@@ -1,0 +1,209 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #333;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #000000;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24pt;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 18pt;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 14pt;
+}
+
+p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+blockquote {
+    border-left: 4px solid #7f8c8d;
+    padding-left: 1em;
+    margin-left: 0;
+    font-style: italic;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+/* Monster Stat Block Styles */
+.stat-block {
+    background-color: #fdf6e3; /* Solarized base3-ish, parchment look */
+    border: 1px solid #d6d6d6;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-bottom: 2em;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    break-inside: avoid; /* Prevent splitting across pages in PDF */
+    color: #333;
+}
+
+.stat-block h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #8b0000; /* Dark Red */
+    color: #8b0000;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    padding-bottom: 2px;
+}
+
+.stat-block .flavor-text {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.stat-block .top-stats {
+    color: #8b0000;
+    margin-bottom: 10px;
+}
+
+.stat-block .top-stats p {
+    margin: 0;
+    display: inline;
+}
+
+.stat-block hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(139, 0, 0, 0), rgba(139, 0, 0, 0.75), rgba(139, 0, 0, 0));
+    margin: 10px 0;
+}
+
+.stat-block .attributes-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    text-align: center;
+    background-color: #faebd7; /* AntiqueWhite */
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.stat-block .attr-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-block .attr-name {
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #8b0000;
+}
+
+.stat-block .attr-value {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.stat-block .section-header {
+    font-weight: bold;
+    font-variant: small-caps;
+    border-bottom: 1px solid #c9ad6a;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.stat-block .property-line {
+    margin-bottom: 4px;
+}
+
+.stat-block .property-line p {
+    margin: 0;
+    display: inline;
+}
+
+.stat-block .property-line strong {
+    font-weight: bold;
+    color: #000000;
+}
+
+.stat-block .action {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border-left: 2px solid #c9ad6a;
+}
+
+.stat-block .action p {
+    margin: 0;
+}
+
+.stat-block .action-name {
+    font-weight: bold;
+    font-style: italic;
+}
+
+table {
+    display: table !important;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    border-spacing: 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 2em 0;
+}
