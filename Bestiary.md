@@ -8,6 +8,8 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 *   **DR**: Damage Reduction (Armor).
 *   **Reactions**: The number of reactions available for the encounter.
 *   **Attributes**: Core stats (STR, AGI, INT, MND, CHA, CON).
+*   **Combat Skill**: The skill value used for attack rolls.
+*   **Base Damage**: The starting damage value before adding DoS and Attribute bonuses.
 
 ---
 
@@ -29,7 +31,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Bite.</span> 65% hit, 5 damage.
+<span class="action-name">Bite.</span> Combat Skill 65, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -53,7 +55,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Crippling Bite.</span> 70% hit, 7 damage.
+<span class="action-name">Crippling Bite.</span> Combat Skill 70, 2 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -77,7 +79,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Corrosive Bite.</span> 60% hit, 6 damage + 2 Bleeding.
+<span class="action-name">Corrosive Bite.</span> Combat Skill 60, 2 Base Damage + 2 Bleeding.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -101,7 +103,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Heavy Maul.</span> 65% hit, 10 damage.
+<span class="action-name">Heavy Maul.</span> Combat Skill 65, 3 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -125,7 +127,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Maul.</span> 60% hit, 8 damage.
+<span class="action-name">Maul.</span> Combat Skill 60, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -149,7 +151,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Poisonous Bite.</span> 70% hit, 4 damage.
+<span class="action-name">Poisonous Bite.</span> Combat Skill 70, 0 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -173,7 +175,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Bite.</span> 65% hit, 5 damage.
+<span class="action-name">Bite.</span> Combat Skill 65, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -197,7 +199,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Peck.</span> 75% hit, 3 damage.
+<span class="action-name">Peck.</span> Combat Skill 75, 0 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -221,7 +223,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Strike.</span> 80% hit, 2 damage + Poison.
+<span class="action-name">Strike.</span> Combat Skill 80, 0 Base Damage + Poison.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -245,7 +247,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Constrict.</span> 60% hit, 6 damage.
+<span class="action-name">Constrict.</span> Combat Skill 60, 0 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -269,7 +271,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Tusk Gore.</span> 55% hit, 7 damage.
+<span class="action-name">Tusk Gore.</span> Combat Skill 55, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -293,7 +295,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Ripping Gore.</span> 60% hit, 9 damage.
+<span class="action-name">Ripping Gore.</span> Combat Skill 60, 2 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -317,7 +319,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Wing Buffet.</span> 65% hit, 4 damage.
+<span class="action-name">Wing Buffet.</span> Combat Skill 65, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -341,7 +343,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Drain.</span> 70% hit, 3 damage.
+<span class="action-name">Drain.</span> Combat Skill 70, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -365,7 +367,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Pounce.</span> 75% hit, 7 damage.
+<span class="action-name">Pounce.</span> Combat Skill 75, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -393,7 +395,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Rusty Sword.</span> 50% hit, 7 damage.
+<span class="action-name">Rusty Sword.</span> Combat Skill 50, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -417,7 +419,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Short Bow.</span> 65% hit, 6 damage.
+<span class="action-name">Short Bow.</span> Combat Skill 65, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -441,7 +443,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Bastard Sword.</span> 60% hit, 9 damage.
+<span class="action-name">Bastard Sword.</span> Combat Skill 60, 2 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -465,7 +467,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Rapier.</span> 65% hit, 7 damage.
+<span class="action-name">Rapier.</span> Combat Skill 65, 0 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -489,7 +491,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Club.</span> 55% hit, 8 damage.
+<span class="action-name">Club.</span> Combat Skill 55, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -513,7 +515,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Halberd.</span> 70% hit, 10 damage.
+<span class="action-name">Halberd.</span> Combat Skill 70, 2 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -537,7 +539,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Crossbow.</span> 75% hit, 8 damage.
+<span class="action-name">Crossbow.</span> Combat Skill 75, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -561,7 +563,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Great Sword.</span> 65% hit, 11 damage.
+<span class="action-name">Great Sword.</span> Combat Skill 65, 3 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -585,7 +587,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Spear.</span> 60% hit, 9 damage.
+<span class="action-name">Spear.</span> Combat Skill 60, 2 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -609,7 +611,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Long Sword.</span> 70% hit, 8 damage.
+<span class="action-name">Long Sword.</span> Combat Skill 70, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -633,7 +635,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Poisoned Dagger.</span> 85% hit, 5 damage + 5 Poison.
+<span class="action-name">Poisoned Dagger.</span> Combat Skill 85, 0 Base Damage + 5 Poison.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -657,7 +659,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Dart.</span> 75% hit, 3 damage + Blindness.
+<span class="action-name">Dart.</span> Combat Skill 75, 0 Base Damage + Blindness.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -681,7 +683,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Axe.</span> 55% hit, 8 damage.
+<span class="action-name">Axe.</span> Combat Skill 55, 2 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -705,7 +707,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Club.</span> 40% hit, 4 damage.
+<span class="action-name">Club.</span> Combat Skill 40, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -729,7 +731,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Shovel.</span> 50% hit, 6 damage.
+<span class="action-name">Shovel.</span> Combat Skill 50, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -757,7 +759,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Dagger.</span> 50% hit, 5 damage.
+<span class="action-name">Dagger.</span> Combat Skill 50, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -781,7 +783,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Mace.</span> 55% hit, 6 damage.
+<span class="action-name">Mace.</span> Combat Skill 55, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -805,7 +807,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Flail.</span> 65% hit, 8 damage.
+<span class="action-name">Flail.</span> Combat Skill 65, 2 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -829,7 +831,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Long Sword.</span> 70% hit, 8 damage.
+<span class="action-name">Long Sword.</span> Combat Skill 70, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -853,7 +855,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Claws.</span> 50% hit, 9 damage.
+<span class="action-name">Claws.</span> Combat Skill 50, 2 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -877,7 +879,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Staff.</span> 45% hit, 4 damage.
+<span class="action-name">Staff.</span> Combat Skill 45, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -901,7 +903,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Sickle.</span> 55% hit, 6 damage.
+<span class="action-name">Sickle.</span> Combat Skill 55, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -925,7 +927,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Athame.</span> 60% hit, 5 damage.
+<span class="action-name">Athame.</span> Combat Skill 60, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -949,7 +951,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Staff.</span> 50% hit, 5 damage.
+<span class="action-name">Staff.</span> Combat Skill 50, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -973,7 +975,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Unarmed Strike.</span> 80% hit, 6 damage.
+<span class="action-name">Unarmed Strike.</span> Combat Skill 80, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -997,7 +999,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Staff.</span> 45% hit, 4 damage.
+<span class="action-name">Staff.</span> Combat Skill 45, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1021,7 +1023,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Scourge.</span> 70% hit, 7 damage.
+<span class="action-name">Scourge.</span> Combat Skill 70, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1049,7 +1051,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Slam.</span> 55% hit, 6 damage.
+<span class="action-name">Slam.</span> Combat Skill 55, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1097,7 +1099,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Multi-Claw.</span> 60% hit, 4 damage x3.
+<span class="action-name">Multi-Claw.</span> Combat Skill 60, 0 Base Damage x3.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1121,7 +1123,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Bone Blade.</span> 70% hit, 8 damage.
+<span class="action-name">Bone Blade.</span> Combat Skill 70, 2 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1145,7 +1147,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Hidden Needle.</span> 75% hit, 4 damage + Sleep.
+<span class="action-name">Hidden Needle.</span> Combat Skill 75, 0 Base Damage + Sleep.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1169,7 +1171,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Bone Spike.</span> 65% hit, 10 damage.
+<span class="action-name">Bone Spike.</span> Combat Skill 65, 2 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1193,7 +1195,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Jagged Bite.</span> 70% hit, 6 damage.
+<span class="action-name">Jagged Bite.</span> Combat Skill 70, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1217,7 +1219,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Lash.</span> 55% hit, 7 damage.
+<span class="action-name">Lash.</span> Combat Skill 55, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1241,7 +1243,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Tentacle.</span> 60% hit, 5 damage.
+<span class="action-name">Tentacle.</span> Combat Skill 60, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1265,7 +1267,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Ichor Glob.</span> 75% hit, 6 damage, 15m range.
+<span class="action-name">Ichor Glob.</span> Combat Skill 75, 1 Base Damage, 15m range.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1289,7 +1291,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Slam.</span> 45% hit, 12 damage.
+<span class="action-name">Slam.</span> Combat Skill 45, 4 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1313,7 +1315,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Swallow.</span> 60% hit, 15 damage.
+<span class="action-name">Swallow.</span> Combat Skill 60, 5 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1337,7 +1339,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Shadow Claw.</span> 75% hit, 6 damage.
+<span class="action-name">Shadow Claw.</span> Combat Skill 75, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1361,7 +1363,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Crystal Shard.</span> 65% hit, 10 damage.
+<span class="action-name">Crystal Shard.</span> Combat Skill 65, 3 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1385,7 +1387,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Rotting Touch.</span> 60% hit, 4 damage + 4 Fear.
+<span class="action-name">Rotting Touch.</span> Combat Skill 60, 0 Base Damage + 4 Fear.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1413,7 +1415,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Slam.</span> 40% hit, 4 damage.
+<span class="action-name">Slam.</span> Combat Skill 40, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1437,7 +1439,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Bite.</span> 45% hit, 5 damage + Plague.
+<span class="action-name">Bite.</span> Combat Skill 45, 1 Base Damage + Plague.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1461,7 +1463,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Rusty Scimitar.</span> 55% hit, 6 damage.
+<span class="action-name">Rusty Scimitar.</span> Combat Skill 55, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1485,7 +1487,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Spear.</span> 60% hit, 8 damage.
+<span class="action-name">Spear.</span> Combat Skill 60, 1 Base Damage.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">

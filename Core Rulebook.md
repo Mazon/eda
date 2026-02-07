@@ -48,7 +48,7 @@ Roll **2d10** (01-100).
 
 *   **Success**: Roll **UNDER** or EQUAL to your Skill/Attribute.
 *   **Failure**: Roll **OVER** your Skill/Attribute.
-*   **Critical Success**: Doubles under skill (11, 22, 33...). A Critical Success deals **Max Damage**: Weapon Base Damage + tens digit of the Skill (e.g., 70 Skill = +7). This replaces the normal damage calculation for that hit.
+*   **Critical Success**: Doubles under skill (11, 22, 33...). A Critical Success deals **Max Damage**: Weapon Base Damage + Tens Digit of the Skill (e.g., 70 Skill = +7). This replaces the normal damage calculation for that hit.
     *   **Difficulty Bypass**: In non-combat checks, a Critical Success automatically fulfills the required Degrees of Success for any difficulty level.
     *   **Degree of Success**: The amount of success. Usually only recorded as the number of ten digits. Example a roll of 48 would be 4 degree of success.
 
@@ -335,7 +335,7 @@ At character creation, you typically choose **one Combat Style**.
 *Style Talents:*
 
 *   **Blocker (T1)**: Unlock the **Block** reaction. Use Shield skill to reduce damage.
-*   **Shield Bash (T1)**: Strike with shield (Dmg = Shield DR + STR).
+*   **Shield Bash (T1)**: Strike with shield (Dmg = Shield DR + Tens Digit of Strength).
 *   **Shield Master (T2)**: Passive: Adjacent allies gain +5 Defense. Reaction: After a successful Block, make a free Shield Bash attack.
 *   **Shield Edge (T3)**: Give advantage against enemy pinned by shield.
 
@@ -613,7 +613,8 @@ A player in the **Vanguard Turn** can spend **a free Action** to **Wait**. This 
 
 ### Damage & Health
 
-*   **Damage**: Fixed base value + Modifiers. Damage is reduced by **Defense** before being applied to HP.
+*   **Damage**: Total damage is calculated as **Weapon Base Damage + Degree of Success (DoS) + Tens Digit of the relevant Attribute**.
+*   **Reduction**: Damage is reduced by **Defense** (Armor/Shields) before being applied to HP.
 *   **Death**: At 0 HP.
 
 > #### Combat Example: The Pack Attacks
@@ -628,7 +629,9 @@ A player in the **Vanguard Turn** can spend **a free Action** to **Wait**. This 
 > **Vanguard Turn (Bjorn & Erik)**
 > 1.  **Bjorn (Action 1 - Move):** Moves 6 meters to intercept Wolf 1. Gains **Evasive Maneuver** (Advantage on Active Defense).
 > 2.  **Bjorn (Action 2 - Attack):** Swings his Long Sword (STR 70). Rolls 25. **Hit!**
->     *   *Damage:* 7 (Long Sword) - 1 (Wolf DR) = 6 damage. Wolf 1 has 6 HP left.
+>     *   *DoS:* 7 (Skill) - 2 (Roll) = 5 DoS.
+>     *   *Damage:* 7 (Base) + 2 (DoS) = 9 damage.
+>     *   *Result:* 9 - 1 (Wolf DR) = 8 damage. Wolf 1 is defeated!
 > 3.  **Erik (Action 1 - Move):** Erik moves next to Astrid to protect her.
 > 4.  **Erik (Action 2 - Help):** Erik uses **Help** to spot for Astrid, giving her advantage on her next attack.
 >
@@ -674,7 +677,7 @@ When you are targeted by an attack, you may spend one of your limited Reactions 
     *   **Success**: You deflect the blow. Reduce incoming damage by your **Weapon Damage**.
     *   **Failure**: You take **Full Damage**.
 *   **Block (Combat: Shields)**:
-    *   **Success**: You catch the blow on your shield. Reduce incoming damage by **Double Shield DR**.
+    *   **Success**: You catch the blow on your shield. Reduce incoming damage by **Shield Defense + Tens Digit of Strength**.
     *   **Failure**: The shield still absorbs some impact. You take **Half Damage**.
 
 ## Conditions & Status Effects
@@ -716,8 +719,10 @@ If there is a long downtime, depending on if the characters plausibly would have
 ### Rest & Recovery
 
 #### Normal Rest
-8 hours of sleep. Small interruption of sleep can be included as long as there is no excessive physical exertion. 
-You recover **4 HP** per day if sleeping normally.
+8 hours of sleep. Small interruption of sleep can be included as long as there is no excessive physical exertion.
+
+*   **HP Recovery**: You recover **4 + (CON Tens Digit) HP** per night of normal sleep.
+*   **MP Recovery**: You recover **MND Tens Digit** MP per night of normal sleep.
 
 ### Health & Injuries
 
@@ -893,7 +898,7 @@ Magic draws power from despair and requires **Mind Points (MP)**.
 **MP Limit**: MND / 4.
 
 ### Spells
-All spells require a successful **MND check** to be cast. The target may make a MND check to resist if the spell is harmful. Most spells cost **5 MP** unless stated otherwise.
+All spells require a successful **MND check** to be cast (including required DoS).
 
 | Spell                  | MP   | Difficulty        | Effect                               |
 | :--------------------- | :--- | :---------------- | :----------------------------------- |
