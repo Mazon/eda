@@ -25,7 +25,7 @@ The game is divided into Adventures and Campaigns.
 
 ## Dice Mechanics
 
-Dice are used to decide outcomes of uncertain actions. Eda uses two d10 dice of different colors to represent 01-100:
+Dice are used to decide outcomes of uncertain actions. Eda uses two 10 sided dice to represent numbers from 01-100, from now on called d10 or 2d10.
 
 *   **Primary Dice**: Represents the 10s (00, 10, 20... 90).
 *   **Secondary Dice**: Represents the 1s (0-9).
@@ -52,9 +52,20 @@ Roll 2d10 (01-100).
 
 *   **Success**: Roll UNDER or EQUAL to your Skill/Attribute.
 *   **Failure**: Roll OVER your Skill/Attribute.
-*   **Critical Success**: Doubles under skill (11, 22, 33...). A Critical Success deals **Critical Damage**: Weapon Base Damage + Maximum Degree of Success (Tens Digit of the Skill). This replaces the normal damage calculation for that hit.
+
+#### Degree of Success
+  
+The amount of success. Recorded as the number of the ten digits. Example a roll of 48 would be 4 degree of success. Many different mechanics in the game uses how much you succeed in something and it also impact how much damage your attacks do.
+
+
+#### Critical Success & Failure
+
+*   **Critical Success**: Doubles under or equal to the skill value (11, 22, 33...).
+    *  In combat a Critical Success deals **Critical Damage**: Weapon Base Damage + Maximum Degree of Success (Tens Digit of the Skill). This replaces the normal damage calculation for that hit.
     *   Difficulty Bypass: In non-combat checks, a Critical Success automatically fulfills the required Degrees of Success for any difficulty level.
-    *   Degree of Success: The amount of success. Usually only recorded as the number of ten digits. Example a roll of 48 would be 4 degree of success.
+
+*   **Critical Failure (Fumble)**: Doubles above the skill value or a roll of **100 (00)** (if above the skill).
+    *   **The Fumble Reward**: Eda uses a "fail forward" mechanic. When you Critical Failure, you immediately increase that skill by **1 point** permanently as you learn from the error. See the section **Fumble Points** for a full explanation.
 
 ### Difficulty Modifiers
 
@@ -73,8 +84,15 @@ Roll 2d10 (01-100).
 >
 > If roll 36, can either be 36 or 63.
 
-*   **Advantage**: You are allowed to select the best result.
+*   **Advantage**: You are allowed to select the best result. The **Best Result** is defined as the successful roll that provides the highest **Degree of Success (DoS)**.
 *   **Disadvantage**: Take the worst result.
+
+> #### Example: The Advantage Choice
+> Bjorn has a Skill of **70** and rolls with **Advantage**. He rolls a **26**.
+> *   Option A: **26** (2 DoS)
+> *   Option B: **62** (6 DoS)
+>
+> Bjorn picks **62**. It is still under his skill (70), but it provides **4 more damage** and satisfies higher difficulty requirements.
 
 ### Opposing Rolls
 
@@ -91,7 +109,8 @@ When two characters are competing against each other (e.g., an arm wrestling mat
 Before rolling, a player can declare they are "Pushing."
 
 *   **Effect**: You gain **Advantage** on the roll.
-*   **Cost**: Regardless of success or failure, you lose **5 Mind Points**.
+*   **Cost**: Regardless of success or failure, you lose **10 Mind Points**.
+
 
 ## Character Creation
 
@@ -281,7 +300,7 @@ At character creation, you typically choose one Combat Style.
 *Applicable Weapons:* Long Swords, Hand Axes, Maces, Bastard Swords (1H).
 *Style Talents:*
 
-*   *None specific yet. Relies on general combat talents.*
+*   **Swift Blade (T1)**: Passive. Drawing or sheathing a one-handed weapon is a **Zero Cost Action**.
 
 ##### Two-Handed
 *Attribute:* **STR**
@@ -1025,9 +1044,10 @@ This system rewards failure and provides consistent growth, ensuring low skills 
 #### The Fumble Points
 
 *   **Trigger**: Your skill improves **immediately** when you roll a **Critical Fumble**.
-*   **Definition of Critical Fumble**: Rolling **Doubles** (11, 22, 33...) that are **ABOVE** your Skill Value.
-    *   *Example*: Skill 30. Roll 44. (Fail + Doubles) -> **Fumble**.
-    *   *Example*: Skill 80. Roll 44. (Success + Doubles) -> **Critical Hit**.
+*   **Definition of Critical Fumble**:
+    1. Rolling **Doubles** ( 77, 88, 99, 00...) that are **ABOVE** your Skill Value.
+    
+    *   *Example*: Skill 45. Roll 77. (Fail + Doubles) -> **Fumble**. Skill increases to 46.
 *   **The Reward**: When you Fumble, increase that skill by **1 point** permanently. This represents learning from a spectacular failure.
 
 #### End of session
