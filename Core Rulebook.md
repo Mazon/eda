@@ -415,23 +415,23 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Pack Tactics**         |  T2   | If an ally is within 2m of your target and has already moved or acted, gain Advantage on attack.             |
 | **Fake Attack**          |  T2   | Action: Target avoids any more attacks this round.                                                               |
 | **Cleave**               |  T2   | Passive: When you kill an enemy, you may immediately make a free attack against another nearby enemy.            |
-| **Dual Wielding**        |  T2   | Two Weapons | Passive: +10 Parry. Action (1 AP): Attack with both weapons (one roll). Hit: Combined weapon damage + Degree of Success. |
-| **Blind Fighting**       |  T2   |             | Ignore penalties for fighting in darkness or against invisible enemies.                                          |
-| **Counter Attack**       |  T3   |             | Reaction: When hit, halve the damage and immediately make a melee attack against the attacker.                   |
-| **Duelist**              |  T3   |             | Passive: You gain +1 additional Reaction pool for the encounter.                                             |
-| **Iron Stomach**         |  T3   |             | Advantage vs Poison/Toxins.                                                                                      |
-| **Iron Will**            |  T3   |             | When you take damage, gain 1 Focus Point. Spend 1 pt for +5 to a roll or 2 pts for a free Reaction.              |
-| **Coup de Grace**        |  T3   |             | Action: Deal Double Damage (ignores Defense) if the target is Prone or Stunned.                             |
-| **Tempo**                |  T3   |             | Advantage on Initiative checks.                                                                                  |
-| **Shape Shift**          |  T3   |             | Werewolf form (+10 STR, Claw 7dmg).                                                                              |
-| **Durable**              |  T3   |             | +5 Natural Defense.                                                                                              |
-| **Flanking**             |  T3   |             | Advantage if ally is on opposite side.                                                                           |
-| **Vanguard Reflexes**    |  T3   |             | Passive: You recover 1 Reaction at the start of every round (up to your max pool).                           |
-| **Unyielding Spirit**    |  T3   |             | Once per long rest, if you would fall to 0 HP, you instead stay at 1 HP and gain 10 Temp HP.                     |
-| **Battle Plan**          |  T4   |             | Party gets Advantage on Initiative checks.                                                                   |
-| **Master of Defense**    |  T4   |             | Passive: You gain Advantage on all Active Defense rolls (Dodge/Parry/Block).                                 |
-| **Steel Resolve**        |  T4   |             | Passive: Gain +2 Defense against all physical attacks.                                             |
-| **Combat Transcendence** |  T4   |             | Action: For 3 rounds, you gain Advantage on all Defense rolls and do not spend Reactions to Dodge.               |
+| **Dual Wielding**        |  T2   | **Req: Two Weapons.** Passive: +10 Parry. Action (1 AP): Attack with both weapons (one roll). Hit: Combined weapon damage + Degree of Success. |
+| **Blind Fighting**       |  T2   | Ignore penalties for fighting in darkness or against invisible enemies.                                          |
+| **Counter Attack**       |  T3   | Reaction: When hit, halve the damage and immediately make a melee attack against the attacker.                   |
+| **Duelist**              |  T3   | Passive: You gain +1 additional Reaction pool for the encounter.                                             |
+| **Iron Stomach**         |  T3   | Advantage vs Poison/Toxins.                                                                                      |
+| **Iron Will**            |  T3   | When you take damage, gain 1 Focus Point. Spend 1 pt for +5 to a roll or 2 pts for a free Reaction.              |
+| **Coup de Grace**        |  T3   | Action: Deal Double Damage (ignores Defense) if the target is Prone or Stunned.                             |
+| **Tempo**                |  T3   | Advantage on Initiative checks.                                                                                  |
+| **Shape Shift**          |  T3   | Werewolf form (+10 STR, Claw 7dmg).                                                                              |
+| **Durable**              |  T3   | +5 Natural Defense.                                                                                              |
+| **Flanking**             |  T3   | Advantage if ally is on opposite side.                                                                           |
+| **Vanguard Reflexes**    |  T3   | Passive: You recover 1 Reaction at the start of every round (up to your max pool).                           |
+| **Unyielding Spirit**    |  T3   | Once per long rest, if you would fall to 0 HP, you instead stay at 1 HP and gain 10 Temp HP.                     |
+| **Battle Plan**          |  T4   | Party gets Advantage on Initiative checks.                                                                   |
+| **Master of Defense**    |  T4   | Passive: You gain Advantage on all Active Defense rolls (Dodge/Parry/Block).                                 |
+| **Steel Resolve**        |  T4   | Passive: Gain +2 Defense against all physical attacks.                                             |
+| **Combat Transcendence** |  T4   | Action: For 3 rounds, you gain Advantage on all Defense rolls and do not spend Reactions to Dodge.               |
 
 #### Troubadour Talents
 *Use music and stories to influence or curse.*
