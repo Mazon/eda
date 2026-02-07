@@ -277,7 +277,7 @@
   </tr>
   <tr>
     <td style="border: 1px solid #000; padding: 8px; background-color: #f9f9f9;">
-      <b>CURRENCY:</b> ____________________
+      <b>CURRENCY:</b> &nbsp;&nbsp; GP: ________ &nbsp;&nbsp; SP: ________ &nbsp;&nbsp; CP: ________
     </td>
   </tr>
 </table>
