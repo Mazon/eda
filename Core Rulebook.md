@@ -331,7 +331,7 @@ At character creation, you typically choose one Combat Style.
 *Applicable Weapons:* Thrown Daggers, Hand Axes, Javelins.
 *Style Talents:*
 
-*   **Far Throwing (T2)**: Action (1 AP): Opposed STR (Athletics) check vs target STR. On success, throw humanoid 20m. Target takes 1d6 damage per 5m thrown.
+*   **Far Throwing (T2)**: Action (1 AP): Opposed STR (Athletics) check vs target STR. On success, throw humanoid 20m. Target takes 1d10 damage per 5m thrown.
 
 ##### Unarmed
 *Attribute:* **STR**
@@ -400,7 +400,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Vengeful Retort**      |  T2   | Rearguard: If you took damage this round, your next attack has Advantage.                                |
 | **Exploit Opening**      |  T2   | Rearguard: Deal +10 Damage if the target missed an attack against you or an ally this round.             |
 | **Harrying Strike**      |  T2   | Action: Target has Disadvantage on their next Defense roll.                                                  |
-| **Bloodied Fury**        |  T2   | If your HP is < 50%, all your attacks deal +1d6 damage.                                                      |
+| **Bloodied Fury**        |  T2   | If your HP is < 50%, all your attacks deal +1d10 damage.                                                     |
 | **Empower**              |  T2   | Action (1 AP): Spend 1 MP. Your next attack this turn deals +10 damage.                                      |
 | **Guardian**             |  T2   | Redirect attack on ally to self (1/round).                                                                       |
 | **Jack of all Trades**   |  T2   | Lowest skills set to second-lowest value.                                                                        |
@@ -950,7 +950,7 @@ In the world of Eda, special items are rare and often carry a price—either in 
 | **Silver-Bell**          | Rings softly when Undead or Demons are within 20m.              | Blessed by the Zealots of the Sun.                              |
 | **Cold-Iron Shackles**   | Prevents the use of Spells and Rituals by anyone bound in them. | Used by witch-hunters to transport prisoners.                   |
 | **Marrow-Bone Flute**    | Using the **Perform** skill grants +5 MP to an ally (1/day).    | Carved from the bone of a forgotten saint.                      |
-| **Void-Glass Lens**      | Allows the user to see invisible spirits and magic auras.       | Extensive use causes temporary blindness (1d6 hours).           |
+| **Void-Glass Lens**      | Allows the user to see invisible spirits and magic auras.       | Extensive use causes temporary blindness (1d10 hours).          |
 | **Vanguard Bracers**     | Your first attack in a combat encounter has **Advantage**.      | Emblazoned with the crest of the High Vanguard.                 |
 | **Duelist's Cape**       | Gain **+1 Reaction** pool while not wearing heavy armor.        | A swirling silk cape designed to confuse opponents.             |
 
@@ -971,14 +971,14 @@ In the world of Eda, special items are rare and often carry a price—either in 
 | **Virgin Hair**          | From a virgin strangled during a lunar eclipse. Requirement for high-tier curses.    |
 | **Guts**                 | Read omens. Human guts reveal the future. Advantage on next related check.           |
 | **Grave Soil**           | Advantage on *Animate Plant* or *Animate Object* rituals.                            |
-| **Iron**                 | Keeps out fairy people. Deals 1d6 damage to Fey.                                     |
+| **Iron**                 | Keeps out fairy people. Deals 1d10 damage to Fey.                                    |
 | **Skulls**               | Used in rituals. Requirement for *Talk with Dead*.                                   |
 | **Corpses / Ash**        | Component for necromancy rituals.                                                    |
 | **Menstrual Blood**      | Used in love brews, fertility rituals, and to bring life back. Advantage on Charm.   |
 | **Placenta**             | Worn under clothes to make a woman fruitful. Resistance to disease.                  |
 | **Nails and Hair**       | Provides the opportunity to curse the owner. Advantage on Hexes vs owner.            |
 | **Rowan Sticks**         | Warding. Advantage on MND checks vs magic.                                           |
-| **Silver**               | Keeps evil away. Deals 1d6 damage to Lycanthropes.                                   |
+| **Silver**               | Keeps evil away. Deals 1d10 damage to Lycanthropes.                                  |
 | **Mucus**                | Ingredient for poisons. Advantage on Alchemy.                                        |
 | **Mirror**               | Protects against curse, keeps evil away (requires old silvered mirrors).             |
 | **Semen**                | Used in love brews and fertility rituals. Advantage on Charm.                        |
@@ -1000,7 +1000,7 @@ All spells require a successful **MND check** to be cast (including required DoS
 | **Confuse**            | 5    | Routine (1 DoS)   | -5 Combat Style to target.                                         |
 | **Commanding Tale**    | 5    | Routine (1 DoS)   | Persuade someone.                                                  |
 | **Freeze in Place**    | 5    | Routine (1 DoS)   | Immobilize target (**MND** vs **CON** check to resist).            |
-| **Medusa Glare**       | 10   | Challenge (2 DoS) | Turn to stone for 1d6 rounds (**MND** vs **CON** check to resist). |
+| **Medusa Glare**       | 10   | Challenge (2 DoS) | Turn to stone for 1d10 rounds (**MND** vs **CON** check to resist). |
 | **Rain Storm**         | 5    | Routine (1 DoS)   | Obscures vision.                                                   |
 | **Form of a Beast**    | 5    | Challenge (2 DoS) | Transform (2 Actions).                                             |
 | **Quicksand**          | 5    | Routine (1 DoS)   | Immobilize target (**MND** vs **AGI** check to resist).            |
@@ -1044,7 +1044,7 @@ Rituals are powerful, utility-focused magical operations that cannot be cast in 
 | **Sickening Curse**   | 1h   | 15   | Hair/Blood        | Target takes -1 Max HP/day. Permanent until Cleanse.               |
 | **Cleanse**           | 1h   | 10   | Pure Water        | Removes one curse or restores 10 MP lost to Fear.                  |
 | **Visions of Future** | 1h   | 15   | Mirror (20g)      | Advantage on next related check.                                   |
-| **Sea Storm**         | 4h   | 30   | Salt/Sea          | Summons a storm (5km radius) for 1d6 hours.                        |
+| **Sea Storm**         | 4h   | 30   | Salt/Sea          | Summons a storm (5km radius) for 1d10 hours.                       |
 | **Talk with Dead**    | 1h   | 10   | Skull             | Ask spirit 3 questions. They cannot lie.                           |
 | **Create Artifact**   | 24h  | 50   | Rare Components   | Permanently enchant an item. High backfire risk.                   |
 
