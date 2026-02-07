@@ -1,276 +1,202 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12pt;
-    line-height: 1.5;
-    color: #333;
-    max-width: 100% !important;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #2c3e50;
+    max-width: 800px; /* Standard single column width for readability */
     margin: 0 auto;
-    padding: 0;
+    padding: 2em;
+    background-color: #ffffff;
 }
 
+/* Headers */
 h1, h2, h3, h4, h5, h6 {
-    font-family: Helvetica, Arial, sans-serif;
-    color: #000000;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 h1 {
-    font-size: 24pt;
-    border-bottom: 2px solid #000000;
-    padding-bottom: 10px;
+    font-size: 32pt;
+    border-bottom: 3px solid #8b0000;
+    padding-bottom: 0.5em;
     margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h2 {
-    font-size: 18pt;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+    font-size: 20pt;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 0.2em;
+    color: #8b0000;
 }
 
 h3 {
-    font-size: 14pt;
+    font-size: 16pt;
+    border-left: 5px solid #8b0000;
+    padding-left: 10px;
 }
 
-p {
-    margin-bottom: 1em;
-    text-align: justify;
+/* Lists */
+ul, ol {
+    margin-bottom: 1.5em;
+    padding-left: 1.5em;
 }
 
+li {
+    margin-bottom: 0.8em; /* Added breathing room between list items */
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+/* Professional Sidebars (Blockquotes) */
 blockquote {
-    border-left: 4px solid #7f8c8d;
-    padding-left: 1em;
-    margin-left: 0;
-    font-style: italic;
-    color: #555;
-    background-color: #f9f9f9;
+    border: 1px solid #c9ad6a;
+    border-left: 8px solid #c9ad6a;
+    background-color: #fdfaf3;
+    padding: 1.5em;
+    margin: 2em 0;
+    font-style: normal;
+    color: #444;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.05);
+}
+
+blockquote h3 {
+    margin-top: 0;
+    border-left: none;
+    padding-left: 0;
+    color: #8b0000;
+    font-variant: small-caps;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    font-size: 10pt;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+th {
+    background-color: #8b0000;
+    color: white;
+    text-align: left;
     padding: 10px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 /* Monster Stat Block Styles */
 .stat-block {
-    background-color: #fdf6e3; /* Solarized base3-ish, parchment look */
+    background-color: #fdf6e3;
     border: 1px solid #d6d6d6;
+    border-top: 4px solid #8b0000;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    padding: 15px;
-    margin-bottom: 2em;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    break-inside: avoid; /* Prevent splitting across pages in PDF */
+    padding: 20px;
+    margin: 2em 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    break-inside: avoid;
     color: #333;
 }
 
 .stat-block h3 {
     margin-top: 0;
-    border-bottom: 2px solid #8b0000; /* Dark Red */
+    border-bottom: 2px solid #8b0000;
+    border-left: none;
+    padding-left: 0;
     color: #8b0000;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Georgia', serif;
     font-variant: small-caps;
-    font-size: 1.5em;
-    padding-bottom: 2px;
+    font-size: 1.8em;
+    padding-bottom: 5px;
 }
 
 .stat-block .flavor-text {
     font-style: italic;
-    font-size: 0.9em;
-    margin-bottom: 10px;
-    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    color: #5d6d7e;
+    text-align: left;
 }
 
 .stat-block .top-stats {
+    font-weight: bold;
     color: #8b0000;
     margin-bottom: 10px;
-}
-
-.stat-block .top-stats p {
-    margin: 0;
-    display: inline;
-}
-
-.stat-block hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(139, 0, 0, 0), rgba(139, 0, 0, 0.75), rgba(139, 0, 0, 0));
-    margin: 10px 0;
+    border-bottom: 1px solid #c9ad6a;
+    padding-bottom: 5px;
 }
 
 .stat-block .attributes-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 5px;
+    gap: 10px;
     text-align: center;
-    background-color: #faebd7; /* AntiqueWhite */
-    padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.stat-block .attr-box {
-    display: flex;
-    flex-direction: column;
+    background-color: rgba(139, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
 }
 
 .stat-block .attr-name {
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 0.75em;
     color: #8b0000;
+    text-transform: uppercase;
 }
 
 .stat-block .attr-value {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .stat-block .section-header {
     font-weight: bold;
     font-variant: small-caps;
     border-bottom: 1px solid #c9ad6a;
-    color: #333;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 1.1em;
+    color: #8b0000;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
 }
 
-.stat-block .property-line {
-    margin-bottom: 4px;
+/* Horizontal Rule flair */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(139, 0, 0, 0), rgba(139, 0, 0, 0.5), rgba(139, 0, 0, 0));
+    margin: 3em 0;
 }
 
-.stat-block .property-line p {
-    margin: 0;
-    display: inline;
-}
-
-.stat-block .property-line strong {
-    font-weight: bold;
-    color: #000000;
-}
-
-.stat-block .action {
-    margin-bottom: 8px;
-    padding-left: 10px;
-    border-left: 2px solid #c9ad6a;
-}
-
-.stat-block .action p {
-    margin: 0;
-}
-
-.stat-block .action-name {
-    font-weight: bold;
-    font-style: italic;
-}
-
-table {
-    display: table !important;
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1em;
-    border-spacing: 0;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-    vertical-align: top;
-}
-
-th {
-    background-color: #000000;
-    color: white;
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-code {
-    background-color: #f4f4f4;
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-family: Consolas, 'Courier New', monospace;
-}
-
-ul, ol {
-    margin-bottom: 1em;
-    padding-left: 2em;
-}
-
-li {
-    margin-bottom: 0.5em;
-}
-
-/* --- Professional Layout Classes --- */
-
-/* 1. Example Box: Used for clarifying rules */
-.example-box {
-    background-color: #f0f0f0;
-    border-left: 5px solid #444;
-    padding: 15px;
-    margin: 1.5em 0;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    page-break-inside: avoid;
-}
-
-.example-box-title {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    color: #444;
-    margin-bottom: 8px;
-    border-bottom: 1px solid #ccc;
-    display: block;
-}
-
-.example-box strong {
-    color: #222;
-}
-
-/* 2. Lore Box: For flavor text and world-building */
-.lore-box {
-    background-color: #fffaf0; /* FloralWhite */
-    border: 1px solid #dcdcdc;
-    padding: 15px 25px;
-    margin: 2em 1em;
-    font-style: italic;
-    font-family: Georgia, serif;
-    position: relative;
-    page-break-inside: avoid;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
-}
-
-/* 3. Sidebar: For GM advice or optional rules (Full width for single-column) */
-.sidebar {
-    background-color: #2c3e50; /* Dark Blue-Grey */
-    color: #ecf0f1;
-    padding: 15px;
-    margin: 2em 0;
-    border-radius: 4px;
-    page-break-inside: avoid;
-}
-
-.sidebar h3, .sidebar h4 {
-    color: #ecf0f1;
-    border-bottom: 1px solid #bdc3c7;
-    margin-top: 0;
-    padding-bottom: 5px;
-}
-
-/* 4. Read Aloud: For text GMs should read to players */
-.read-aloud {
-    background-color: #e8f4f8;
-    border: 1px solid #bce8f1;
-    padding: 15px;
-    margin: 1.5em 0;
-    color: #31708f;
-    font-family: sans-serif;
-}
-
-.read-aloud::before {
-    font-weight: bold;
-    display: block;
-    font-size: 0.8em;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 1em;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .stat-block .attributes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
