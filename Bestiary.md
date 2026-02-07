@@ -1,4 +1,4 @@
-# Eda: Bestiary
+# Bestiary
 
 This book contains creatures and adversaries found in the world of Eda. Each entry includes stats for combat and unique behaviors or abilities.
 

@@ -40,9 +40,9 @@ It is up to the group to decide how long to play, but a general tip is to keep s
 
 **Session 0**: It is always a good idea to have a first session where you don’t adventure fully but make sure everyone has a character created, backstories are done, and expectations are set regarding the tone of the game.
 
-# Playing the Game
+## Playing the Game
 
-## Checks
+### Checks
 
 Roll **2d10** (01-100).
 
@@ -50,9 +50,9 @@ Roll **2d10** (01-100).
 *   **Failure**: Roll **OVER** your Skill/Attribute.
 *   **Critical Success**: Doubles under skill (11, 22, 33...). A Critical Success deals **Max Damage**: Weapon Base Damage + tens digit of the Skill (e.g., 70 Skill = +7). This replaces the normal damage calculation for that hit.
     *   **Difficulty Bypass**: In non-combat checks, a Critical Success automatically fulfills the required Degrees of Success for any difficulty level.
-*   **Degree of Success**: The value of the primary die (tens digit). For example, a roll of 48 grants 4 Degrees of Success.
+    *   **Degree of Success**: The amount of success. Usually only recorded as the number of ten digits. Example a roll of 48 would be 4 degree of success.
 
-## Difficulty Modifiers
+### Difficulty Modifiers
 
 | Difficulty          | Requirement (DoS) | Description                                     |
 | :------------------ | :---------------- | :---------------------------------------------- |
@@ -63,12 +63,15 @@ Roll **2d10** (01-100).
 | **Extreme**         | 6 DoS             | At the edge of human capability.                |
 | **Near Impossible** | 8 DoS             | Practically legendary feats; requires a Master. |
 
-## Advantage & Disadvantage
+### Advantage & Disadvantage
 
-*   **Advantage**: Roll twice, take the **best** result (lowest number).
-*   **Disadvantage**: Roll twice, take the **worst** result (highest number).
+>In other games advantage and disadvantage is usually done by rolling twice. Using 2d10 dice, you can switch what dice is the primary and which is the secondary. This way we only have to roll once.
+> If roll 36, can either be 36 or 63.
 
-## Opposing Rolls
+*   **Advantage**: You are allowed to select the best result.
+*   **Disadvantage**: Take the worst result.
+
+### Opposing Rolls
 
 When two characters are competing against each other (e.g., an arm wrestling match or trying to hide from a guard), both parties make a check.
 
@@ -77,21 +80,56 @@ When two characters are competing against each other (e.g., an arm wrestling mat
 *   If one succeeds and the other fails, the successful character wins.
 *   If both succeed, the character with the **highest successful roll** wins.
 
-# Character Creation
+### Pushing the Limit
+
+Before rolling, a player can declare they are "Pushing."
+*   **Effect**: You gain **Advantage** on the roll.
+*   **Cost**: Regardless of success or failure, you lose **5 Mind Points**.
+
+## Character Creation
 
 To create a character, you make choices that customize them to be interesting and fun. A character consists of:
-1.  **Ability Scores**
-2.  **Genome**
+
+1.  **Genome**
+2.  **Body & Mind**
 3.  **Heritage**
 4.  **Skills**
 5.  **Talents**
-6.  **Archetype**
+6.  **Combat Styles**
 7.  **Course of Life**
 8.  **Equipment**
 
-## Ability Scores
+>Creating Bjorn the Brave
+>
+> **Step 1: Genome**
+> Bjorn chooses **The Bear** totem.
+> *Stats:* STR 70, AGI 65, INT 60, MND 40, CHA 60, CON 65.
+>
+> **Step 2: Body & Mind**
+> He get 30 HP (CON /2), 10 MP (MND /4) and 3 reactions.
+>
+> **Step 3: Heritage**
+> He picks **Hearth-born**.
+> *Trait:* Stoic Endurance.
+> *Skills:* Trained in **Survival** and **Crafting**.
+> *Gear:* A sturdy iron cook-pot.
+>
+> **Step 4: Skills**
+> Bjorn is already Trained in Survival and Crafting from his Heritage. He chooses 3 more Trained Skills: **Athletics**, **Warfare**, and **Perception**.
+>
+> **Step 5 and 6: Talents & Combat Styles**
+> Bjorn selects the **Shield Wall** Talent and the **One-Handed & Shield** Combat Style.
+>
+> **Step 7: Course of Life**
+> Bjorn is a veteran of the Frost Wars, seeking to protect his village from the creeping ice. He is brave but cautious.
+>
+> **Step 8: Equipment**
+> Bjorn starts with a **Long Sword**, a **Round Shield**, and **Chain Mail**. He also carries his **sturdy iron cook-pot**, a **bedroll**, a **tinderbox**, and **5 days of rations**. He has **15 silver pieces** left for his journey.
 
-These determine your raw abilities. They affect skill baselines and are used in dice rolls.
+
+### Genome
+
+Determines your raw potential and base stats. Select one animal totem to get your base ability scores.
 
 *   **Strength (STR)**: Raw power. Needed to carry heavy armor and weapons.
 *   **Agility (AGI)**: Nimbleness, flexibility, aim. Sync between mind and body.
@@ -100,11 +138,7 @@ These determine your raw abilities. They affect skill baselines and are used in 
 *   **Charisma (CHA)**: Social influence, charm, leadership.
 *   **Constitution (CON)**: Physical resilience, survival instinct, health.
 
-## Genome
-
-Determines your raw potential and base stats. Select one animal totem to get your base ability scores.
-
-| Nature        |  STR  |  AGI  |  INT  |  MND  |  CHA  |  CON  |
+| Animal totem  |  STR  |  AGI  |  INT  |  MND  |  CHA  |  CON  |
 | :------------ | :---: | :---: | :---: | :---: | :---: | :---: |
 | **The Bear**  |  70   |  65   |  60   |  40   |  60   |  65   |
 | **The Raven** |  50   |  55   |  80   |  65   |  70   |  40   |
@@ -113,11 +147,17 @@ Determines your raw potential and base stats. Select one animal totem to get you
 | **The Ox**    |  60   |  60   |  60   |  60   |  50   |  70   |
 | **The Fox**   |  50   |  65   |  65   |  50   |  70   |  60   |
 
-## Heritage
+### Body & Mind
+
+*   **Health Points (HP)**: Equal to your **CON** attribute. (Falls to death at 0 HP).
+*   **Mind Points (MP)**: MND / 4. Used for talents, magic, and fear. 
+*   **Reaction Pool**: (AGI / 2) / 10. The amount of reactions during a full encounter.
+ 
+### Heritage
 
 Your Heritage defines your upbringing, innate traits, and starting social standing. Every Heritage provides a **Signature Trait**, two **Heritage Skills** in which you are automatically **Trained**, a unique piece of **Starting Equipment**, and usually a choice of one **Combat Style**.
 
-### Hearth-born
+#### Hearth-born
 
 *The sturdy folk of the clans. You were raised to survive the frost, tend the fire, and hold the line.*
 
@@ -125,7 +165,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Heritage Skills:** Trained in **Survival** and **Crafting**.
 *   **Starting Equipment:** A sturdy iron cook-pot or a carved wooden idol of a Hearth-God.
 
-### Dvergr
+#### Dvergr
 
 *Born of stone and ancient frost. Your people are the master-smiths who once thrived in the deep halls, now mostly lost to the ice.*
 
@@ -133,7 +173,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Heritage Skills:** Trained in **Engineering** and **Appraise**.
 *   **Starting Equipment:** A masterwork whetstone (adds +1 to next damage roll after use, 1/day) or a pouch of "Deep-Salt."
 
-### Wild-walker
+#### Wild-walker
 
 *You belong to the wastes. While others huddle behind walls, you find your way through the blizzards of the Fjordlands.*
 
@@ -141,7 +181,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Heritage Skills:** Trained in **Navigation** and **Nature**.
 *   **Starting Equipment:** A hand-drawn map of a secret mountain pass or a weather-beaten compass.
 
-### Warg-touched
+#### Warg-touched
 
 *The blood of the Great Wolf runs thin in your veins. You are more beast than man, a feral omen of the Wolf-Age.*
 
@@ -149,7 +189,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Heritage Skills:** Trained in **Tracking** and **Athletics**.
 *   **Starting Equipment:** A necklace of predator teeth or a heavy cloak made of wolf pelt.
 
-### Blighted
+#### Blighted
 
 *You carry a slow decay. Whether a curse of the Old Gods or a rot from the black ichor, you are marked for a lonely life.*
 
@@ -158,7 +198,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   Skills:** Trained in **Medicine** and **Investigation**.
 *   **Starting Equipment:** A supply of heavy, lavender-scented bandages or a small bell to warn others of your approach.
 
-### Hollow-born
+#### Hollow-born
 
 *You were touched by the black ichor before birth. You are a living mutation, a fragment of the "Hollowed" force in human skin.*
 
@@ -167,30 +207,30 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Burden: Monstrous.** You start with a visible mutation. Most NPCs will be wary, hostile, or fearful on sight.
 *   **Starting Equipment:** A porcelain mask to hide your mutations or a small vial of inert black ichor.
 
-### Umbral-kin
+#### Umbral-kin
 
 *A fragment of the Eternal Night given form. You are pale, silent, and unsettling, as if you don't quite belong in the physical world.*
 
-*   **Trait: Shadow Blend.** You have +20 to **Stealth** checks while in dim light or darkness.
+*   **Trait: Shadow Blend.** You have **advantage** to **Stealth** checks while in dim light or darkness.
 *   **Heritage Skills:** Trained in **Stealth** and **Perception**.
-*   **Burden: Sun-Sick.** You take a -10 penalty to all rolls while in direct sunlight.
+*   **Burden: Sun-Sick.** You take a **disadvantage** to all rolls while in direct sunlight.
 *   **Starting Equipment:** A sheer black veil or a shard of obsidian that never feels warm.
 
-## Course of Life & Journal
+### Course of Life & Journal
 
 Describe your character. Are you generous? Do you like animals? What are your goals? Keep a journal of your adventures, friends, and enemies.
 
 
 
 
-## Skills
+### Skills
 
 Skills represent your character's training and experience.
 
 *   **Base Skill**: Your base score in any skill is equal to its associated **Attribute** / 2.
 *   **Trained**: You are specialized in this skill. A Trained skill is equal to its associated **Attribute** in full. At character creation, you gain **2 Trained Skills** from your Heritage, usually **1 Combat Style**, and select **3 additional Trained Skills** from the list below. After that you can increase your skills by using XP. Only trained skills can be improved by XP. To "unlock" an untrained skill into a trained skill you need to spend **5 XP** at once, representing dedicated training. After that, you can increase the skill score using XP.
 
-### Skill List
+#### Skill List
 
 | Skill                | Attribute | Description                           |
 | :------------------- | :-------: | :------------------------------------ |
@@ -231,41 +271,41 @@ Skills represent your character's training and experience.
 | **Tracking**         |    INT    | Following trails.                     |
 | **Warfare**          |    INT    | Tactics and strategy.                 |
 
-### Combat Styles
+#### Combat Styles
 
 Combat Styles represent your character's training in specific forms of combat. Unlike general skills, these determine which weapons you can use effectively and often unlock specific talents.
 
-At character creation, you typically choose **one Combat Style** from your Heritage or background.
+At character creation, you typically choose **one Combat Style**.
 
-#### Finesse
+##### Finesse
 *Attribute:* **AGI**
 *Applicable Weapons:* Daggers, Short Swords, Rapiers.
 *Style Talents:*
 
 *   **Riposte (T2)**: Reaction: After a successful Parry, make an immediate counter-attack with that weapon.
 
-#### One-Handed
+##### One-Handed
 *Attribute:* **STR**
 *Applicable Weapons:* Long Swords, Hand Axes, Maces, Bastard Swords (1H).
 *Style Talents:*
 
 *   *None specific yet. Relies on general combat talents.*
 
-#### Two-Handed
+##### Two-Handed
 *Attribute:* **STR**
 *Applicable Weapons:* Great Swords, Great Axes, Bastard Swords (2H).
 *Style Talents:*
 
 *   **Breaker (T2)**: Action (1 AP): Powerful blow. Ignores Armor DR. If damage > 10, target is knocked Prone.
 
-#### Polearms
+##### Polearms
 *Attribute:* **STR**
 *Applicable Weapons:* Short Spears, Pikes, Halberds.
 *Style Talents:*
 
 *   **Sentinel (T2)**: Reaction: Attack enemy entering your reach. On hit, their movement becomes 0 for the turn.
 
-#### Marksmanship
+##### Marksmanship
 *Attribute:* **AGI**
 *Applicable Weapons:* Short Bows, Long Bows, Crossbows.
 *Style Talents:*
@@ -275,21 +315,21 @@ At character creation, you typically choose **one Combat Style** from your Herit
 *   **Far Shooting (T2)**: Ranged weapon range +25%.
 *   **Flurry of Arrows (T2)**: Action: Make one attack. If it hits, you deal your weapon damage three times (without Attribute bonus).
 
-#### Throwing
+##### Throwing
 *Attribute:* **AGI**
 *Applicable Weapons:* Thrown Daggers, Hand Axes, Javelins.
 *Style Talents:*
 
 *   **Far Throwing (T2)**: Throw humanoid 20m.
 
-#### Unarmed
+##### Unarmed
 *Attribute:* **STR**
 *Applicable Weapons:* Fists, Natural Weapons, Grappling.
 *Style Talents:*
 
 *   **Brawler (T2)**: Action (1 AP): Grapple check. Success: Target Restrained. Deal Unarmed Dmg as free action each turn held.
 
-#### Shields
+##### Shields
 *Attribute:* **STR**
 *Applicable Weapons:* Bucklers, Round Shields, Tower Shields.
 *Style Talents:*
@@ -299,11 +339,11 @@ At character creation, you typically choose **one Combat Style** from your Herit
 *   **Shield Master (T2)**: Passive: Adjacent allies gain +5 Defense. Reaction: After a successful Block, make a free Shield Bash attack.
 *   **Shield Edge (T3)**: Give advantage against enemy pinned by shield.
 
-## Talents
+### Talents
 
-Talents are special abilities or moves. You gain them by spending **Experience Points (XP)**.
+Talents are special abilities or moves. You gain one at the start of the game and then by spending **Experience Points (XP)**.
 
-### The Talent Pyramid
+#### The Talent Pyramid
 
 To ensure a broad base of abilities, you must follow the Talent Pyramid. You cannot specialize in high-tier powers without a foundation of lower-tier skills.
 
@@ -317,7 +357,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 
 > **Archetype Path Rule**: To take an Archetype Talent of Tier 2 or higher, you must already possess at least one talent from that same Archetype in the tier directly below it.
 
-### Common Talents
+#### Common Talents
 
 | Name                     | Tier  | Requirement | Description                                                                                                      |
 | :----------------------- | :---: | :---------- | :--------------------------------------------------------------------------------------------------------------- |
@@ -382,7 +422,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Steel Resolve**        |  T4   |             | Passive: Gain +2 Damage Reduction (DR) against all physical attacks.                                             |
 | **Combat Transcendence** |  T4   |             | Action: For 3 rounds, you gain Advantage on all Defense rolls and do not spend Reactions to Dodge.               |
 
-### Troubadour Talents
+#### Troubadour Talents
 
 *Use music and stories to influence or curse.*
 
@@ -400,23 +440,23 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Siren's Call**       |  T3   |             | Charm creature (CHA 60+).                              |
 | **Harbinger's Lament** |  T4   |             | 15 Psychic Dmg + Stun to enemies in 20m.               |
 
-### Thug Talents
+#### Thug Talents
 
 *Ruthless street fighters.*
 
-| Name                 | Tier  | Requirement | Description                                                         |
-| :------------------- | :---: | :---------- | :------------------------------------------------------------------ |
-| **Dirty Fighting**   |  T1   |             | Advantage vs surprised enemies.                                     |
-| **Streetwise**       |  T1   |             | Advantage on INT checks re: crime.                                  |
-| **Sneak Attack**     |  T1   |             | +5 Damage vs unaware enemy.                                         |
-| **Brutality**        |  T1   |             | Deal an additional **+1d6** damage on all successful melee attacks. |
-| **Intimidation**     |  T1   |             | Force Morale check (CHA 50+).                                       |
-| **Fence Contacts**   |  T2   |             | Sell stolen goods.                                                  |
-| **Disguise Mastery** |  T2   |             | Disguise 50+ required.                                              |
-| **Dark Vision**      |  T2   |             | See in dark.                                                        |
-| **Mystic Shroud**    |  T3   |             | Invisibility for 3 turns (Darkness).                                |
+| Name                 | Tier  | Requirement | Description                                                          |
+| :------------------- | :---: | :---------- | :------------------------------------------------------------------- |
+| **Dirty Fighting**   |  T1   |             | Advantage vs surprised enemies.                                      |
+| **Streetwise**       |  T1   |             | Advantage on INT checks re: crime.                                   |
+| **Sneak Attack**     |  T1   |             | +5 Damage vs unaware enemy.                                          |
+| **Brutality**        |  T1   |             | Deal an additional **1** damage on all successful melee attacks.     |
+| **Intimidation**     |  T1   |             | Force Morale check (CHA 50+) or have disadvantage rest of the round. |
+| **Fence Contacts**   |  T2   |             | Sell stolen goods.                                                   |
+| **Disguise Mastery** |  T2   |             | Disguise 50+ required.                                               |
+| **Dark Vision**      |  T2   |             | See in dark.                                                         |
+| **Mystic Shroud**    |  T3   |             | Invisibility for 3 turns (Darkness) ( non combat).                   |
 
-### Zealot Talents
+#### Zealot Talents
 
 *Driven by faith and fanaticism.*
 
@@ -425,14 +465,15 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Vigil**             |  T1   |             | +5 Perception when guarding.                                                                                     |
 | **Rites**             |  T1   |             | Remove minor curses/contamination.                                                                               |
 | **Whispered Secrets** |  T1   |             | Advantage on occult/magic ID.                                                                                    |
-| **Healing Touch**     |  T2   |             | Restore 10 HP to ally.                                                                                           |
+| **Healing Touch**     |  T2   |             | Restore 10 HP to ally. Once a day.                                                                               |
 | **Holy Aura**         |  T2   |             | Allies within 10m gain **+1 Damage Reduction (DR)** and **+10** to all Active Defense rolls (Dodge/Parry/Block). |
 | **Blood Offering**    |  T2   |             | Sacrifice 5 HP for +10 Damage.                                                                                   |
-| **Strength in Grief** |  T3   |             | +5 Attack/Defense for 1 turn.                                                                                    |
-| **Dark Channel**      |  T3   |             | Aura +5 Dmg/Advantage to allies, take 3 dmg/turn.                                                                |
+| **Strength in Grief** |  T3   |             | +10 Attack/Defense for 1 turn.                                                                                   |
+
+| **Dark Channel**      |  T3   |             | Aura +5 Dmg/Advantage to allies, take 10 dmg/turn.                                                                |
 | **Death Awakens**     |  T4   |             | Revive ally with 15 HP (1/day).                                                                                  |
 
-### Warden Talents
+#### Warden Talents
 
 *Guardians of nature.*
 
@@ -453,7 +494,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Storm Watcher**         |  T3   |             | Detect storms, Survival advantage.  |
 | **Canopy Cloak**          |  T3   |             | Invisibility in woods.              |
 
-### Wanderer Talents
+#### Wanderer Talents
 
 *Cursed souls.*
 
@@ -472,15 +513,15 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Fate's Embrace**       |  T4   |             | Invincible 3 turns.                   |
 | **Cursed Rebirth**       |  T4   |             | Revive with 15 HP (1/long rest).      |
 
-### Huntsman Talents
+#### Huntsman Talents
 
 *Masters of the hunt.*
 
 | Name                           | Tier  | Requirement | Description                           |
 | :----------------------------- | :---: | :---------- | :------------------------------------ |
 | **Survival Instinct**          |  T1   |             | Advantage on Survival.                |
-| **Animal Handler**             |  T1   |             | Pet mechanics.                        |
-| **Endurance Training**         |  T1   |             | Increase Max HP (amount undefined).   |
+| **Animal Handler**             |  T1   |             | Advantage on Animal Training checks.  |
+| **Endurance Training**         |  T1   |             | Increase Max HP by 5.                 |
 | **Precision Strikes**          |  T2   |             | +5 Attack vs creatures.               |
 | **Trap Expertise**             |  T2   |             | Set traps (+2 Dmg).                   |
 | **Coordinated Assault**        |  T2   |             | +5 Attack for allies.                 |
@@ -495,7 +536,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Improved Toughened Resolve** |  T3   |             | Immunity Psychic.                     |
 | **Tactical Awareness**         |  T4   |             | Advantage Initiative.                 |
 
-### Veteran Talents
+#### Veteran Talents
 
 *Seasoned warriors.*
 
@@ -512,7 +553,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Guardian Aura**         |  T4   |             | Allies +5 Defense, Resist Fear.    |
 | **Tactician's Insight**   |  T5   |             | Allies +5 Dmg vs enemy.            |
 
-### Witch Talents
+#### Witch Talents
 
 *Users of dark magic.*
 
@@ -526,82 +567,104 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Hex Ward**         |  T3   |             | Advantage on all rolls to resist or cleanse hexes and curses.                                           |
 | **Abyssal Affinity** |  T3   |             | Spend 2 MP for **Double Damage** spell; take 5 necrotic damage.                                         |
 
-### Noble Talents
+#### Noble Talents
 
 *Aristocrats and leaders.*
 
-| Name                    | Tier  | Requirement | Description                   |
-| :---------------------- | :---: | :---------- | :---------------------------- |
-| **Commanding Presence** |  T1   |             | Allies +5 Attack/Skill.       |
-| **Courtly Grace**       |  T1   |             | Advantage CHA vs Nobles.      |
-| **Master of Influence** |  T2   |             | Influence others to do tasks. |
+| Name                    | Tier  | Requirement | Description                                                           |
+| :---------------------- | :---: | :---------- | :-------------------------------------------------------------------- |
+| **Commanding Presence** |  T1   |             | Allies +5 Attack/Skill.                                               |
+| **Courtly Grace**       |  T1   |             | Advantage CHA vs Nobles.                                              |
+| **Master of Influence** |  T2   |             | Requires a successful CHA check to influence others to perform tasks. |
 
-# Derived Attributes
 
-## HP & MP
+## Encounters
 
-*   **Health Points (HP)**: Equal to your **CON** attribute. (Falls to death at 0 HP).
-*   **Mind Points (MP)**: MND / 4. Used for talents, magic, and fear. 
+Encounters start with iniative roll, each combatant then go in turn order after everyone had their turn. The round is over and the next round start with a new iniative roll.
 
-## Fear
-
-*   **Fear**: is a force that erodes your MIND. Anything that causes Fear reduces your current **Mind Points** directly. Unlike HP, Mind Points do not naturally recover without rest or special items. If your Mind Points reach 0, you get the condition **Frightened** until recover MIND points fully.
- 
-# Combat
-
-## Initiative
-Only the **Player Characters** roll for Initiative. Each player rolls against their **AGI**.
+### Initiative
+Only the player characters roll for initiative. Each player rolls against their **AGI**.
 
 *   **Success**: The player acts in the **Vanguard Turn** (before the enemies).
 *   **Failure**: The player acts in the **Rearguard Turn** (after the enemies).
 *   **Group Coordination**: Players in the same turn (Vanguard or Rearguard) can act in any order they choose themselves if not clockwise.
 
-## Actions
+### Actions
 On your turn, you get **2 Action Points** and **1 Zero Cost Action**.
 
-### Standard Actions
+#### Standard Actions
 
-*   **Move (1 AP)**: Up to Speed (AGI / 10 meters).
+*   **Move**: Up to Speed (AGI / 10 meters).
     *   **Evasive Maneuver**: If you move at least 3 meters during your turn, you gain **+10 to all Active Defense rolls** (Dodge, Parry, Block) until the start of your next turn.
-*   **Attack (1 AP)**: Use your equipped weapon.
-*   **Help (1 AP)**: Lending your help to an ally, giving advantage on an action. Need to be within melee range.
-*   **Activate / Manipulate Item (1 AP)**: Can example open a door, light a candle or smaller simpler tasks that take some time.
-*   **Draw / Sheathe Weapon (1 AP)**: To change your weapon, example to switch from your bow to a sword you will need to use a action.
-*   **Mount / Dismount (1 AP)**: To mount or dismount animals or a vehicle.
-*   **Stand Up (1 AP)**: To get up if sitting or prone.
-*   **Use Talent/Skill**: Variable cost.
-*   **Prepare (1 AP)**: Save an action as a Reaction.
+*   **Attack**: Use a combat style.
+*   **Help**: Lending your help to an ally, giving advantage on an action. Need to be within melee range.
+*   **Activate / Manipulate Item**: Can example open a door, light a candle or smaller simpler tasks that take some time.
+*   **Draw / Sheathe Weapon**: To change your weapon, example to switch from your bow to a sword you will need to use a action.
+*   **Mount / Dismount**: To mount or dismount animals or a vehicle.
+*   **Stand Up**: To get up if sitting or prone.
+*   **Use Talent/Skill**: Variable cost described by the talent, normally 1 action.
+*   **Prepare**: Save an action as a Reaction.
 
-### The Wait Action
+#### The Wait Action
 A player in the **Vanguard Turn** can spend **a free Action** to **Wait**. This drops them to the **Rearguard Turn**, effectively trading iniative for better positioning or observation.
 
 *   **Momentum**: By waiting and observing the enemy, the player gains **Momentum**. When acting in the Rearguard Turn, they may choose one benefit:
     *   **Precision**: +10 to their next skill check or attack.
-## Damage & Health
+
+### Damage & Health
 
 *   **Damage**: Fixed base value + Modifiers. Damage is reduced by **Defense** before being applied to HP.
 *   **Death**: At 0 HP.
 
-## Cover
+> #### Combat Example: The Pack Attacks
+>
+> Bjorn (AGI 65) and his companions Astrid (AGI 75) and Erik (AGI 50) are trekking through the Frostwood when three Gray Wolves emerge from the trees.
+>
+> **Round 1: Initiative**
+> *   **Bjorn** rolls a 42 (Success). Acts in the **Vanguard Turn**.
+> *   **Erik** rolls a 28 (Success). Acts in the **Vanguard Turn**.
+> *   **Astrid** rolls a 81 (Failure). Acts in the **Rearguard Turn**.
+>
+> **Vanguard Turn (Bjorn & Erik)**
+> 1.  **Bjorn (Action 1 - Move):** Moves 6 meters to intercept Wolf 1. Gains **Evasive Maneuver** (+10 Active Defense).
+> 2.  **Bjorn (Action 2 - Attack):** Swings his Long Sword (STR 70). Rolls 25. **Hit!**
+>     *   *Damage:* 7 (Long Sword) - 1 (Wolf DR) = 6 damage. Wolf 1 has 6 HP left.
+> 3.  **Erik (Action 1 - Move):** Erik moves next to Astrid to protect her.
+> 4.  **Erik (Action 2 - Help):** Erik uses **Help** to spot for Astrid, giving her advantage on her next attack.
+>
+> **Enemy Turn (Gray Wolves)**
+> *   **Wolf 1 (Injured):** Bites Bjorn. Rolls 55 (Hit).
+>     *   Bjorn spends his 1st Reaction (out of 2) to **Block**. He rolls a 30 (Success).
+>     *   *Reduction:* 2 (Chain Mail) + 4 (Double Shield) = 6. The wolf's 5 damage is fully negated.
+> *   **Wolf 2:** Moves to flank Bjorn. With **Pack Tactics**, its hit chance is 75%. It rolls 70. **Hit!**
+>     *   Bjorn spends his last Reaction to **Dodge**. He rolls a 40 against his AGI/2 (32). **Failure.**
+>     *   *Result:* 5 damage - 2 (Chain Mail) = 3 damage taken.
+> *   **Wolf 3:** Moves into melee. It bites with **Pack Tactics** (+10), rolling an 80. **Miss.**
+>
+> **Rearguard Turn (Astrid)**
+> 1.  **Astrid (Action 1 - Attack):** Fires her Shortbow at Wolf 1. She has Advantage (from Erik). She rolls 15 and 60. Taking the 15: **Hit!**
+>     *   *Damage:* 5 (Shortbow) - 1 (Wolf DR) = 4 damage. Wolf 1 has 2 HP left.
+> 2.  **Astrid (Action 2 - Move):** Moves to higher ground for safety.
+
+### Cover
 Cover is a vital part of tactical survival. Represents the difficulty of hitting a target partially or fully obscured by the environment.
 
-### Cover Types
-| Type      | Examples                                    | Mechanical Effect                         |
-| :-------- | :------------------------------------------ | :---------------------------------------- |
-| **None**  | Open field, empty hallway.                  | No bonus.                                 |
-| **Light** | Bushes, crates, furniture, other creatures. | **-10 to Hit** for the attacker.          |
-| **Heavy** | Stone walls, large trees, corners.          | **-20 to Hit** for the attacker.          |
-| **Full**  | Behind a solid wall, inside a room.         | **Cannot be targeted** by direct attacks. |
-
-*   **Directional:** Cover only applies if the object is physically between the attacker and the target.
-*   **Bypassing:** An attacker can negate cover by moving to an angle where the cover no longer obscures the target.
+#### Cover Types
+| Type     | Examples                                    | Mechanical Effect                         |
+| :------- | :------------------------------------------ | :---------------------------------------- |
+| **None** | Open field, empty hallway.                  | No bonus.                                 |
+| **Half** | Bushes, crates, furniture, other creatures. | **Disadvantage** for the attacker.        |
+| **Full** | Behind a solid wall, inside a room.         | **Cannot be targeted** by direct attacks. |
 
 
-## Reactions & Active Defense
-Survival depends on your ability to react to incoming threats. Characters have a **limited pool of Reactions** for an entire encounter. **Reactions**: Calculated as **(MND / 2)**. Use the **tens digit** of the result as your total pool of Reactions for the **entire encounter**. (Example: MND 55 / 2 = 27.5, which gives **2 Reactions**). 
+### Reactions & Active Defense
+
+Survival depends on your ability to react to incoming threats. Characters have a **limited pool of Reactions** for an entire encounter. 
+
+**Reactions**: Calculated as **(MND / 2)**. Use the **tens digit** of the result as your total pool of Reactions for the **entire encounter**. (Example: MND 55 / 2 = 27.5, which gives **2 Reactions**). 
 These do not refresh every round and must be used strategically.
 
-### Active Defense Options:
+#### Active Defense Options:
 When you are targeted by an attack, you may spend one of your limited Reactions to perform one of the following:
 
 *   **Dodge (AGI) / 2**:
@@ -614,9 +677,11 @@ When you are targeted by an attack, you may spend one of your limited Reactions 
     *   **Success**: You catch the blow on your shield. Reduce incoming damage by **Double Shield DR**.
     *   **Failure**: The shield still absorbs some impact. You take **Half Damage**.
 
-# Conditions
+## Conditions & Status Effects
 
 Conditions represent various physical, mental, or situational states that can affect a character. Most conditions are temporary, but they can be deadly if ignored.
+
+Fear is a force that erodes your MIND. Anything that causes Fear reduces your current **Mind Points** directly. Unlike HP, Mind Points do not naturally recover without rest or special items. If your Mind Points reach 0, you get the condition **Frightened** until recover MIND points fully.
 
 | Condition       | Mechanical Effect                                                                                                                                                                |
 | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -628,48 +693,46 @@ Conditions represent various physical, mental, or situational states that can af
 | **Stunned**     | You are momentarily dazed. You cannot take actions or reactions. Attackers have **Advantage** on attacks against you.                                                            |
 | **Unconscious** | You are totally unaware of your surroundings. You are **Prone** and **Stunned**. You automatically fail all checks. Any successful attack against you is a **Critical Success**. |
 
-# Status Effects
 
 Status effects represent the toll of the environment and biological needs on the body.
 
 | Effect          | Mechanical Effect                                                                                                                                                                                                                                                        |
 | :-------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Bleeding**    | You are losing blood. Take **2 Damage** at the start of each of your turns. This effect can be stopped with a successful **Medicine** check or if you receive any form of healing.                                                                                       |
-| **Burning**     | You are on fire. Take **2 Damage** at the start of each of your turns. You can spend **1 Action Point** to attempt an **Agility** check to douse the flames.                                                                                                             |
-| **Cold**        | Extreme cold numbs your body. You have **Disadvantage** on all **Agility** checks. If you do not find warmth, you must succeed on a **Constitution** check every hour or take **2 Damage**.                                                                              |
+| **Bleeding**    | You are losing blood. Take **2 Damage** at the start of each of your turns. This effect can be stopped with a successful **Medicine** check (**Routine, 1 DoS**) or if you receive any form of healing.                                                                  |
+| **Burning**     | You are on fire. Take **2 Damage** at the start of each of your turns. You can spend **1 Action Point** to attempt an **Agility** check to douse the flames. (**Routine, 1 DoS** for small fires, **Challenge, 2 DoS** for large).                                       |
+| **Cold**        | Extreme cold numbs your body. You have **Disadvantage** on all **Agility** checks. If you do not find warmth, you must succeed on a **Constitution** check (**Routine, 1 DoS**) every hour or take **2 Damage**.                                                         |
 | **Exhaustion**  | You are physically or mentally spent. **Exhaustion** has 3 levels: <br>1. **Disadvantage** on all Attribute checks. <br>2. **Speed** is halved and **Disadvantage** on all Skill checks. <br>3. You fall **Unconscious**. <br>A full rest removes 1 level of Exhaustion. |
-| **Heat**        | Blistering heat drains your stamina. You double your consumption of water. If you do not have water, you must succeed on a **Constitution** check every hour or gain 1 level of **Exhaustion**.                                                                          |
-| **Poisoned**    | Toxins are in your system. You have **Disadvantage** on all **Strength** and **Constitution** checks. Take **1 Damage** at the start of each of your turns unless the poison is neutralized.                                                                             |
+| **Heat**        | Blistering heat drains your stamina. You double your consumption of water. If you do not have water, you must succeed on a **Constitution** check (**Routine, 1 DoS**) every hour or gain 1 level of **Exhaustion**.                                                     |
+| **Poisoned**    | Toxins are in your system. You have **Disadvantage** on all **Strength** and **Constitution** checks. Take **1 Damage** at the start of each of your turns unless the poison is neutralized with a **Constitution** check (**Challenge, 2 DoS**).                        |
 | **Starvation**  | You lack nourishment. After 3 days without food, you gain 1 level of **Exhaustion** every 24 hours. This cannot be recovered until you eat a full meal.                                                                                                                  |
 | **Suffocating** | You cannot breathe. You can hold your breath for **CON / 10** minutes (minimum 1). After this, you gain 1 level of **Exhaustion** every minute. If you reach level 3, you die instead of falling unconscious.                                                            |
 
-# Adventuring
+## Adventuring
 
-## Downtime
+### Downtime
 
 If there is a long downtime, depending on if the characters plausibly would have access to shops etc. You are allowed to spend coins on anything that would plausibly be available. It is also okay to perform other type of normal duties such as bathing or go to the barber etc.
 
-## Rest & Recovery
+### Rest & Recovery
 
-### Normal Rest
+#### Normal Rest
 8 hours of sleep. Small interruption of sleep can be included as long as there is no excessive physical exertion. 
 You recover **4 HP** per day if sleeping normally.
 
-## Health & Injuries
+### Health & Injuries
 
-### Healing Abilities
+#### Healing Abilities
 Using the **Aid** skill to bandage or splint a broken arm can stop bleeding and prevent an injury from getting worse.
 
-### Injuries
-
-#### Severely Injured
-If you have less than **5 HP** after taking damage, the character is **Severely Injured**. You lose any avoidance or dodge bonuses and might suffer many other effects.
-
-# Equipment & Economy
+## Equipment & Economy
 
 Currency is **Silver Pieces (sp)**. 100 copper pieces (cp) = 1 silver piece (sp).
 
-## Common Goods & Services
+### Barter
+
+Outside major cities it is quite common that barter is used. Opposing rolls for haggling might occur.
+
+### Common Goods & Services
 
 | Item                   | Cost  | Unit        | Notes                      |
 | :--------------------- | :---- | :---------- | :------------------------- |
@@ -707,13 +770,13 @@ Currency is **Silver Pieces (sp)**. 100 copper pieces (cp) = 1 silver piece (sp)
 | Carriage Travel        | 1sp   | per 5km     | Road travel                |
 | Message Courier        | 5sp   | per city    | Reliable delivery          |
 
-## Weapons
+### Weapons
 
 | Name              | Damage | Cost  | Req    |
 | :---------------- | :----: | :---- | :----- |
 | **Fist**          |   2    | -     | -      |
 | **Dagger**        |   4    | 15sp  | AGI>50 |
-| **Short Sword**   |   5    | 40sp  | STR>40 |
+| **Short Sword**   |   5    | 40sp  | AGI>40 |
 | **Long Sword**    |   7    | 75sp  | STR>50 |
 | **Bastard Sword** |   8    | 120sp | STR>50 |
 | **Great Sword**   |   10   | 250sp | STR>65 |
@@ -725,7 +788,7 @@ Currency is **Silver Pieces (sp)**. 100 copper pieces (cp) = 1 silver piece (sp)
 | **Long Bow**      |   8    | 150sp | AGI>50 |
 | **Crossbow**      |   8    | 200sp | STR>55 |
 
-## Armor
+### Armor
 
 Armor protects you by providing **Defense**, which is subtracted from incoming damage. Armors are categorized by weight, which determines the penalties applied to the wearer.
 
@@ -750,7 +813,7 @@ Armor protects you by providing **Defense**, which is subtracted from incoming d
 
 
 
-## Shields
+### Shields
 
 Shields are providing Defense and used with the **Block** reaction. 
 
@@ -761,7 +824,7 @@ Shields are providing Defense and used with the **Block** reaction.
 | **Square Shield**      |    2    | STR > 60    | 120sp |
 | **Metal Shield**       |    3    | STR > 65    | 250sp |
 
-## General Equipment
+### General Equipment
 | Item                  | Cost  | Weight/Notes                     |
 | :-------------------- | :---: | :------------------------------- |
 | **Torch (x3)**        |  1sp  | Burns for 1 hour.                |
@@ -775,7 +838,7 @@ Shields are providing Defense and used with the **Block** reaction.
 | **Tinderbox**         |  2sp  | Used to light fires.             |
 | **Holy Water**        | 50sp  | Deals 1d10 dmg to undead/demons. |
 
-## Relics & Curios
+### Relics & Curios
 
 In the world of Eda, special items are rare and often carry a price—either in coin or in the toll they take on the soul.
 
@@ -791,46 +854,46 @@ In the world of Eda, special items are rare and often carry a price—either in 
 | **Vanguard Bracers**     | Your first attack in a combat encounter has **Advantage**.      | Emblazoned with the crest of the High Vanguard.                 |
 | **Duelist's Cape**       | Gain **+1 Reaction** pool while not wearing heavy armor.        | A swirling silk cape designed to confuse opponents.             |
 
-### Folk Curios & Ingredients
+#### Folk Curios & Ingredients
 
-| Item                     | Description                                                              |
-| :----------------------- | :----------------------------------------------------------------------- |
-| **Elf Stone / Elf Shot** | Provides protection against range weapons, curses, and evil.             |
-| **Children's Skeletons** | Good for many things.                                                    |
-| **Bone Knots**           | -                                                                        |
-| **Blood**                | -                                                                        |
-| **Chest (Torso)**        | A human torso; keeps enemies away.                                       |
-| **Amber**                | Placed between the breasts during childbirth to aid delivery.            |
-| **Glass**                | -                                                                        |
-| **Hazel Sticks**         | -                                                                        |
-| **Skin**                 | -                                                                        |
-| **Severed Head**         | An oiled, severed head.                                                  |
-| **Virgin Hair**          | From a virgin strangled during a lunar eclipse.                          |
-| **Guts**                 | Read omens. Human guts reveal the future.                                |
-| **Grave Soil**           | -                                                                        |
-| **Iron**                 | Keeps out fairy people.                                                  |
-| **Skulls**               | -                                                                        |
-| **Corpses / Ash**        | -                                                                        |
-| **Menstrual Blood**      | Used in love brews, fertility rituals, and to bring life back.           |
-| **Placenta**             | Worn under clothes to make a woman fruitful.                             |
-| **Nails and Hair**       | Provides the opportunity to curse the owner.                             |
-| **Rowan Sticks**         | -                                                                        |
-| **Silver**               | Keeps evil away.                                                         |
-| **Mucus**                | -                                                                        |
-| **Mirror**               | Protects against curse, keeps evil away (requires old silvered mirrors). |
-| **Semen**                | Used in love brews and fertility rituals.                                |
-| **Spit**                 | Protects against bad luck.                                               |
-| **Sulfur**               | -                                                                        |
-| **Urine**                | Drives away evil.                                                        |
-| **Eagle Stone**          | -                                                                        |
+| Item                     | Description                                                                          |
+| :----------------------- | :----------------------------------------------------------------------------------- |
+| **Elf Stone / Elf Shot** | Provides protection against range weapons, curses, and evil. +5 Defense vs Ranged.   |
+| **Children's Skeletons** | Good for many things. Advantage on Occult checks.                                    |
+| **Bone Knots**           | Used in bindings. Advantage on Thievery (Lockpicking) checks.                        |
+| **Blood**                | Ingredient for life brews. Restores 1 MP if used in ritual.                          |
+| **Chest (Torso)**        | A human torso; keeps enemies away. Advantage on Intimidate checks.                   |
+| **Amber**                | Placed between the breasts during childbirth to aid delivery. Advantage on Medicine. |
+| **Glass**                | Used to trap spirits. Advantage on MND to resist ghosts.                             |
+| **Hazel Sticks**         | Used for dowsing. Advantage on Navigation.                                           |
+| **Skin**                 | For parchment or voodoo. Advantage on Hex Craft.                                     |
+| **Severed Head**         | An oiled, severed head. Can be queried with *Talk with Dead*.                        |
+| **Virgin Hair**          | From a virgin strangled during a lunar eclipse. Requirement for high-tier curses.    |
+| **Guts**                 | Read omens. Human guts reveal the future. Advantage on next related check.           |
+| **Grave Soil**           | Advantage on *Animate Plant* or *Animate Object* rituals.                            |
+| **Iron**                 | Keeps out fairy people. Deals 1d6 damage to Fey.                                     |
+| **Skulls**               | Used in rituals. Requirement for *Talk with Dead*.                                   |
+| **Corpses / Ash**        | Component for necromancy rituals.                                                    |
+| **Menstrual Blood**      | Used in love brews, fertility rituals, and to bring life back. Advantage on Charm.   |
+| **Placenta**             | Worn under clothes to make a woman fruitful. Resistance to disease.                  |
+| **Nails and Hair**       | Provides the opportunity to curse the owner. Advantage on Hexes vs owner.            |
+| **Rowan Sticks**         | Warding. Advantage on MND checks vs magic.                                           |
+| **Silver**               | Keeps evil away. Deals 1d6 damage to Lycanthropes.                                   |
+| **Mucus**                | Ingredient for poisons. Advantage on Alchemy.                                        |
+| **Mirror**               | Protects against curse, keeps evil away (requires old silvered mirrors).             |
+| **Semen**                | Used in love brews and fertility rituals. Advantage on Charm.                        |
+| **Spit**                 | Protects against bad luck. Advantage on one roll per day.                            |
+| **Sulfur**               | Deters insects and demons. Advantage on Survival.                                    |
+| **Urine**                | Drives away evil. Advantage on MND vs Fear.                                          |
+| **Eagle Stone**          | Found in nests. Advantage on Perception.                                             |
 
-# Magic & Rituals
+## Magic & Rituals
 
 Magic draws power from despair and requires **Mind Points (MP)**.
 **MP Limit**: MND / 4.
 
-## Spells
-Most spells cost **5 MP** unless stated otherwise.
+### Spells
+All spells require a successful **MND check** to be cast. The target may make a MND check to resist if the spell is harmful. Most spells cost **5 MP** unless stated otherwise.
 
 | Spell                  | MP   | Effect                               |
 | :--------------------- | :--- | :----------------------------------- |
@@ -853,22 +916,22 @@ Most spells cost **5 MP** unless stated otherwise.
 | **Feather Step**       | 5    | Ignore rough terrain.                |
 | **Wind Shield**        | 5    | +20 Defense vs Ranged.               |
 
-## Rituals
+### Rituals
 Rituals are powerful, utility-focused magical operations that cannot be cast in combat. They require a prepared space, specific ingredients, and significant time.
 
-### Ritual Rules
+#### Ritual Rules
 
 *   **Requirements**: Must have the **Rituals (T2)** Witch Talent.
 *   **Time**: 1 Hour (Standard).
 *   **Cost**: 10 MP + Material Cost (Gold/Ingredients).
-*   **Check**: Roll **MND** vs Difficulty 50 (unless stated otherwise).
+*   **Check**: Roll **MND** vs **Difficulty (DoS)**. Most standard rituals require **1 DoS (Routine)**. Powerful rituals may require **2-4 DoS**.
 *   **Failure & Fear**:
 *   **Success**: The ritual works as intended.
 *   **Great Success (Roll < 1/5 MND)**: No MP cost, or the effect is doubled/enhanced.
 *   **Failure**: No effect. Lose MP and Materials. **Lose 2 additional MP due to Fear**.
 *   **Critical Failure (Roll 95-100)**: The ritual backfires. The GM determines a negative consequence. **Lose 5 additional MP due to Fear**.
 
-### Ritual List
+#### Ritual List
 
 | Ritual                | Time | MP   | Materials         | Effect                                                        |
 | :-------------------- | :--- | :--- | :---------------- | :------------------------------------------------------------ |
@@ -886,12 +949,12 @@ Rituals are powerful, utility-focused magical operations that cannot be cast in 
 | **Create Artifact**   | 24h  | 50   | Rare Components   | Permanently enchant an item. High backfire risk.              |
 
 
-# Game Master Section
+## Game Master Section
 
-## Progression
+### Progression
 This system rewards failure and provides consistent growth, ensuring low skills improve quickly while high skills plateau.
 
-### The Fumble Points
+#### The Fumble Points
 
 *   **Trigger**: Your skill improves **immediately** when you roll a **Critical Fumble**.
 *   **Definition of Critical Fumble**: Rolling **Doubles** (11, 22, 33...) that are **ABOVE** your Skill Value.
@@ -899,7 +962,7 @@ This system rewards failure and provides consistent growth, ensuring low skills 
     *   *Example*: Skill 80. Roll 44. (Success + Doubles) -> **Critical Hit**.
 *   **The Reward**: When you Fumble, increase that skill by **1 point** permanently. This represents learning from a spectacular failure.
 
-### End of session
+#### End of session
 
 At the end of every session, all players receive **5 Experience Points (XP)**. This represents the general experience and growth gained from adventuring.
 

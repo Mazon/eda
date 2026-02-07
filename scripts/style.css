@@ -201,9 +201,76 @@ li {
     margin-bottom: 0.5em;
 }
 
-hr {
-    border: 0;
-    height: 1px;
-    background: #ccc;
+/* --- Professional Layout Classes --- */
+
+/* 1. Example Box: Used for clarifying rules */
+.example-box {
+    background-color: #f0f0f0;
+    border-left: 5px solid #444;
+    padding: 15px;
+    margin: 1.5em 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    page-break-inside: avoid;
+}
+
+.example-box-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #444;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+}
+
+.example-box strong {
+    color: #222;
+}
+
+/* 2. Lore Box: For flavor text and world-building */
+.lore-box {
+    background-color: #fffaf0; /* FloralWhite */
+    border: 1px solid #dcdcdc;
+    padding: 15px 25px;
+    margin: 2em 1em;
+    font-style: italic;
+    font-family: Georgia, serif;
+    position: relative;
+    page-break-inside: avoid;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+}
+
+/* 3. Sidebar: For GM advice or optional rules (Full width for single-column) */
+.sidebar {
+    background-color: #2c3e50; /* Dark Blue-Grey */
+    color: #ecf0f1;
+    padding: 15px;
     margin: 2em 0;
+    border-radius: 4px;
+    page-break-inside: avoid;
+}
+
+.sidebar h3, .sidebar h4 {
+    color: #ecf0f1;
+    border-bottom: 1px solid #bdc3c7;
+    margin-top: 0;
+    padding-bottom: 5px;
+}
+
+/* 4. Read Aloud: For text GMs should read to players */
+.read-aloud {
+    background-color: #e8f4f8;
+    border: 1px solid #bce8f1;
+    padding: 15px;
+    margin: 1.5em 0;
+    color: #31708f;
+    font-family: sans-serif;
+}
+
+.read-aloud::before {
+    font-weight: bold;
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
 }

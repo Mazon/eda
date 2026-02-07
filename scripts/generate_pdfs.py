@@ -2,7 +2,7 @@ import subprocess
 import os
 import shutil
 
-def convert_md_to_pdf(input_file, output_file, css_file=None):
+def convert_md_to_pdf(input_file, output_file, css_file=None, title=None):
     print(f"Converting {input_file} to {output_file}...")
     try:
         # Use pandoc to convert to HTML first
@@ -14,13 +14,15 @@ def convert_md_to_pdf(input_file, output_file, css_file=None):
             input_file,
             '-s', # standalone
             '-f', 'markdown+raw_html', # ensure HTML is preserved
+            '--toc', # Generate Table of Contents
             '-o', html_file
         ]
 
+        if title:
+            pandoc_args.extend(['--metadata', f'title={title}'])
+
         if css_file:
              pandoc_args.extend(['--css', css_file])
-             # Also metadata title to avoid warnings/empty titles
-             ## pandoc_args.extend(['--metadata', 'title=Eda RPG'])
 
         subprocess.run(pandoc_args, check=True)
 
@@ -79,24 +81,24 @@ def main():
     if not os.path.exists(build_dir):
         os.makedirs(build_dir)
 
-    # List of files to convert
+    # List of files to convert: { markdown_file: (pdf_name, title) }
     files_to_convert = {
-        'Bestiary.md': 'Bestiary.pdf',
-        'Core.md': 'Core_Rulebook.pdf',
-        'Character Sheet.md': 'Character_Sheet.pdf',
-        'Campaign_Age_of_Wolves_PLAYTEST_ONLY.md': 'Campaign_Age_of_Wolves.pdf'
+        'Core Rulebook.md': ('Core_Rulebook.pdf', 'Eda Core Rulebook'),
+        'Bestiary.md': ('Bestiary.pdf', 'Eda Bestiary'),
+        'Character Sheet.md': ('Character_Sheet.pdf', None),
+        'Adventure_The_Age_of_Wolves.md': ('Adventure_The_Age_of_Wolves.pdf', 'The Age of Wolves')
     }
 
     style_css = 'scripts/style.css'
 
-    for md_file, pdf_file in files_to_convert.items():
+    for md_file, (pdf_file, title) in files_to_convert.items():
         if os.path.exists(md_file):
             output_path = os.path.join(build_dir, pdf_file)
             
             # Apply CSS to all except Character Sheet (it has its own embedded styles)
             current_css = style_css if md_file != 'Character Sheet.md' else None
             
-            convert_md_to_pdf(md_file, output_path, css_file=current_css)
+            convert_md_to_pdf(md_file, output_path, css_file=current_css, title=title)
         else:
             print(f"Warning: {md_file} not found, skipping.")
 

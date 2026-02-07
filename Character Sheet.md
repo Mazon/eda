@@ -26,7 +26,7 @@
 <div class="sheet-container">
 
 <div style="text-align: center; margin-bottom: 0px;">
-  <img src="border.png" style="width: 100%; display: block;">
+  <img src="images/border.png" style="width: 100%; display: block;">
 </div>
 
 <table width="100%" style="border-collapse: collapse; font-family: sans-serif; border: 2px solid #000; width: 100%;">

@@ -8,6 +8,7 @@
 ---
 
 # Table of Contents
+
 1.  **Part I: The Gazetteer of the North**
 
     *   History & Myths
@@ -179,6 +180,7 @@ Frozen over, but ships are trapped in the ice and used as housing.
 | **The Black Market**  | Grek   | Poison, Lockpicks, Stolen Goods       | Barter Only    |
 
 ## Rumors Table (d10)
+
 1.  "They say the Iron Covenant is building a machine that eats people."
 2.  "The fish in the lake have human eyes now."
 3.  "Mayor Valen talks to himself at night. Or... to something in his room."
@@ -248,6 +250,7 @@ The players are now in the wilderness with nothing. This scene teaches the **Sur
 
 **Travel Roles:**
 Assign a role to each player for the journey.
+
 1.  **Point (Perception):** Spots ambushes and traps.
 2.  **Guide (Survival):** Navigates. Failure means getting lost (+1 day travel).
 3.  **Forager (Survival):** Finds food (Pine nuts, bark, rabbits). DC depends on terrain.
