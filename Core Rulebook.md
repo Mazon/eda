@@ -342,7 +342,7 @@ At character creation, you typically choose one Combat Style.
 
 ##### Shields
 *Attribute:* **STR**
-*Applicable Weapons:* Bucklers, Round Shields, Tower Shields.
+*Applicable Weapons:* Bucklers, Round Shields, Kite Shields, Tower Shields, Greatshields.
 *Style Talents:*
 
 *   **Blocker (T1)**: Unlock the **Block** reaction. Use Shield skill to reduce damage.
@@ -895,12 +895,17 @@ Armor protects you by providing **Defense**, which is subtracted from incoming d
 
 Shields are providing Defense and used with the **Block** reaction. 
 
-| Type                   | Defense | Requirement | Cost  |
-| :--------------------- | :-----: | :---------- | :---: |
-| **Small Round Shield** |    1    | STR > 40    | 40sp  |
-| **Round Shield**       |    2    | STR > 55    | 100sp |
-| **Square Shield**      |    2    | STR > 60    | 120sp |
-| **Metal Shield**       |    3    | STR > 65    | 250sp |
+| Type                   | Defense | Requirement | Cost  | Notes                              |
+| :--------------------- | :-----: | :---------- | :---: | :--------------------------------- |
+| **Wicker Shield**      |    1    | -           | 10sp  | Cheap and fragile.                 |
+| **Buckler**            |    1    | STR > 30    | 25sp  | Small, easy to carry.              |
+| **Small Round Shield** |    1    | STR > 40    | 40sp  | Standard light shield.             |
+| **Round Shield**       |    2    | STR > 55    | 100sp | Reliable protection.               |
+| **Square Shield**      |    2    | STR > 60    | 120sp | Covers more of the body.           |
+| **Kite Shield**        |    3    | STR > 65    | 180sp | Almond-shaped, excellent coverage. |
+| **Metal Shield**       |    3    | STR > 70    | 250sp | Very durable.                      |
+| **Tower Shield**       |    4    | STR > 80    | 500sp | Massive. Disadvantage on Stealth.  |
+| **Dvergr Greatshield** |    4    | STR > 85    | 800sp | Master-crafted stone/metal hybrid. |
 
 ### General Equipment
 | Item                    | Cost  | Weight/Notes                                                |
