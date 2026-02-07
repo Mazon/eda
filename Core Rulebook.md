@@ -106,7 +106,7 @@ To create a character, you make choices that customize them to be interesting an
 > *Stats:* STR 70, AGI 65, INT 60, MND 40, CHA 60, CON 65.
 >
 > **Step 2: Body & Mind**
-> He get 30 HP (CON /2), 10 MP (MND /4) and 3 reactions.
+> He get 65 HP (CON), 10 MP (MND /4) and 6 reactions.
 >
 > **Step 3: Heritage**
 > He picks **Hearth-born**.
@@ -151,7 +151,7 @@ Determines your raw potential and base stats. Select one animal totem to get you
 
 *   **Health Points (HP)**: Equal to your **CON** attribute. (Falls to death at 0 HP).
 *   **Mind Points (MP)**: MND / 4. Used for talents, magic, and fear. 
-*   **Reaction Pool**: (AGI / 2) / 10. The amount of reactions during a full encounter.
+*   **Reaction Pool**: Tens digit of AGI (e.g., AGI 65 = 6 Reactions). The amount of reactions during a full encounter.
  
 ### Heritage
 
@@ -363,15 +363,15 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | :----------------------- | :---: | :---------- | :--------------------------------------------------------------------------------------------------------------- |
 | **Focus**                |  T1   |             | Action: Your next attack this turn has **Advantage**.                                                            |
 | **Overdrive**            |  T1   |             | Action (1 AP): Your next attack this turn adds degree of success (tens digit of roll) to damage.                 |
-| **Berserk**              |  T1   |             | Action: Enter frenzy (+20 Attack, No Defense).                                                                   |
+| **Berserk**              |  T1   |             | Action: Enter frenzy (Advantage on all attacks, cannot use Reactions).                                           |
 | **Breathless**           |  T1   |             | Hold breath for 5 minutes.                                                                                       |
 | **First Strike**         |  T1   |             | Action (1 AP): Make an attack. If acting in the **Rearguard**, deal **+5 Damage**.                               |
 | **Marked for Death**     |  T1   |             | Action: Target is "Marked". The next ally to hit them deals **+5 Damage**.                                       |
 | **Vanguard's Lead**      |  T1   |             | If you move 3m+ in the **Vanguard**, one ally gains **Momentum (Precision)** for free.                           |
 | **Desperate Attack**     |  T1   |             | Move 5m with Attack Action.                                                                                      |
 | **The Charge**           |  T1   |             | Move up to Speed in a straight line and make a melee attack. If 3m+, deal **+5 Damage**. No Reactions.           |
-| **Smart Fighting**       |  T1   |             | Passive: While in cover, you gain **+10** to all Active Defense rolls (Dodge/Parry/Block).                       |
-| **Dodge**                |  T1   |             | Reaction: AGI check to avoid attack.                                                                             |
+| **Smart Fighting**       |  T1   |             | Passive: While in cover, you gain **Advantage** on all Active Defense rolls (Dodge/Parry/Block).                 |
+| **Dodge**                |  T1   |             | Reaction: AGI check (Challenge: 2 DoS) to avoid attack.                                                          |
 | **Expert**               |  T1   |             | Advantage on one skill check/day.                                                                                |
 | **Bird-man**             |  T1   |             | Pet bird (Carry message, Hunt, Track).                                                                           |
 | **False Persona**        |  T1   |             | Assume a disguise; cannot use other talents.                                                                     |
@@ -385,7 +385,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Curiosity**            |  T2   |             | Advantage on INT checks.                                                                                         |
 | **Favored Weapon**       |  T2   |             | +5 Attack with specific weapon.                                                                                  |
 | **Flurry of Blows**      |  T2   |             | Action: Make one attack. If it hits, you deal your weapon damage three times (without Attribute bonus).          |
-| **Tactical Guard**       |  T2   |             | Action: Give an ally in the Rearguard **+10 to their next Defense roll**.                                        |
+| **Tactical Guard**       |  T2   |             | Action: Give an ally in the Rearguard **Advantage** on their next Defense roll.                                  |
 | **Vengeful Retort**      |  T2   |             | **Rearguard**: If you took damage this round, your next attack has **Advantage**.                                |
 | **Exploit Opening**      |  T2   |             | **Rearguard**: Deal **+10 Damage** if the target missed an attack against you or an ally this round.             |
 | **Harrying Strike**      |  T2   |             | Action: Target has **Disadvantage** on their next Defense roll.                                                  |
@@ -397,10 +397,10 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Holy Weapon**          |  T2   |             | Coated in "holy" poison (+2 Damage).                                                                             |
 | **Caregiver**            |  T2   |             | +20 on Aid rolls.                                                                                                |
 | **Merciless**            |  T2   |             | Advantage on attacks vs injured enemies.                                                                         |
-| **Commanding Order**     |  T2   |             | Give a ally in the same phase and turn +10 to hit                                                                |
+| **Commanding Order**     |  T2   |             | Give an ally in the same phase and turn **Advantage** to hit.                                                    |
 | **Redirection**          |  T2   |             | Give ally a reaction to avoid/block (1/encounter).                                                               |
-| **Bolster**              |  T2   |             | Reaction: Ally gets +5 Attack.                                                                                   |
-| **Coordinated Assault**  |  T2   |             | If an ally hit this target earlier this round, you gain **+10 to Hit**.                                          |
+| **Bolster**              |  T2   |             | Reaction: Ally gains **Advantage** on their next attack.                                                         |
+| **Coordinated Assault**  |  T2   |             | If an ally hit this target earlier this round, you gain **Advantage** on the attack.                             |
 | **Pack Tactics**         |  T2   |             | If an ally is within 2m of your target and has already moved or acted, gain **Advantage** on attack.             |
 | **Fake Attack**          |  T2   |             | Action: Target avoids any more attacks this round.                                                               |
 | **Cleave**               |  T2   |             | Passive: When you kill an enemy, you may immediately make a free attack against another nearby enemy.            |
@@ -411,13 +411,13 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Iron Stomach**         |  T3   |             | Advantage vs Poison/Toxins.                                                                                      |
 | **Iron Will**            |  T3   |             | When you take damage, gain 1 Focus Point. Spend 1 pt for +5 to a roll or 2 pts for a free Reaction.              |
 | **Coup de Grace**        |  T3   |             | Action: Deal **Double Damage** (ignores Armor DR) if the target is Prone or Stunned.                             |
-| **Tempo**                |  T3   |             | +10 to Initiative.                                                                                               |
+| **Tempo**                |  T3   |             | Advantage on Initiative checks.                                                                                  |
 | **Shape Shift**          |  T3   |             | Werewolf form (+10 STR, Claw 7dmg).                                                                              |
 | **Durable**              |  T3   |             | +5 Natural Defense.                                                                                              |
 | **Flanking**             |  T3   |             | Advantage if ally is on opposite side.                                                                           |
 | **Vanguard Reflexes**    |  T3   |             | Passive: You recover **1 Reaction** at the start of every round (up to your max pool).                           |
 | **Unyielding Spirit**    |  T3   |             | Once per long rest, if you would fall to 0 HP, you instead stay at 1 HP and gain 10 Temp HP.                     |
-| **Battle Plan**          |  T4   |             | Party gets +10 Initiative.                                                                                       |
+| **Battle Plan**          |  T4   |             | Party gets **Advantage** on Initiative checks.                                                                   |
 | **Master of Defense**    |  T4   |             | Passive: You gain **Advantage** on all Active Defense rolls (Dodge/Parry/Block).                                 |
 | **Steel Resolve**        |  T4   |             | Passive: Gain +2 Damage Reduction (DR) against all physical attacks.                                             |
 | **Combat Transcendence** |  T4   |             | Action: For 3 rounds, you gain Advantage on all Defense rolls and do not spend Reactions to Dodge.               |
@@ -466,9 +466,9 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Rites**             |  T1   |             | Remove minor curses/contamination.                                                                               |
 | **Whispered Secrets** |  T1   |             | Advantage on occult/magic ID.                                                                                    |
 | **Healing Touch**     |  T2   |             | Restore 10 HP to ally. Once a day.                                                                               |
-| **Holy Aura**         |  T2   |             | Allies within 10m gain **+1 Damage Reduction (DR)** and **+10** to all Active Defense rolls (Dodge/Parry/Block). |
+| **Holy Aura**         |  T2   |             | Allies within 10m gain **+1 Damage Reduction (DR)** and **Advantage** on all Active Defense rolls.               |
 | **Blood Offering**    |  T2   |             | Sacrifice 5 HP for +10 Damage.                                                                                   |
-| **Strength in Grief** |  T3   |             | +10 Attack/Defense for 1 turn.                                                                                   |
+| **Strength in Grief** |  T3   |             | Advantage on all Attack and Defense rolls for 1 turn.                                                            |
 
 | **Dark Channel**      |  T3   |             | Aura +5 Dmg/Advantage to allies, take 10 dmg/turn.                                                                |
 | **Death Awakens**     |  T4   |             | Revive ally with 15 HP (1/day).                                                                                  |
@@ -524,9 +524,9 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Endurance Training**         |  T1   |             | Increase Max HP by 5.                 |
 | **Precision Strikes**          |  T2   |             | +5 Attack vs creatures.               |
 | **Trap Expertise**             |  T2   |             | Set traps (+2 Dmg).                   |
-| **Coordinated Assault**        |  T2   |             | +5 Attack for allies.                 |
+| **Coordinated Assault**        |  T2   |             | Allies gain **Advantage** on the attack. |
 | **Uncanny Defense**            |  T2   |             | Reaction: Halve damage.               |
-| **Slayer's Fury**              |  T2   |             | +10 Hit/Dmg (1/long rest).            |
+| **Slayer's Fury**              |  T2   |             | Advantage to Hit and +10 Damage (1/long rest). |
 | **Heroic Sacrifice**           |  T2   |             | Take damage for ally.                 |
 | **Apex Predator**              |  T2   |             | Sense supernatural.                   |
 | **Toughened Resolve**          |  T3   |             | Resistance Psychic.                   |
@@ -549,7 +549,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Unyielding Defender**   |  T2   |             | Absorb half ally damage.           |
 | **Shield of the People**  |  T3   |             | Redirect attack to self.           |
 | **Heirloom Relic**        |  T3   |             | Item with +5 bonus.                |
-| **Inspiring Presence**    |  T4   |             | Allies +20% Attack/Saves.          |
+| **Inspiring Presence**    |  T4   |             | Allies gain **Advantage** on the first roll of the encounter. |
 | **Guardian Aura**         |  T4   |             | Allies +5 Defense, Resist Fear.    |
 | **Tactician's Insight**   |  T5   |             | Allies +5 Dmg vs enemy.            |
 
@@ -573,7 +573,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 
 | Name                    | Tier  | Requirement | Description                                                           |
 | :---------------------- | :---: | :---------- | :-------------------------------------------------------------------- |
-| **Commanding Presence** |  T1   |             | Allies +5 Attack/Skill.                                               |
+| **Commanding Presence** |  T1   |             | Allies gain **Advantage** on their next check (1/turn).               |
 | **Courtly Grace**       |  T1   |             | Advantage CHA vs Nobles.                                              |
 | **Master of Influence** |  T2   |             | Requires a successful CHA check to influence others to perform tasks. |
 
@@ -595,7 +595,7 @@ On your turn, you get **2 Action Points** and **1 Zero Cost Action**.
 #### Standard Actions
 
 *   **Move**: Up to Speed (AGI / 10 meters).
-    *   **Evasive Maneuver**: If you move at least 3 meters during your turn, you gain **+10 to all Active Defense rolls** (Dodge, Parry, Block) until the start of your next turn.
+    *   **Evasive Maneuver**: If you move at least 3 meters during your turn, you gain **Advantage on all Active Defense rolls** (Dodge, Parry, Block) until the start of your next turn.
 *   **Attack**: Use a combat style.
 *   **Help**: Lending your help to an ally, giving advantage on an action. Need to be within melee range.
 *   **Activate / Manipulate Item**: Can example open a door, light a candle or smaller simpler tasks that take some time.
@@ -609,7 +609,7 @@ On your turn, you get **2 Action Points** and **1 Zero Cost Action**.
 A player in the **Vanguard Turn** can spend **a free Action** to **Wait**. This drops them to the **Rearguard Turn**, effectively trading iniative for better positioning or observation.
 
 *   **Momentum**: By waiting and observing the enemy, the player gains **Momentum**. When acting in the Rearguard Turn, they may choose one benefit:
-    *   **Precision**: +10 to their next skill check or attack.
+    *   **Precision**: Advantage on their next skill check or attack.
 
 ### Damage & Health
 
@@ -626,7 +626,7 @@ A player in the **Vanguard Turn** can spend **a free Action** to **Wait**. This 
 > *   **Astrid** rolls a 81 (Failure). Acts in the **Rearguard Turn**.
 >
 > **Vanguard Turn (Bjorn & Erik)**
-> 1.  **Bjorn (Action 1 - Move):** Moves 6 meters to intercept Wolf 1. Gains **Evasive Maneuver** (+10 Active Defense).
+> 1.  **Bjorn (Action 1 - Move):** Moves 6 meters to intercept Wolf 1. Gains **Evasive Maneuver** (Advantage on Active Defense).
 > 2.  **Bjorn (Action 2 - Attack):** Swings his Long Sword (STR 70). Rolls 25. **Hit!**
 >     *   *Damage:* 7 (Long Sword) - 1 (Wolf DR) = 6 damage. Wolf 1 has 6 HP left.
 > 3.  **Erik (Action 1 - Move):** Erik moves next to Astrid to protect her.
@@ -634,12 +634,12 @@ A player in the **Vanguard Turn** can spend **a free Action** to **Wait**. This 
 >
 > **Enemy Turn (Gray Wolves)**
 > *   **Wolf 1 (Injured):** Bites Bjorn. Rolls 55 (Hit).
->     *   Bjorn spends his 1st Reaction (out of 2) to **Block**. He rolls a 30 (Success).
+>     *   Bjorn spends his 1st Reaction (out of 6) to **Block**. He rolls a 30 (Success).
 >     *   *Reduction:* 2 (Chain Mail) + 4 (Double Shield) = 6. The wolf's 5 damage is fully negated.
 > *   **Wolf 2:** Moves to flank Bjorn. With **Pack Tactics**, its hit chance is 75%. It rolls 70. **Hit!**
->     *   Bjorn spends his last Reaction to **Dodge**. He rolls a 40 against his AGI/2 (32). **Failure.**
+>     *   Bjorn spends his 2nd Reaction to **Dodge**. He rolls a 15 (1 DoS). **Failure** (Requires 2 DoS).
 >     *   *Result:* 5 damage - 2 (Chain Mail) = 3 damage taken.
-> *   **Wolf 3:** Moves into melee. It bites with **Pack Tactics** (+10), rolling an 80. **Miss.**
+> *   **Wolf 3:** Moves into melee. It bites with **Pack Tactics** (Advantage), rolling an 80. **Miss.**
 >
 > **Rearguard Turn (Astrid)**
 > 1.  **Astrid (Action 1 - Attack):** Fires her Shortbow at Wolf 1. She has Advantage (from Erik). She rolls 15 and 60. Taking the 15: **Hit!**
@@ -661,13 +661,13 @@ Cover is a vital part of tactical survival. Represents the difficulty of hitting
 
 Survival depends on your ability to react to incoming threats. Characters have a **limited pool of Reactions** for an entire encounter. 
 
-**Reactions**: Calculated as **(MND / 2)**. Use the **tens digit** of the result as your total pool of Reactions for the **entire encounter**. (Example: MND 55 / 2 = 27.5, which gives **2 Reactions**). 
+**Reactions**: Your total pool of Reactions for the **entire encounter** is equal to the **tens digit of your AGI**. (Example: AGI 65 gives **6 Reactions**).
 These do not refresh every round and must be used strategically.
 
 #### Active Defense Options:
 When you are targeted by an attack, you may spend one of your limited Reactions to perform one of the following:
 
-*   **Dodge (AGI) / 2**:
+*   **Dodge (AGI) (Challenge: 2 DoS)**:
     *   **Success**: You move out of the way. You take **No Damage**.
     *   **Failure**: You take **Full Damage**.
 *   **Parry (Relevant Combat Style)**:
@@ -895,26 +895,26 @@ Magic draws power from despair and requires **Mind Points (MP)**.
 ### Spells
 All spells require a successful **MND check** to be cast. The target may make a MND check to resist if the spell is harmful. Most spells cost **5 MP** unless stated otherwise.
 
-| Spell                  | MP   | Effect                               |
-| :--------------------- | :--- | :----------------------------------- |
-| **Confuse**            | 5    | -5 Combat Style to target.           |
-| **Commanding Tale**    | 5    | Persuade someone.                    |
-| **Freeze in Place**    | 5    | Chance to immobilize.                |
-| **Medusa Glare**       | 10   | Turn to stone.                       |
-| **Rain Storm**         | 5    | Obscures vision.                     |
-| **Form of a Beast**    | 5    | Transform (2 Actions).               |
-| **Quicksand**          | 5    | Immobilize target.                   |
-| **Mind Shield**        | 5    | Double defense vs witchcraft (1 hr). |
-| **Charm Animal**       | 5    | Make animal friendly.                |
-| **Poison Touch**       | 5    | Inflict 7 damage.                    |
-| **Gaze of Salamander** | 5    | Dark vision / thermal.               |
-| **Identify**           | 5    | Understand magical items.            |
-| **Alter Winds**        | 5    | Change wind speed.                   |
-| **Diagnose Disease**   | 5    | Detect illness.                      |
-| **Forest Entangle**    | 5    | Entangle in vegetation.              |
-| **Endure Elements**    | 5    | Resistance hot/cold.                 |
-| **Feather Step**       | 5    | Ignore rough terrain.                |
-| **Wind Shield**        | 5    | +20 Defense vs Ranged.               |
+| Spell                  | MP   | Difficulty        | Effect                               |
+| :--------------------- | :--- | :---------------- | :----------------------------------- |
+| **Confuse**            | 5    | Routine (1 DoS)   | -5 Combat Style to target.           |
+| **Commanding Tale**    | 5    | Routine (1 DoS)   | Persuade someone.                    |
+| **Freeze in Place**    | 5    | Routine (1 DoS)   | Chance to immobilize.                |
+| **Medusa Glare**       | 10   | Challenge (2 DoS) | Turn to stone.                       |
+| **Rain Storm**         | 5    | Routine (1 DoS)   | Obscures vision.                     |
+| **Form of a Beast**    | 5    | Challenge (2 DoS) | Transform (2 Actions).               |
+| **Quicksand**          | 5    | Routine (1 DoS)   | Immobilize target.                   |
+| **Mind Shield**        | 5    | Routine (1 DoS)   | Double defense vs witchcraft (1 hr). |
+| **Charm Animal**       | 5    | Routine (1 DoS)   | Make animal friendly.                |
+| **Poison Touch**       | 5    | Routine (1 DoS)   | Inflict 7 damage.                    |
+| **Gaze of Salamander** | 5    | Routine (1 DoS)   | Dark vision / thermal.               |
+| **Identify**           | 5    | Routine (1 DoS)   | Understand magical items.            |
+| **Alter Winds**        | 5    | Routine (1 DoS)   | Change wind speed.                   |
+| **Diagnose Disease**   | 5    | Routine (1 DoS)   | Detect illness.                      |
+| **Forest Entangle**    | 5    | Routine (1 DoS)   | Entangle in vegetation.              |
+| **Endure Elements**    | 5    | Routine (1 DoS)   | Resistance hot/cold.                 |
+| **Feather Step**       | 5    | Routine (1 DoS)   | Ignore rough terrain.                |
+| **Wind Shield**        | 5    | Routine (1 DoS)   | Advantage on Defense vs Ranged.      |
 
 ### Rituals
 Rituals are powerful, utility-focused magical operations that cannot be cast in combat. They require a prepared space, specific ingredients, and significant time.
