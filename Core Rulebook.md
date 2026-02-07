@@ -834,44 +834,60 @@ Outside major trade hubs, barter is the primary form of exchange. A character mi
 
 ### Weapons
 
-| Name              | Damage | Cost  | Req    |
-| :---------------- | :----: | :---- | :----- |
-| **Fist**          |   2    | -     | -      |
-| **Dagger**        |   4    | 15sp  | AGI>50 |
-| **Short Sword**   |   5    | 40sp  | AGI>40 |
-| **Long Sword**    |   7    | 75sp  | STR>50 |
-| **Bastard Sword** |   8    | 120sp | STR>50 |
-| **Great Sword**   |   10   | 250sp | STR>65 |
-| **Hand Axe**      |   6    | 30sp  | STR>50 |
-| **Great Axe**     |   11   | 220sp | STR>65 |
-| **Short Spear**   |   7    | 50sp  | STR>50 |
-| **Mace**          |   6    | 60sp  | STR>50 |
-| **Short Bow**     |   6    | 80sp  | AGI>50 |
-| **Long Bow**      |   8    | 150sp | AGI>50 |
-| **Crossbow**      |   8    | 200sp | STR>55 |
+| Name              | Damage | Cost  | Req    | Notes                                                            |
+| :---------------- | :----: | :---- | :----- | :--------------------------------------------------------------- |
+| **Fist**          |   2    | -     | -      | -                                                                |
+| **Dagger**        |   4    | 15sp  | AGI>50 | -                                                                |
+| **Sling**         |   4    | 5sp   | AGI>40 | Range 20m. Uses stones (free).                                   |
+| **Short Sword**   |   5    | 40sp  | AGI>40 | -                                                                |
+| **Long Sword**    |   7    | 75sp  | STR>50 | -                                                                |
+| **Bastard Sword** |   8    | 120sp | STR>50 | -                                                                |
+| **Falchion**      |   8    | 60sp  | STR>55 | **Brutal**: +1 Damage on Critical Success.                       |
+| **Great Sword**   |   10   | 250sp | STR>65 | -                                                                |
+| **Hand Axe**      |   6    | 30sp  | STR>50 | -                                                                |
+| **Great Axe**     |   11   | 220sp | STR>65 | -                                                                |
+| **Short Spear**   |   7    | 50sp  | STR>50 | -                                                                |
+| **Pike**          |   8    | 90sp  | STR>60 | **Reach**: Can attack enemies up to 3m away.                     |
+| **Mace**          |   6    | 60sp  | STR>50 | -                                                                |
+| **Morning Star**  |   7    | 80sp  | STR>55 | **Spiked**: Ignores 1 point of Armor Defense.                    |
+| **Warhammer**     |   7    | 70sp  | STR>60 | **Crushing**: Ignores 1 point of Shield Defense.                 |
+| **Short Bow**     |   6    | 80sp  | AGI>50 | -                                                                |
+| **Long Bow**      |   8    | 150sp | AGI>50 | -                                                                |
+| **Crossbow**      |   8    | 200sp | STR>55 | -                                                                |
+| **Weighted Net**  |   -    | 20sp  | AGI>50 | **Entangle**: Hit targets are Restrained.                        |
+| **Caltrops**      |   -    | 10sp  | -      | **Area Denial**: Covers 2m sq. AGI check or 2 dmg + Immobilized. |
 
 ### Armor
 
 Armor protects you by providing **Defense**, which is subtracted from incoming damage. Armors are categorized by weight, which determines the penalties applied to the wearer.
 
-| Type             | Defense |  Cost  | Req    |
-| :--------------- | :-----: | :----: | :----- |
-| **Light Armor**  |         |        |        |
-| Clothes          |    0    |   -    | -      |
-| Fur-Lined Garb   |    0    |  40sp  | -      |
-| Thick Fabric     |    1    |  30sp  | -      |
-| Leather          |    1    |  80sp  | -      |
-| Studded Leather  |    1    | 200sp  | -      |
-| **Medium Armor** |         |        |        |
-| Hide Armor       |    1    | 120sp  | STR>40 |
-| Ring Mail        |    2    | 250sp  | STR>45 |
-| Scale Mail       |    2    | 450sp  | STR>50 |
-| Brigandine       |    2    | 650sp  | STR>55 |
-| **Heavy Armor**  |         |        |        |
-| Chain Mail       |    2    | 300sp  | STR>50 |
-| Lamellar Armor   |    3    | 700sp  | STR>65 |
-| Plate Armor      |    3    | 800sp  | STR>70 |
-| Dvergr Plate     |    4    | 2000sp | STR>80 |
+| Type             | Defense |  Cost  | Req    | Notes                                                              |
+| :--------------- | :-----: | :----: | :----- | :----------------------------------------------------------------- |
+| **Light Armor**  |         |        |        |                                                                    |
+| Clothes          |    0    |   -    | -      | -                                                                  |
+| Gambeson         |    1    |  50sp  | -      | Thick quilted cloth. Can be worn under other armor for +1 (Max 3). |
+| Fur-Lined Garb   |    0    |  40sp  | -      | Advantage on checks vs Cold.                                       |
+| Thick Fabric     |    1    |  30sp  | -      | -                                                                  |
+| Leather          |    1    |  80sp  | -      | -                                                                  |
+| Studded Leather  |    1    | 200sp  | -      | -                                                                  |
+| **Medium Armor** |         |        |        |                                                                    |
+| Hide Armor       |    1    | 120sp  | STR>40 | -                                                                  |
+| Ring Mail        |    2    | 250sp  | STR>45 | -                                                                  |
+| Scale Mail       |    2    | 450sp  | STR>50 | -                                                                  |
+| Brigandine       |    2    | 650sp  | STR>55 | -                                                                  |
+| **Heavy Armor**  |         |        |        |                                                                    |
+| Chain Mail       |    2    | 300sp  | STR>50 | -                                                                  |
+| Lamellar Armor   |    3    | 700sp  | STR>65 | -                                                                  |
+| Plate Armor      |    3    | 800sp  | STR>70 | -                                                                  |
+| Dvergr Plate     |    4    | 2000sp | STR>80 | -                                                                  |
+
+### Helmets & Accessories
+
+| Type                   | Defense | Cost  | Req    | Notes                                           |
+| :--------------------- | :-----: | :---: | :----- | :---------------------------------------------- |
+| **Open Helmet**        |   +1    | 60sp  | -      | Protects the head. Penalty: -5 to Perception.   |
+| **Full Great Helm**    |   +2    | 200sp | STR>60 | Maximum protection. Penalty: -15 to Perception. |
+| **Reinforced Greaves** |   +0    | 80sp  | -      | Advantage vs leg-based "Crippled" effects.      |
 
 
 
@@ -887,18 +903,35 @@ Shields are providing Defense and used with the **Block** reaction.
 | **Metal Shield**       |    3    | STR > 65    | 250sp |
 
 ### General Equipment
-| Item                  | Cost  | Weight/Notes                     |
-| :-------------------- | :---: | :------------------------------- |
-| **Torch (x3)**        |  1sp  | Burns for 1 hour.                |
-| **Lantern**           | 10sp  | Requires Oil.                    |
-| **Flask of Oil**      |  2sp  | Burns for 4 hours.               |
-| **Rope (15m)**        |  5sp  | Hemp.                            |
-| **Iron Spikes (x10)** |  2sp  | For climbing or jamming doors.   |
-| **Rations (1 day)**   |  2sp  | Dried meat/bread.                |
-| **Waterskin**         |  1sp  | Holds 2 liters.                  |
-| **Bedroll**           |  2sp  | For sleeping in the wild.        |
-| **Tinderbox**         |  2sp  | Used to light fires.             |
-| **Holy Water**        | 50sp  | Deals 1d10 dmg to undead/demons. |
+| Item                    | Cost  | Weight/Notes                                                |
+| :---------------------- | :---: | :---------------------------------------------------------- |
+| **Torch (x3)**          |  1sp  | Burns for 1 hour.                                           |
+| **Lantern**             | 10sp  | Requires Oil.                                               |
+| **Flask of Oil**        |  2sp  | Burns for 4 hours.                                          |
+| **Rope (15m)**          |  5sp  | Hemp.                                                       |
+| **Grappling Hook**      | 15sp  | Attaches to rope. Advantage on Climbing checks.             |
+| **Iron Spikes (x10)**   |  2sp  | For climbing or jamming doors.                              |
+| **Crowbar**             | 10sp  | Advantage on STR checks to pry objects.                     |
+| **Rations (1 day)**     |  2sp  | Dried meat/bread.                                           |
+| **Waterskin**           |  1sp  | Holds 2 liters.                                             |
+| **Bedroll**             |  2sp  | For sleeping in the wild.                                   |
+| **Tinderbox**           |  2sp  | Used to light fires.                                        |
+| **Iron Pot**            | 10sp  | For cooking and boiling water.                              |
+| **Whetstone**           |  5sp  | Use during rest. Adds +1 to the next damage roll.           |
+| **Clean Bandages (x5)** |  5sp  | Required for Medicine checks without penalty.               |
+| **Needle & Thread**     |  2sp  | Repair gear or stitch wounds (Medicine Advantage).          |
+| **Manacles (Iron)**     | 30sp  | Restrains a character. Requires key or Hard Thievery check. |
+| **Holy Water**          | 50sp  | Deals 1d10 dmg to undead/demons.                            |
+
+### Practical Alchemical & Herbal Items
+
+| Item                  | Cost  | Effect                                                                                                  |
+| :-------------------- | :---: | :------------------------------------------------------------------------------------------------------ |
+| **Weapon Oil**        | 10sp  | Applied to metal gear. Prevents rust for 24 hours in wet conditions.                                    |
+| **Blood-Stanch Herb** | 15sp  | A bitter paste. Immediately stops the **Bleeding** status.                                              |
+| **Numbing Mash**      | 20sp  | A herbal chew. Ignore penalties from 1 level of **Exhaustion** for 1 hour.                              |
+| **Troll Fat Candle**  |  5sp  | Burns for 6 hours. Waterproof; stays lit in rain or snow.                                               |
+| **Stilling-Dust**     | 40sp  | Potent narcotic. Removes Fear and Pain (ignore 2 levels of Exhaustion), but causes -10 INT for 4 hours. |
 
 ### Relics & Curios
 
