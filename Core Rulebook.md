@@ -193,7 +193,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 
 *You carry a slow decay. Whether a curse of the Old Gods or a rot from the black ichor, you are marked for a lonely life.*
 
-*   **Trait: Deadened Nerves.** You gain +2 Armor DR (Natural) as your skin hardens and numbs.
+*   **Trait: Deadened Nerves.** You gain +2 Defense (Natural) as your skin hardens and numbs.
 *   **Heritage 
 *   Skills:** Trained in **Medicine** and **Investigation**.
 *   **Starting Equipment:** A supply of heavy, lavender-scented bandages or a small bell to warn others of your approach.
@@ -296,7 +296,7 @@ At character creation, you typically choose **one Combat Style**.
 *Applicable Weapons:* Great Swords, Great Axes, Bastard Swords (2H).
 *Style Talents:*
 
-*   **Breaker (T2)**: Action (1 AP): Powerful blow. Ignores Armor DR. If damage > 10, target is knocked Prone.
+*   **Breaker (T2)**: Action (1 AP): Powerful blow. Ignores Defense. If damage > 10, target is knocked Prone.
 
 ##### Polearms
 *Attribute:* **STR**
@@ -320,14 +320,14 @@ At character creation, you typically choose **one Combat Style**.
 *Applicable Weapons:* Thrown Daggers, Hand Axes, Javelins.
 *Style Talents:*
 
-*   **Far Throwing (T2)**: Throw humanoid 20m.
+*   **Far Throwing (T2)**: Action (1 AP): **Opposed STR (Athletics)** check vs target STR. On success, throw humanoid 20m. Target takes 1d6 damage per 5m thrown.
 
 ##### Unarmed
 *Attribute:* **STR**
 *Applicable Weapons:* Fists, Natural Weapons, Grappling.
 *Style Talents:*
 
-*   **Brawler (T2)**: Action (1 AP): Grapple check. Success: Target Restrained. Deal Unarmed Dmg as free action each turn held.
+*   **Brawler (T2)**: Action (1 AP): **Opposed STR (Unarmed)** check vs target AGI or STR. Success: Target **Restrained**. Deal Unarmed Dmg as free action each turn held.
 
 ##### Shields
 *Attribute:* **STR**
@@ -335,9 +335,9 @@ At character creation, you typically choose **one Combat Style**.
 *Style Talents:*
 
 *   **Blocker (T1)**: Unlock the **Block** reaction. Use Shield skill to reduce damage.
-*   **Shield Bash (T1)**: Strike with shield (Dmg = Shield DR + Degree of Success).
+*   **Shield Bash (T1)**: Strike with shield (Dmg = Shield Defense + Degree of Success).
 *   **Shield Master (T2)**: Passive: Adjacent allies gain +5 Defense. Reaction: After a successful Block, make a free Shield Bash attack.
-*   **Shield Edge (T3)**: Give advantage against enemy pinned by shield.
+*   **Shield Edge (T3)**: You have **Advantage** on attacks against an enemy you have **Immobilized** with your shield.
 
 ### Talents
 
@@ -376,7 +376,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Bird-man**             |  T1   |             | Pet bird (Carry message, Hunt, Track).                                                                           |
 | **False Persona**        |  T1   |             | Assume a disguise; cannot use other talents.                                                                     |
 | **Horsemanship**         |  T1   |             | Advantage on Riding checks (1/day).                                                                              |
-| **Parry**                |  T1   |             | Reaction: Opposed AGI check to parry melee.                                                                      |
+| **Parry**                |  T1   |             | Reaction: AGI check to parry melee. On success, reduce damage by Weapon Damage + DoS.                            |
 | **Bounce Back**          |  T1   |             | Advantage on check to avoid Prone.                                                                               |
 | **Mounted Combat**       |  T1   |             | +5 Damage while mounted.                                                                                         |
 | **Information Network**  |  T1   |             | Access to thieves' network for info.                                                                             |
@@ -410,7 +410,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Duelist**              |  T3   |             | Passive: You gain **+1 additional Reaction** pool for the encounter.                                             |
 | **Iron Stomach**         |  T3   |             | Advantage vs Poison/Toxins.                                                                                      |
 | **Iron Will**            |  T3   |             | When you take damage, gain 1 Focus Point. Spend 1 pt for +5 to a roll or 2 pts for a free Reaction.              |
-| **Coup de Grace**        |  T3   |             | Action: Deal **Double Damage** (ignores Armor DR) if the target is Prone or Stunned.                             |
+| **Coup de Grace**        |  T3   |             | Action: Deal **Double Damage** (ignores Defense) if the target is Prone or Stunned.                             |
 | **Tempo**                |  T3   |             | Advantage on Initiative checks.                                                                                  |
 | **Shape Shift**          |  T3   |             | Werewolf form (+10 STR, Claw 7dmg).                                                                              |
 | **Durable**              |  T3   |             | +5 Natural Defense.                                                                                              |
@@ -419,7 +419,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Unyielding Spirit**    |  T3   |             | Once per long rest, if you would fall to 0 HP, you instead stay at 1 HP and gain 10 Temp HP.                     |
 | **Battle Plan**          |  T4   |             | Party gets **Advantage** on Initiative checks.                                                                   |
 | **Master of Defense**    |  T4   |             | Passive: You gain **Advantage** on all Active Defense rolls (Dodge/Parry/Block).                                 |
-| **Steel Resolve**        |  T4   |             | Passive: Gain +2 Damage Reduction (DR) against all physical attacks.                                             |
+| **Steel Resolve**        |  T4   |             | Passive: Gain +2 Defense against all physical attacks.                                             |
 | **Combat Transcendence** |  T4   |             | Action: For 3 rounds, you gain Advantage on all Defense rolls and do not spend Reactions to Dodge.               |
 
 #### Troubadour Talents
@@ -466,7 +466,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Rites**             |  T1   |             | Remove minor curses/contamination.                                                                               |
 | **Whispered Secrets** |  T1   |             | Advantage on occult/magic ID.                                                                                    |
 | **Healing Touch**     |  T2   |             | Restore 10 HP to ally. Once a day.                                                                               |
-| **Holy Aura**         |  T2   |             | Allies within 10m gain **+1 Damage Reduction (DR)** and **Advantage** on all Active Defense rolls.               |
+| **Holy Aura**         |  T2   |             | Allies within 10m gain **+1 Defense** and **Advantage** on all Active Defense rolls.               |
 | **Blood Offering**    |  T2   |             | Sacrifice 5 HP for +10 Damage.                                                                                   |
 | **Strength in Grief** |  T3   |             | Advantage on all Attack and Defense rolls for 1 turn.                                                            |
 
@@ -631,14 +631,14 @@ A player in the **Vanguard Turn** can spend **a free Action** to **Wait**. This 
 > 2.  **Bjorn (Action 2 - Attack):** Swings his Long Sword (STR 70). Rolls 25. **Hit!**
 >     *   *DoS:* 2 (Roll 28).
 >     *   *Damage:* 7 (Base) + 2 (DoS) = 9 damage.
->     *   *Result:* 9 - 1 (Wolf DR) = 8 damage. Wolf 1 is defeated!
+>     *   *Result:* 9 - 1 (Wolf Defense) = 8 damage. Wolf 1 is defeated!
 > 3.  **Erik (Action 1 - Move):** Erik moves next to Astrid to protect her.
 > 4.  **Erik (Action 2 - Help):** Erik uses **Help** to spot for Astrid, giving her advantage on her next attack.
 >
 > **Enemy Turn (Gray Wolves)**
 > *   **Wolf 1 (Injured):** Bites Bjorn. Rolls 55 (Hit).
 >     *   Bjorn spends his 1st Reaction (out of 6) to **Block**. He rolls a 30 (3 DoS).
->     *   *Reduction:* 2 (Chain Mail) + 2 (Shield DR) + 3 (DoS) = 7. The wolf's 5 damage is fully negated.
+>     *   *Reduction:* 2 (Chain Mail) + 2 (Shield Defense) + 3 (DoS) = 7. The wolf's 5 damage is fully negated.
 > *   **Wolf 2:** Moves to flank Bjorn. With **Pack Tactics**, its hit chance is 75%. It rolls 70. **Hit!**
 >     *   Bjorn spends his 2nd Reaction to **Dodge**. He rolls a 15 (1 DoS). **Failure** (Requires 2 DoS).
 >     *   *Result:* 5 damage - 2 (Chain Mail) = 3 damage taken.
@@ -646,7 +646,7 @@ A player in the **Vanguard Turn** can spend **a free Action** to **Wait**. This 
 >
 > **Rearguard Turn (Astrid)**
 > 1.  **Astrid (Action 1 - Attack):** Fires her Shortbow at Wolf 1. She has Advantage (from Erik). She rolls 15 and 60. Taking the 15: **Hit!**
->     *   *Damage:* 5 (Shortbow) - 1 (Wolf DR) = 4 damage. Wolf 1 has 2 HP left.
+>     *   *Damage:* 5 (Shortbow) - 1 (Wolf Defense) = 4 damage. Wolf 1 has 2 HP left.
 > 2.  **Astrid (Action 2 - Move):** Moves to higher ground for safety.
 
 ### Cover
@@ -673,7 +673,7 @@ When you are targeted by an attack, you may spend one of your limited Reactions 
 *   **Dodge (AGI) (Challenge: 2 DoS)**:
     *   **Success**: You move out of the way. You take **No Damage**.
     *   **Failure**: You take **Full Damage**.
-*   **Parry (Relevant Combat Style)**:
+*   **Parry (AGI)**:
     *   **Success**: You deflect the blow. Reduce incoming damage by your **Weapon Damage + Degree of Success**.
     *   **Failure**: You take **Full Damage**.
 *   **Block (Combat: Shields)**:
@@ -708,7 +708,14 @@ Status effects represent the toll of the environment and biological needs on the
 | **Heat**        | Blistering heat drains your stamina. You double your consumption of water. If you do not have water, you must succeed on a **Constitution** check (**Routine, 1 DoS**) every hour or gain 1 level of **Exhaustion**.                                                     |
 | **Poisoned**    | Toxins are in your system. You have **Disadvantage** on all **Strength** and **Constitution** checks. Take **1 Damage** at the start of each of your turns unless the poison is neutralized with a **Constitution** check (**Challenge, 2 DoS**).                        |
 | **Starvation**  | You lack nourishment. After 3 days without food, you gain 1 level of **Exhaustion** every 24 hours. This cannot be recovered until you eat a full meal.                                                                                                                  |
-| **Suffocating** | You cannot breathe. You can hold your breath for **CON / 10** minutes (minimum 1). After this, you gain 1 level of **Exhaustion** every minute. If you reach level 3, you die instead of falling unconscious.                                                            |
+| **Suffocating** | You cannot breathe. In calm situations, you can hold your breath for **CON / 10** minutes (minimum 1). In high-stress situations (combat), you must succeed on a **Constitution** check every round or gain 1 level of **Exhaustion**. If you reach level 3, you die. |
+
+## Environmental Hazards
+
+### Falling
+Gravity is a lethal foe. When you fall from a height of **3 meters or more**, you take damage upon landing.
+*   **Damage**: **5 damage** for every **3 meters** fallen.
+*   **Mitigation**: You may attempt an **Acrobatics** check (**Challenge, 2 DoS**) to halve the falling damage.
 
 ## Adventuring
 
@@ -904,11 +911,11 @@ All spells require a successful **MND check** to be cast (including required DoS
 | :--------------------- | :--- | :---------------- | :----------------------------------- |
 | **Confuse**            | 5    | Routine (1 DoS)   | -5 Combat Style to target.           |
 | **Commanding Tale**    | 5    | Routine (1 DoS)   | Persuade someone.                    |
-| **Freeze in Place**    | 5    | Routine (1 DoS)   | Chance to immobilize.                |
-| **Medusa Glare**       | 10   | Challenge (2 DoS) | Turn to stone.                       |
+| **Freeze in Place**    | 5    | Routine (1 DoS)   | Immobilize target (**MND** vs **CON** check to resist). |
+| **Medusa Glare**       | 10   | Challenge (2 DoS) | Turn to stone for 1d6 rounds (**MND** vs **CON** check to resist). |
 | **Rain Storm**         | 5    | Routine (1 DoS)   | Obscures vision.                     |
 | **Form of a Beast**    | 5    | Challenge (2 DoS) | Transform (2 Actions).               |
-| **Quicksand**          | 5    | Routine (1 DoS)   | Immobilize target.                   |
+| **Quicksand**          | 5    | Routine (1 DoS)   | Immobilize target (**MND** vs **AGI** check to resist). |
 | **Mind Shield**        | 5    | Routine (1 DoS)   | Double defense vs witchcraft (1 hr). |
 | **Charm Animal**       | 5    | Routine (1 DoS)   | Make animal friendly.                |
 | **Poison Touch**       | 5    | Routine (1 DoS)   | Inflict 7 damage.                    |
@@ -916,7 +923,7 @@ All spells require a successful **MND check** to be cast (including required DoS
 | **Identify**           | 5    | Routine (1 DoS)   | Understand magical items.            |
 | **Alter Winds**        | 5    | Routine (1 DoS)   | Change wind speed.                   |
 | **Diagnose Disease**   | 5    | Routine (1 DoS)   | Detect illness.                      |
-| **Forest Entangle**    | 5    | Routine (1 DoS)   | Entangle in vegetation.              |
+| **Forest Entangle**    | 5    | Routine (1 DoS)   | Immobilize target (**MND** vs **AGI** check to resist). |
 | **Endure Elements**    | 5    | Routine (1 DoS)   | Resistance hot/cold.                 |
 | **Feather Step**       | 5    | Routine (1 DoS)   | Ignore rough terrain.                |
 | **Wind Shield**        | 5    | Routine (1 DoS)   | Advantage on Defense vs Ranged.      |
@@ -932,7 +939,7 @@ Rituals are powerful, utility-focused magical operations that cannot be cast in 
 *   **Check**: Roll **MND** vs **Difficulty (DoS)**. Most standard rituals require **1 DoS (Routine)**. Powerful rituals may require **2-4 DoS**.
 *   **Failure & Fear**:
 *   **Success**: The ritual works as intended.
-*   **Great Success (Roll < 1/5 MND)**: No MP cost, or the effect is doubled/enhanced.
+*   **Critical Success (Doubles under Skill)**: No MP cost, and the effect is doubled/enhanced.
 *   **Failure**: No effect. Lose MP and Materials. **Lose 2 additional MP due to Fear**.
 *   **Critical Failure (Roll 95-100)**: The ritual backfires. The GM determines a negative consequence. **Lose 5 additional MP due to Fear**.
 
@@ -941,8 +948,8 @@ Rituals are powerful, utility-focused magical operations that cannot be cast in 
 | Ritual                | Time | MP   | Materials         | Effect                                                        |
 | :-------------------- | :--- | :--- | :---------------- | :------------------------------------------------------------ |
 | **Animate Plant**     | 1h   | 10   | Grave Soil (5g)   | Creates a Vine-Shrouded (HP 15, STR 50) for 24h.              |
-| **Animate Object**    | 1h   | 10   | Quicksilver (10g) | Turns a medium object into a Construct (HP 12, DR 5) for 24h. |
-| **Mud Golem**         | 2h   | 15   | Heart of Warrior  | Creates a Mud Golem (HP 30, DR 2, STR 60) for 24h.            |
+| **Animate Object**    | 1h   | 10   | Quicksilver (10g) | Turns a medium object into a Construct (HP 12, Defense 5) for 24h. |
+| **Mud Golem**         | 2h   | 15   | Heart of Warrior  | Creates a Mud Golem (HP 30, Defense 2, STR 60) for 24h.            |
 | **Soul Eater**        | 1h   | 20   | Fresh Corpse      | +10 to one Attribute for 1 day. **Lose 3 MP (Fear)**.         |
 | **Summon Python**     | 10m  | 10   | Snake Skin        | Summons a Giant Snake (Bestiary) for 1 hour.                  |
 | **Dimension Gateway** | 4h   | 25   | Star Dust (50g)   | Portal between two known circles.                             |
