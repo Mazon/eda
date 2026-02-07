@@ -79,6 +79,7 @@ When two characters are competing against each other (e.g., an arm wrestling mat
 *   If both fail, nothing happens or the situation remains unchanged.
 *   If one succeeds and the other fails, the successful character wins.
 *   If both succeed, the character with the **highest successful roll** wins.
+*   **Resisting Effects**: When a spell or ability says "Attribute vs Attribute to resist," it always uses an **Opposing Roll**.
 
 ### Pushing the Limit
 
@@ -327,7 +328,7 @@ At character creation, you typically choose **one Combat Style**.
 *Applicable Weapons:* Fists, Natural Weapons, Grappling.
 *Style Talents:*
 
-*   **Brawler (T2)**: Action (1 AP): **Opposed STR (Unarmed)** check vs target AGI or STR. Success: Target **Restrained**. Deal Unarmed Dmg as free action each turn held.
+*   **Brawler (T2)**: Action (1 AP): **Opposed STR (Unarmed)** check vs target AGI or STR. Success: Target **Restrained**. Deal Unarmed Dmg as free action each turn held. (See Conditions for Restrained).
 
 ##### Shields
 *Attribute:* **STR**
@@ -450,7 +451,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Streetwise**       |  T1   |             | Advantage on INT checks re: crime.                                   |
 | **Sneak Attack**     |  T1   |             | +5 Damage vs unaware enemy.                                          |
 | **Brutality**        |  T1   |             | Deal an additional **1** damage on all successful melee attacks.     |
-| **Intimidation**     |  T1   |             | Force Morale check (CHA 50+) or have disadvantage rest of the round. |
+| **Intimidation**     |  T1   |             | Force **Morale Check** (CHA vs MND) or target has disadvantage rest of the round. |
 | **Fence Contacts**   |  T2   |             | Sell stolen goods.                                                   |
 | **Disguise Mastery** |  T2   |             | Disguise 50+ required.                                               |
 | **Dark Vision**      |  T2   |             | See in dark.                                                         |
@@ -684,7 +685,9 @@ When you are targeted by an attack, you may spend one of your limited Reactions 
 
 Conditions represent various physical, mental, or situational states that can affect a character. Most conditions are temporary, but they can be deadly if ignored.
 
-Fear is a force that erodes your MIND. Anything that causes Fear reduces your current **Mind Points** directly. Unlike HP, Mind Points do not naturally recover without rest or special items. If your Mind Points reach 0, you get the condition **Frightened** until recover MIND points fully.
+Fear is a force that erodes your MIND. Anything that causes Fear reduces your current **Mind Points** directly. Unlike HP, Mind Points do not naturally recover without rest or special items. If your Mind Points reach 0, you get the condition **Frightened** until you recover your **Maximum MIND points**.
+
+**Morale Check**: A check to resist fear or intimidation. This is an **Opposing Roll** (e.g., Attacker's CHA vs. Target's MND).
 
 | Condition       | Mechanical Effect                                                                                                                                                                |
 | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -693,6 +696,7 @@ Fear is a force that erodes your MIND. Anything that causes Fear reduces your cu
 | **Hidden**      | You are unseen and unheard. You have **Advantage** on your next attack. If you attack or move into the open, the condition ends. See **Stealth** skill for more details.         |
 | **Immobilized** | Your movement is restricted. Your **Speed is 0**. You cannot use the **Move** or **The Charge** actions. You have **Disadvantage** on **Dodge** checks.                          |
 | **Prone**       | You are lying on the ground. Ranged attacks against you have **Disadvantage**, but melee attacks against you have **Advantage**. Standing up costs **1 Action Point**.           |
+| **Restrained**  | You are **Immobilized** and have **Disadvantage** on all attack rolls. Attackers have **Advantage** on attacks against you.                                                      |
 | **Stunned**     | You are momentarily dazed. You cannot take actions or reactions. Attackers have **Advantage** on attacks against you.                                                            |
 | **Unconscious** | You are totally unaware of your surroundings. You are **Prone** and **Stunned**. You automatically fail all checks. Any successful attack against you is a **Critical Success**. |
 

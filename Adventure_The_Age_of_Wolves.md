@@ -219,7 +219,7 @@ Suddenly, the horses stop screaming. Silence falls—heavy and unnatural. Then a
 **Mechanic: The Crash**
 
 *   All players must make a **CON Check (Routine - 1 DoS)**.
-*   **Failure:** Take **1d10 Bludgeoning damage** and start with **1 Level of Fatigue**.
+*   **Failure:** Take **5 Bludgeoning damage** and start with **1 Level of Exhaustion**.
 
 **The Horror:**
 Looking up at the road (50ft up the embankment), they see a **Dire Bear** standing on two legs. Its fur is matted with black slime. It tears a guard in half like wet paper. It doesn't see them... yet.
@@ -229,7 +229,7 @@ The players are now in the wilderness with nothing. This scene teaches the **Sur
 
 **Looting the Dead Guards:**
 
-*   2 **Daggers** (1d10 dmg).
+*   2 **Daggers** (4 damage).
 *   1 **Shortbow** (broken string, fixable with **INT Check**).
 *   1 **Quiver** (4 arrows).
 *   1 **Flint & Steel** (Critical for survival).
@@ -237,12 +237,11 @@ The players are now in the wilderness with nothing. This scene teaches the **Sur
 
 #### Survival Rules Sidebar
 > **The Cold:** Without proper clothing (Cloaks/Furs), a character must make a **CON Check** every hour of exposure.
-> *   **Failure:** Gain **1 Fatigue**.
-> *   **Fatigue:** -10 to all Skills per level.
-> *   **Level 5:** Death by Hypothermia.
+> *   **Failure:** Gain **1 level of Exhaustion**.
+> *   **Exhaustion**: See Core Rulebook for effects.
 >
 > **Hunger:** A character must eat 1 Ration per day.
-> *   **Starvation:** Cannot recover HP or Fatigue during rest. Gain 1 Fatigue per day.
+> *   **Starvation:** Cannot recover HP or Exhaustion during rest. Gain 1 level of Exhaustion per day.
 
 ### Scene 3: The Journey to Oakhaven
 **Distance:** 60 Miles (3 Days Travel).
@@ -254,7 +253,7 @@ Assign a role to each player for the journey.
 1.  **Point (Perception):** Spots ambushes and traps.
 2.  **Guide (Survival):** Navigates. Failure means getting lost (+1 day travel).
 3.  **Forager (Survival):** Finds food (Pine nuts, bark, rabbits). DC depends on terrain.
-4.  **Camp Keeper (Survival):** Builds shelter/fire. Essential for removing Fatigue.
+4.  **Camp Keeper (Survival):** Builds shelter/fire. Essential for removing Exhaustion.
 
 #### Wilderness Random Encounters (d10)
 | Roll | Encounter                                                                                                       |
@@ -266,15 +265,15 @@ Assign a role to each player for the journey.
 | 6    | **Covenant Patrol:** 5 Soldiers + 1 War Dog. Avoidance requires **Stealth Check**.                              |
 | 7    | **Hollowed Bear:** A bear with black ichor dripping from its mouth. (Boss Fight).                               |
 | 8    | **The Ghost:** A spectral viking pointing East. Following him grants +10 XP.                                    |
-| 9    | **Avalanche:** Survival Check or take heavy damage (3d10).                                                      |
-| 10   | **Safe Haven:** A hot spring or hidden cave. Heals 1 Level of Fatigue instantly.                                |
+| 9    | **Avalanche:** Survival Check or take 15 damage.                                                                |
+| 10   | **Safe Haven:** A hot spring or hidden cave. Heals 1 Level of Exhaustion instantly.                             |
 
 ### Scene 4: The Frozen Lake (Hazard)
 They must cross a lake to save a day of travel. The ice is black and groaning.
 
 *   **Hazard:** Thin Ice. **AGI Check (Challenge - 2 DoS)** to cross silently.
 *   **The Threat:** **Drowners** (Zombies trapped under the ice).
-*   **Event:** If a player fails, the ice breaks. They fall in. A Drowner grapples the target (**STR vs STR**).
+*   **Event:** If a player fails, the ice breaks. They fall in. A Drowner **Restrains** the target (**STR vs STR** Opposing Roll).
 
 ### Scene 5: The Hunter's Lodge (Optional Dungeon)
 A small cabin off the main path. Smoke rises from the chimney.
@@ -315,7 +314,7 @@ Guard Captain **Vorn** blocks the way. "No refugees. City's full."
 
 **Area 2: The Slime Tunnel**
 
-*   *Trap:* The floor is slick with green slime. **AGI Check** or fall into the sewage (Constitution Save vs Disease).
+*   *Trap:* The floor is slick with green slime. **AGI Check (Routine - 1 DoS)** or fall into the sewage (**CON Check** vs Disease).
 
 **Area 3: The Nest**
 
@@ -358,7 +357,7 @@ Mayor Valen takes the stage. He coughs, then *explodes*.
 The Barrow is 2 days north, through the **Road of Bones**.
 
 *   **Event:** A magical blizzard strikes. Visibility is zero.
-*   **Psychic Horror:** The players see ghosts of their past. Each player must confess a regret to the ghost or take **1d10 Psychic Damage**.
+*   **Psychic Horror:** The players see ghosts of their past. Each player must confess a regret to the ghost or take **5 Psychic Damage**.
 
 ### Scene 2: The High Barrow (Dungeon)
 **Entrance:** A giant wolf's mouth carved into the mountainside. The teeth are 10ft long icicles.
@@ -369,7 +368,7 @@ The Barrow is 2 days north, through the **Road of Bones**.
 **Room 1: The Antechamber**
 
 *   *Description:* Stone tables line the walls. Rusted bowls sit on them.
-*   *Trap:* A pressure plate under the central rug triggers a **Swinging Log (2d10 Bludgeoning)**.
+*   *Trap:* A pressure plate under the central rug triggers a **Swinging Log (10 Bludgeoning damage)**.
 *   *Encounter:* 4 **Skeletons** rise from the debris.
 
 **Room 2: The Hall of Heroes**
@@ -379,7 +378,7 @@ The Barrow is 2 days north, through the **Road of Bones**.
 
 **Room 3: The Armory**
 
-*   *Loot:* Rusted weapons (useless), but one **Shield of the Bear** (+10 Defense, Resistance to Cold) is hidden in a chest.
+*   *Loot:* Rusted weapons (useless), but one **Shield of the Bear** (+3 Defense, Resistance to Cold) is hidden in a chest.
 *   *Guardian:* A **Poltergeist** throws weapons at the players.
 
 **Room 4: The Feast Hall**
@@ -414,8 +413,8 @@ The Barrow is 2 days north, through the **Road of Bones**.
 
 *   *Description:* A massive cavern. Jarl Skoll sits on a throne of bone. The **Tablet of Sun-Binding** rests on his lap.
 *   *Boss:* **Jarl Skoll** (Draugr Lord).
-    *   **Phase 1 (The Jarl):** AC 60 (Plate). Slow movement. Swings a Greataxe (2d10+5).
-    *   **Phase 2 (The Beast):** At 50% HP, his armor shatters. He drops the axe and fights with claws. 2 Attacks per turn. Screams cause Fear checks.
+    *   **Phase 1 (The Jarl):** Plate Armor (Def 3). Slow movement. Swings a Greataxe (11 Base Damage).
+    *   **Phase 2 (The Beast):** At 50% HP, his armor shatters. He drops the axe and fights with claws (7 Base Damage). 2 Attacks per turn. Screams cause **Morale Checks**.
 *   *Victory:* Skoll crumbles to dust. The Tablet is recovered.
 
 ---
@@ -431,7 +430,7 @@ The players have **1 Hour** (in-game) before the main assault breaches the walls
 
 *   **Action 1:** Help Beren barricade the Inn. (Creates a fallback point).
 *   **Action 2:** Help Orin distribute weapons to the refugees. (Adds +5 Defense to civilians).
-*   **Action 3:** Set traps at the bridge. (Deals 2d10 dmg to the first wave).
+*   **Action 3:** Set traps at the bridge. (Deals 10 damage to the first wave).
 
 ### Scene 3: The Battle (3 Waves)
 **Objective:** Hold the Bridge for 5 Rounds to let the refugee barges launch.
@@ -467,35 +466,35 @@ The bridge collapses. The players must jump onto the last barge.
 **1. Dire Wolf**
 
 *   **STR:** 55 | **AGI:** 60 | **HP:** 20
-*   **Attack:** Bite (1d10). *Pack Tactics:* +10 to Hit if ally is near.
+*   **Attack:** Bite (4 damage). *Pack Tactics:* +10 to Hit if ally is near.
 
 **2. Drowner (Zombie)**
 
 *   **STR:** 40 | **AGI:** 20 | **HP:** 15
-*   **Attack:** Claw (1d6). *Undead Fortitude:* On death, roll CON check. Success = revive with 1 HP.
+*   **Attack:** Claw (3 damage). *Undead Fortitude:* On death, roll CON check. Success = revive with 1 HP.
 
 **3. Covenant Foot Soldier**
 
 *   **STR:** 50 | **AGI:** 45 | **HP:** 25
-*   **Armor:** Chain (Def 4).
-*   **Attack:** Spear (1d8).
+*   **Armor:** Chain (Def 2).
+*   **Attack:** Spear (7 damage).
 
 ### Bosses & Elites
 
 **4. Hollowed Bear**
 
 *   **STR:** 75 | **AGI:** 40 | **HP:** 60
-*   **Attack:** Swipe (2d8). *Corrupting Touch:* Hit causes 1 Fatigue.
+*   **Attack:** Swipe (8 damage). *Corrupting Touch:* Hit causes 1 level of Exhaustion.
 
 **5. Ghast Matriarch**
 
 *   **STR:** 40 | **AGI:** 70 | **HP:** 50
-*   **Attack:** Claws (2d6). *Scream:* All in 30ft make CON Save or be Stunned.
+*   **Attack:** Claws (6 damage). *Scream:* All in 30ft make **CON Check (Challenge - 2 DoS)** or be **Stunned**.
 
 **6. Jarl Skoll (Draugr Lord)**
 
 *   **STR:** 80 | **AGI:** 30 (Phase 1) / 70 (Phase 2) | **HP:** 100
-*   **Attack:** Greataxe (2d10+5). *Ice Aura:* Anyone within 5ft takes 1d6 Cold dmg.
+*   **Attack:** Greataxe (11 Base + DoS). *Ice Aura:* Anyone within 5ft takes 3 Cold damage.
 
 **7. Armored Troll**
 

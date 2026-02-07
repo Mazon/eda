@@ -19,7 +19,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Gray Wolf</h3>
 <div class="flavor-text">Pack hunters that thrive in the winter forests.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 12 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 12 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -43,7 +43,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Alpha Wolf</h3>
 <div class="flavor-text">Large, scarred leader of a pack.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 22 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 22 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">50</span></div>
@@ -67,7 +67,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Ichor-Wolf</h3>
 <div class="flavor-text">A wolf mutated by black ichor, dripping dark fluid.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 18 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 18 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -83,7 +83,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Fear Aura:</strong> Any character starting their turn adjacent to the Ichor-Wolf loses 1 MP.
+<strong>Fear Aura:</strong> Any character starting their turn adjacent to the Ichor-Wolf must pass a **MND Check (Routine - 1 DoS)** or lose 1 MP.
 </div>
 </div>
 
@@ -91,7 +91,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Winter Bear</h3>
 <div class="flavor-text">A massive white bear, blending into the snow.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 40 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 40 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 3
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">80</span></div>
@@ -115,7 +115,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Cave Bear</h3>
 <div class="flavor-text">Smaller than the winter bear but more aggressive in tight spaces.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 35 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 35 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">75</span></div>
@@ -131,7 +131,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Crushing Grip:</strong> If both claws hit, the target is Immobilized.
+<strong>Crushing Grip:</strong> If both claws hit, the target is **Restrained** (Opposed STR check to escape).
 </div>
 </div>
 
@@ -139,7 +139,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Giant Spider</h3>
 <div class="flavor-text">Lurks in dark forests and dungeons.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 15 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 15 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">45</span></div>
@@ -155,7 +155,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Webbing:</strong> Action (10m range), AGI check or be Stuck.
+<strong>Webbing:</strong> Action (10m range), **AGI Check (Routine - 1 DoS)** or be **Immobilized**.
 </div>
 </div>
 
@@ -163,7 +163,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Web-Weaver Spider</h3>
 <div class="flavor-text">Specializes in intricate, sticky traps.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 18 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 18 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -187,7 +187,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Great Raven</h3>
 <div class="flavor-text">An omen of death, capable of blinding eyes.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 8 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 8 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">15</span></div>
@@ -211,7 +211,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Viper</h3>
 <div class="flavor-text">A swift, venomous snake.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 6 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 6 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 8
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">10</span></div>
@@ -227,7 +227,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Neurotoxin:</strong> Target must pass CON check or take -10 to AGI for 1 hour.
+<strong>Neurotoxin:</strong> Target must pass **CON Check (Routine - 1 DoS)** or take -10 to AGI for 1 hour.
 </div>
 </div>
 
@@ -235,7 +235,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Constrictor Snake</h3>
 <div class="flavor-text">A massive serpent that crushes its prey.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 25 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">65</span></div>
@@ -251,7 +251,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Crush:</strong> Deals 6 automatic damage per round to a grappled target.
+<strong>Crush:</strong> Deals 6 automatic damage per round to a **Restrained** target.
 </div>
 </div>
 
@@ -259,7 +259,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Wild Boar</h3>
 <div class="flavor-text">A stubborn, charging beast.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 20 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">60</span></div>
@@ -283,7 +283,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Razor-Tusk Boar</h3>
 <div class="flavor-text">A larger boar with iron-like tusks.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 30 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 30 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">70</span></div>
@@ -307,7 +307,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Giant Bat</h3>
 <div class="flavor-text">Leathery wings in the night.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 10 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 10 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">20</span></div>
@@ -331,7 +331,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Blood-Sucking Bat</h3>
 <div class="flavor-text">Parasitic bat that drains health.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 12 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 12 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">15</span></div>
@@ -355,7 +355,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Mountain Lion</h3>
 <div class="flavor-text">A silent predator of the high peaks.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 25 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -383,7 +383,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Bandit Scoundrel</h3>
 <div class="flavor-text">A common criminal.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 15 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 15 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">50</span></div>
@@ -407,7 +407,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Bandit Archer</h3>
 <div class="flavor-text">Uses a bow to pick off targets from afar.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 12 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 12 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -431,7 +431,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Bandit Leader</h3>
 <div class="flavor-text">The strongest and most cunning of the bunch.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 25 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">60</span></div>
@@ -455,7 +455,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Highwayman</h3>
 <div class="flavor-text">A skilled rider and robber.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 20 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -479,7 +479,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Thug</h3>
 <div class="flavor-text">A brutal brawler.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 22 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 22 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">65</span></div>
@@ -503,7 +503,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Mercenary Veteran</h3>
 <div class="flavor-text">A professional soldier for hire.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 30 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 30 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">65</span></div>
@@ -527,7 +527,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Mercenary Crossbowman</h3>
 <div class="flavor-text">Trained in heavy ranged combat.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 25 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -551,7 +551,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Rogue Knight</h3>
 <div class="flavor-text">A fallen noble turned predator.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 35 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 35 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">70</span></div>
@@ -575,7 +575,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Town Guard</h3>
 <div class="flavor-text">Protecting what remains.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 20 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">60</span></div>
@@ -599,7 +599,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Guard Captain</h3>
 <div class="flavor-text">A disciplined leader of the watch.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 30 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 30 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">65</span></div>
@@ -623,7 +623,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Assassin</h3>
 <div class="flavor-text">A silent killer in the dark.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 18 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 18 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 8
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">45</span></div>
@@ -647,7 +647,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Poisoner</h3>
 <div class="flavor-text">A specialist in toxins.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 15 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 15 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -671,7 +671,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Deserter</h3>
 <div class="flavor-text">A soldier who fled, now fighting for survival.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 18 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 18 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -695,7 +695,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Beggar (Hostile)</h3>
 <div class="flavor-text">Driven to madness by hunger.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 10 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 10 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">35</span></div>
@@ -719,7 +719,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Grave Robber</h3>
 <div class="flavor-text">Vultures of the battlefield.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 15 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 15 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">45</span></div>
@@ -747,7 +747,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Cult Acolyte</h3>
 <div class="flavor-text">Low-level servant of a dark god.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 12 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 12 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -771,7 +771,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Cult Priest</h3>
 <div class="flavor-text">Leader of a small cell.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 20 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">45</span></div>
@@ -795,7 +795,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Fanatic Zealot</h3>
 <div class="flavor-text">Brainwashed and fearless.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 18 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 18 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -819,7 +819,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Inquisitor</h3>
 <div class="flavor-text">Hunter of heretics and witches.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 28 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 28 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">60</span></div>
@@ -843,7 +843,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Sacrificial Victim (Twisted)</h3>
 <div class="flavor-text">A soul broken and mutated by ritual.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 0
+<strong>HP</strong>: 25 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 3
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">65</span></div>
@@ -867,7 +867,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Dark Summoner</h3>
 <div class="flavor-text">Calls horrors from the Void.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 15 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 15 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">35</span></div>
@@ -891,7 +891,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Blood-Binder</h3>
 <div class="flavor-text">Uses life force to chain enemies.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 20 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">45</span></div>
@@ -907,7 +907,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Crimson Chain:</strong> Target within 10m must pass MND check or be Immobilized.
+<strong>Crimson Chain:</strong> Target within 10m must pass **MND Check (Routine - 1 DoS)** or be **Immobilized**.
 </div>
 </div>
 
@@ -915,7 +915,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Coven Witch</h3>
 <div class="flavor-text">Uses ancient hexes.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 18 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 18 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">30</span></div>
@@ -939,7 +939,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Hex-Weaver</h3>
 <div class="flavor-text">Specialist in long-term curses.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 22 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 22 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">35</span></div>
@@ -963,7 +963,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Silent Monk (Hostile)</h3>
 <div class="flavor-text">Sworn to a dark silence.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 4
+<strong>HP</strong>: 25 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">60</span></div>
@@ -987,7 +987,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Doomsday Prophet</h3>
 <div class="flavor-text">Spreads the word of the end.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 15 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 15 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -1003,7 +1003,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Visions of Doom:</strong> Target must pass MND check or be Stunned for 1 round.
+<strong>Visions of Doom:</strong> Target must pass **MND Check (Challenge - 2 DoS)** or be **Stunned** for 1 round.
 </div>
 </div>
 
@@ -1011,7 +1011,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Flagellant</h3>
 <div class="flavor-text">Pain is their prayer.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 24 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 24 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -1039,7 +1039,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Hollowed Shambler</h3>
 <div class="flavor-text">A man lost to the black ichor.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 18 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 0
+<strong>HP</strong>: 18 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 3
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">60</span></div>
@@ -1055,7 +1055,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Oozing Ichor:</strong> On hit, target must pass CON check or be Blinded by fluid.
+<strong>Oozing Ichor:</strong> On hit, target must pass **CON Check (Routine - 1 DoS)** or be **Blinded** by fluid.
 </div>
 </div>
 
@@ -1063,7 +1063,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Ichor-Bloated</h3>
 <div class="flavor-text">Full of volatile fluid.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 0
+<strong>HP</strong>: 25 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 2
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -1087,7 +1087,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Many-Limbed Horror</h3>
 <div class="flavor-text">Too many arms to count.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 30 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 30 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">70</span></div>
@@ -1111,7 +1111,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Faceless One</h3>
 <div class="flavor-text">A smooth-skinned, silent mutant.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 22 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 22 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -1135,7 +1135,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Skin-Stretcher</h3>
 <div class="flavor-text">Capable of mimicking human forms.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 20 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">50</span></div>
@@ -1159,7 +1159,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Bone-Grown</h3>
 <div class="flavor-text">Exoskeleton of jagged bone.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 35 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 35 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 3
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">75</span></div>
@@ -1183,7 +1183,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Twisted Hound</h3>
 <div class="flavor-text">A dog merged with ichor.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 15 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 15 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -1207,7 +1207,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Slithering Mass</h3>
 <div class="flavor-text">A mound of mutated flesh.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 40 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 40 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 2
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">60</span></div>
@@ -1231,7 +1231,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Eye-Stalk Mutant</h3>
 <div class="flavor-text">Covered in seeing organs.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 18 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 4
+<strong>HP</strong>: 18 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -1255,7 +1255,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Ichor-Spitter</h3>
 <div class="flavor-text">Ranged mutant.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 15 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 15 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">45</span></div>
@@ -1279,7 +1279,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Fleshy Wall</h3>
 <div class="flavor-text">Immovable and bloated.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 60 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 0
+<strong>HP</strong>: 60 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 1
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">80</span></div>
@@ -1303,7 +1303,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Screaming Maw</h3>
 <div class="flavor-text">A giant mouth on legs.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 35 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 35 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">75</span></div>
@@ -1327,7 +1327,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Shadow-Touched Mutant</h3>
 <div class="flavor-text">Fades in and out of sight.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 20 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">50</span></div>
@@ -1351,7 +1351,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Crystallized Horror</h3>
 <div class="flavor-text">Body turned to jagged obsidian.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 45 | <strong>DR</strong>: 6 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 45 | <strong>DR</strong>: 6 | <strong>Reactions</strong>: 2
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">70</span></div>
@@ -1375,7 +1375,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Void-Leper</h3>
 <div class="flavor-text">Decaying with extra-dimensional rot.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 20 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">45</span></div>
@@ -1403,7 +1403,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Rot-walker (Zombie)</h3>
 <div class="flavor-text">The classic shambling threat.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 18 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 0
+<strong>HP</strong>: 18 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 2
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -1427,7 +1427,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Plague-Carrier Zombie</h3>
 <div class="flavor-text">Explodes with disease.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 0
+<strong>HP</strong>: 20 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 2
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">50</span></div>
@@ -1451,7 +1451,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Shambling Skeleton</h3>
 <div class="flavor-text">Bones held by hate.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 10 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 10 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">45</span></div>
@@ -1475,7 +1475,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Armored Skeleton</h3>
 <div class="flavor-text">Ancient guards.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 15 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 15 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -1499,7 +1499,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Skeleton Archer</h3>
 <div class="flavor-text">Silent snipers from the dark.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 12 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 12 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -1523,7 +1523,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Wraith</h3>
 <div class="flavor-text">A spirit of sorrow.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 20 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">10</span></div>
@@ -1547,7 +1547,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Banshee</h3>
 <div class="flavor-text">Wail of the lost.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 25 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">10</span></div>
@@ -1571,7 +1571,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Draugr Warrior</h3>
 <div class="flavor-text">The honored dead.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 25 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">65</span></div>
@@ -1595,7 +1595,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Draugr Lord</h3>
 <div class="flavor-text">Master of the tomb.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 45 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 45 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">75</span></div>
@@ -1619,7 +1619,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Ghoul</h3>
 <div class="flavor-text">Eaters of the dead.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 20 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -1635,7 +1635,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Paralysis:</strong> Target must pass CON check or be Immobilized.
+<strong>Paralysis:</strong> Target must pass **CON Check (Challenge - 2 DoS)** or be **Immobilized**.
 </div>
 </div>
 
@@ -1643,7 +1643,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Wight</h3>
 <div class="flavor-text">Intelligent, life-draining undead.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 35 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 35 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">65</span></div>
@@ -1667,7 +1667,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Spectral Stalker</h3>
 <div class="flavor-text">Invisible hunter.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 15 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 4
+<strong>HP</strong>: 15 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 8
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">20</span></div>
@@ -1691,7 +1691,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Poltergeist</h3>
 <div class="flavor-text">Chaos in the shadows.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 12 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 5
+<strong>HP</strong>: 12 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 9
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -1715,7 +1715,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Vampire Thrall</h3>
 <div class="flavor-text">Siren of the night.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 30 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 30 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">60</span></div>
@@ -1731,7 +1731,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Charm:</strong> Target must pass MND check or be unable to attack the Thrall.
+<strong>Charm:</strong> Target must pass **MND Check (Routine - 1 DoS)** or be unable to attack the Thrall.
 </div>
 </div>
 
@@ -1739,7 +1739,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Ancient Mummy</h3>
 <div class="flavor-text">Preserved by dark oils.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 50 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 50 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 3
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">75</span></div>
@@ -1763,7 +1763,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Bone-Heap</h3>
 <div class="flavor-text">Amalgamation of remains.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 40 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 40 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">70</span></div>
@@ -1787,7 +1787,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Headless Rider</h3>
 <div class="flavor-text">A spectral terror on horseback.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 45 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 45 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 8
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">70</span></div>
@@ -1803,7 +1803,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Fearful Charge:</strong> Targets in path must pass MND or be Frightened.
+<strong>Fearful Charge:</strong> Targets in path must pass **MND Check (Challenge - 2 DoS)** or be **Frightened**.
 </div>
 </div>
 
@@ -1811,7 +1811,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Cursed Spirit</h3>
 <div class="flavor-text">Bound to an object.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 20 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">10</span></div>
@@ -1839,7 +1839,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Forest Troll</h3>
 <div class="flavor-text">Regenerating beast of the woods.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 50 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 50 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">80</span></div>
@@ -1863,7 +1863,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Mountain Troll</h3>
 <div class="flavor-text">Made of living stone.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 70 | <strong>DR</strong>: 6 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 70 | <strong>DR</strong>: 6 | <strong>Reactions</strong>: 2
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">90</span></div>
@@ -1887,7 +1887,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Hill Giant</h3>
 <div class="flavor-text">A hungry, clumsy titan.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 80 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 80 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 3
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">95</span></div>
@@ -1911,7 +1911,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Frost Giant</h3>
 <div class="flavor-text">Master of the winter peaks.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 100 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 100 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">100</span></div>
@@ -1935,7 +1935,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Hag (Forest)</h3>
 <div class="flavor-text">Uses nature to trap souls.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 35 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 35 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">50</span></div>
@@ -1959,7 +1959,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Hag (Sea)</h3>
 <div class="flavor-text">Drowned and hateful.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 40 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 40 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">60</span></div>
@@ -1983,7 +1983,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Wood-Wretch</h3>
 <div class="flavor-text">A tree-like spirit of rot.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 45 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 45 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 3
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">75</span></div>
@@ -2007,7 +2007,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Moss-Man</h3>
 <div class="flavor-text">Silent guardian of the swamp.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 30 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 30 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">65</span></div>
@@ -2031,7 +2031,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Corrupted Nymph</h3>
 <div class="flavor-text">Beauty turned to horror.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 4
+<strong>HP</strong>: 25 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 8
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">35</span></div>
@@ -2047,7 +2047,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Siren's Call:</strong> Target must pass MND check or be charmed for 1 hour.
+<strong>Siren's Call:</strong> Target must pass **MND Check (Routine - 1 DoS)** or be charmed for 1 hour.
 </div>
 </div>
 
@@ -2055,7 +2055,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Stone Guardian</h3>
 <div class="flavor-text">Animated monolith.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 60 | <strong>DR</strong>: 8 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 60 | <strong>DR</strong>: 8 | <strong>Reactions</strong>: 2
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">85</span></div>
@@ -2079,7 +2079,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Spriggan</h3>
 <div class="flavor-text">A shape-shifting forest spirit.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 30 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 30 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">60</span></div>
@@ -2103,7 +2103,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Earth Elemental (Lesser)</h3>
 <div class="flavor-text">Moving mound of dirt and rock.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 40 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 1
+<strong>HP</strong>: 40 | <strong>DR</strong>: 5 | <strong>Reactions</strong>: 2
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">75</span></div>
@@ -2127,7 +2127,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Water Spirit (Hostile)</h3>
 <div class="flavor-text">A violent wave given form.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 35 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 35 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">65</span></div>
@@ -2151,7 +2151,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Fire-Dancer</h3>
 <div class="flavor-text">Spirits of the hearth gone wild.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 4
+<strong>HP</strong>: 25 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 9
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -2175,7 +2175,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Storm-Caller (Spirit)</h3>
 <div class="flavor-text">The thunder's roar.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 45 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 45 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 8
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -2203,7 +2203,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Void-Stalker</h3>
 <div class="flavor-text">The basic foot soldier of the Void.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 20 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 20 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -2227,7 +2227,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Mind-Warp</h3>
 <div class="flavor-text">A floating brain-like horror.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 30 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 30 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">20</span></div>
@@ -2251,7 +2251,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Shadow-Form</h3>
 <div class="flavor-text">A living, aggressive shadow.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 25 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 5
+<strong>HP</strong>: 25 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 9
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -2275,7 +2275,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Star-Spawn</h3>
 <div class="flavor-text">Beings of geometry and madness.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 55 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 55 | <strong>DR</strong>: 4 | <strong>Reactions</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">80</span></div>
@@ -2299,7 +2299,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Dimensional Leach</h3>
 <div class="flavor-text">Siphons reality itself.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 18 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 2
+<strong>HP</strong>: 18 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">45</span></div>
@@ -2323,7 +2323,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Reality-Bender</h3>
 <div class="flavor-text">Distorts space around it.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 40 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 40 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">60</span></div>
@@ -2347,7 +2347,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Whispering Void</h3>
 <div class="flavor-text">A cloud of dark voices.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 35 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 4
+<strong>HP</strong>: 35 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 8
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">10</span></div>
@@ -2371,7 +2371,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Devourer of Dreams</h3>
 <div class="flavor-text">Lurks in the sleeping mind.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 50 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 50 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 7
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">65</span></div>
@@ -2395,7 +2395,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>The Thing in the Snow</h3>
 <div class="flavor-text">A legendary horror of the high waste.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 150 | <strong>DR</strong>: 6 | <strong>Reactions</strong>: 4
+<strong>HP</strong>: 150 | <strong>DR</strong>: 6 | <strong>Reactions</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">110</span></div>
@@ -2419,7 +2419,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Avatar of the Void (Boss)</h3>
 <div class="flavor-text">The physical manifestation of the end.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 300 | <strong>DR</strong>: 10 | <strong>Reactions</strong>: 6
+<strong>HP</strong>: 300 | <strong>DR</strong>: 10 | <strong>Reactions</strong>: 10
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">150</span></div>
