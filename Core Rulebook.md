@@ -89,6 +89,7 @@ When two characters are competing against each other (e.g., an arm wrestling mat
 ### Pushing the Limit
 
 Before rolling, a player can declare they are "Pushing."
+
 *   **Effect**: You gain **Advantage** on the roll.
 *   **Cost**: Regardless of success or failure, you lose **5 Mind Points**.
 
@@ -96,7 +97,7 @@ Before rolling, a player can declare they are "Pushing."
 
 To create a character, you make choices that customize them to be interesting and fun. A character consists of:
 
-1.  Genome
+1.  Attributes & Genome
 2.  Body & Mind
 3.  Heritage
 4.  Skills
@@ -119,10 +120,10 @@ To create a character, you make choices that customize them to be interesting an
 >
 > **Step 7: Course of Life**: Bjorn is a veteran of the Frost Wars, seeking to protect his village from the creeping ice. He is brave but cautious.
 >
-> **Step 8: Equipment**: Bjorn starts with a Long Sword, a Round Shield, and Chain Mail. He also carries his sturdy iron cook-pot, a bedroll, a tinderbox, and 5 days of rations. He has 15 silver pieces left for his journey.
+> **Step 8: Equipment**: Bjorn starts with 60 Silver Marks from his **Hearth-born** heritage. He purchases a Hand Axe (30sp), a bedroll (2sp), a tinderbox (2sp), and 5 days of rations (10sp). He also carries his sturdy iron cook-pot from his heritage, leaving him with **16 Silver Marks** for his journey.
 
 
-### Genome
+### Attributes & Genome
 
 Determines your raw potential and base stats. Select one animal totem to get your base ability scores.
 
@@ -150,7 +151,7 @@ Determines your raw potential and base stats. Select one animal totem to get you
  
 ### Heritage
 
-Your Heritage defines your upbringing, innate traits, and starting social standing. Every Heritage provides a Signature Trait, two Heritage Skills in which you are automatically Trained, a unique piece of Starting Equipment, and usually a choice of one Combat Style.
+Your Heritage defines your upbringing, innate traits, and starting social standing. Every Heritage provides a Signature Trait, two Heritage Skills in which you are automatically Trained, a unique piece of Starting Equipment, a set amount of **Starting Currency** (Silver Marks), and usually a choice of one Combat Style.
 
 #### Hearth-born
 *The sturdy folk of the clans. You were raised to survive the frost, tend the fire, and hold the line.*
@@ -158,6 +159,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Trait: Stoic Endurance.** Once per session, you can ignore all penalties from Exhaustion or Cold for one hour.
 *   **Heritage Skills:** Trained in Survival and Crafting.
 *   **Starting Equipment:** A sturdy iron cook-pot or a carved wooden idol of a Hearth-God.
+*   **Starting Currency:** 60 Silver Marks.
 
 #### Dvergr
 *Born of stone and ancient frost. Your people are the master-smiths who once thrived in the deep halls, now mostly lost to the ice.*
@@ -165,6 +167,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Trait: Unyielding.** You have +10 to MND checks to resist Intimidation, Fear, or magical influence.
 *   **Heritage Skills:** Trained in Engineering and Appraise.
 *   **Starting Equipment:** A masterwork whetstone (adds +1 to next damage roll after use, 1/day) or a pouch of "Deep-Salt."
+*   **Starting Currency:** 100 Silver Marks.
 
 #### Wild-walker
 *You belong to the wastes. While others huddle behind walls, you find your way through the blizzards of the Fjordlands.*
@@ -172,6 +175,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Trait: Scout's Eye.** You cannot be surprised while in the wilderness, provided you are conscious.
 *   **Heritage Skills:** Trained in Navigation and Nature.
 *   **Starting Equipment:** A hand-drawn map of a secret mountain pass or a weather-beaten compass.
+*   **Starting Currency:** 40 Silver Marks.
 
 #### Warg-touched
 *The blood of the Great Wolf runs thin in your veins. You are more beast than man, a feral omen of the Wolf-Age.*
@@ -179,6 +183,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Trait: Primal Instinct.** You have +10 to Perception and Tracking. You can see in low light as if it were bright light.
 *   **Heritage Skills:** Trained in Tracking and Athletics.
 *   **Starting Equipment:** A necklace of predator teeth or a heavy cloak made of wolf pelt.
+*   **Starting Currency:** 25 Silver Marks.
 
 #### Blighted
 *You carry a slow decay. Whether a curse of the Old Gods or a rot from the black ichor, you are marked for a lonely life.*
@@ -186,6 +191,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Trait: Deadened Nerves.** You gain +2 Defense (Natural) as your skin hardens and numbs.
 *   **Heritage Skills:** Trained in Medicine and Investigation.
 *   **Starting Equipment:** A supply of heavy, lavender-scented bandages or a small bell to warn others of your approach.
+*   **Starting Currency:** 35 Silver Marks.
 
 #### Hollow-born
 *You were touched by the black ichor before birth. You are a living mutation, a fragment of the "Hollowed" force in human skin.*
@@ -194,6 +200,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Heritage Skills:** Trained in Occult Knowledge and Intimidate.
 *   **Burden: Monstrous.** You start with a visible mutation. Most NPCs will be wary, hostile, or fearful on sight.
 *   **Starting Equipment:** A porcelain mask to hide your mutations or a small vial of inert black ichor.
+*   **Starting Currency:** 25 Silver Marks.
 
 #### Umbral-kin
 *A fragment of the Eternal Night given form. You are pale, silent, and unsettling, as if you don't quite belong in the physical world.*
@@ -202,6 +209,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Heritage Skills:** Trained in Stealth and Perception.
 *   **Burden: Sun-Sick.** You take a Disadvantage to all rolls while in direct sunlight.
 *   **Starting Equipment:** A sheer black veil or a shard of obsidian that never feels warm.
+*   **Starting Currency:** 50 Silver Marks.
 
 ### Course of Life
 
