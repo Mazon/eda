@@ -994,6 +994,31 @@ Rituals are powerful, utility-focused magical operations that cannot be cast in 
 
 ## Game Master Section
 
+### Progress Clocks
+
+Progress Clocks are a visual tool used by the Game Master to track the flow of events, the progress of a complex task, or the approaching threat of a looming danger.
+
+A clock is a circle divided into segments—typically 4, 6, or 8. As events unfold, the GM fills in these segments to represent progress.
+
+#### Types of Clocks
+
+*   **Objective Clocks**: Used to track the players' progress toward a goal, such as "Sneak into the Fortress" or "Research the Ancient Curse."
+*   **Danger Clocks**: Represent a growing threat or a countdown to a negative event, such as "The Guards are Alerted" or "The Ritual Completes."
+*   **Linked Clocks**: Sometimes, one clock must be completed before another can begin. For example, a "Find the Secret Entrance" (4 segments) clock might need to be filled before the "Infiltrate the Vault" (6 segments) clock starts.
+*   **Mission Clocks**: Track the overall progress of a large-scale operation or adventure.
+
+#### Filling a Clock
+
+Segments are usually filled based on the outcome of rolls:
+
+*   **Success**: Fill 1 segment.
+*   **Critical Success**: Fill 2 or 3 segments.
+*   **Failure on a Risky Action**: The GM may fill 1 or 2 segments on a related **Danger Clock**.
+
+#### Why Use Clocks?
+
+Clocks provide transparency and tension. They allow players to see exactly how close they are to success or disaster, making their choices feel more impactful. They are especially useful for situations that shouldn't be resolved by a single roll but require a series of actions.
+
 ### Progression
 This system rewards failure and provides consistent growth, ensuring low skills improve quickly while high skills plateau.
 
