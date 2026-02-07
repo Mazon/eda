@@ -332,19 +332,20 @@ class CombatEncounter:
             if "Smart Fighting" in vic.talents and vic.cover_type != "None": def_mod += 10
             if vic.offhand and vic.offhand.is_shield and "Blocker" in vic.talents:
                 d_success, d_roll, d_dos, d_crit = vic.roll_skill(vic.skill_combat, modifier=def_mod, advantage=def_adv)
-                if d_success: dmg_reduction = (vic.offhand.dr * 2) + (vic.stats.STR // 10)
+                if d_success: dmg_reduction = vic.offhand.dr + d_dos
                 else: final_dmg_mult = 0.5
             elif vic.stats.AGI > vic.skill_combat:
                 d_success, d_roll, d_dos, d_crit = vic.roll_skill(vic.stats.AGI, modifier=def_mod, advantage=def_adv)
                 if d_success: final_dmg_mult = 0.5
             else:
                 d_success, d_roll, d_dos, d_crit = vic.roll_skill(vic.skill_combat, modifier=def_mod, advantage=def_adv)
-                if d_success: dmg_reduction = att.weapon.damage + ((att.stats.STR if not att.weapon.is_ranged else att.stats.AGI) // 10)
-        if crit: damage = att.weapon.damage + (att.skill_combat // 10)
+                if d_success: dmg_reduction = vic.weapon.damage + d_dos
+        if crit:
+            damage = att.weapon.damage + (att.skill_combat // 10)
         else:
-            attr_bonus = (att.stats.STR if not att.weapon.is_ranged else att.stats.AGI) // 10
-            damage = att.weapon.damage + dos + attr_bonus - dmg_reduction
+            damage = att.weapon.damage + dos
             if att.next_attack_overdrive: damage += dos
+        damage -= dmg_reduction
         if phase == "Rearguard":
             if "First Strike" in att.talents: damage += 5
             if "Exploit Opening" in att.talents: damage += 10

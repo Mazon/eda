@@ -48,7 +48,7 @@ Roll **2d10** (01-100).
 
 *   **Success**: Roll **UNDER** or EQUAL to your Skill/Attribute.
 *   **Failure**: Roll **OVER** your Skill/Attribute.
-*   **Critical Success**: Doubles under skill (11, 22, 33...). A Critical Success deals **Max Damage**: Weapon Base Damage + Tens Digit of the Skill (e.g., 70 Skill = +7). This replaces the normal damage calculation for that hit.
+*   **Critical Success**: Doubles under skill (11, 22, 33...). A Critical Success deals **Critical Damage**: Weapon Base Damage + Maximum Degree of Success (Tens Digit of the Skill). This replaces the normal damage calculation for that hit.
     *   **Difficulty Bypass**: In non-combat checks, a Critical Success automatically fulfills the required Degrees of Success for any difficulty level.
     *   **Degree of Success**: The amount of success. Usually only recorded as the number of ten digits. Example a roll of 48 would be 4 degree of success.
 
@@ -313,7 +313,7 @@ At character creation, you typically choose **one Combat Style**.
 *   **Calm Shooting (T1)**: Passive: Ranged attacks treat Heavy cover as Light, and ignore Light cover.
 *   **Crossbow Expert (T1)**: +1 Damage with crossbows.
 *   **Far Shooting (T2)**: Ranged weapon range +25%.
-*   **Flurry of Arrows (T2)**: Action: Make one attack. If it hits, you deal your weapon damage three times (without Attribute bonus).
+*   **Flurry of Arrows (T2)**: Action: Make one attack. If it hits, you deal your weapon damage three times (without Degree of Success).
 
 ##### Throwing
 *Attribute:* **AGI**
@@ -335,7 +335,7 @@ At character creation, you typically choose **one Combat Style**.
 *Style Talents:*
 
 *   **Blocker (T1)**: Unlock the **Block** reaction. Use Shield skill to reduce damage.
-*   **Shield Bash (T1)**: Strike with shield (Dmg = Shield DR + Tens Digit of Strength).
+*   **Shield Bash (T1)**: Strike with shield (Dmg = Shield DR + Degree of Success).
 *   **Shield Master (T2)**: Passive: Adjacent allies gain +5 Defense. Reaction: After a successful Block, make a free Shield Bash attack.
 *   **Shield Edge (T3)**: Give advantage against enemy pinned by shield.
 
@@ -384,7 +384,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Resistance**           |  T2   |             | Choose damage type; reduce by 50%.                                                                               |
 | **Curiosity**            |  T2   |             | Advantage on INT checks.                                                                                         |
 | **Favored Weapon**       |  T2   |             | +5 Attack with specific weapon.                                                                                  |
-| **Flurry of Blows**      |  T2   |             | Action: Make one attack. If it hits, you deal your weapon damage three times (without Attribute bonus).          |
+| **Flurry of Blows**      |  T2   |             | Action: Make one attack. If it hits, you deal your weapon damage three times (without Degree of Success).        |
 | **Tactical Guard**       |  T2   |             | Action: Give an ally in the Rearguard **Advantage** on their next Defense roll.                                  |
 | **Vengeful Retort**      |  T2   |             | **Rearguard**: If you took damage this round, your next attack has **Advantage**.                                |
 | **Exploit Opening**      |  T2   |             | **Rearguard**: Deal **+10 Damage** if the target missed an attack against you or an ally this round.             |
@@ -404,7 +404,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Pack Tactics**         |  T2   |             | If an ally is within 2m of your target and has already moved or acted, gain **Advantage** on attack.             |
 | **Fake Attack**          |  T2   |             | Action: Target avoids any more attacks this round.                                                               |
 | **Cleave**               |  T2   |             | Passive: When you kill an enemy, you may immediately make a free attack against another nearby enemy.            |
-| **Dual Wielding**        |  T2   | Two Weapons | Passive: +10 Parry. Action (1 AP): Attack with both weapons (one roll). Hit: Combined weapon damage + Attribute. |
+| **Dual Wielding**        |  T2   | Two Weapons | Passive: +10 Parry. Action (1 AP): Attack with both weapons (one roll). Hit: Combined weapon damage + Degree of Success. |
 | **Blind Fighting**       |  T2   |             | Ignore penalties for fighting in darkness or against invisible enemies.                                          |
 | **Counter Attack**       |  T3   |             | Reaction: When hit, halve the damage and immediately make a melee attack against the attacker.                   |
 | **Duelist**              |  T3   |             | Passive: You gain **+1 additional Reaction** pool for the encounter.                                             |
@@ -613,7 +613,7 @@ A player in the **Vanguard Turn** can spend **a free Action** to **Wait**. This 
 
 ### Damage & Health
 
-*   **Damage**: Total damage is calculated as **Weapon Base Damage + Degree of Success (DoS) + Tens Digit of the relevant Attribute**.
+*   **Damage**: Total damage is calculated as **Weapon Base Damage + Degree of Success (DoS)**.
 *   **Reduction**: Damage is reduced by **Defense** (Armor/Shields) before being applied to HP.
 *   **Death**: At 0 HP.
 
@@ -629,7 +629,7 @@ A player in the **Vanguard Turn** can spend **a free Action** to **Wait**. This 
 > **Vanguard Turn (Bjorn & Erik)**
 > 1.  **Bjorn (Action 1 - Move):** Moves 6 meters to intercept Wolf 1. Gains **Evasive Maneuver** (Advantage on Active Defense).
 > 2.  **Bjorn (Action 2 - Attack):** Swings his Long Sword (STR 70). Rolls 25. **Hit!**
->     *   *DoS:* 7 (Skill) - 2 (Roll) = 5 DoS.
+>     *   *DoS:* 2 (Roll 28).
 >     *   *Damage:* 7 (Base) + 2 (DoS) = 9 damage.
 >     *   *Result:* 9 - 1 (Wolf DR) = 8 damage. Wolf 1 is defeated!
 > 3.  **Erik (Action 1 - Move):** Erik moves next to Astrid to protect her.
@@ -637,8 +637,8 @@ A player in the **Vanguard Turn** can spend **a free Action** to **Wait**. This 
 >
 > **Enemy Turn (Gray Wolves)**
 > *   **Wolf 1 (Injured):** Bites Bjorn. Rolls 55 (Hit).
->     *   Bjorn spends his 1st Reaction (out of 6) to **Block**. He rolls a 30 (Success).
->     *   *Reduction:* 2 (Chain Mail) + 4 (Double Shield) = 6. The wolf's 5 damage is fully negated.
+>     *   Bjorn spends his 1st Reaction (out of 6) to **Block**. He rolls a 30 (3 DoS).
+>     *   *Reduction:* 2 (Chain Mail) + 2 (Shield DR) + 3 (DoS) = 7. The wolf's 5 damage is fully negated.
 > *   **Wolf 2:** Moves to flank Bjorn. With **Pack Tactics**, its hit chance is 75%. It rolls 70. **Hit!**
 >     *   Bjorn spends his 2nd Reaction to **Dodge**. He rolls a 15 (1 DoS). **Failure** (Requires 2 DoS).
 >     *   *Result:* 5 damage - 2 (Chain Mail) = 3 damage taken.
@@ -674,10 +674,10 @@ When you are targeted by an attack, you may spend one of your limited Reactions 
     *   **Success**: You move out of the way. You take **No Damage**.
     *   **Failure**: You take **Full Damage**.
 *   **Parry (Relevant Combat Style)**:
-    *   **Success**: You deflect the blow. Reduce incoming damage by your **Weapon Damage**.
+    *   **Success**: You deflect the blow. Reduce incoming damage by your **Weapon Damage + Degree of Success**.
     *   **Failure**: You take **Full Damage**.
 *   **Block (Combat: Shields)**:
-    *   **Success**: You catch the blow on your shield. Reduce incoming damage by **Shield Defense + Tens Digit of Strength**.
+    *   **Success**: You catch the blow on your shield. Reduce incoming damage by **Shield Defense + Degree of Success**.
     *   **Failure**: The shield still absorbs some impact. You take **Half Damage**.
 
 ## Conditions & Status Effects
