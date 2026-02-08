@@ -11,13 +11,12 @@ Eda is a dark fantasy roleplaying game of magic, wonder, and perilous adventure.
 Life in Eda is harsh and often short. It was not always so; legends speak of a prosperous land where peace and harmony once reigned. The name Eda itself is said to mean "Wondrous" in a long-forgotten tongue. Today, few believe these old stories, and they are whispered only in the safety of dimly lit taverns or behind locked doors.
 
 Common people are scared not only of darkness, monsters, and other creatures roaming the countryside but also of religious fanatics, powerful clans, and corrupt governments. Rulers are often bandits, scoundrels, and men trying to prey on the weak. Then there are diseases, harsh weather, and pests eating the crops. Life is not easy for those trying to do good.
-                                       |
 
 ## What is a Roleplaying Game?
 
 A tabletop role-playing game is played with a group of friends. One acts as a Game Master (GM). The rest will take control of a Player Character (PC). The players act through their character and let their character make decisions. The GM will be the world around the players and guide them. Together the players and the GM create a collaborative adventure.
 
-The primary goal is that everyone should have fun. The rules laid out in this book are for guidance, your group might feel like changing some aspects on how you feel to play the game and that is great!
+The primary goal is that everyone should have fun. The rules laid out in this book are for guidance, your group might feel like changing some aspects on how you feel to play the game and that is great! Homebrewing of the rules are encouraged. 
 
 The game is divided into Adventures and Campaigns.
 
@@ -49,7 +48,7 @@ While the duration of play is up to each group, sessions typically last 4–5 ho
 
 ### Checks
 
-When a character attempts an action with an uncertain outcome, the Game Master (GM) will call for a **Check**. To make a check, roll **d100** (two ten-sided dice).
+When a character attempts an action with an uncertain outcome, the Game Master (GM) will call for a **Check**. To make a check, roll a **d100** (two ten-sided dice).
 
 *   **Success**: Roll **UNDER or EQUAL** to your Skill or Attribute value.
 *   **Failure**: Roll **OVER** your Skill or Attribute value.
@@ -61,7 +60,6 @@ Eda uses a "Blackjack" style system where you want to roll as **high as possible
 *   **Calculating DoS**: Your DoS is equal to the **tens digit** of your successful roll.
     *   *Example*: A roll of **48** provides **4 DoS**.
 *   **High Rolls (Near Skill)**: Rolling close to your skill value provides the highest quality of success. For example, with a skill of 70, a roll of 69 provides 6 DoS, while a roll of 12 only provides 1 DoS.
-*   **Low Rolls (Near 01)**: These are "safer" because they are much more likely to be successful, but they yield a lower DoS.
 
 > ### Example: Calculating DoS
 >
@@ -79,15 +77,22 @@ Eda uses a "Blackjack" style system where you want to roll as **high as possible
 
 ### Failure
 
-It is up to the GM to decide what outcome might happen if a check have a failure and while there is no specific rule around degree of failure, it is up to the GM if he would like to take that into consideration.
+It is up to the GM to decide what outcome might happen if a check have a failure and while there is no specific rule around degree of failure, it is up to the GM if he would like to take that into consideration aswell.
 
-*   **Critical Failure (Fumble)**: A **Pair** above your skill value, or a roll of **100 (00)**.
-    *   **The Fumble Reward**: When you Critical Failure, you immediately increase that skill by **1 point** permanently as you learn from your mistakes. See the section **Fumble Points** for a full explanation. 
-There is no other specific rules around critical failure but GM might take them into consideration if he want to do so.
+**Critical Failure (Fumble)**: A **Pair** above your skill value, or a roll of **100 (00)**.
+*   **The Fumble Reward**: When you Critical Failure, you immediately increase that skill by **1 point** permanently as you learn from your mistakes. See the section **Fumble Points** for a full explanation. 
+There is no other specific rules around critical failure.
 
 ### Difficulty Modifiers
 
-Some tasks are harder than others and require a minimum number of Degrees of Success to succeed.
+Some tasks are harder than others and require a minimum number of Degrees of Success to succeed. The GM might require the player to have some degree of success to succeed. 
+
+> ### Example: Bjorn swimming in the river
+>
+> Bjorn ended up in the river with his chainmail and a strong current,
+> while he can swim he is struggling to reach the shore.
+>
+> *   He rolls a **65**: Success! The tens digit is 6, so he achieves **6 DoS**. The GM had decided 2 DoS would be enough in this case.
 
 | Difficulty          | Requirement | Description                                     |
 | :------------------ | :---------- | :---------------------------------------------- |
