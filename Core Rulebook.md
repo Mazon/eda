@@ -194,7 +194,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 #### Clansman
 *Steel quenched in the ice of the Fjordlands. It remembers every blow of the hammer, and it never forgets a debt.*
 
-*   **Trait: Grim Resolve.** Once per session, when your life or honor is on the line, you may add your CON or INS tens digit as a bonus to any Check.
+*   **Trait: Grim Resolve.** Once per day, when your life or honor is on the line, you may add your CON or INS tens digit as a bonus to any Check.
 *   **Heritage Skills:** Trained in Survival and Intimidate.
 *   **Starting Equipment:** A whetstone, a flask of "North-Burn" spirits, or a carved bone token.
 *   **Starting Currency:** 40 sp.
@@ -242,7 +242,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 #### Outcast
 *Material that's been dipped in the black. It's changed the grain, made it... wrong. But sometimes the wrong tool is the only one that works.*
 
-*   **Trait: Hollow-Sense.** Once per session, you can sense the presence of "Hollowed" creatures within 100 feet. You also have Advantage on Intimidate checks.
+*   **Trait: Hollow-Sense.** Once per day, you can sense the presence of "Hollowed" creatures within 100 feet. You also have Advantage on Intimidate checks.
 *   **Heritage Skills:** Trained in Occult Knowledge and Investigation.
 *   **Starting Equipment:** A porcelain mask to hide a "stain," a vial of bitter medicine, or a heavy hood.
 *   **Starting Currency:** 20 sp.
@@ -595,8 +595,9 @@ On your turn, you receive **2 Action Points (AP)** and **1 Zero Cost Action**.
 #### Standard Actions
 
 *   **Move (1 AP)**: Move a distance up to your **Speed** (AGI / 10 meters).
-    *   **Evasive Maneuver**: If you move at least 3 meters during your turn, you gain **Advantage** on all **Active Defense** rolls (Dodge, Parry, Block) until the start of your next turn.
+    *   **Evasive Stance**: If you move at least 3 meters during your turn, you gain the **Evasive** status until the start of your next turn. Attackers suffer a **-20 penalty** on all attack rolls against you while you are Evasive.
 *   **Attack (1 AP)**: Make an attack using a Combat Style.
+    *   **Multiple Attack Penalty (MAP)**: If you perform more than one Attack action in a single turn, any attack after the first is made at **Half Skill**.
 *   **Help (1 AP)**: Assist an ally within melee range, granting them **Advantage** on their next action.
 *   **Interact (1 AP)**: Open a door, light a torch, or manipulate an object.
 *   **Swap Weapon (1 AP)**: Draw or sheathe a weapon.
@@ -631,7 +632,7 @@ A player in the Vanguard Turn can spend a free Action to Wait. This drops them t
 >
 > **Vanguard Turn (Bjorn & Erik)**
 >
-> 1.  **Bjorn (Action 1 - Move):** Moves 6 meters to intercept Wolf 1. Gains **Evasive Maneuver** (Advantage on Active Defense).
+> 1.  **Bjorn (Action 1 - Move):** Moves 6 meters to intercept Wolf 1. Gains **Evasive Stance** (-20 to be hit).
 >
 > 2.  **Bjorn (Action 2 - Attack):** Swings his Long Sword (STR 70). Rolls 25. **Hit!**
 >
@@ -1125,9 +1126,9 @@ The progression system in Eda rewards failure and provides consistent growth, en
     *   *Example*: Skill 45. Roll 77. (Fail + Pair) -> **Fumble**. Skill increases to 46.
 *   **The Reward**: When you Fumble, increase that skill by **1 point** permanently. This represents learning from a spectacular failure.
 
-### End of Session
+### Milestones & Growth
 
-At the end of every session, all players receive **5 Experience Points (XP)**. This represents the general experience and growth gained from adventuring.
+After every major encounter, significant discovery, or successful completion of a goal, the GM awards players **2–5 Experience Points (XP)**. As a general rule, players should receive about **5 XP** for every day of active adventuring.
 
 **Spending XP:**
 
