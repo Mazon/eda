@@ -150,15 +150,15 @@ Character creation is the process of defining your protagonist's strengths, hist
 >
 > **Step 2: Body & Mind**: He calculates 65 HP (equal to CON), 20 IP (INS / 2), and a pool of 6 Reactions (tens digit of AGI).
 >
-> **Step 3: Heritage**: He picks **Hearth-born**. Trait: Stoic Endurance. Skills: Trained in Survival and Crafting. Gear: A sturdy iron cook-pot.
+> **Step 3: Heritage**: He picks **Clansman**. Trait: Grim Resolve. Skills: Trained in Survival and Intimidate. Gear: A whetstone and a flask of "North-Burn."
 >
-> **Step 4: Skills**: Bjorn is already Trained in Survival and Crafting from his Heritage. He chooses 3 more Trained Skills: Athletics, Warfare, and Perception.
+> **Step 4: Skills**: Bjorn is already Trained in Survival and Intimidate from his Heritage. He chooses 3 more Trained Skills: Athletics, Warfare, and Perception.
 >
 > **Step 5 and 6: Talents & Combat Styles**: Bjorn selects the **Shield Wall** Talent and the **One-Handed & Shield** Combat Style.
 >
 > **Step 7: Course of Life**: Bjorn is a veteran of the Frost Wars, seeking to protect his village from the creeping ice. He is brave but cautious.
 >
-> **Step 8: Equipment**: Bjorn starts with **60 sp** from his **Hearth-born** heritage. He purchases a Hand Axe (30sp), a bedroll (2sp), a tinderbox (2sp), and 5 days of rations (10sp). He also carries his sturdy iron cook-pot from his heritage, leaving him with **16 sp** for his journey.
+> **Step 8: Equipment**: Bjorn starts with **40 sp** from his **Clansman** heritage. He purchases a Hand Axe (30sp), a bedroll (2sp), a tinderbox (2sp), and 5 days of rations (10sp). He also carries his whetstone from his heritage, leaving him with **-4 sp**. *Note: Bjorn might need to reconsider his purchases or borrow some silver!*
 
 
 ### Lineage
@@ -191,63 +191,61 @@ Determines your raw potential and base attributes. Select one animal totem to ge
 
 Your Heritage defines your upbringing, innate traits, and starting social standing. Every Heritage provides a Signature Trait, two Heritage Skills in which you are automatically Trained, a unique piece of Starting Equipment, a set amount of starting currency (sp), and usually a choice of one Combat Style.
 
-#### Hearth-born
-*The sturdy folk of the clans. You were raised to survive the frost, tend the fire, and hold the line.*
+#### Clansman
+*Steel quenched in the ice of the Fjordlands. It remembers every blow of the hammer, and it never forgets a debt.*
 
-*   **Trait: Stoic Endurance.** Once per session, you can ignore all penalties from Exhaustion or Cold for one hour.
-*   **Heritage Skills:** Trained in Survival and Crafting.
-*   **Starting Equipment:** A sturdy iron cook-pot or a carved wooden idol of a Hearth-God.
-*   **Starting Currency:** 60 sp.
-
-#### Dvergr
-*Born of stone and ancient frost. Your people are the master-smiths who once thrived in the deep halls, now mostly lost to the ice.*
-
-*   **Trait: Unyielding.** You have +10 to INS checks to resist Intimidation, Fear, or magical influence.
-*   **Heritage Skills:** Trained in Engineering and Appraise.
-*   **Starting Equipment:** A masterwork whetstone (adds +1 to next damage roll after use, 1/day) or a pouch of "Deep-Salt."
-*   **Starting Currency:** 100 sp.
-
-#### Wild-walker
-*You belong to the wastes. While others huddle behind walls, you find your way through the blizzards of the Fjordlands.*
-
-*   **Trait: Scout's Eye.** You cannot be surprised while in the wilderness, provided you are conscious.
-*   **Heritage Skills:** Trained in Navigation and Nature.
-*   **Starting Equipment:** A hand-drawn map of a secret mountain pass or a weather-beaten compass.
+*   **Trait: Grim Resolve.** Once per session, when your life or honor is on the line, you may add your CON or INS tens digit as a bonus to any Check.
+*   **Heritage Skills:** Trained in Survival and Intimidate.
+*   **Starting Equipment:** A whetstone, a flask of "North-Burn" spirits, or a carved bone token.
 *   **Starting Currency:** 40 sp.
 
-#### Warg-touched
-*The blood of the Great Wolf runs thin in your veins. You are more beast than man, a feral omen of the Wolf-Age.*
+#### Clergy
+*Polished stone that hides the grit beneath. They speak of the light, but they know the weight of the dark better than most.*
 
-*   **Trait: Primal Instinct.** You have +10 to Perception and Tracking. You can see in low light as if it were bright light.
-*   **Heritage Skills:** Trained in Tracking and Athletics.
-*   **Starting Equipment:** A necklace of predator teeth or a heavy cloak made of wolf pelt.
-*   **Starting Currency:** 25 sp.
-
-#### Blighted
-*You carry a slow decay. Whether a curse of the Old Gods or a rot from the black ichor, you are marked for a lonely life.*
-
-*   **Trait: Deadened Nerves.** You gain +2 Defense (Natural) as your skin hardens and numbs.
-*   **Heritage Skills:** Trained in Medicine and Investigation.
-*   **Starting Equipment:** A supply of heavy, lavender-scented bandages or a small bell to warn others of your approach.
-*   **Starting Currency:** 35 sp.
-
-#### Hollow-born
-*You were touched by the black ichor before birth. You are a living mutation, a fragment of the "Hollowed" force in human skin.*
-
-*   **Trait: Ichor Siphon.** You can consume the black ichor of defeated Hollowed creatures to restore 1d10 HP, but doing so causes you to lose 1 Instinct Point due to Fear.
-*   **Heritage Skills:** Trained in Occult Knowledge and Intimidate.
-*   **Burden: Monstrous.** You start with a visible mutation. Most NPCs will be wary, hostile, or fearful on sight.
-*   **Starting Equipment:** A porcelain mask to hide your mutations or a small vial of inert black ichor.
-*   **Starting Currency:** 25 sp.
-
-#### Umbral-kin
-*A fragment of the Eternal Night given form. You are pale, silent, and unsettling, as if you don't quite belong in the physical world.*
-
-*   **Trait: Shadow Blend.** You have Advantage to Stealth checks while in dim light or darkness.
-*   **Heritage Skills:** Trained in Stealth and Perception.
-*   **Burden: Sun-Sick.** You take a Disadvantage to all rolls while in direct sunlight.
-*   **Starting Equipment:** A sheer black veil or a shard of obsidian that never feels warm.
+*   **Trait: Unwavering.** You have Advantage on checks to resist Intimidation, Fear, or magical influence.
+*   **Heritage Skills:** Trained in Religion and Medicine.
+*   **Starting Equipment:** A holy symbol (chipped), a vial of scented oil, or a book of scripture.
 *   **Starting Currency:** 50 sp.
+
+#### Farmer
+*Seasoned wood, rough to the touch and gnarled by the wind. It doesn't look like much, but it's the only thing that keeps the roof up when the wolves come.*
+
+*   **Trait: Sturdy-Built.** You can ignore all penalties from the first level of Exhaustion.
+*   **Heritage Skills:** Trained in Nature and Athletics.
+*   **Starting Equipment:** A heavy wood-axe, a bundle of dried grain, or a sturdy iron cook-pot.
+*   **Starting Currency:** 30 sp.
+
+#### Artisan
+*Fine-tooled leather, flexible but tough. They know how things are made, and more importantly, they know how they break.*
+
+*   **Trait: Eye for Detail.** You have Advantage on Appraise or Engineering checks to identify flaws or value in physical objects.
+*   **Heritage Skills:** Trained in Crafting and Engineering.
+*   **Starting Equipment:** A set of masterwork tools, a leather apron, or a small bag of scrap metal.
+*   **Starting Currency:** 60 sp.
+
+#### Merchant
+*Silver-plated lead. It carries the weight of value, even if the luster’s a bit thin. They know the price of everything and the value of nothing.*
+
+*   **Trait: Master of Coin.** You have Advantage on Barter or Persuade checks when negotiating prices or trade deals.
+*   **Heritage Skills:** Trained in Barter and Appraise.
+*   **Starting Equipment:** A set of brass scales, a pouch of "foreign" coins, or a fine traveling cloak.
+*   **Starting Currency:** 120 sp.
+
+#### Noble
+*Frayed silk and rusted gold. Once they were the finest material in the shop; now they're just threads and memories.*
+
+*   **Trait: Silver Tongue.** You have Advantage on Persuade or Diplomacy checks when dealing with authority figures or high-society.
+*   **Heritage Skills:** Trained in Diplomacy and History.
+*   **Starting Equipment:** A signet ring (scratched out), a fine but frayed cloak, or a book of genealogies.
+*   **Starting Currency:** 100 sp.
+
+#### Outcast
+*Material that's been dipped in the black. It's changed the grain, made it... wrong. But sometimes the wrong tool is the only one that works.*
+
+*   **Trait: Hollow-Sense.** Once per session, you can sense the presence of "Hollowed" creatures within 100 feet. You also have Advantage on Intimidate checks.
+*   **Heritage Skills:** Trained in Occult Knowledge and Investigation.
+*   **Starting Equipment:** A porcelain mask to hide a "stain," a vial of bitter medicine, or a heavy hood.
+*   **Starting Currency:** 20 sp.
 
 ### Course of Life
 
@@ -887,7 +885,7 @@ Armor protects you by providing **Defense**, which is subtracted from incoming d
 | Chain Mail       |    2    | 300sp  | STR>50 | -                                                                  |
 | Lamellar Armor   |    3    | 700sp  | STR>65 | -                                                                  |
 | Plate Armor      |    3    | 800sp  | STR>70 | -                                                                  |
-| Dvergr Plate     |    4    | 2000sp | STR>80 | -                                                                  |
+| Master-crafted Plate |    4    | 2000sp | STR>80 | -                                                                  |
 
 ### Helmets & Accessories
 
@@ -913,7 +911,7 @@ Shields provide **Defense** and are used with the **Block** reaction.
 | **Kite Shield**        |    3    | STR > 65    | 180sp | Almond-shaped, excellent coverage. |
 | **Metal Shield**       |    3    | STR > 70    | 250sp | Very durable.                      |
 | **Tower Shield**       |    4    | STR > 80    | 500sp | Massive. Disadvantage on Stealth.  |
-| **Dvergr Greatshield** |    4    | STR > 85    | 800sp | Master-crafted stone/metal hybrid. |
+| **Iron-Hold Greatshield** |    4    | STR > 85    | 800sp | Master-crafted stone/metal hybrid. |
 
 ### Adventuring Gear
 | Item                    | Cost  | Weight/Notes                                                |
