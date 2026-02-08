@@ -53,13 +53,14 @@ When a character attempts an action with an uncertain outcome, the Game Master (
 *   **Success**: Roll **UNDER or EQUAL** to your Skill or Attribute value.
 *   **Failure**: Roll **OVER** your Skill or Attribute value.
 
-### The Blackjack System & Degree of Success (DoS)
+Success is not only if you succeeded in something or not. Eda uses degree of sucess to see how good you performed something. Failure might also have different consquences but is decided by the GM only and not measured by dice. A failure is a failure. 
+
+### Degree of Success (DoS)
 
 Eda uses a "Blackjack" style system where you want to roll as **high as possible** without exceeding your Skill value. The quality of your success is measured by the **Degree of Success (DoS)**.
 
 *   **Calculating DoS**: Your DoS is equal to the **tens digit** of your successful roll.
     *   *Example*: A roll of **48** provides **4 DoS**.
-*   **High Rolls (Near Skill)**: Rolling close to your skill value provides the highest quality of success. For example, with a skill of 70, a roll of 69 provides 6 DoS, while a roll of 12 only provides 1 DoS.
 
 > ### Example: Calculating DoS
 >
@@ -75,17 +76,9 @@ Eda uses a "Blackjack" style system where you want to roll as **high as possible
     *   **Combat**: Deals **Critical Damage** (Weapon Base Damage + Tens Digit of the Skill). This replaces the normal damage calculation for that hit.
     *   **Non-Combat**: Automatically fulfills the required Degrees of Success for any difficulty level.
 
-### Failure
-
-It is up to the GM to decide what outcome might happen if a check have a failure and while there is no specific rule around degree of failure, it is up to the GM if he would like to take that into consideration aswell.
-
-**Critical Failure (Fumble)**: A **Pair** above your skill value, or a roll of **100 (00)**.
-*   **The Fumble Reward**: When you Critical Failure, you immediately increase that skill by **1 point** permanently as you learn from your mistakes. See the section **Fumble Points** for a full explanation. 
-There is no other specific rules around critical failure.
-
 ### Difficulty Modifiers
 
-Some tasks are harder than others and require a minimum number of Degrees of Success to succeed. The GM might require the player to have some degree of success to succeed. 
+Some tasks are harder than others and the GM might require a minimum number of Degrees of Success to succeed.
 
 > ### Example: Bjorn swimming in the river
 >
@@ -196,7 +189,7 @@ Determines your raw potential and base attributes. Select one animal totem to ge
  
 ### Heritage
 
-Your Heritage defines your upbringing, innate traits, and starting social standing. Every Heritage provides a Signature Trait, two Heritage Skills in which you are automatically Trained, a unique piece of Starting Equipment, a set amount of **Starting Currency** (sp), and usually a choice of one Combat Style.
+Your Heritage defines your upbringing, innate traits, and starting social standing. Every Heritage provides a Signature Trait, two Heritage Skills in which you are automatically Trained, a unique piece of Starting Equipment, a set amount of starting currency (sp), and usually a choice of one Combat Style.
 
 #### Hearth-born
 *The sturdy folk of the clans. You were raised to survive the frost, tend the fire, and hold the line.*
