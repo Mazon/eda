@@ -111,6 +111,8 @@ Before rolling, a player can declare they are "Pushing."
 *   **Effect**: You gain **Advantage** on the roll.
 *   **Cost**: Regardless of success or failure, you lose **10 Mind Points**.
 
+> **Note on Mind Points**: Mind Points (MP) represent your character's mental focus, sanity, and willpower. They are a pool of points that can be spent to push yourself or are lost when facing horrific sights. If your Mind Points reach 0, you become Frightened. See **Body & Mind** in Character Creation for how to calculate your maximum MP.
+
 
 ## Character Creation
 
