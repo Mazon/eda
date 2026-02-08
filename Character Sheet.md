@@ -101,7 +101,7 @@
           <td style="border: 1px solid #000; padding: 8px; text-align: center;">&nbsp;</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #000; padding: 8px;"><b>REACTIONS</b></td>
+          <td style="border: 1px solid #000; padding: 8px;"><b>REACTION POOL</b></td>
           <td style="border: 1px solid #000; padding: 8px; text-align: center;">&nbsp;</td>
         </tr>
       </table>

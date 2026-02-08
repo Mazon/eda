@@ -5,8 +5,8 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 ## Creature Stat Blocks
 
 *   **HP**: Hit Points.
-*   **DR**: Damage Reduction (Armor).
-*   **Reactions**: The number of reactions available for the encounter.
+*   **Defense**: A value that reduces incoming damage.
+*   **Reaction Pool**: The number of reactions available for the encounter.
 *   **Attributes**: Core stats (STR, AGI, LOG, INS, CHA, CON).
 *   **Combat Skill**: The skill value used for attack rolls.
 *   **Base Damage**: The starting damage value before adding DoS and Attribute bonuses.
@@ -19,7 +19,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Gray Wolf</h3>
 <div class="flavor-text">Pack hunters that thrive in the winter forests.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 12 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 6
+<strong>HP</strong>: 12 | <strong>Defense</strong>: 1 | <strong>Reaction Pool</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
@@ -31,7 +31,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Bite.</span> Combat Skill 65, 1 Base Damage.
+<span class="action-name">Bite.</span> Combat Skill 65, Damage 1.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -43,7 +43,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Alpha Wolf</h3>
 <div class="flavor-text">Large, scarred leader of a pack.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 22 | <strong>DR</strong>: 1 | <strong>Reactions</strong>: 6
+<strong>HP</strong>: 22 | <strong>Defense</strong>: 1 | <strong>Reaction Pool</strong>: 6
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">50</span></div>
@@ -55,7 +55,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Crippling Bite.</span> Combat Skill 70, 2 Base Damage.
+<span class="action-name">Crippling Bite.</span> Combat Skill 70, Damage 2.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -67,7 +67,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Ichor-Wolf</h3>
 <div class="flavor-text">A wolf mutated by black ichor, dripping dark fluid.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 18 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 5
+<strong>HP</strong>: 18 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
@@ -79,7 +79,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Corrosive Bite.</span> Combat Skill 60, 2 Base Damage + 2 Bleeding.
+<span class="action-name">Corrosive Bite.</span> Combat Skill 60, Damage 2 + 2 Bleeding.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -91,7 +91,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Winter Bear</h3>
 <div class="flavor-text">A massive white bear, blending into the snow.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 40 | <strong>DR</strong>: 3 | <strong>Reactions</strong>: 3
+<strong>HP</strong>: 40 | <strong>Defense</strong>: 3 | <strong>Reaction Pool</strong>: 3
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">80</span></div>
@@ -103,7 +103,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Heavy Maul.</span> Combat Skill 65, 3 Base Damage.
+<span class="action-name">Heavy Maul.</span> Combat Skill 65, Damage 3.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -115,7 +115,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Cave Bear</h3>
 <div class="flavor-text">Smaller than the winter bear but more aggressive in tight spaces.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 35 | <strong>DR</strong>: 2 | <strong>Reactions</strong>: 4
+<strong>HP</strong>: 35 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 4
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">75</span></div>
@@ -127,7 +127,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Maul.</span> Combat Skill 60, 1 Base Damage.
+<span class="action-name">Maul.</span> Combat Skill 60, Damage 1.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -139,7 +139,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <h3>Giant Spider</h3>
 <div class="flavor-text">Lurks in dark forests and dungeons.</div><hr>
 <div class="top-stats">
-<strong>HP</strong>: 15 | <strong>DR</strong>: 0 | <strong>Reactions</strong>: 5
+<strong>HP</strong>: 15 | <strong>Defense</strong>: 0 | <strong>Reaction Pool</strong>: 5
 </div>
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">45</span></div>
@@ -151,7 +151,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Poisonous Bite.</span> Combat Skill 70, 0 Base Damage.
+<span class="action-name">Poisonous Bite.</span> Combat Skill 70, Damage 0.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
