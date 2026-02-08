@@ -58,11 +58,11 @@
           <td style="border: 1px solid #000; padding: 8px; text-align: center;">&nbsp;</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #000; padding: 8px;"><b>INTELLIGENCE</b> <small>(INT)</small></td>
+          <td style="border: 1px solid #000; padding: 8px;"><b>LOGIC</b> <small>(LOG)</small></td>
           <td style="border: 1px solid #000; padding: 8px; text-align: center;">&nbsp;</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #000; padding: 8px;"><b>MIND</b> <small>(MND)</small></td>
+          <td style="border: 1px solid #000; padding: 8px;"><b>INSTINCT</b> <small>(INS)</small></td>
           <td style="border: 1px solid #000; padding: 8px; text-align: center;">&nbsp;</td>
         </tr>
         <tr>
@@ -86,7 +86,7 @@
           <td style="border: 1px solid #000; padding: 8px; text-align: center;">&nbsp;</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #000; padding: 8px;"><b>MIND POINTS</b></td>
+          <td style="border: 1px solid #000; padding: 8px;"><b>INSTINCT POINTS</b></td>
           <td style="border: 1px solid #000; padding: 8px; text-align: center;">&nbsp;</td>
         </tr>
         <tr style="background-color: #eee;">
@@ -201,61 +201,61 @@
   </tr>
   <tr style="font-size: 0.9em;">
     <td style="border: 1px solid #000; padding: 4px;" width="28%">[ ] Acrobatics <small>(AGI)</small></td><td style="border: 1px solid #000; padding: 4px;" width="5%">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;" width="28%">[ ] Engineering <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;" width="5%">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;" width="28%">[ ] Engineering <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;" width="5%">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;" width="28%">[ ] Persuade <small>(CHA)</small></td><td style="border: 1px solid #000; padding: 4px;" width="5%">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Aid <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Aid <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Entertain <small>(CHA)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Religion <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Religion <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Alchemy <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] History <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Alchemy <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] History <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Riding <small>(AGI)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Anatomy <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Anatomy <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Intimidate <small>(CHA)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Seafaring <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Seafaring <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Animal Training <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Animal Training <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Investigation <small>(CHA)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Stealth <small>(AGI)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Appraise <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Linguistics <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Appraise <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Linguistics <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Survival <small>(CON)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
     <td style="border: 1px solid #000; padding: 4px;">[ ] Athletics <small>(STR)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Medicine <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Medicine <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Swimming <small>(CON)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
     <td style="border: 1px solid #000; padding: 4px;">[ ] Barter <small>(CHA)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Nature <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Nature <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Thievery <small>(AGI)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
     <td style="border: 1px solid #000; padding: 4px;">[ ] Bluff <small>(CHA)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Navigation <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Tracking <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Navigation <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Tracking <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Botany <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Occult <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Warfare <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Botany <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Occult <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Warfare <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
     <td style="border: 1px solid #000; padding: 4px;">[ ] Climbing <small>(STR)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Perception <small>(MND)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Perception <small>(INS)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Drive Vehicle <small>(AGI)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Crafting <small>(INT)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Crafting <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Diplomacy <small>(CHA)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;"></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>

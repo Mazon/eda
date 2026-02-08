@@ -7,7 +7,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 *   **HP**: Hit Points.
 *   **DR**: Damage Reduction (Armor).
 *   **Reactions**: The number of reactions available for the encounter.
-*   **Attributes**: Core stats (STR, AGI, INT, MND, CHA, CON).
+*   **Attributes**: Core stats (STR, AGI, LOG, INS, CHA, CON).
 *   **Combat Skill**: The skill value used for attack rolls.
 *   **Base Damage**: The starting damage value before adding DoS and Attribute bonuses.
 
@@ -24,8 +24,8 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">40</span></div>
 <div class="attr-box"><span class="attr-name">AGI</span><span class="attr-value">60</span></div>
-<div class="attr-box"><span class="attr-name">INT</span><span class="attr-value">15</span></div>
-<div class="attr-box"><span class="attr-name">MND</span><span class="attr-value">25</span></div>
+<div class="attr-box"><span class="attr-name">LOG</span><span class="attr-value">15</span></div>
+<div class="attr-box"><span class="attr-name">INS</span><span class="attr-value">25</span></div>
 <div class="attr-box"><span class="attr-name">CHA</span><span class="attr-value">10</span></div>
 <div class="attr-box"><span class="attr-name">CON</span><span class="attr-value">35</span></div>
 </div>
@@ -48,8 +48,8 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">50</span></div>
 <div class="attr-box"><span class="attr-name">AGI</span><span class="attr-value">65</span></div>
-<div class="attr-box"><span class="attr-name">INT</span><span class="attr-value">20</span></div>
-<div class="attr-box"><span class="attr-name">MND</span><span class="attr-value">30</span></div>
+<div class="attr-box"><span class="attr-name">LOG</span><span class="attr-value">20</span></div>
+<div class="attr-box"><span class="attr-name">INS</span><span class="attr-value">30</span></div>
 <div class="attr-box"><span class="attr-name">CHA</span><span class="attr-value">25</span></div>
 <div class="attr-box"><span class="attr-name">CON</span><span class="attr-value">45</span></div>
 </div>
@@ -72,8 +72,8 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">55</span></div>
 <div class="attr-box"><span class="attr-name">AGI</span><span class="attr-value">50</span></div>
-<div class="attr-box"><span class="attr-name">INT</span><span class="attr-value">10</span></div>
-<div class="attr-box"><span class="attr-name">MND</span><span class="attr-value">15</span></div>
+<div class="attr-box"><span class="attr-name">LOG</span><span class="attr-value">10</span></div>
+<div class="attr-box"><span class="attr-name">INS</span><span class="attr-value">15</span></div>
 <div class="attr-box"><span class="attr-name">CHA</span><span class="attr-value">05</span></div>
 <div class="attr-box"><span class="attr-name">CON</span><span class="attr-value">50</span></div>
 </div>
@@ -83,7 +83,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Fear Aura:</strong> Any character starting their turn adjacent to the Ichor-Wolf must pass a MND Check (Routine - 1 DoS) or lose 1 MP.
+<strong>Fear Aura:</strong> Any character starting their turn adjacent to the Ichor-Wolf must pass a INS Check (Routine - 1 DoS) or lose 1 IP.
 </div>
 </div>
 
@@ -96,8 +96,8 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">80</span></div>
 <div class="attr-box"><span class="attr-name">AGI</span><span class="attr-value">35</span></div>
-<div class="attr-box"><span class="attr-name">INT</span><span class="attr-value">15</span></div>
-<div class="attr-box"><span class="attr-name">MND</span><span class="attr-value">25</span></div>
+<div class="attr-box"><span class="attr-name">LOG</span><span class="attr-value">15</span></div>
+<div class="attr-box"><span class="attr-name">INS</span><span class="attr-value">25</span></div>
 <div class="attr-box"><span class="attr-name">CHA</span><span class="attr-value">10</span></div>
 <div class="attr-box"><span class="attr-name">CON</span><span class="attr-value">75</span></div>
 </div>
@@ -120,8 +120,8 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">75</span></div>
 <div class="attr-box"><span class="attr-name">AGI</span><span class="attr-value">40</span></div>
-<div class="attr-box"><span class="attr-name">INT</span><span class="attr-value">15</span></div>
-<div class="attr-box"><span class="attr-name">MND</span><span class="attr-value">20</span></div>
+<div class="attr-box"><span class="attr-name">LOG</span><span class="attr-value">15</span></div>
+<div class="attr-box"><span class="attr-name">INS</span><span class="attr-value">20</span></div>
 <div class="attr-box"><span class="attr-name">CHA</span><span class="attr-value">10</span></div>
 <div class="attr-box"><span class="attr-name">CON</span><span class="attr-value">70</span></div>
 </div>
@@ -144,8 +144,8 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 <div class="attributes-grid">
 <div class="attr-box"><span class="attr-name">STR</span><span class="attr-value">45</span></div>
 <div class="attr-box"><span class="attr-name">AGI</span><span class="attr-value">55</span></div>
-<div class="attr-box"><span class="attr-name">INT</span><span class="attr-value">10</span></div>
-<div class="attr-box"><span class="attr-name">MND</span><span class="attr-value">20</span></div>
+<div class="attr-box"><span class="attr-name">LOG</span><span class="attr-value">10</span></div>
+<div class="attr-box"><span class="attr-name">INS</span><span class="attr-value">20</span></div>
 <div class="attr-box"><span class="attr-name">CHA</span><span class="attr-value">05</span></div>
 <div class="attr-box"><span class="attr-name">CON</span><span class="attr-value">30</span></div>
 </div>

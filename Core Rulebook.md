@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Eda is a dark fantasy game. While still having magic, wonders and amazing adventure. Magic and supernatural things usually have higher consequences both for someone using it and anyone that gets targeted by it.
+Eda is a dark fantasy game. While still having magic, wonders and amazing adventure. Magic and supernatural things usually have higher consequences for someone using it.
 
 Living in Eda can be tough and deadly. It was not always this way; once upon a time, the stories tell about a prosperous land where most people lived in peace and harmony. The name Eda itself is said to have meant “Wonderous” in an ancient language long forgotten. Nowadays not many still believe in the legends, and they are mostly whispered quietly over a drink in a dimly lit tavern or hiding in your home.
 
@@ -109,9 +109,9 @@ When two characters are competing against each other (e.g., an arm wrestling mat
 Before rolling, a player can declare they are "Pushing."
 
 *   **Effect**: You gain **Advantage** on the roll.
-*   **Cost**: Regardless of success or failure, you lose **10 Mind Points**.
+*   **Cost**: Regardless of success or failure, you lose **10 Instinct Points**.
 
-> **Note on Mind Points**: Mind Points (MP) represent your character's mental focus, sanity, and willpower. They are a pool of points that can be spent to push yourself or are lost when facing horrific sights. If your Mind Points reach 0, you become Frightened. See **Body & Mind** in Character Creation for how to calculate your maximum MP.
+> **Note on Instinct Points**: Instinct Points (IP) represent your character's mental focus, sanity, and willpower. They are a pool of points that can be spent to push yourself or are lost when facing horrific sights. If your Instinct Points reach 0, you become Frightened. See **Body & Instinct** in Character Creation for how to calculate your maximum IP.
 
 
 ## Character Creation
@@ -119,7 +119,7 @@ Before rolling, a player can declare they are "Pushing."
 To create a character, you make choices that customize them to be interesting and fun. A character consists of:
 
 1.  Attributes & Lineage
-2.  Body & Mind
+2.  Body & Instinct
 3.  Heritage
 4.  Skills
 5.  Talents
@@ -129,9 +129,9 @@ To create a character, you make choices that customize them to be interesting an
 
 > ### Character Creation Example: Bjorn the Brave
 >
-> **Step 1: Lineage**: Bjorn chooses **The Bear** totem. Stats: STR 70, AGI 65, INT 60, MND 40, CHA 60, CON 65.
+> **Step 1: Lineage**: Bjorn chooses **The Bear** totem. Stats: STR 70, AGI 65, LOG 60, INS 40, CHA 60, CON 65.
 >
-> **Step 2: Body & Mind**: He get 65 HP (CON), 10 MP (MND /4) and 6 reactions.
+> **Step 2: Body & Instinct**: He get 65 HP (CON), 10 IP (INS /4) and 6 reactions.
 >
 > **Step 3: Heritage**: He picks **Hearth-born**. Trait: Stoic Endurance. Skills: Trained in Survival and Crafting. Gear: A sturdy iron cook-pot.
 >
@@ -149,13 +149,13 @@ To create a character, you make choices that customize them to be interesting an
 Determines your raw potential and base stats. Select one animal totem to get your base ability scores.
 
 *   **Strength (STR)**: Raw power. Needed to carry heavy armor and weapons.
-*   **Agility (AGI)**: Nimbleness, flexibility, aim. Sync between mind and body.
-*   **Intelligence (INT)**: Deduction, memory, understanding languages, puzzles.
-*   **Mind (MND)**: Focus, will, determination. Sensing the supernatural.
+*   **Agility (AGI)**: Nimbleness, flexibility, aim. Sync between instinct and body.
+*   **Logic (LOG)**: Deduction, memory, understanding languages, puzzles.
+*   **Instinct (INS)**: Focus, will, determination. Sensing the supernatural.
 *   **Charisma (CHA)**: Social influence, charm, leadership.
 *   **Constitution (CON)**: Physical resilience, survival instinct, health.
 
-| Animal totem  |  STR  |  AGI  |  INT  |  MND  |  CHA  |  CON  |
+| Animal totem  |  STR  |  AGI  |  LOG  |  INS  |  CHA  |  CON  |
 | :------------ | :---: | :---: | :---: | :---: | :---: | :---: |
 | **The Bear**  |  70   |  65   |  60   |  40   |  60   |  65   |
 | **The Raven** |  50   |  55   |  80   |  65   |  70   |  40   |
@@ -164,10 +164,10 @@ Determines your raw potential and base stats. Select one animal totem to get you
 | **The Ox**    |  60   |  60   |  60   |  60   |  50   |  70   |
 | **The Fox**   |  50   |  65   |  65   |  50   |  70   |  60   |
 
-### Body & Mind
+### Body & Instinct
 
 *   **Health Points (HP)**: Equal to your CON attribute. (Falls to death at 0 HP).
-*   **Mind Points (MP)**: MND / 4. Used for talents, magic, and fear. 
+*   **Instinct Points (IP)**: INS / 4. Used for talents, magic, and fear.
 *   **Reaction Pool**: Tens digit of AGI (e.g., AGI 65 = 6 Reactions). The amount of reactions during a full encounter.
  
 ### Heritage
@@ -185,7 +185,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 #### Dvergr
 *Born of stone and ancient frost. Your people are the master-smiths who once thrived in the deep halls, now mostly lost to the ice.*
 
-*   **Trait: Unyielding.** You have +10 to MND checks to resist Intimidation, Fear, or magical influence.
+*   **Trait: Unyielding.** You have +10 to INS checks to resist Intimidation, Fear, or magical influence.
 *   **Heritage Skills:** Trained in Engineering and Appraise.
 *   **Starting Equipment:** A masterwork whetstone (adds +1 to next damage roll after use, 1/day) or a pouch of "Deep-Salt."
 *   **Starting Currency:** 100 Silver Marks.
@@ -217,7 +217,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 #### Hollow-born
 *You were touched by the black ichor before birth. You are a living mutation, a fragment of the "Hollowed" force in human skin.*
 
-*   **Trait: Ichor Siphon.** You can consume the black ichor of defeated Hollowed creatures to restore 1d10 HP, but doing so causes you to lose 1 Mind Point due to Fear.
+*   **Trait: Ichor Siphon.** You can consume the black ichor of defeated Hollowed creatures to restore 1d10 HP, but doing so causes you to lose 1 Instinct Point due to Fear.
 *   **Heritage Skills:** Trained in Occult Knowledge and Intimidate.
 *   **Burden: Monstrous.** You start with a visible mutation. Most NPCs will be wary, hostile, or fearful on sight.
 *   **Starting Equipment:** A porcelain mask to hide your mutations or a small vial of inert black ichor.
@@ -248,41 +248,41 @@ Skills represent your character's training and experience.
 | Skill                | Attribute | Description                           |
 | :------------------- | :-------: | :------------------------------------ |
 | Acrobatics           |    AGI    | Balance, tumbling.                    |
-| Aid                  |    INT    | Bandage wounds, fix broken bones.     |
-| Alchemy              |    INT    | Create potions and brews.             |
-| Anatomy              |    INT    | Knowledge of body structure.          |
+| Aid                  |    LOG    | Bandage wounds, fix broken bones.     |
+| Alchemy              |    LOG    | Create potions and brews.             |
+| Anatomy              |    LOG    | Knowledge of body structure.          |
 | Animal Training      |    CHA    | Train animals.                        |
-| Appraise             |    INT    | Estimate value of items.              |
+| Appraise             |    LOG    | Estimate value of items.              |
 | Athletics            |    STR    | Climbing, jumping, physical feats.    |
 | Barter               |    CHA    | Negotiate prices.                     |
 | Bluff                |    CHA    | Deception.                            |
-| Botany               |    INT    | Plant knowledge.                      |
+| Botany               |    LOG    | Plant knowledge.                      |
 | Climbing             |    STR    | Scaling walls/trees.                  |
-| Crafting             |    INT    | Making items.                         |
+| Crafting             |    LOG    | Making items.                         |
 | Diplomacy            |    CHA    | Negotiation and peace-making.         |
-| Disguise             |    INT    | Changing appearance.                  |
+| Disguise             |    LOG    | Changing appearance.                  |
 | Drive Vehicle        |    AGI    | Controlling carts/wagons.             |
-| Engineering          |    INT    | Mechanics, gadgets.                   |
+| Engineering          |    LOG    | Mechanics, gadgets.                   |
 | Entertain            |    CHA    | Performance.                          |
-| History              |    INT    | Knowledge of the past.                |
+| History              |    LOG    | Knowledge of the past.                |
 | Intimidate           |    CHA    | Coercion through fear.                |
 | Investigation        |    CHA    | Interrogation, finding clues.         |
-| Linguistics          |    INT    | Read/write languages.                 |
-| Medicine             |    INT    | Treating disease/injury.              |
-| Nature               |    INT    | Knowledge of the wild.                |
-| Navigation           |    INT    | Finding your way.                     |
-| Occult Knowledge     |    INT    | Magic, monsters, dark beings.         |
-| Perception           |    MND    | Spotting hidden things (Sixth Sense). |
+| Linguistics          |    LOG    | Read/write languages.                 |
+| Medicine             |    LOG    | Treating disease/injury.              |
+| Nature               |    LOG    | Knowledge of the wild.                |
+| Navigation           |    LOG    | Finding your way.                     |
+| Occult Knowledge     |    LOG    | Magic, monsters, dark beings.         |
+| Perception           |    INS    | Spotting hidden things (Sixth Sense). |
 | Persuade             |    CHA    | Convincing others.                    |
-| Religion             |    INT    | Knowledge of gods/cults.              |
+| Religion             |    LOG    | Knowledge of gods/cults.              |
 | Riding               |    AGI    | Riding mounts.                        |
-| Seafaring            |    INT    | Boating knowledge.                    |
+| Seafaring            |    LOG    | Boating knowledge.                    |
 | Stealth              |    AGI    | Hiding and moving silently.           |
 | Survival             |    CON    | Enduring harsh environments.          |
 | Swimming             |    CON    | Moving in water.                      |
 | Thievery             |    AGI    | Pickpocket, lockpicking.              |
-| Tracking             |    INT    | Following trails.                     |
-| Warfare              |    INT    | Tactics and strategy.                 |
+| Tracking             |    LOG    | Following trails.                     |
+| Warfare              |    LOG    | Tactics and strategy.                 |
 
 #### Combat Styles
 
@@ -333,7 +333,7 @@ At character creation, you typically choose one Combat Style.
 *Applicable Weapons:* Thrown Daggers, Hand Axes, Javelins.
 *Style Talents:*
 
-*   **Far Throwing (T2)**: Action (1 AP): Opposed STR (Athletics) check vs target STR. On success, throw humanoid 20m. Target takes 1d10 damage per 5m thrown.
+*   **Far Throwing (T2)**: Action (1 AP): Opposed STR (Athletics) check vs target STR. On success, throw humanoid 20m. Target takes 5 damage per 5m thrown.
 
 ##### Unarmed
 *Attribute:* **STR**
@@ -349,7 +349,7 @@ At character creation, you typically choose one Combat Style.
 
 *   **Blocker (T1)**: Unlock the **Block** reaction. Use Shield skill to reduce damage.
 *   **Shield Bash (T1)**: Strike with shield (Dmg = Shield Defense + Degree of Success).
-*   **Shield Master (T2)**: Passive: Adjacent allies gain +5 Defense. Reaction: After a successful Block, make a free Shield Bash attack.
+*   **Shield Wall (T2)**: Passive: Adjacent allies gain +5 Defense. Reaction: After a successful Block, make a free Shield Bash attack.
 *   **Shield Edge (T3)**: You have Advantage on attacks against an enemy you have Immobilized with your shield.
 
 ### Talents
@@ -377,58 +377,30 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Focus**                |  T1   | Action: Your next attack this turn has Advantage.                                                            |
 | **Overdrive**            |  T1   | Action (1 AP): Your next attack this turn adds degree of success (tens digit of roll) to damage.                 |
 | **Berserk**              |  T1   | Action: Enter frenzy (Advantage on all attacks, cannot use Reactions).                                           |
-| **Breathless**           |  T1   | Hold breath for 5 minutes.                                                                                       |
 | **First Strike**         |  T1   | Action (1 AP): Make an attack. If acting in the Rearguard, deal +5 Damage.                               |
-| **Marked for Death**     |  T1   | Action: Target is "Marked". The next ally to hit them deals +5 Damage.                                       |
 | **Vanguard's Lead**      |  T1   | If you move 3m+ in the Vanguard, one ally gains Momentum (Precision) for free.                           |
 | **Desperate Attack**     |  T1   | Move 5m with Attack Action.                                                                                      |
 | **The Charge**           |  T1   | Move up to Speed in a straight line and make a melee attack. If 3m+, deal +5 Damage. No Reactions.           |
 | **Smart Fighting**       |  T1   | Passive: While in cover, you gain Advantage on all Active Defense rolls (Dodge/Parry/Block).                 |
 | **Dodge**                |  T1   | Reaction: AGI check (Challenge: 2 DoS) to avoid attack.                                                          |
 | **Expert**               |  T1   | Advantage on one skill check/day.                                                                                |
-| **Bird-man**             |  T1   | Pet bird (Carry message, Hunt, Track).                                                                           |
-| **False Persona**        |  T1   | Assume a disguise; cannot use other talents.                                                                     |
-| **Horsemanship**         |  T1   | Advantage on Riding checks (1/day).                                                                              |
 | **Parry**                |  T1   | Reaction: AGI check to parry melee. On success, reduce damage by Weapon Damage + DoS.                            |
 | **Bounce Back**          |  T1   | Advantage on check to avoid Prone.                                                                               |
-| **Mounted Combat**       |  T1   | +5 Damage while mounted.                                                                                         |
-| **Information Network**  |  T1   | Access to thieves' network for info.                                                                             |
 | **Move and Attack**      |  T2   | Move 10m and attack as single action.                                                                            |
 | **Resistance**           |  T2   | Choose damage type; reduce by 50%.                                                                               |
-| **Curiosity**            |  T2   | Advantage on INT checks.                                                                                         |
-| **Favored Weapon**       |  T2   | +5 Attack with specific weapon.                                                                                  |
-| **Flurry of Blows**      |  T2   | Action: Make one attack. If it hits, you deal your weapon damage three times (without Degree of Success).        |
-| **Tactical Guard**       |  T2   | Action: Give an ally in the Rearguard Advantage on their next Defense roll.                                  |
-| **Vengeful Retort**      |  T2   | Rearguard: If you took damage this round, your next attack has Advantage.                                |
-| **Exploit Opening**      |  T2   | Rearguard: Deal +10 Damage if the target missed an attack against you or an ally this round.             |
 | **Harrying Strike**      |  T2   | Action: Target has Disadvantage on their next Defense roll.                                                  |
-| **Bloodied Fury**        |  T2   | If your HP is < 50%, all your attacks deal +1d10 damage.                                                     |
-| **Empower**              |  T2   | Action (1 AP): Spend 1 MP. Your next attack this turn deals +10 damage.                                      |
-| **Guardian**             |  T2   | Redirect attack on ally to self (1/round).                                                                       |
+| **Bloodied Fury**        |  T2   | If your HP is < 50%, all your attacks deal +5 damage.                                                     |
+| **Empower**              |  T2   | Action (1 AP): Spend 1 IP. Your next attack this turn deals +10 damage.                                      |
 | **Jack of all Trades**   |  T2   | Lowest skills set to second-lowest value.                                                                        |
-| **Defender**             |  T2   | +1 Defense Action.                                                                                               |
-| **Holy Weapon**          |  T2   | Coated in "holy" poison (+2 Damage).                                                                             |
-| **Caregiver**            |  T2   | +20 on Aid rolls.                                                                                                |
-| **Merciless**            |  T2   | Advantage on attacks vs injured enemies.                                                                         |
-| **Commanding Order**     |  T2   | Give an ally in the same phase and turn Advantage to hit.                                                    |
-| **Redirection**          |  T2   | Give ally a reaction to avoid/block (1/encounter).                                                               |
-| **Bolster**              |  T2   | Reaction: Ally gains Advantage on their next attack.                                                         |
-| **Coordinated Assault**  |  T2   | If an ally hit this target earlier this round, you gain Advantage on the attack.                             |
-| **Pack Tactics**         |  T2   | If an ally is within 2m of your target and has already moved or acted, gain Advantage on attack.             |
-| **Fake Attack**          |  T2   | Action: Target avoids any more attacks this round.                                                               |
 | **Cleave**               |  T2   | Passive: When you kill an enemy, you may immediately make a free attack against another nearby enemy.            |
 | **Dual Wielding**        |  T2   | **Req: Two Weapons.** Passive: +10 Parry. Action (1 AP): Attack with both weapons (one roll). Hit: Combined weapon damage + Degree of Success. |
 | **Blind Fighting**       |  T2   | Ignore penalties for fighting in darkness or against invisible enemies.                                          |
 | **Counter Attack**       |  T3   | Reaction: When hit, halve the damage and immediately make a melee attack against the attacker.                   |
 | **Duelist**              |  T3   | Passive: You gain +1 additional Reaction pool for the encounter.                                             |
-| **Iron Stomach**         |  T3   | Advantage vs Poison/Toxins.                                                                                      |
 | **Iron Will**            |  T3   | When you take damage, gain 1 Focus Point. Spend 1 pt for +5 to a roll or 2 pts for a free Reaction.              |
 | **Coup de Grace**        |  T3   | Action: Deal Double Damage (ignores Defense) if the target is Prone or Stunned.                             |
 | **Tempo**                |  T3   | Advantage on Initiative checks.                                                                                  |
-| **Shape Shift**          |  T3   | Werewolf form (+10 STR, Claw 7dmg).                                                                              |
 | **Durable**              |  T3   | +5 Natural Defense.                                                                                              |
-| **Flanking**             |  T3   | Advantage if ally is on opposite side.                                                                           |
-| **Vanguard Reflexes**    |  T3   | Passive: You recover 1 Reaction at the start of every round (up to your max pool).                           |
 | **Unyielding Spirit**    |  T3   | Once per long rest, if you would fall to 0 HP, you instead stay at 1 HP and gain 10 Temp HP.                     |
 | **Battle Plan**          |  T4   | Party gets Advantage on Initiative checks.                                                                   |
 | **Master of Defense**    |  T4   | Passive: You gain Advantage on all Active Defense rolls (Dodge/Parry/Block).                                 |
@@ -455,17 +427,22 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 #### Thug Talents
 *Ruthless street fighters.*
 
-| Name                 | Tier  | Description                                                                   |
-| :------------------- | :---: | :---------------------------------------------------------------------------- |
-| **Dirty Fighting**   |  T1   | Advantage vs surprised enemies.                                               |
-| **Streetwise**       |  T1   | Advantage on INT checks re: crime.                                            |
-| **Sneak Attack**     |  T1   | +5 Damage vs unaware enemy.                                                   |
-| **Brutality**        |  T1   | Deal an additional 1 damage on all successful melee attacks.                  |
-| **Intimidation**     |  T1   | Force Morale Check (CHA vs MND) or target has disadvantage rest of the round. |
-| **Fence Contacts**   |  T2   | Sell stolen goods.                                                            |
-| **Disguise Mastery** |  T2   | Disguise 50+ required.                                                        |
-| **Dark Vision**      |  T2   | See in dark.                                                                  |
-| **Mystic Shroud**    |  T3   | Invisibility for 3 turns (Darkness) ( non combat).                            |
+| Name                    | Tier  | Description                                                                                  |
+| :---------------------- | :---: | :------------------------------------------------------------------------------------------- |
+| **Dirty Fighting**      |  T1   | Advantage vs surprised enemies.                                                              |
+| **Streetwise**          |  T1   | Advantage on LOG checks re: crime.                                                           |
+| **Sneak Attack**        |  T1   | +5 Damage vs unaware enemy.                                                                  |
+| **Intimidation**        |  T1   | Force Morale Check (CHA vs INS) or target has disadvantage rest of the round.                |
+| **False Persona**       |  T1   | Assume a disguise; cannot use other talents.                                                 |
+| **Information Network** |  T1   | Access to thieves' network for info.                                                         |
+| **Merciless**           |  T1   | Advantage on attacks vs injured enemies.                                                     |
+| **Fence Contacts**      |  T2   | Sell stolen goods.                                                                           |
+| **Disguise Mastery**    |  T2   | Disguise 50+ required.                                                                       |
+| **Dark Vision**         |  T2   | See in dark.                                                                                 |
+| **Exploit Opening**     |  T2   | Rearguard: Deal +10 Damage if the target missed an attack against you or an ally this round. |
+| **Fake Attack**         |  T2   | Action: Target avoids any more attacks this round.                                           |
+| **Mystic Shroud**       |  T3   | Invisibility for 3 turns (Darkness) ( non combat).                                           |
+| **Flanking**            |  T3   | Advantage if ally is on opposite side.                                                       |
 
 #### Zealot Talents
 *Driven by faith and fanaticism.*
@@ -478,6 +455,9 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Healing Touch**     |  T2   | Restore 10 HP to ally. Once a day.                                           |
 | **Holy Aura**         |  T2   | Allies within 10m gain +1 Defense and Advantage on all Active Defense rolls. |
 | **Blood Offering**    |  T2   | Sacrifice 5 HP for +10 Damage.                                               |
+| **Holy Weapon**       |  T2   | Coated in "holy" poison (+2 Damage).                                         |
+| **Caregiver**         |  T2   | +20 on Aid rolls.                                                            |
+| **Martyr's Shield**   |  T2   | Take 50% of damage meant for an ally within 5m.                              |
 | **Strength in Grief** |  T3   | Advantage on all Attack and Defense rolls for 1 turn.                        |
 | **Dark Channel**      |  T3   | Aura +5 Dmg/Advantage to allies, take 10 dmg/turn.                           |
 | **Death Awakens**     |  T4   | Revive ally with 15 HP (1/day).                                              |
@@ -490,6 +470,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Detect Illness**        |  T1   | Diagnose disease/curses.            |
 | **Naturalistic Bolster**  |  T1   | Grant 5 Temp HP (1/long rest).      |
 | **Sylvan Whisper**        |  T1   | Speak with animals/plants.          |
+| **Bird-man**              |  T1   | Pet bird (Carry message, Hunt, Track). |
 | **Healing Leaf**          |  T2   | Create poultice (10 HP).            |
 | **Guardian’s Resilience** |  T2   | +5 Defense in home terrain.         |
 | **Stone’s Fortitude**     |  T2   | Resistance to Blunt, +5 CON checks. |
@@ -528,19 +509,18 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Survival Instinct**          |  T1   | Advantage on Survival.                         |
 | **Animal Handler**             |  T1   | Advantage on Animal Training checks.           |
 | **Endurance Training**         |  T1   | Increase Max HP by 5.                          |
+| **Hunter's Mark**              |  T1   | Action: Target is marked. You deal +2 damage to them. |
 | **Precision Strikes**          |  T2   | +5 Attack vs creatures.                        |
 | **Trap Expertise**             |  T2   | Set traps (+2 Dmg).                            |
-| **Coordinated Assault**        |  T2   | Allies gain Advantage on the attack.           |
 | **Uncanny Defense**            |  T2   | Reaction: Halve damage.                        |
 | **Slayer's Fury**              |  T2   | Advantage to Hit and +10 Damage (1/long rest). |
-| **Heroic Sacrifice**           |  T2   | Take damage for ally.                          |
 | **Apex Predator**              |  T2   | Sense supernatural.                            |
+| **Pack Tactics**               |  T2   | If an ally is within 2m of your target and has already moved or acted, gain Advantage on attack. |
 | **Toughened Resolve**          |  T3   | Resistance Psychic.                            |
-| **Slayer's Mark**              |  T3   | Mark target (+2 Dmg for everyone).             |
+| **Slayer's Mark**              |  T3   | Action: Target is marked. All allies deal +5 damage to them. |
 | **Alertness**                  |  T3   | Cannot be surprised.                           |
 | **Master Tactician**           |  T3   | Grant allies Advantage (1/long rest).          |
 | **Improved Toughened Resolve** |  T3   | Immunity Psychic.                              |
-| **Tactical Awareness**         |  T4   | Advantage Initiative.                          |
 
 #### Veteran Talents
 *Seasoned warriors.*
@@ -548,12 +528,15 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | Name                      | Tier  | Description                                               |
 | :------------------------ | :---: | :-------------------------------------------------------- |
 | **Combat Awareness**      |  T1   | Advantage Perception (Ambush).                            |
+| **Mounted Combat**        |  T1   | +5 Damage while mounted.                                  |
 | **Tactical Maneuvering**  |  T2   | Move 10m free action.                                     |
 | **Defensive Stance**      |  T2   | Reduce damage by 2.                                       |
 | **Weapon Specialization** |  T2   | +1 Dmg, +5 Hit with chosen weapon.                        |
-| **Unyielding Defender**   |  T2   | Absorb half ally damage.                                  |
-| **Shield of the People**  |  T3   | Redirect attack to self.                                  |
+| **Guardian**              |  T2   | Redirect attack from an adjacent ally to yourself (1/round). |
+| **Redirection**           |  T2   | Give ally a reaction to avoid/block (1/encounter).        |
+| **Shield of the People**  |  T3   | Redirect all attacks against an adjacent ally to yourself for 1 round. |
 | **Heirloom Relic**        |  T3   | Item with +5 bonus.                                       |
+| **Vanguard Reflexes**     |  T3   | Passive: You recover 1 Reaction at the start of every round (up to your max pool). |
 | **Inspiring Presence**    |  T4   | Allies gain Advantage on the first roll of the encounter. |
 | **Guardian Aura**         |  T4   | Allies +5 Defense, Resist Fear.                           |
 | **Tactician's Insight**   |  T5   | Allies +5 Dmg vs enemy.                                   |
@@ -564,12 +547,13 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | Name                 | Tier  | Description                                                                                             |
 | :------------------- | :---: | :------------------------------------------------------------------------------------------------------ |
 | **Eldritch Sight**   |  T1   | See magic auras.                                                                                        |
-| **Hex Craft**        |  T1   | Cast hexes/curses (MND).                                                                                |
+| **Hex Craft**        |  T1   | Cast hexes/curses (INS).                                                                                |
 | **Rituals**          |  T2   | Perform powerful, utility-focused rituals (see Rituals section).                                        |
 | **Coven Bond**       |  T2   | +2 Spell Rolls near witches.                                                                            |
 | **Familiar**         |  T3   | You gain a spiritual familiar (Raven, Cat, or Toad). It can scout, share its senses and deliver spells. |
 | **Hex Ward**         |  T3   | Advantage on all rolls to resist or cleanse hexes and curses.                                           |
-| **Abyssal Affinity** |  T3   | Spend 2 MP for **Double Damage** spell; take 5 necrotic damage.                                         |
+| **Abyssal Affinity** |  T3   | Spend 2 IP for **Double Damage** spell; take 5 necrotic damage.                                         |
+| **Shape Shift**      |  T3   | Werewolf form (+10 STR, Claw 7dmg).                                                                     |
 
 #### Noble Talents
 *Aristocrats and leaders.*
@@ -578,7 +562,11 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | :---------------------- | :---: | :-------------------------------------------------------------------- |
 | **Commanding Presence** |  T1   | Allies gain Advantage on their next check (1/turn).                   |
 | **Courtly Grace**       |  T1   | Advantage CHA vs Nobles.                                              |
+| **Horsemanship**        |  T1   | Advantage on Riding checks (1/day).                                   |
 | **Master of Influence** |  T2   | Requires a successful CHA check to influence others to perform tasks. |
+| **Commanding Order**    |  T2   | Give an ally in the same phase and turn Advantage to hit.             |
+| **Coordinated Assault** |  T2   | If an ally hit this target earlier this round, you gain Advantage on the attack. |
+| **Bolster**             |  T2   | Reaction: Ally gains Advantage on their next attack.                  |
 
 ## Encounters
 
@@ -723,9 +711,9 @@ When you are targeted by an attack, you may spend one of your limited Reactions 
 
 Conditions represent various physical, mental, or situational states that can affect a character. Most conditions are temporary, but they can be deadly if ignored.
 
-Fear is a force that erodes your MIND. Anything that causes Fear reduces your current **Mind Points** directly. Unlike HP, Mind Points do not naturally recover without rest or special items. If your Mind Points reach 0, you get the condition **Frightened** until you recover your **Maximum MIND points**.
+Fear is a force that erodes your INSTINCT. Anything that causes Fear reduces your current **Instinct Points** directly. Unlike HP, Instinct Points do not naturally recover without rest or special items. If your Instinct Points reach 0, you get the condition **Frightened** until you recover your **Maximum INSTINCT points**.
 
-**Morale Check**: A check to resist fear or intimidation. This is an **Opposing Roll** (e.g., Attacker's CHA vs. Target's MND).
+**Morale Check**: A check to resist fear or intimidation. This is an **Opposing Roll** (e.g., Attacker's CHA vs. Target's INS).
 
 | Condition       | Mechanical Effect                                                                                                                                                                |
 | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -773,7 +761,7 @@ If there is a long downtime, depending on if the characters plausibly would have
 8 hours of sleep. Small interruption of sleep can be included as long as there is no excessive physical exertion.
 
 *   **HP Recovery**: You recover **4 + (CON Tens Digit) HP** per night of normal sleep.
-*   **MP Recovery**: You recover **MND Tens Digit** MP per night of normal sleep.
+*   **IP Recovery**: You recover **INS Tens Digit** IP per night of normal sleep.
 
 ### Health & Injuries
 
@@ -938,7 +926,7 @@ Shields are providing Defense and used with the **Block** reaction.
 | **Blood-Stanch Herb** | 15sp  | A bitter paste. Immediately stops the **Bleeding** status.                                              |
 | **Numbing Mash**      | 20sp  | A herbal chew. Ignore penalties from 1 level of **Exhaustion** for 1 hour.                              |
 | **Troll Fat Candle**  |  5sp  | Burns for 6 hours. Waterproof; stays lit in rain or snow.                                               |
-| **Stilling-Dust**     | 40sp  | Potent narcotic. Removes Fear and Pain (ignore 2 levels of Exhaustion), but causes -10 INT for 4 hours. |
+| **Stilling-Dust**     | 40sp  | Potent narcotic. Removes Fear and Pain (ignore 2 levels of Exhaustion), but causes -10 LOG for 4 hours. |
 
 ### Relics & Curios
 
@@ -948,10 +936,10 @@ In the world of Eda, special items are rare and often carry a price—either in 
 | :----------------------- | :-------------------------------------------------------------- | :-------------------------------------------------------------- |
 | **Amulet of Clarity**    | Advantage on checks to resist Fear.                             | Wearer takes 1 Damage per hour as the stone siphons corruption. |
 | **Blood-Stained Dagger** | Deals +5 Damage against enemies already below max HP.           | A relic from the "Bleeding Land" campaign.                      |
-| **Shadow-Veil Cloak**    | Advantage on Stealth checks in dim light or darkness.           | While worn, the user feels a cold dread (-5 to MND checks).     |
+| **Shadow-Veil Cloak**    | Advantage on Stealth checks in dim light or darkness.           | While worn, the user feels a cold dread (-5 to INS checks).     |
 | **Silver-Bell**          | Rings softly when Undead or Demons are within 20m.              | Blessed by the Zealots of the Sun.                              |
 | **Cold-Iron Shackles**   | Prevents the use of Spells and Rituals by anyone bound in them. | Used by witch-hunters to transport prisoners.                   |
-| **Marrow-Bone Flute**    | Using the **Perform** skill grants +5 MP to an ally (1/day).    | Carved from the bone of a forgotten saint.                      |
+| **Marrow-Bone Flute**    | Using the **Perform** skill grants +5 IP to an ally (1/day).    | Carved from the bone of a forgotten saint.                      |
 | **Void-Glass Lens**      | Allows the user to see invisible spirits and magic auras.       | Extensive use causes temporary blindness (1d10 hours).          |
 | **Vanguard Bracers**     | Your first attack in a combat encounter has **Advantage**.      | Emblazoned with the crest of the High Vanguard.                 |
 | **Duelist's Cape**       | Gain **+1 Reaction** pool while not wearing heavy armor.        | A swirling silk cape designed to confuse opponents.             |
@@ -963,10 +951,10 @@ In the world of Eda, special items are rare and often carry a price—either in 
 | **Elf Stone / Elf Shot** | Provides protection against range weapons, curses, and evil. +5 Defense vs Ranged.   |
 | **Children's Skeletons** | Good for many things. Advantage on Occult checks.                                    |
 | **Bone Knots**           | Used in bindings. Advantage on Thievery (Lockpicking) checks.                        |
-| **Blood**                | Ingredient for life brews. Restores 1 MP if used in ritual.                          |
+| **Blood**                | Ingredient for life brews. Restores 1 IP if used in ritual.                          |
 | **Chest (Torso)**        | A human torso; keeps enemies away. Advantage on Intimidate checks.                   |
 | **Amber**                | Placed between the breasts during childbirth to aid delivery. Advantage on Medicine. |
-| **Glass**                | Used to trap spirits. Advantage on MND to resist ghosts.                             |
+| **Glass**                | Used to trap spirits. Advantage on INS to resist ghosts.                             |
 | **Hazel Sticks**         | Used for dowsing. Advantage on Navigation.                                           |
 | **Skin**                 | For parchment or voodoo. Advantage on Hex Craft.                                     |
 | **Severed Head**         | An oiled, severed head. Can be queried with *Talk with Dead*.                        |
@@ -979,41 +967,41 @@ In the world of Eda, special items are rare and often carry a price—either in 
 | **Menstrual Blood**      | Used in love brews, fertility rituals, and to bring life back. Advantage on Charm.   |
 | **Placenta**             | Worn under clothes to make a woman fruitful. Resistance to disease.                  |
 | **Nails and Hair**       | Provides the opportunity to curse the owner. Advantage on Hexes vs owner.            |
-| **Rowan Sticks**         | Warding. Advantage on MND checks vs magic.                                           |
+| **Rowan Sticks**         | Warding. Advantage on INS checks vs magic.                                           |
 | **Silver**               | Keeps evil away. Deals 1d10 damage to Lycanthropes.                                  |
 | **Mucus**                | Ingredient for poisons. Advantage on Alchemy.                                        |
 | **Mirror**               | Protects against curse, keeps evil away (requires old silvered mirrors).             |
 | **Semen**                | Used in love brews and fertility rituals. Advantage on Charm.                        |
 | **Spit**                 | Protects against bad luck. Advantage on one roll per day.                            |
 | **Sulfur**               | Deters insects and demons. Advantage on Survival.                                    |
-| **Urine**                | Drives away evil. Advantage on MND vs Fear.                                          |
+| **Urine**                | Drives away evil. Advantage on INS vs Fear.                                          |
 | **Eagle Stone**          | Found in nests. Advantage on Perception.                                             |
 
 ## Magic & Rituals
 
-Magic draws power from despair and requires **Mind Points (MP)**.
-**MP Limit**: MND / 4.
+Magic draws power from despair and requires **Instinct Points (IP)**.
+**IP Limit**: INS / 4.
 
 ### Spells
-All spells require a successful **MND check** to be cast (including required DoS).
+All spells require a successful **INS check** to be cast (including required DoS).
 
-| Spell                  | MP   | Difficulty        | Effect                                                             |
+| Spell                  | IP   | Difficulty        | Effect                                                             |
 | :--------------------- | :--- | :---------------- | :----------------------------------------------------------------- |
 | **Confuse**            | 5    | Routine (1 DoS)   | -5 Combat Style to target.                                         |
 | **Commanding Tale**    | 5    | Routine (1 DoS)   | Persuade someone.                                                  |
-| **Freeze in Place**    | 5    | Routine (1 DoS)   | Immobilize target (**MND** vs **CON** check to resist).            |
-| **Medusa Glare**       | 10   | Challenge (2 DoS) | Turn to stone for 1d10 rounds (**MND** vs **CON** check to resist). |
+| **Freeze in Place**    | 5    | Routine (1 DoS)   | Immobilize target (**INS** vs **CON** check to resist).            |
+| **Medusa Glare**       | 10   | Challenge (2 DoS) | Turn to stone for 5 rounds (**INS** vs **CON** check to resist). |
 | **Rain Storm**         | 5    | Routine (1 DoS)   | Obscures vision.                                                   |
 | **Form of a Beast**    | 5    | Challenge (2 DoS) | Transform (2 Actions).                                             |
-| **Quicksand**          | 5    | Routine (1 DoS)   | Immobilize target (**MND** vs **AGI** check to resist).            |
-| **Mind Shield**        | 5    | Routine (1 DoS)   | Double defense vs witchcraft (1 hr).                               |
+| **Quicksand**          | 5    | Routine (1 DoS)   | Immobilize target (**INS** vs **AGI** check to resist).            |
+| **Instinct Shield**    | 5    | Routine (1 DoS)   | Double defense vs witchcraft (1 hr).                               |
 | **Charm Animal**       | 5    | Routine (1 DoS)   | Make animal friendly.                                              |
 | **Poison Touch**       | 5    | Routine (1 DoS)   | Inflict 7 damage.                                                  |
 | **Gaze of Salamander** | 5    | Routine (1 DoS)   | Dark vision / thermal.                                             |
 | **Identify**           | 5    | Routine (1 DoS)   | Understand magical items.                                          |
 | **Alter Winds**        | 5    | Routine (1 DoS)   | Change wind speed.                                                 |
 | **Diagnose Disease**   | 5    | Routine (1 DoS)   | Detect illness.                                                    |
-| **Forest Entangle**    | 5    | Routine (1 DoS)   | Immobilize target (**MND** vs **AGI** check to resist).            |
+| **Forest Entangle**    | 5    | Routine (1 DoS)   | Immobilize target (**INS** vs **AGI** check to resist).            |
 | **Endure Elements**    | 5    | Routine (1 DoS)   | Resistance hot/cold.                                               |
 | **Feather Step**       | 5    | Routine (1 DoS)   | Ignore rough terrain.                                              |
 | **Wind Shield**        | 5    | Routine (1 DoS)   | Advantage on Defense vs Ranged.                                    |
@@ -1025,28 +1013,28 @@ Rituals are powerful, utility-focused magical operations that cannot be cast in 
 
 *   **Requirements**: Must have the **Rituals (T2)** Witch Talent.
 *   **Time**: 1 Hour (Standard).
-*   **Cost**: 10 MP + Material Cost (Gold/Ingredients).
-*   **Check**: Roll **MND** vs **Difficulty (DoS)**. Most standard rituals require **1 DoS (Routine)**. Powerful rituals may require **2-4 DoS**.
+*   **Cost**: 10 IP + Material Cost (Gold/Ingredients).
+*   **Check**: Roll **INS** vs **Difficulty (DoS)**. Most standard rituals require **1 DoS (Routine)**. Powerful rituals may require **2-4 DoS**.
 *   **Failure & Fear**:
 *   **Success**: The ritual works as intended.
-*   **Critical Success (Pair under Skill)**: No MP cost, and the effect is doubled/enhanced.
-*   **Failure**: No effect. Lose MP and Materials. **Lose 2 additional MP due to Fear**.
-*   **Critical Failure (Roll 95-100)**: The ritual backfires. The GM determines a negative consequence. **Lose 5 additional MP due to Fear**.
+*   **Critical Success (Pair under Skill)**: No IP cost, and the effect is doubled/enhanced.
+*   **Failure**: No effect. Lose IP and Materials. **Lose 2 additional IP due to Fear**.
+*   **Critical Failure (Roll 95-100)**: The ritual backfires. The GM determines a negative consequence. **Lose 5 additional IP due to Fear**.
 
 #### Ritual List
 
-| Ritual                | Time | MP   | Materials         | Effect                                                             |
+| Ritual                | Time | IP   | Materials         | Effect                                                             |
 | :-------------------- | :--- | :--- | :---------------- | :----------------------------------------------------------------- |
 | **Animate Plant**     | 1h   | 10   | Grave Soil (5g)   | Creates a Vine-Shrouded (HP 15, STR 50) for 24h.                   |
 | **Animate Object**    | 1h   | 10   | Quicksilver (10g) | Turns a medium object into a Construct (HP 12, Defense 5) for 24h. |
 | **Mud Golem**         | 2h   | 15   | Heart of Warrior  | Creates a Mud Golem (HP 30, Defense 2, STR 60) for 24h.            |
-| **Soul Eater**        | 1h   | 20   | Fresh Corpse      | +10 to one Attribute for 1 day. **Lose 3 MP (Fear)**.              |
+| **Soul Eater**        | 1h   | 20   | Fresh Corpse      | +10 to one Attribute for 1 day. **Lose 3 IP (Fear)**.              |
 | **Summon Python**     | 10m  | 10   | Snake Skin        | Summons a Giant Snake (Bestiary) for 1 hour.                       |
 | **Dimension Gateway** | 4h   | 25   | Star Dust (50g)   | Portal between two known circles.                                  |
 | **Sickening Curse**   | 1h   | 15   | Hair/Blood        | Target takes -1 Max HP/day. Permanent until Cleanse.               |
-| **Cleanse**           | 1h   | 10   | Pure Water        | Removes one curse or restores 10 MP lost to Fear.                  |
+| **Cleanse**           | 1h   | 10   | Pure Water        | Removes one curse or restores 10 IP lost to Fear.                  |
 | **Visions of Future** | 1h   | 15   | Mirror (20g)      | Advantage on next related check.                                   |
-| **Sea Storm**         | 4h   | 30   | Salt/Sea          | Summons a storm (5km radius) for 1d10 hours.                       |
+| **Sea Storm**         | 4h   | 30   | Salt/Sea          | Summons a storm (5km radius) for 5 hours.                       |
 | **Talk with Dead**    | 1h   | 10   | Skull             | Ask spirit 3 questions. They cannot lie.                           |
 | **Create Artifact**   | 24h  | 50   | Rare Components   | Permanently enchant an item. High backfire risk.                   |
 

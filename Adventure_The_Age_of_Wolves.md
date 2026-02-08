@@ -215,7 +215,7 @@ The players are now in the wilderness with nothing. This scene teaches the Survi
 **Looting the Dead Guards**:
 
 *   2 Daggers (4 damage).
-*   1 Shortbow (broken string, fixable with INT Check).
+*   1 Shortbow (broken string, fixable with LOG Check).
 *   1 Quiver (4 arrows).
 *   1 Flint & Steel (Critical for survival).
 *   2 Wool Cloaks (Heavy, rough wool).
