@@ -1078,6 +1078,39 @@ Segments are usually filled based on the outcome of rolls:
 
 Clocks provide transparency and tension. They allow players to see exactly how close they are to success or disaster, making their choices feel more impactful. They are especially useful for situations that shouldn't be resolved by a single roll but require a series of actions.
 
+### Running the Game
+
+This section provides concrete guidance for managing the challenges of Eda at the table.
+
+#### Handling Lethality & Success
+
+Eda is a dangerous world. Success is never guaranteed, and failure should always carry weight.
+
+*   **The Cost of Failure**: Avoid "nothing happens" on a failed roll. Instead, introduce a concrete consequence:
+    *   **Strength Fail**: You force the door open, but your shoulder is bruised (Lose 1d10 HP) or your crowbar snaps.
+    *   **Logic Fail**: You decipher the map, but it takes so long that the sun sets (Lose time/Light resources).
+    *   **Agility Fail**: You sneak past the guard, but drop a pouch of 5 Silver Marks that clatters on the stone.
+*   **Success with a Cost**: Sometimes a player fails a roll by a small margin. You can offer them the choice to succeed at a cost.
+    *   *Example*: "You catch the ledge, but the strain costs you 5 Instinct Points as panic sets in."
+
+#### Practical Rules Application
+
+*   **The Art of the Roll**: Only call for a roll when:
+    1.  The character is under pressure (time, danger, or social stakes).
+    2.  The outcome is uncertain.
+    3.  Failure has a concrete consequence.
+*   **Narrating Degrees of Success (DoS)**: Use the DoS to describe the quality of the action:
+    *   **1 DoS (Routine)**: You get the job done, but it’s messy or takes effort.
+    *   **4 DoS (Hard)**: You perform the task with professional grace and efficiency.
+    *   **8 DoS (Near Impossible)**: You perform a legendary feat that leaves witnesses in awe.
+*   **Adjudicating the Blackjack System**: Remember that a high roll that stays under the skill is always better. In an Opposed Roll, if both succeed, the higher roll wins regardless of DoS.
+
+#### Concrete Survival Management
+
+*   **The Cold Clock**: Instead of rolling for cold every hour, use a 4 or 6-segment **Danger Clock** labeled "Freezing." Fill a segment whenever the party stops to rest without a fire or fails a Survival check during travel. When the clock is full, every character takes 1d10 damage.
+*   **Light as a Resource**: A torch typically lasts for 2 "Scenes" or one hour of travel. 
+    *   **Darkness**: If the party loses their light source in a dangerous area, they immediately lose 5 Instinct Points (IP) due to Fear and take Disadvantage on all rolls requiring sight.
+
 ### Progression
 This system rewards failure and provides consistent growth, ensuring low skills improve quickly while high skills plateau.
 
