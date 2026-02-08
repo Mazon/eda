@@ -220,7 +220,7 @@
     <td style="border: 1px solid #000; padding: 4px;">[ ] Seafaring <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Animal Training <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Animal Training <small>(CHA)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Investigation <small>(CHA)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Stealth <small>(AGI)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
@@ -246,7 +246,7 @@
   </tr>
   <tr style="font-size: 0.9em;">
     <td style="border: 1px solid #000; padding: 4px;">[ ] Botany <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
-    <td style="border: 1px solid #000; padding: 4px;">[ ] Occult <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
+    <td style="border: 1px solid #000; padding: 4px;">[ ] Occult Knowledge <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
     <td style="border: 1px solid #000; padding: 4px;">[ ] Warfare <small>(LOG)</small></td><td style="border: 1px solid #000; padding: 4px;">&nbsp;</td>
   </tr>
   <tr style="font-size: 0.9em;">

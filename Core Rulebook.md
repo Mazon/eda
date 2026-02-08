@@ -57,6 +57,14 @@ Roll d100 (01-100).
   
 The amount of success. Recorded as the number of the ten digits. Example a roll of 48 would be 4 degree of success. Many different mechanics in the game uses how much you succeed in something and it also impact how much damage your attacks do.
 
+> ### The Blackjack System
+>
+> Eda uses a "Blackjack" style system for Degrees of Success. This means you want to roll as **high as possible** without going over your Skill value.
+>
+> *   **High Rolls (Near Skill)**: Provide the highest Degree of Success, representing a perfect execution of the task.
+> *   **Low Rolls (Near 01)**: Are "Safer" as they are more likely to succeed, but they provide a lower Degree of Success.
+> *   **Tactical Choice**: Some tasks (like Dodge) require a minimum Degree of Success. If your skill is low, you must risk rolling close to your limit to succeed at these difficult feats.
+
 
 #### Critical Success & Failure
 
@@ -131,7 +139,7 @@ To create a character, you make choices that customize them to be interesting an
 >
 > **Step 1: Lineage**: Bjorn chooses **The Bear** totem. Stats: STR 70, AGI 65, LOG 60, INS 40, CHA 60, CON 65.
 >
-> **Step 2: Body & Instinct**: He get 65 HP (CON), 10 IP (INS /4) and 6 reactions.
+> **Step 2: Body & Mind**: He get 65 HP (CON), 20 IP (INS / 2) and 6 reactions.
 >
 > **Step 3: Heritage**: He picks **Hearth-born**. Trait: Stoic Endurance. Skills: Trained in Survival and Crafting. Gear: A sturdy iron cook-pot.
 >
@@ -167,7 +175,7 @@ Determines your raw potential and base stats. Select one animal totem to get you
 ### Body & Instinct
 
 *   **Health Points (HP)**: Equal to your CON attribute. (Falls to death at 0 HP).
-*   **Instinct Points (IP)**: INS / 4. Used for talents, magic, and fear.
+*   **Instinct Points (IP)**: INS / 2. Used for talents, magic, and fear.
 *   **Reaction Pool**: Tens digit of AGI (e.g., AGI 65 = 6 Reactions). The amount of reactions during a full encounter.
  
 ### Heritage
@@ -286,7 +294,7 @@ Skills represent your character's training and experience.
 
 #### Combat Styles
 
-Combat Styles represent your character's training in specific forms of combat. Unlike general skills, these determine which weapons you can use effectively and often unlock specific talents.
+Combat Styles represent your character's training in specific forms of combat. They have a base value of Attribute / 2 and become the full Attribute when Trained. They determine which weapons you can use effectively and often unlock specific talents.
 
 At character creation, you typically choose one Combat Style.
 
@@ -539,7 +547,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Vanguard Reflexes**     |  T3   | Passive: You recover 1 Reaction at the start of every round (up to your max pool). |
 | **Inspiring Presence**    |  T4   | Allies gain Advantage on the first roll of the encounter. |
 | **Guardian Aura**         |  T4   | Allies +5 Defense, Resist Fear.                           |
-| **Tactician's Insight**   |  T5   | Allies +5 Dmg vs enemy.                                   |
+| **Tactician's Insight**   |  T4   | Allies +5 Dmg vs enemy.                                   |
 
 #### Witch Talents
 *Users of dark magic.*
@@ -570,7 +578,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 
 ## Encounters
 
-Encounters start with iniative roll, each combatant then go in turn order after everyone had their turn. The round is over and the next round start with a new iniative roll.
+Encounters start with initiative roll, each combatant then go in turn order after everyone had their turn. The round is over and the next round start with a new initiative roll.
 
 ### Initiative
 Only the player characters roll for initiative. Each player rolls against their AGI.
@@ -689,10 +697,14 @@ Cover is a vital part of tactical survival. Represents the difficulty of hitting
 
 ### Reactions & Active Defense
 
-Survival depends on your ability to react to incoming threats. Characters have a **limited pool of Reactions** for an entire encounter. 
+Survival depends on your ability to react to incoming threats. Characters have a **limited pool of Reactions** for an entire encounter.
 
 **Reactions**: Your total pool of Reactions for the **entire encounter** is equal to the **tens digit of your AGI**. (Example: AGI 65 gives **6 Reactions**).
 These do not refresh every round and must be used strategically.
+
+> ### Conserving Your Strength
+>
+> In Eda, combat is fast and brutal. Because your Reaction Pool does not refresh during an encounter, every choice to Dodge or Parry is a life-altering decision. GM's should use this to create tension—once a character's reactions are spent, they are vulnerable. Players must decide whether to save their energy for a boss's heavy strike or use it to survive a minion's early assault.
 
 #### Active Defense Options:
 When you are targeted by an attack, you may spend one of your limited Reactions to perform one of the following:
@@ -788,7 +800,7 @@ Outside major trade hubs, barter is the primary form of exchange. A character mi
 
 | Item                   | Cost  | Unit        | Notes                      |
 | :--------------------- | :---- | :---------- | :------------------------- |
-| **Grains & Foodstuf**  |       |             |                            |
+| **Grains & Foodstuffs** |       |             |                            |
 | Wheat                  | 1cp   | 1 kg        | Standard crop              |
 | Flour                  | 2cp   | 1 kg        | Ground grain               |
 | Salt                   | 5cp   | 100g        | Essential preservative     |
@@ -980,7 +992,7 @@ In the world of Eda, special items are rare and often carry a price—either in 
 ## Magic & Rituals
 
 Magic draws power from despair and requires **Instinct Points (IP)**.
-**IP Limit**: INS / 4.
+**IP Limit**: INS / 2.
 
 ### Spells
 All spells require a successful **INS check** to be cast (including required DoS).
@@ -1025,15 +1037,15 @@ Rituals are powerful, utility-focused magical operations that cannot be cast in 
 
 | Ritual                | Time | IP   | Materials         | Effect                                                             |
 | :-------------------- | :--- | :--- | :---------------- | :----------------------------------------------------------------- |
-| **Animate Plant**     | 1h   | 10   | Grave Soil (5g)   | Creates a Vine-Shrouded (HP 15, STR 50) for 24h.                   |
-| **Animate Object**    | 1h   | 10   | Quicksilver (10g) | Turns a medium object into a Construct (HP 12, Defense 5) for 24h. |
+| **Animate Plant**     | 1h   | 10   | Grave Soil (5sp)  | Creates a Vine-Shrouded (HP 15, STR 50) for 24h.                   |
+| **Animate Object**    | 1h   | 10   | Quicksilver (10sp)| Turns a medium object into a Construct (HP 12, Defense 5) for 24h. |
 | **Mud Golem**         | 2h   | 15   | Heart of Warrior  | Creates a Mud Golem (HP 30, Defense 2, STR 60) for 24h.            |
 | **Soul Eater**        | 1h   | 20   | Fresh Corpse      | +10 to one Attribute for 1 day. **Lose 3 IP (Fear)**.              |
 | **Summon Python**     | 10m  | 10   | Snake Skin        | Summons a Giant Snake (Bestiary) for 1 hour.                       |
-| **Dimension Gateway** | 4h   | 25   | Star Dust (50g)   | Portal between two known circles.                                  |
+| **Dimension Gateway** | 4h   | 25   | Star Dust (50sp)  | Portal between two known circles.                                  |
 | **Sickening Curse**   | 1h   | 15   | Hair/Blood        | Target takes -1 Max HP/day. Permanent until Cleanse.               |
 | **Cleanse**           | 1h   | 10   | Pure Water        | Removes one curse or restores 10 IP lost to Fear.                  |
-| **Visions of Future** | 1h   | 15   | Mirror (20g)      | Advantage on next related check.                                   |
+| **Visions of Future** | 1h   | 15   | Mirror (20sp)     | Advantage on next related check.                                   |
 | **Sea Storm**         | 4h   | 30   | Salt/Sea          | Summons a storm (5km radius) for 5 hours.                       |
 | **Talk with Dead**    | 1h   | 10   | Skull             | Ask spirit 3 questions. They cannot lie.                           |
 | **Create Artifact**   | 24h  | 50   | Rare Components   | Permanently enchant an item. High backfire risk.                   |
