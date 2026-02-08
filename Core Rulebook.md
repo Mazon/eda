@@ -118,7 +118,7 @@ Before rolling, a player can declare they are "Pushing."
 
 To create a character, you make choices that customize them to be interesting and fun. A character consists of:
 
-1.  Attributes & Genome
+1.  Attributes & Lineage
 2.  Body & Mind
 3.  Heritage
 4.  Skills
@@ -129,7 +129,7 @@ To create a character, you make choices that customize them to be interesting an
 
 > ### Character Creation Example: Bjorn the Brave
 >
-> **Step 1: Genome**: Bjorn chooses **The Bear** totem. Stats: STR 70, AGI 65, INT 60, MND 40, CHA 60, CON 65.
+> **Step 1: Lineage**: Bjorn chooses **The Bear** totem. Stats: STR 70, AGI 65, INT 60, MND 40, CHA 60, CON 65.
 >
 > **Step 2: Body & Mind**: He get 65 HP (CON), 10 MP (MND /4) and 6 reactions.
 >
@@ -144,7 +144,7 @@ To create a character, you make choices that customize them to be interesting an
 > **Step 8: Equipment**: Bjorn starts with 60 Silver Marks from his **Hearth-born** heritage. He purchases a Hand Axe (30sp), a bedroll (2sp), a tinderbox (2sp), and 5 days of rations (10sp). He also carries his sturdy iron cook-pot from his heritage, leaving him with **16 Silver Marks** for his journey.
 
 
-### Attributes & Genome
+### Attributes & Lineage
 
 Determines your raw potential and base stats. Select one animal totem to get your base ability scores.
 

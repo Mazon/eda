@@ -35,7 +35,7 @@
   </tr>
   <tr>
     <td style="border: 1px solid #000; padding: 10px;" width="50%"><small style="color: #666; font-weight: bold;">CHARACTER NAME</small><br><div style="font-size: 1.1em; margin-top: 4px;">&nbsp;</div></td>
-    <td style="border: 1px solid #000; padding: 10px;" width="35%"><small style="color: #666; font-weight: bold;">GENOME & HERITAGE</small><br><div style="font-size: 1.1em; margin-top: 4px;">&nbsp;</div></td>
+    <td style="border: 1px solid #000; padding: 10px;" width="35%"><small style="color: #666; font-weight: bold;">LINEAGE & HERITAGE</small><br><div style="font-size: 1.1em; margin-top: 4px;">&nbsp;</div></td>
     <td style="border: 1px solid #000; padding: 10px;" width="15%"><small style="color: #666; font-weight: bold;">TOTAL XP</small><br><div style="font-size: 1.1em; margin-top: 4px; text-align: center;">&nbsp;</div></td>
   </tr>
 </table>
