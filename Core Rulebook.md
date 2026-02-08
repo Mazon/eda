@@ -25,7 +25,7 @@ The game is divided into Adventures and Campaigns.
 
 ## Dice Mechanics
 
-Dice are used to decide outcomes of uncertain actions. Eda uses two 10 sided dice to represent numbers from 01-100, from now on called d10 or 2d10.
+Dice are used to decide outcomes of uncertain actions. Eda uses two 10-sided dice to represent numbers from 01-100, referred to as **d100**.
 
 *   **Primary Dice**: Represents the 10s (00, 10, 20... 90).
 *   **Secondary Dice**: Represents the 1s (0-9).
@@ -48,7 +48,7 @@ It is up to the group to decide how long to play, but a general tip is to keep s
 
 ### Checks
 
-Roll 2d10 (01-100).
+Roll d100 (01-100).
 
 *   **Success**: Roll UNDER or EQUAL to your Skill/Attribute.
 *   **Failure**: Roll OVER your Skill/Attribute.
@@ -80,19 +80,19 @@ The amount of success. Recorded as the number of the ten digits. Example a roll 
 
 ### Advantage & Disadvantage
 
-> In other games advantage and disadvantage is usually done by rolling twice. Using 2d10 dice, you can switch what dice is the primary and which is the secondary. This way we only have to roll once.
->
-> If roll 36, can either be 36 or 63.
+When you have Advantage or Disadvantage, you roll d100 as normal, but you can swap which die is the primary (tens) and which is the secondary (units). This allows you to choose between two possible results from a single roll.
 
-*   **Advantage**: You are allowed to select the best result. The **Best Result** is defined as the successful roll that provides the highest **Degree of Success (DoS)**.
-*   **Disadvantage**: Take the worst result.
+For example, if you roll a **3** and a **6**, your result can be either **36** or **63**.
+
+*   **Advantage**: You select the best result. The **Best Result** is defined as the successful roll that provides the highest **Degree of Success (DoS)**.
+*   **Disadvantage**: You must take the worst result.
 
 > #### Example: The Advantage Choice
-> Bjorn has a Skill of **70** and rolls with **Advantage**. He rolls a **26**.
+> Bjorn has a Skill of **70** and rolls with **Advantage**. He rolls a **2** and a **6**.
 > *   Option A: **26** (2 DoS)
 > *   Option B: **62** (6 DoS)
 >
-> Bjorn picks **62**. It is still under his skill (70), but it provides **4 more damage** and satisfies higher difficulty requirements.
+> Bjorn picks **62**. It is still under his skill (70), but it provides a higher Degree of Success, potentially dealing more damage or satisfying higher difficulty requirements.
 
 ### Opposing Rolls
 
