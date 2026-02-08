@@ -60,11 +60,11 @@ The amount of success. Recorded as the number of the ten digits. Example a roll 
 
 #### Critical Success & Failure
 
-*   **Critical Success**: Doubles under or equal to the skill value (11, 22, 33...).
+*   **Critical Success**: A **Pair** under or equal to the skill value (11, 22, 33...).
     *  In combat a Critical Success deals **Critical Damage**: Weapon Base Damage + Maximum Degree of Success (Tens Digit of the Skill). This replaces the normal damage calculation for that hit.
     *   Difficulty Bypass: In non-combat checks, a Critical Success automatically fulfills the required Degrees of Success for any difficulty level.
 
-*   **Critical Failure (Fumble)**: Doubles above the skill value or a roll of **100 (00)** (if above the skill).
+*   **Critical Failure (Fumble)**: A **Pair** above the skill value or a roll of **100 (00)** (if above the skill).
     *   **The Fumble Reward**: Eda uses a "fail forward" mechanic. When you Critical Failure, you immediately increase that skill by **1 point** permanently as you learn from the error. See the section **Fumble Points** for a full explanation.
 
 ### Difficulty Modifiers
@@ -1027,7 +1027,7 @@ Rituals are powerful, utility-focused magical operations that cannot be cast in 
 *   **Check**: Roll **MND** vs **Difficulty (DoS)**. Most standard rituals require **1 DoS (Routine)**. Powerful rituals may require **2-4 DoS**.
 *   **Failure & Fear**:
 *   **Success**: The ritual works as intended.
-*   **Critical Success (Doubles under Skill)**: No MP cost, and the effect is doubled/enhanced.
+*   **Critical Success (Pair under Skill)**: No MP cost, and the effect is doubled/enhanced.
 *   **Failure**: No effect. Lose MP and Materials. **Lose 2 additional MP due to Fear**.
 *   **Critical Failure (Roll 95-100)**: The ritual backfires. The GM determines a negative consequence. **Lose 5 additional MP due to Fear**.
 
@@ -1083,9 +1083,9 @@ This system rewards failure and provides consistent growth, ensuring low skills 
 
 *   **Trigger**: Your skill improves **immediately** when you roll a **Critical Fumble**.
 *   **Definition of Critical Fumble**:
-    1. Rolling **Doubles** ( 77, 88, 99, 00...) that are **ABOVE** your Skill Value.
+    1. Rolling a **Pair** (11, 22, 33, ..., 00) that is **ABOVE** your Skill Value.
     
-    *   *Example*: Skill 45. Roll 77. (Fail + Doubles) -> **Fumble**. Skill increases to 46.
+    *   *Example*: Skill 45. Roll 77. (Fail + Pair) -> **Fumble**. Skill increases to 46.
 *   **The Reward**: When you Fumble, increase that skill by **1 point** permanently. This represents learning from a spectacular failure.
 
 #### End of session
