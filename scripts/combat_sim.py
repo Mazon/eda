@@ -333,9 +333,9 @@ class CombatEncounter:
         hit_mod = 0
         skill_val = att.skill_combat
         
-        # Multiple Attack Penalty (MAP): Half Skill for 2nd attack
+        # Multiple Attack Penalty (MAP): -20 for 2nd+ attack
         if hasattr(att, 'attacks_this_turn') and att.attacks_this_turn >= 1:
-            skill_val = skill_val // 2
+            hit_mod -= 20
         
         # Evasive Token Penalty: Retired (now handled by Defense bonus in take_damage)
         # if getattr(self, 'use_evasive_defense', False) and vic.moved_this_turn >= 3:
@@ -382,7 +382,7 @@ class CombatEncounter:
                 else: final_dmg_mult = 0.5
             elif "Dodge" in vic.talents:
                 d_success, d_roll, d_dos, d_crit = vic.roll_skill(vic.stats.AGI, modifier=def_mod, advantage=def_adv)
-                if d_success and d_dos >= 2: final_dmg_mult = 0.0
+                if d_success: final_dmg_mult = 0.0
             elif "Parry" in vic.talents:
                 d_success, d_roll, d_dos, d_crit = vic.roll_skill(vic.stats.AGI, modifier=def_mod, advantage=def_adv)
                 if d_success: dmg_reduction = vic.weapon.damage + d_dos

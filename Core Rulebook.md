@@ -72,8 +72,8 @@ Eda uses a "Blackjack" style system where you want to roll as **high as possible
 
 ### Critical Success
 
-*   **Critical Success**: A **Pair** (11, 22, 33...) that is under or equal to your skill value.
-    *   **Combat**: Deals **Critical Damage** (Weapon Base Damage + Tens Digit of the Skill). This replaces the normal damage calculation for that hit.
+*   **Critical Success**: A pair (11, 22, 33...) that is under or equal to your skill value.
+    *   **Combat**: Deals critical damage (Weapon Base Damage + Tens Digit of the Skill). This replaces the normal damage calculation for that hit.
     *   **Non-Combat**: Automatically fulfills the required Degrees of Success for any difficulty level.
 
 ### Difficulty Modifiers
@@ -96,13 +96,12 @@ Some tasks are harder than others and the GM might require a minimum number of D
 | **Extreme**         | 6 DoS       | At the edge of human capability.                |
 | **Near Impossible** | 8 DoS       | Practically legendary feats; requires a Master. |
 
-> **Note on Difficulty**: Most active defense rolls (Dodge, Parry, Block) are **Simple** (0 DoS required) unless stated otherwise.
 
 ### Advantage & Disadvantage
 
 When you have Advantage or Disadvantage, you roll d100 as normal, but you can swap which die is the primary (tens) and which is the secondary (units). This allows you to choose between two possible results from a single roll.
 
-*   **Advantage**: You select the best result. The **Best Result** is defined as the successful roll that provides the highest **Degree of Success (DoS)**.
+*   **Advantage**: You select the best result. The best result is defined as the successful roll that provides the highest **Degree of Success (DoS)**.
 *   **Disadvantage**: You must take the worst result.
 
 > ### Example: Advantage Swap
@@ -118,10 +117,9 @@ When you have Advantage or Disadvantage, you roll d100 as normal, but you can sw
 
 When two characters compete (e.g., an arm wrestling match or hiding from a guard), both make a check.
 
-*   **Highest Successful Roll Wins**: If both succeed, the character with the **highest successful roll** wins (Blackjack rules).
+*   **Highest Successful Roll Wins**: If both succeed, the character with the highest successful roll wins (Blackjack rules).
 *   **Single Success**: If one succeeds and the other fails, the successful character wins.
 *   **Double Failure**: If both fail, the situation remains unchanged.
-*   **Resisting Effects**: When an ability says "Attribute vs Attribute to resist," it always uses an **Opposing Roll**.
 
 ### Pushing the Limit
 
@@ -130,7 +128,7 @@ Before rolling, a player can declare they are "Pushing."
 *   **Effect**: You gain **Advantage** on the roll.
 *   **Cost**: Regardless of success or failure, you lose **10 Instinct Points (IP)**.
 
-> **Note on Instinct Points**: Instinct Points (IP) represent your character's subconsicous and willpower. They are a pool of points that can be spent to push yourself or are lost when facing horrific sights. If your Instinct Points reach 0, you become Frightened. See **Body & Mind** in Character Creation for how to calculate your maximum IP.
+> **Note**: Instinct Points (IP) represent your character's subconsicous and willpower. They are a pool of points that can be spent to push yourself or are lost when facing horrific sights. If your Instinct Points reach 0, you become **Frightened**. See section **Body & Mind** in Character Creation for how to calculate your maximum IP.
 
 
 ## Character Creation
@@ -167,12 +165,12 @@ Character creation is the process of defining your protagonist's strengths, hist
 
 Determines your raw potential and base attributes. Select one animal totem to get all your attributes.
 
-*   **Strength (STR)**: Raw power. Needed to carry heavy armor and weapons.
-*   **Agility (AGI)**: Nimbleness, flexibility, aim. Sync between instinct and body.
+*   **Strength (STR)**: Raw power and strength.
+*   **Agility (AGI)**: Nimbleness, flexibility, aim..
 *   **Logic (LOG)**: Deduction, memory, understanding languages, puzzles.
-*   **Instinct (INS)**: Focus, will, determination. Sensing the supernatural.
+*   **Instinct (INS)**: Focus, will, determination, subconscious.
 *   **Charisma (CHA)**: Social influence, charm, leadership.
-*   **Constitution (CON)**: Physical resilience, survival instinct, health.
+*   **Constitution (CON)**: Physical resilience, health.
 
 | Animal totem  |  STR  |  AGI  |  LOG  |  INS  |  CHA  |  CON  |
 | :------------ | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -258,7 +256,7 @@ Describe your character. Are you generous? Do you like animals? What are your go
 Skills represent your character's training and experience.
 
 *   **Base Skill**: Your base score in any skill is equal to its associated Attribute / 2.
-*   **Trained**: You are specialized in this skill. A Trained skill is equal to its associated Attribute in full. At character creation, you gain 2 Trained Skills from your Heritage, usually 1 Combat Style, and select 3 additional Trained Skills from the list below. After that you can increase your skills by using XP. Only trained skills can be improved by XP. To "unlock" an untrained skill into a trained skill you need to spend 5 XP at once, representing dedicated training. After that, you can increase the skill score using XP.
+*   **Trained**: You are specialized in this skill. A Trained skill is equal to its associated Attribute in full. At character creation, you gain 2 Trained Skills from your Heritage, 1 Combat Style, and select 3 additional Trained Skills from the list below. After that you can increase your skills by using XP. Only trained skills can be improved by XP. To "unlock" an untrained skill into a trained skill you need to spend 5 XP at once, representing dedicated training. After that, you can increase the skill score using XP.
 
 #### Skill List
 
@@ -371,7 +369,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 
 > **The Rule of More**: At any time, you must have more talents in a given tier than you have in the tier directly above it. (Common Talents).
 > *   Example: To take your first Tier 2 talent, you must have at least two Tier 1 talents. To take a second Tier 2 talent, you must have at least three Tier 1 talents.
-
+>
 > **Archetype Path Rule**: To take an Archetype Talent of Tier 2 or higher, you must already possess at least one talent from that same Archetype in the tier directly below it.
 
 ### Common Talents
@@ -382,7 +380,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Overdrive**            |  T1   | Action (1 AP): Your next attack this turn adds degree of success (tens digit of roll) to damage.                 |
 | **Berserk**              |  T1   | Action: Enter frenzy (Advantage on all attacks, cannot use Reactions).                                           |
 | **First Strike**         |  T1   | Action (1 AP): Make an attack. If acting in the Rearguard, deal +5 Damage.                               |
-| **Vanguard's Lead**      |  T1   | If you move 3m+ in the Vanguard, one ally gains Momentum (Precision) for free.                           |
+| **Vanguard's Lead**      |  T1   | If you move 3m+ in the Vanguard, one ally gains **Momentum** (Regain 1 Reaction) for free.               |
 | **Desperate Attack**     |  T1   | Move 5m with Attack Action.                                                                                      |
 | **The Charge**           |  T1   | Move up to Speed in a straight line and make a melee attack. If 3m+, deal +5 Damage. No Reactions.           |
 | **Smart Fighting**       |  T1   | Passive: While in cover, you gain Advantage on all Active Defense rolls (Dodge/Parry/Block).                 |
@@ -604,10 +602,9 @@ On your turn, you receive **2 Action Points (AP)** and **1 Zero Cost Action**.
 *   **Prepare (1 AP)**: Save an action to be used as a **Reaction** later in the round.
 
 #### The Wait Action
-A player in the Vanguard Turn can spend a free Action to Wait. This drops them to the Rearguard Turn, effectively trading initiative for better positioning or observation.
+A player in the Vanguard Turn can spend their **Zero Cost Action** to **Wait**. This drops them to the Rearguard Turn, effectively trading initiative for better positioning, observation, or recovery.
 
-*   **Momentum**: By waiting and observing the enemy, the player gains Momentum. When acting in the Rearguard Turn, they may choose one benefit:
-    *   **Precision**: Advantage on their next skill check or attack.
+*   **Momentum**: By waiting and observing the enemy, the player gains Momentum. When acting in the Rearguard Turn, they regain **1 spent Reaction** to their pool.
 
 ### Damage & Health
 
@@ -718,7 +715,7 @@ When you are targeted by an attack, you may spend **1 Reaction** from your pool 
     *   **Failure**: Your guard is broken. You take **full damage**.
 *   **Block (Shield Skill Check)**:
     *   **Success**: You catch the blow on your shield. Reduce incoming damage by your **Shield Defense + DoS**.
-    *   **Failure**: You take **half damage**.
+    *   **Failure**: The shield absorbs some impact. You take **half damage**.
 
 ## Conditions & Status Effects
 
