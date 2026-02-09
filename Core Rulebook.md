@@ -592,7 +592,7 @@ On your turn, you receive **2 Action Points (AP)** and **1 Zero Cost Action**.
 *   **Move (1 AP)**: Move a distance up to your **Speed** (AGI / 10 meters).
     *   **Evasive Stance**: If you move at least 3 meters during your turn, you gain the **Evasive** status until the start of your next turn. You gain **+3 Defense** against all attacks while you are Evasive.
 *   **Attack (1 AP)**: Make an attack using a Combat Style.
-    *   **Multiple Attack Penalty (MAP)**: If you perform more than one Attack action in a single turn, any attack after the first is made at a **-20 penalty**.
+    *   **Multiple Attack Penalty (MAP)**: If you perform more than one Attack action in a single turn, any attack after the first is made at **/2** skill chance.
 *   **Help (1 AP)**: Assist an ally within melee range, granting them **Advantage** on their next action.
 *   **Interact (1 AP)**: Open a door, light a torch, or manipulate an object.
 *   **Swap Weapon (1 AP)**: Draw or sheathe a weapon.
