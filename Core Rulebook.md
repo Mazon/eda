@@ -192,7 +192,7 @@ Determines your raw potential and base attributes. Select one animal totem to ge
 Your heritage defines your upbringing, innate traits, and starting social standing. Every heritage provides a signature trait, two heritage skills in which you are automatically trained, a unique piece of starting equipment, a set amount of starting currency, and usually a choice of one combat ctyle.
 
 #### Clansman
-*Steel quenched in the ice of the Fjordlands. It remembers every blow of the hammer, and it never forgets a debt.*
+*The wind cuts like a knife in the wild lands, and graves are dug shallow in the frozen earth. Your people survive on loyalty, debt, and the grim knowledge that winter kills the weak.*
 
 *   **Trait: Grim Resolve.** Once per day, when your life or honor is on the line, you may add your CON or INS tens digit as a bonus to any check.
 *   **Heritage Skills:** Trained in Survival and Intimidate.
@@ -200,23 +200,23 @@ Your heritage defines your upbringing, innate traits, and starting social standi
 *   **Starting Currency:** 60 sp.
 
 #### Clergy
-*Polished stone that hides the grit beneath. They speak of the light, but they know the weight of the dark better than most.*
+*Silence hangs heavy in the temple, broken only by the desperate prayers of the sick. Whether a true believer or a charlatan in a frayed robe, you have walked among the dying and seen what men will do when the gods turn their backs.*
 
 *   **Trait: Unwavering.** You have advantage on checks to resist intimidation, fear, or magical influence.
 *   **Heritage Skills:** Trained in Religion and Medicine.
-*   **Starting Equipment:** A holy symbol (chipped), a vial of scented oil, or a book of scripture.
+*   **Starting Equipment:** A holy symbol (chipped), a small box of salt, or a roll of clean bandages.
 *   **Starting Currency:** 50 sp.
 
 #### Farmer
-*Seasoned wood, rough to the touch and gnarled by the wind. It doesn't look like much, but it's the only thing that keeps the roof up when the wolves come.*
+*Mud, toil, and the biting frost—these are the only constants. A bad harvest is a death sentence, and hunger is a wolf that never sleeps.*
 
 *   **Trait: Sturdy-Built.** You can ignore all penalties from the first level of exhaustion.
 *   **Heritage Skills:** Trained in Nature and Athletics.
-*   **Starting Equipment:** A heavy wood-axe, a bundle of dried grain, or a sturdy iron cook-pot.
+*   **Starting Equipment:** A heavy wood-axe, a small bag of hardy seeds, or a sturdy iron cook-pot.
 *   **Starting Currency:** 30 sp.
 
 #### Artisan
-*Fine-tooled leather, flexible but tough. They know how things are made, and more importantly, they know how they break.*
+*In a world of rust and ruin, things must be forged to last. The smell of hot iron and oil is more comforting than perfume, and a well-made tool is worth more than a crown.*
 
 *   **Trait: Eye for Detail.** You have advantage on appraise or engineering checks to identify flaws or value in physical objects.
 *   **Heritage Skills:** Trained in Crafting and Engineering.
@@ -224,27 +224,27 @@ Your heritage defines your upbringing, innate traits, and starting social standi
 *   **Starting Currency:** 60 sp.
 
 #### Merchant
-*Silver-plated lead. It carries the weight of value, even if the luster’s a bit thin. They know the price of everything and the value of nothing.*
+*Gold is the only shield that doesn't rust. Raised among the chaotic markets and dangerous trade routes, survival meant spotting a lie before it was spoken.*
 
 *   **Trait: Master of Coin.** You have advantage on barter or persuade checks when negotiating prices or trade deals.
 *   **Heritage Skills:** Trained in Barter and Appraise.
-*   **Starting Equipment:** A set of brass scales, a pouch of "foreign" coins, or a fine traveling cloak.
+*   **Starting Equipment:** A set of brass scales, a concealed dagger, or a map with safe routes marked.
 *   **Starting Currency:** 120 sp.
 
 #### Noble
-*Frayed silk and rusted gold. Once they were the finest material in the shop; now they're just threads and memories.*
+*Drafty halls filled with the ghosts of past glories were your playground, teaching the bitter taste of pride without gold. The world may have forgotten your family's honor, but you have not.*
 
 *   **Trait: Silver Tongue.** You have advantage on persuade or diplomacy checks when dealing with authority figures or high-society.
 *   **Heritage Skills:** Trained in Diplomacy and History.
-*   **Starting Equipment:** A signet ring (scratched out), a fine but frayed cloak, or a book of genealogies.
+*   **Starting Equipment:** A heavy signet ring (worth 10sp), a fine but frayed cloak, or a letter of debt owed to your family.
 *   **Starting Currency:** 100 sp.
 
 #### Outcast
-*Material that's been dipped in the black. It's changed the grain, made it... wrong. But sometimes the wrong tool is the only one that works.*
+*While decent folk sleep behind locked doors, you learned to be invisible, eating scraps and sleeping with one eye open. Society rejected you, so you learned to survive without it.*
 
-*   **Trait: Hollow-Sense.** Once per day, you can sense the presence of "hollowed" creatures within 100 feet. You also have advantage on intimidate checks.
+*   **Trait: Hardened Survivor.** You have learned to live on the fringes of society. You have advantage on Stealth and Survival checks when in urban environments or ruins.
 *   **Heritage Skills:** Trained in Occult Knowledge and Investigation.
-*   **Starting Equipment:** A porcelain mask to hide a "stain," a vial of bitter medicine, or a heavy hood.
+*   **Starting Equipment:** A rusted knife, a lucky charm made of bone, or a heavy hood.
 *   **Starting Currency:** 40 sp.
 
 ### Course of Life
