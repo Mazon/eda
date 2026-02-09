@@ -367,10 +367,10 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 *   Tier 3: Cost 15 XP.
 *   Tier 4: Cost 20 XP.
 
-> The Rule of More: At any time, you must have more talents in a given tier than you have in the tier directly above it. (Common Talents).
+> **The Rule of More**: At any time, you must have more talents in a given tier than you have in the tier directly above it. (Common Talents).
 > *   Example: To take your first Tier 2 talent, you must have at least two Tier 1 talents. To take a second Tier 2 talent, you must have at least three Tier 1 talents.
 >
-> Archetype Path Rule: To take an Archetype Talent of Tier 2 or higher, you must already possess at least one talent from that same Archetype in the tier directly below it.
+> **Archetype Path Rule**: To take an Archetype Talent of Tier 2 or higher, you must already possess at least one talent from that same Archetype in the tier directly below it.
 
 ### Common Talents
 
@@ -710,7 +710,7 @@ When you are targeted by an attack, you may spend 1 Reaction from your pool to p
 *   **Dodge (AGI Check)**:
     *   Success: You move out of the way. You take no damage.
     *   Failure: You fail to move in time. You take full damage.
-*   **Parry (AGI check)**:
+*   **Parry (combat style check)**:
     *   Success: You deflect the blow with your weapon. Reduce incoming damage by your weapon damage + DoS.
     *   Failure: Your guard is broken. You take full damage.
 *   **Block (shield skill check)**:
@@ -784,9 +784,9 @@ Currency is based on the weight and purity of precious metals. While many remote
 
 ### Denominations
 
-*   **Copper Bit (cp)**: A thin, stamped copper disc used for everyday purchases.
-*   **Silver Piece (sp)**: The standard unit of trade. Most goods are priced in silver pieces. (100 cp = 1 sp).
-*   **Gold Crown (gp)**: Large, heavy coins often dating back long in history. Used only for significant transactions, such as buying land or high-quality livestock. (100 sp = 1 gp).
+*   **Copper (cp)**: A thin, stamped copper disc used for everyday purchases.
+*   **Silver (sp)**: The standard unit of trade. Most goods are priced in silver pieces. (100 cp = 1 sp).
+*   **Gold (gp)**: Large, heavy coins often dating back long in history. Used only for significant transactions, such as buying land or high-quality livestock. (100sp = 1 gp).
 
 ### Hacksilver & Barter
 
