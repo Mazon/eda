@@ -45,7 +45,7 @@ def convert_md_to_pdf(input_file, output_file, css_file=None, title=None):
             pdf_options = '{"format": "A4", "margin": {"top": "15mm", "right": "15mm", "bottom": "15mm", "left": "15mm"}, "printBackground": true}'
             if input_file == 'Character Sheet.md':
                 # Use smaller margins for the character sheet to fit everything
-                pdf_options = '{"format": "A4", "margin": {"top": "10mm", "right": "10mm", "bottom": "10mm", "left": "10mm"}, "printBackground": true}'
+                pdf_options = '{"format": "A4", "margin": {"top": "0", "right": "0", "bottom": "0", "left": "0"}, "printBackground": true}'
             
             # Additional options to ensure local file access if needed
             # But md-to-pdf generally handles local files fine

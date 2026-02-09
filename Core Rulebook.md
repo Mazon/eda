@@ -439,8 +439,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | Information Network     |  T1   | Access to thieves' network for info.                                                         |
 | Merciless               |  T1   | Advantage on attacks vs injured enemies.                                                     |
 | Fence Contacts          |  T2   | Sell stolen goods.                                                                           |
-| Disguise Mastery        |  T2   | Disguise 50+ required.                                                                       |
-| Dark Vision             |  T2   | See in dark.                                                                                 |
+| Disguise Mastery        |  T2   | Disguise 50+ required.                                                                       |                       
 | Exploit Opening         |  T2   | Rearguard: Deal +10 Damage if the target missed an attack against you or an ally this round. |
 | Fake Attack             |  T2   | Action: Target avoids any more attacks this round.                                           |
 | Mystic Shroud           |  T3   | Invisibility for 3 turns (Darkness) ( non combat).                                           |
