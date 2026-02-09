@@ -247,7 +247,7 @@ class CombatEncounter:
             for p in vanguard_players:
                 if p.hp <= 0: continue
                 if random.random() < 0.2:
-                    p.momentum = "Precision"
+                    p.momentum = "Recovery"
                     rearguard_players.append(p)
                     continue
                 self.resolve_turn(p, party, self.enemies, forced_strategy=strategy)
@@ -275,6 +275,11 @@ class CombatEncounter:
         strategy = forced_strategy if forced_strategy else "Default"
         attacks_made = 0
         
+        # Apply Momentum benefits that trigger at start of turn
+        if p.momentum == "Recovery":
+            p.reactions = min(p.max_reactions, p.reactions + 1)
+            p.momentum = None
+
         while p.combat_ap > 0:
             if strategy == "SingleAttackLimit":
                 if attacks_made >= 1:
@@ -333,16 +338,11 @@ class CombatEncounter:
         hit_mod = 0
         skill_val = att.skill_combat
         
-        # Multiple Attack Penalty (MAP): -20 for 2nd+ attack
+        # Multiple Attack Penalty (MAP): /2 skill for 2nd+ attack
         if hasattr(att, 'attacks_this_turn') and att.attacks_this_turn >= 1:
-            hit_mod -= 20
+            skill_val = skill_val // 2
         
-        # Evasive Token Penalty: Retired (now handled by Defense bonus in take_damage)
-        # if getattr(self, 'use_evasive_defense', False) and vic.moved_this_turn >= 3:
-        #     hit_mod -= 20
-
         adv = att.next_attack_advantage
-        if att.momentum == "Precision": adv = True
         if "Pack Tactics" in att.talents and any(f for f in friends if f.hp > 0 and f != att and (f.moved_this_turn > 0 or f.has_acted)):
             adv = True
         
