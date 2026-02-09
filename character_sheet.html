@@ -236,6 +236,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 25px;
+            height: 88%; /* Fill the page */
         }
         .skill-list {
             font-size: 9pt;
@@ -546,21 +547,21 @@
 
         <div class="skills-grid">
             <!-- CONDITIONS (Moved from Page 1) -->
-            <div style="flex-grow: 1; display: flex; flex-direction: column;">
-                <div class="section-header">Journal</div>
-                <div class="input-field" data-field="conditions" data-multiline="true" style="flex-grow: 1; border: 1px solid #ccc; background: var(--bg-light); height: auto; min-height: 400px;"></div>
+            <div style="display: flex; flex-direction: column; height: 100%;">
+                <div class="section-header">Active Conditions & Notes</div>
+                <div class="input-field" data-field="conditions" data-multiline="true" style="flex-grow: 1; border: 1px solid #ccc; background: var(--bg-light); height: 100%;"></div>
             </div>
 
             <!-- INVENTORY & CURRENCY -->
-            <div style="display: flex; flex-direction: column; gap: 15px;">
-                <div>
+            <div style="display: flex; flex-direction: column; gap: 15px; height: 100%;">
+                <div style="flex-grow: 1; display: flex; flex-direction: column;">
                     <div class="section-header">Inventory</div>
-                     <table>
+                    <table style="height: 100%;">
                          <tr>
                             <th width="10%" style="text-align: center;">#</th>
                             <th width="90%">Item Name</th>
                         </tr>
-                        <!-- 15 Rows -->
+                        <!-- 30 Rows -->
                         <tr> <td style="text-align:center;">1</td> <td><div class="input-field" data-field="inv_item_1"></div></td> </tr>
                         <tr> <td style="text-align:center;">2</td> <td><div class="input-field" data-field="inv_item_2"></div></td> </tr>
                         <tr> <td style="text-align:center;">3</td> <td><div class="input-field" data-field="inv_item_3"></div></td> </tr>
@@ -576,6 +577,21 @@
                         <tr> <td style="text-align:center;">13</td> <td><div class="input-field" data-field="inv_item_13"></div></td> </tr>
                         <tr> <td style="text-align:center;">14</td> <td><div class="input-field" data-field="inv_item_14"></div></td> </tr>
                         <tr> <td style="text-align:center;">15</td> <td><div class="input-field" data-field="inv_item_15"></div></td> </tr>
+                        <tr> <td style="text-align:center;">16</td> <td><div class="input-field" data-field="inv_item_16"></div></td> </tr>
+                        <tr> <td style="text-align:center;">17</td> <td><div class="input-field" data-field="inv_item_17"></div></td> </tr>
+                        <tr> <td style="text-align:center;">18</td> <td><div class="input-field" data-field="inv_item_18"></div></td> </tr>
+                        <tr> <td style="text-align:center;">19</td> <td><div class="input-field" data-field="inv_item_19"></div></td> </tr>
+                        <tr> <td style="text-align:center;">20</td> <td><div class="input-field" data-field="inv_item_20"></div></td> </tr>
+                        <tr> <td style="text-align:center;">21</td> <td><div class="input-field" data-field="inv_item_21"></div></td> </tr>
+                        <tr> <td style="text-align:center;">22</td> <td><div class="input-field" data-field="inv_item_22"></div></td> </tr>
+                        <tr> <td style="text-align:center;">23</td> <td><div class="input-field" data-field="inv_item_23"></div></td> </tr>
+                        <tr> <td style="text-align:center;">24</td> <td><div class="input-field" data-field="inv_item_24"></div></td> </tr>
+                        <tr> <td style="text-align:center;">25</td> <td><div class="input-field" data-field="inv_item_25"></div></td> </tr>
+                        <tr> <td style="text-align:center;">26</td> <td><div class="input-field" data-field="inv_item_26"></div></td> </tr>
+                        <tr> <td style="text-align:center;">27</td> <td><div class="input-field" data-field="inv_item_27"></div></td> </tr>
+                        <tr> <td style="text-align:center;">28</td> <td><div class="input-field" data-field="inv_item_28"></div></td> </tr>
+                        <tr> <td style="text-align:center;">29</td> <td><div class="input-field" data-field="inv_item_29"></div></td> </tr>
+                        <tr> <td style="text-align:center;">30</td> <td><div class="input-field" data-field="inv_item_30"></div></td> </tr>
                     </table>
                 </div>
 
