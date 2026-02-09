@@ -152,7 +152,7 @@ class Character:
         if "Holy Aura" in self.talents: defense += 1
         if "Defensive Stance" in self.talents: defense += 2
         if "Steel Resolve" in self.talents: defense += 2
-        if self.has_evasive_bonus: defense += 2 # New Rule: +2 Defense from movement
+        if self.has_evasive_bonus: defense += 3 # New Rule: +3 Defense from movement
         
         final_dmg = max(0, amount - defense)
         if final_dmg > 0:
@@ -337,9 +337,9 @@ class CombatEncounter:
         if hasattr(att, 'attacks_this_turn') and att.attacks_this_turn >= 1:
             skill_val = skill_val // 2
         
-        # Evasive Token Penalty: -20 to hit targets that moved 3m+
-        if getattr(self, 'use_evasive_defense', False) and vic.moved_this_turn >= 3:
-            hit_mod -= 20
+        # Evasive Token Penalty: Retired (now handled by Defense bonus in take_damage)
+        # if getattr(self, 'use_evasive_defense', False) and vic.moved_this_turn >= 3:
+        #     hit_mod -= 20
 
         adv = att.next_attack_advantage
         if att.momentum == "Precision": adv = True

@@ -96,6 +96,8 @@ Some tasks are harder than others and the GM might require a minimum number of D
 | **Extreme**         | 6 DoS       | At the edge of human capability.                |
 | **Near Impossible** | 8 DoS       | Practically legendary feats; requires a Master. |
 
+> **Note on Difficulty**: Most active defense rolls (Dodge, Parry, Block) are **Simple** (0 DoS required) unless stated otherwise.
+
 ### Advantage & Disadvantage
 
 When you have Advantage or Disadvantage, you roll d100 as normal, but you can swap which die is the primary (tens) and which is the secondary (units). This allows you to choose between two possible results from a single roll.
@@ -158,7 +160,7 @@ Character creation is the process of defining your protagonist's strengths, hist
 >
 > **Step 7: Course of Life**: Bjorn is a veteran of the Frost Wars, seeking to protect his village from the creeping ice. He is brave but cautious.
 >
-> **Step 8: Equipment**: Bjorn starts with **40 sp** from his **Clansman** heritage. He purchases a Hand Axe (30sp), a bedroll (2sp), a tinderbox (2sp), and 5 days of rations (10sp). He also carries his whetstone from his heritage, leaving him with **-4 sp**. *Note: Bjorn might need to reconsider his purchases or borrow some silver!*
+> **Step 8: Equipment**: Bjorn starts with **60 sp** from his **Clansman** heritage. He purchases a Hand Axe (30sp), a bedroll (2sp), a tinderbox (2sp), and 5 days of rations (10sp). He also carries his whetstone from his heritage, leaving him with **16 sp**.
 
 
 ### Lineage
@@ -197,7 +199,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Trait: Grim Resolve.** Once per day, when your life or honor is on the line, you may add your CON or INS tens digit as a bonus to any Check.
 *   **Heritage Skills:** Trained in Survival and Intimidate.
 *   **Starting Equipment:** A whetstone, a flask of "North-Burn" spirits, or a carved bone token.
-*   **Starting Currency:** 40 sp.
+*   **Starting Currency:** 60 sp.
 
 #### Clergy
 *Polished stone that hides the grit beneath. They speak of the light, but they know the weight of the dark better than most.*
@@ -245,7 +247,7 @@ Your Heritage defines your upbringing, innate traits, and starting social standi
 *   **Trait: Hollow-Sense.** Once per day, you can sense the presence of "Hollowed" creatures within 100 feet. You also have Advantage on Intimidate checks.
 *   **Heritage Skills:** Trained in Occult Knowledge and Investigation.
 *   **Starting Equipment:** A porcelain mask to hide a "stain," a vial of bitter medicine, or a heavy hood.
-*   **Starting Currency:** 20 sp.
+*   **Starting Currency:** 40 sp.
 
 ### Course of Life
 
@@ -263,16 +265,12 @@ Skills represent your character's training and experience.
 | Skill                | Attribute | Description                           |
 | :------------------- | :-------: | :------------------------------------ |
 | Acrobatics           |    AGI    | Balance, tumbling.                    |
-| Aid                  |    LOG    | Bandage wounds, fix broken bones.     |
 | Alchemy              |    LOG    | Create potions and brews.             |
-| Anatomy              |    LOG    | Knowledge of body structure.          |
 | Animal Training      |    CHA    | Train animals.                        |
 | Appraise             |    LOG    | Estimate value of items.              |
-| Athletics            |    STR    | Climbing, jumping, physical feats.    |
+| Athletics            |    STR    | Scaling walls/trees, jumping, swimming, physical feats. |
 | Barter               |    CHA    | Negotiate prices.                     |
 | Bluff                |    CHA    | Deception.                            |
-| Botany               |    LOG    | Plant knowledge.                      |
-| Climbing             |    STR    | Scaling walls/trees.                  |
 | Crafting             |    LOG    | Making items.                         |
 | Diplomacy            |    CHA    | Negotiation and peace-making.         |
 | Disguise             |    LOG    | Changing appearance.                  |
@@ -281,10 +279,10 @@ Skills represent your character's training and experience.
 | Entertain            |    CHA    | Performance.                          |
 | History              |    LOG    | Knowledge of the past.                |
 | Intimidate           |    CHA    | Coercion through fear.                |
-| Investigation        |    CHA    | Interrogation, finding clues.         |
+| Investigation        |    LOG    | Interrogation, finding clues.         |
 | Linguistics          |    LOG    | Read/write languages.                 |
-| Medicine             |    LOG    | Treating disease/injury.              |
-| Nature               |    LOG    | Knowledge of the wild.                |
+| Medicine             |    LOG    | Treating disease/injury, anatomy, first aid. |
+| Nature               |    LOG    | Knowledge of the wild, plants, and animals. |
 | Navigation           |    LOG    | Finding your way.                     |
 | Occult Knowledge     |    LOG    | Magic, monsters, dark beings.         |
 | Perception           |    INS    | Spotting hidden things (Sixth Sense). |
@@ -294,7 +292,6 @@ Skills represent your character's training and experience.
 | Seafaring            |    LOG    | Boating knowledge.                    |
 | Stealth              |    AGI    | Hiding and moving silently.           |
 | Survival             |    CON    | Enduring harsh environments.          |
-| Swimming             |    CON    | Moving in water.                      |
 | Thievery             |    AGI    | Pickpocket, lockpicking.              |
 | Tracking             |    LOG    | Following trails.                     |
 | Warfare              |    LOG    | Tactics and strategy.                 |
@@ -356,7 +353,7 @@ At character creation, you can choose one Combat Style if your heritage don't sa
 
 *   **Blocker (T1)**: Unlock the **Block** reaction. Use Shield skill to reduce damage.
 *   **Shield Bash (T1)**: Strike with shield (Damage = Shield Defense + DoS).
-*   **Shield Wall (T2)**: Passive. Adjacent allies gain +5 Defense. Reaction: After a successful Block, make a free Shield Bash attack.
+*   **Shield Wall (T2)**: Passive. Adjacent allies gain +2 Defense. Reaction: After a successful Block, make a free Shield Bash attack.
 *   **Shield Edge (T3)**: You have Advantage on attacks against an enemy you have Immobilized with your shield.
 
 ## Talents
@@ -389,12 +386,12 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Desperate Attack**     |  T1   | Move 5m with Attack Action.                                                                                      |
 | **The Charge**           |  T1   | Move up to Speed in a straight line and make a melee attack. If 3m+, deal +5 Damage. No Reactions.           |
 | **Smart Fighting**       |  T1   | Passive: While in cover, you gain Advantage on all Active Defense rolls (Dodge/Parry/Block).                 |
-| **Dodge**                |  T1   | Reaction: AGI check (Challenge: 2 DoS) to avoid attack.                                                          |
+| **Dodge**                |  T1   | Reaction: AGI check to avoid attack.                                                                             |
 | **Expert**               |  T1   | Advantage on one skill check/day.                                                                                |
 | **Parry**                |  T1   | Reaction: AGI check to parry melee. On success, reduce damage by Weapon Damage + DoS.                            |
 | **Bounce Back**          |  T1   | Advantage on check to avoid Prone.                                                                               |
-| **Move and Attack**      |  T2   | Move 10m and attack as single action.                                                                            |
-| **Resistance**           |  T2   | Choose damage type; reduce by 50%.                                                                               |
+| **Relentless Pursuit**   |  T2   | Move 10m and attack as single action.                                                                            |
+| **Battle Scarred**       |  T2   | Choose damage type; reduce by 50%.                                                                               |
 | **Harrying Strike**      |  T2   | Action: Target has Disadvantage on their next Defense roll.                                                  |
 | **Bloodied Fury**        |  T2   | If your HP is < 50%, all your attacks deal +5 damage.                                                     |
 | **Empower**              |  T2   | Action (1 AP): Spend 1 IP. Your next attack this turn deals +10 damage.                                      |
@@ -522,7 +519,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Uncanny Defense**            |  T2   | Reaction: Halve damage.                        |
 | **Slayer's Fury**              |  T2   | Advantage to Hit and +10 Damage (1/long rest). |
 | **Apex Predator**              |  T2   | Sense supernatural.                            |
-| **Pack Tactics**               |  T2   | If an ally is within 2m of your target and has already moved or acted, gain Advantage on attack. |
+| **Pack Tactics**               |  T2   | If an ally is within 2m of your target, gain Advantage on attack. |
 | **Toughened Resolve**          |  T3   | Resistance Psychic.                            |
 | **Slayer's Mark**              |  T3   | Action: Target is marked. All allies deal +5 damage to them. |
 | **Alertness**                  |  T3   | Cannot be surprised.                           |
@@ -543,7 +540,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Redirection**           |  T2   | Give ally a reaction to avoid/block (1/encounter).        |
 | **Shield of the People**  |  T3   | Redirect all attacks against an adjacent ally to yourself for 1 round. |
 | **Heirloom Relic**        |  T3   | Item with +5 bonus.                                       |
-| **Vanguard Reflexes**     |  T3   | Passive: You recover 1 Reaction at the start of every round (up to your max pool). |
+| **Vanguard Reflexes**     |  T3   | Passive: You recover **all** spent reactions at the start of every round. |
 | **Inspiring Presence**    |  T4   | Allies gain Advantage on the first roll of the encounter. |
 | **Guardian Aura**         |  T4   | Allies +5 Defense, Resist Fear.                           |
 | **Tactician's Insight**   |  T4   | Allies +5 Dmg vs enemy.                                   |
@@ -562,18 +559,18 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | **Abyssal Affinity** |  T3   | Spend 2 IP for **Double Damage** spell; take 5 necrotic damage.                                         |
 | **Shape Shift**      |  T3   | Werewolf form (+10 STR, Claw 7dmg).                                                                     |
 
-### Noble Talents
-*Aristocrats and leaders.*
+### Earl Talents
+*Social dominance and diplomatic authority.*
 
-| Name                    | Tier  | Description                                                           |
-| :---------------------- | :---: | :-------------------------------------------------------------------- |
-| **Commanding Presence** |  T1   | Allies gain Advantage on their next check (1/turn).                   |
-| **Courtly Grace**       |  T1   | Advantage CHA vs Nobles.                                              |
-| **Horsemanship**        |  T1   | Advantage on Riding checks (1/day).                                   |
-| **Master of Influence** |  T2   | Requires a successful CHA check to influence others to perform tasks. |
-| **Commanding Order**    |  T2   | Give an ally in the same phase and turn Advantage to hit.             |
-| **Coordinated Assault** |  T2   | If an ally hit this target earlier this round, you gain Advantage on the attack. |
-| **Bolster**             |  T2   | Reaction: Ally gains Advantage on their next attack.                  |
+| Name                       | Tier  | Description                                                                                                                     |
+| :------------------------- | :---: | :------------------------------------------------------------------------------------------------------------------------------ |
+| **Sanctuary of Status**    |  T1   | Enemies must pass an **INS check (vs your CHA)** to target you with an attack if you haven't struck yet.                        |
+| **Gilded Words**           |  T1   | Successful **Persuade** checks also **Charm** the target (Advantage on subsequent social checks) for 1 hour.                    |
+| **Master of Etiquette**    |  T1   | You can never be surprised in social situations and always act first in social encounters.                                      |
+| **Sovereign Mandate**      |  T2   | **Action (1 IP)**: Command a creature to "Halt", "Flee", or "Kneel". They must pass an **INS check** or obey for 1 round.       |
+| **Noble Aegis**            |  T2   | Allies within 5m gain **Advantage on all checks to resist Fear, Charm, or Mind-control**.                                       |
+| **High Stakes Negotiator** |  T2   | You can use **CHA** instead of **AGI** for Initiative rolls.                                                                    |
+| **Right of Passage**       |  T3   | **Action (1/Encounter)**: You and your allies can move through enemy spaces without triggering opportunity attacks for 1 round. |
 
 ## Encounters
 
@@ -595,9 +592,9 @@ On your turn, you receive **2 Action Points (AP)** and **1 Zero Cost Action**.
 #### Standard Actions
 
 *   **Move (1 AP)**: Move a distance up to your **Speed** (AGI / 10 meters).
-    *   **Evasive Stance**: If you move at least 3 meters during your turn, you gain the **Evasive** status until the start of your next turn. Attackers suffer a **-20 penalty** on all attack rolls against you while you are Evasive.
+    *   **Evasive Stance**: If you move at least 3 meters during your turn, you gain the **Evasive** status until the start of your next turn. You gain **+3 Defense** against all attacks while you are Evasive.
 *   **Attack (1 AP)**: Make an attack using a Combat Style.
-    *   **Multiple Attack Penalty (MAP)**: If you perform more than one Attack action in a single turn, any attack after the first is made at **Half Skill**.
+    *   **Multiple Attack Penalty (MAP)**: If you perform more than one Attack action in a single turn, any attack after the first is made at a **-20 penalty**.
 *   **Help (1 AP)**: Assist an ally within melee range, granting them **Advantage** on their next action.
 *   **Interact (1 AP)**: Open a door, light a torch, or manipulate an object.
 *   **Swap Weapon (1 AP)**: Draw or sheathe a weapon.
@@ -632,7 +629,7 @@ A player in the Vanguard Turn can spend a free Action to Wait. This drops them t
 >
 > **Vanguard Turn (Bjorn & Erik)**
 >
-> 1.  **Bjorn (Action 1 - Move):** Moves 6 meters to intercept Wolf 1. Gains **Evasive Stance** (-20 to be hit).
+> 1.  **Bjorn (Action 1 - Move):** Moves 6 meters to intercept Wolf 1. Gains **Evasive Stance** (+3 Defense).
 >
 > 2.  **Bjorn (Action 2 - Attack):** Swings his Long Sword (STR 70). Rolls 25. **Hit!**
 >
@@ -649,10 +646,12 @@ A player in the Vanguard Turn can spend a free Action to Wait. This drops them t
 > *   **Wolf 1 (Injured):** Bites Bjorn. Rolls 55 (Hit).
 >     *   Bjorn spends his 1st Reaction (out of 6) to **Block**. He rolls a 30 (3 DoS).
 >     *   *Reduction:* 2 (Chain Mail) + 2 (Shield Defense) + 3 (DoS) = 7. The wolf's 6 damage (1 Base + 5 DoS) is fully negated.
-> *   **Wolf 2:** Moves to flank Bjorn. With **Pack Tactics**, its hit chance is 75%. It rolls 70. **Hit!**
->     *   Bjorn spends his 2nd Reaction to **Dodge**. He rolls a 15 (1 DoS). **Failure** (Requires 2 DoS).
->     *   *Result:* 8 damage (1 Base + 7 DoS) - 2 (Chain Mail) = 6 damage taken.
-> *   **Wolf 3:** Moves into melee with Bjorn. It bites with **Pack Tactics** (Advantage), rolling an 80. **Miss.**
+> *   **Wolf 2:** Moves to flank Bjorn. With **Pack Tactics**, it has **Advantage**. It rolls 15 and 70. Taking the 15: **Hit!**
+>     *   Bjorn spends his 2nd Reaction to **Dodge**. He rolls a 42. **Success!** (Dodge now only requires a standard success). Bjorn leaps away from the snapping jaws.
+>     *   *Result:* No damage taken.
+> *   **Wolf 3:** Moves into melee with Bjorn. It bites with **Pack Tactics** (**Advantage**), rolling 48 and 80. Taking the 48: **Hit!**
+>     *   Bjorn spends his 3rd Reaction to **Block**. He rolls a 60 (6 DoS).
+>     *   *Reduction:* 2 (Chain Mail) + 2 (Shield Defense) + 6 (DoS) = 10. The wolf's 6 damage (1 Base + 5 DoS) is fully negated.
 >
 > **Rearguard Turn (Astrid)**
 > 1.  **Astrid (Action 1 - Attack):** Fires her Short Bow at Wolf 1. She has Advantage (from Erik). She rolls 15 and 60. Taking the 15: **Hit!**
@@ -703,7 +702,6 @@ Cover is a vital part of tactical survival. Represents the difficulty of hitting
 Survival in Eda depends on your ability to react to incoming threats. However, physical and mental exhaustion is a factor—characters have a **limited pool of Reactions** for an entire encounter.
 
 *   **Reaction Pool**: Your total pool of Reactions for the **entire encounter** is equal to the **tens digit of your AGI**. (e.g., AGI 65 provides **6 Reactions**).
-*   **Finite Resource**: These reactions **do not refresh** every round. Your pool must last for the duration of the entire combat encounter. Use them wisely.
 
 > ### Conserving Your Strength
 >
@@ -712,7 +710,7 @@ Survival in Eda depends on your ability to react to incoming threats. However, p
 #### Active Defense Options
 When you are targeted by an attack, you may spend **1 Reaction** from your pool to perform one of the following:
 
-*   **Dodge (AGI Check - Challenge: 2 DoS)**:
+*   **Dodge (AGI Check)**:
     *   **Success**: You move out of the way. You take **no damage**.
     *   **Failure**: You fail to move in time. You take **full damage**.
 *   **Parry (AGI Check)**:
@@ -720,7 +718,7 @@ When you are targeted by an attack, you may spend **1 Reaction** from your pool 
     *   **Failure**: Your guard is broken. You take **full damage**.
 *   **Block (Shield Skill Check)**:
     *   **Success**: You catch the blow on your shield. Reduce incoming damage by your **Shield Defense + DoS**.
-    *   **Failure**: The shield absorbs some impact. You take **half damage**.
+    *   **Failure**: You take **half damage**.
 
 ## Conditions & Status Effects
 
@@ -781,7 +779,7 @@ A standard rest requires at least 8 hours of sleep. Minor interruptions do not n
 ### Health & Injuries
 
 #### Healing Abilities
-Using the **Aid** skill to bandage or splint a broken arm can stop bleeding and prevent an injury from getting worse.
+Using the **Medicine** skill to bandage or splint a broken arm can stop bleeding and prevent an injury from getting worse.
 
 ## Equipment & Economy
 
@@ -1134,7 +1132,7 @@ After every major encounter, significant discovery, or successful completion of 
 
 *   **Buy Talents**: T1 = 5 XP, T2 = 10 XP, T3 = 15 XP, T4 = 20 XP.
 *   **Increase Attributes**: +1 to any Attribute = 10 XP.
-*   **Steady Training**: 1 XP increases a trained Skill score by **2 points**.
+*   **Steady Training**: 1 XP increases a trained Skill score by **1 point**.
 *   **Unlock Skill**: 5 XP to turn an untrained skill into a Trained skill.
 
 

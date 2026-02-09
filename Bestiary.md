@@ -35,7 +35,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Pack Tactics:</strong> Gains +10 to attack rolls if another wolf is adjacent to the target.
+<strong>Pack Tactics:</strong> Gains **Advantage** on attack rolls if another ally is adjacent to the target.
 </div>
 </div>
 
@@ -151,7 +151,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Poisonous Bite.</span> Combat Skill 70, Damage 0.
+<span class="action-name">Poisonous Bite.</span> Combat Skill 70, Damage 1.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
