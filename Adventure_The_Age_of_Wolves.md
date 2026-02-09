@@ -202,35 +202,35 @@ Suddenly, the horses stop screaming. Silence falls—heavy and unnatural. Then a
 
 > ### Mechanic: The Crash
 >
-> *   All players must make a **CON Check (Routine - 1 DoS)**.
+> *   All players must make a **CON check (routine - 1 DoS)**.
 >
-> *   **Failure**: Take 5 Bludgeoning damage and start with 1 Level of Exhaustion.
+> *   **Failure**: Take 5 bludgeoning damage and start with 1 level of exhaustion.
 
 **The Horror**:
 Looking up at the road (50ft up the embankment), they see a Dire Bear standing on two legs. Its fur is matted with black slime. It tears a guard in half like wet paper. It doesn't see them... yet.
 
 ### Scene 2: Scavenging & Survival
-The players are now in the wilderness with nothing. This scene teaches the Survival Mechanics.
+The players are now in the wilderness with nothing. This scene teaches the survival mechanics.
 
 **Looting the Dead Guards**:
 
 *   2 Daggers (4 damage).
-*   1 Shortbow (broken string, fixable with LOG Check).
+*   1 Shortbow (broken string, fixable with LOG check).
 *   1 Quiver (4 arrows).
 *   1 Flint & Steel (Critical for survival).
 *   2 Wool Cloaks (Heavy, rough wool).
 
 > ### Survival Rules Sidebar
 >
-> **The Cold**: Without proper clothing (Cloaks/Furs), a character must make a CON Check every hour of exposure.
+> **The Cold**: Without proper clothing (Cloaks/Furs), a character must make a CON check every hour of exposure.
 >
-> *   **Failure**: Gain 1 level of Exhaustion.
+> *   **Failure**: Gain 1 level of exhaustion.
 >
 > *   **Exhaustion**: See Core Rulebook for effects.
 >
 > **Hunger**: A character must eat 1 Ration per day.
 >
-> *   **Starvation**: Cannot recover HP or Exhaustion during rest. Gain 1 level of Exhaustion per day.
+> *   **Starvation**: Cannot recover HP or exhaustion during rest. Gain 1 level of exhaustion per day.
 
 ---
 
@@ -245,11 +245,11 @@ The players are now in the wilderness with nothing. This scene teaches the Survi
 *   *Encounter*: 3 Giant Rats.
 
 **Area 2: The Slime Tunnel**
-*   *Trap*: The floor is slick with green slime. AGI Check (Routine - 1 DoS) or fall into the sewage (CON Check vs Disease).
+*   *Trap*: The floor is slick with green slime. AGI check (routine - 1 DoS) or fall into the sewage (CON check vs disease).
 
 **Area 3: The Nest**
 *   *Description*: A dry platform covered in trash and bones.
-*   *Encounter*: Rat Swarm (Immune to single target attacks, vulnerable to fire/Area of Effect).
+*   *Encounter*: Rat Swarm (Immune to single target attacks, vulnerable to fire/area of effect).
 
 **Area 4: The Fungal Gate**
 *   *Visual*: A massive blockage of black fungus. It pulses like a heart.
@@ -265,6 +265,6 @@ The players are now in the wilderness with nothing. This scene teaches the Survi
 >
 > A fragment of King Haldor's broken blade. It glows with a faint, warm light.
 >
-> *   **Effect**: While held, it grants Advantage on all checks to resist Cold and Fear.
+> *   **Effect**: While held, it grants advantage on all checks to resist cold and fear.
 >
 > *   **Combat**: Deals +5 damage against the Hollowed.

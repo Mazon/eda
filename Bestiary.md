@@ -9,7 +9,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 *   **Reaction Pool**: The number of reactions available for the encounter.
 *   **Attributes**: Core stats (STR, AGI, LOG, INS, CHA, CON).
 *   **Combat Skill**: The skill value used for attack rolls.
-*   **Base Damage**: The starting damage value before adding DoS and Attribute bonuses.
+*   **Base Damage**: The starting damage value before adding DoS and attribute bonuses.
 
 ---
 
@@ -35,7 +35,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Pack Tactics:</strong> Gains **Advantage** on attack rolls if another ally is adjacent to the target.
+<strong>Pack Tactics:</strong> Gains **advantage** on attack rolls if another ally is adjacent to the target.
 </div>
 </div>
 
@@ -83,7 +83,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Fear Aura:</strong> Any character starting their turn adjacent to the Ichor-Wolf must pass a INS Check (Routine - 1 DoS) or lose 1 IP.
+<strong>Fear Aura:</strong> Any character starting their turn adjacent to the Ichor-Wolf must pass a INS check (routine - 1 DoS) or lose 1 IP.
 </div>
 </div>
 
@@ -107,7 +107,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Snow-Camouflage:</strong> Advantage on Stealth in snow; attackers have Disadvantage if the bear is in cover.
+<strong>Snow-Camouflage:</strong> Advantage on stealth in snow; attackers have disadvantage if the bear is in cover.
 </div>
 </div>
 
@@ -131,7 +131,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Crushing Grip:</strong> If both claws hit, the target is Restrained (Opposed STR check to escape).
+<strong>Crushing Grip:</strong> If both claws hit, the target is restrained (opposed STR check to escape).
 </div>
 </div>
 
@@ -155,6 +155,6 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Webbing:</strong> Action (10m range), AGI Check (Routine - 1 DoS) or be Immobilized.
+<strong>Webbing:</strong> Action (10m range), AGI check (routine - 1 DoS) or be immobilized.
 </div>
 </div>
