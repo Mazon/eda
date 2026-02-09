@@ -2,3 +2,4 @@ backup/
 .DS_Store
 .pdf
 .zip
+node_modules/
