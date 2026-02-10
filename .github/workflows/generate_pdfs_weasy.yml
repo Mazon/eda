@@ -2,15 +2,8 @@ name: Generate and Release PDFs
 
 on:
   push:
-    branches: [ main, master ]
     tags:
       - '*'
-  workflow_dispatch:
-    inputs:
-      tag_name:
-        description: 'Tag name for the release (e.g., v1.0.0). Defaults to branch/tag name if empty.'
-        required: false
-        default: ''
 
 jobs:
   build:
@@ -21,6 +14,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Ensure we have tags and history for commit message
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -45,12 +40,18 @@ jobs:
           git log -1 --pretty=%B >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
+      - name: Upload PDFs as Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: eda-rpg-pdfs
+          path: build/*.pdf
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           files: build/*.pdf
-          tag_name: ${{ github.event.inputs.tag_name || (github.ref_type == 'tag' && github.ref_name || 'latest') }}
-          name: "Eda RPG - ${{ github.event.inputs.tag_name || (github.ref_type == 'tag' && github.ref_name || 'latest') }}"
+          tag_name: ${{ github.ref_name }}
+          name: "Eda RPG - ${{ github.ref_name }}"
           body: ${{ steps.commit_message.outputs.msg }}
           draft: false
           prerelease: false
