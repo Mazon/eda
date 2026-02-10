@@ -84,10 +84,11 @@ def main():
     # List of files to convert: { markdown_file: (pdf_name, title) }
     files_to_convert = {
         'Core Rulebook.md': ('Core_Rulebook.pdf', 'Eda Core Rulebook'),
-        'Bestiary.md': ('Bestiary.pdf', 'Eda Bestiary'),
+        'Creature_Compendium.md': ('Creature_Compendium.pdf', 'Eda Creature Compendium'),
         'Character Sheet.md': ('Character_Sheet.pdf', None),
         'Cheat_Sheet.md': ('Cheat_Sheet.pdf', None),
-        'Adventure_The_Age_of_Wolves.md': ('Adventure_The_Age_of_Wolves.pdf', 'The Age of Wolves')
+        'Adventure_The_Age_of_Wolves.md': ('Adventure_The_Age_of_Wolves.pdf', 'The Age of Wolves'),
+        'World_of_Eda.md': ('World_of_Eda.pdf', 'World of Eda')
     }
 
     style_css = 'scripts/style.css'

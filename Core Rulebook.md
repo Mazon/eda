@@ -1080,7 +1080,6 @@ In the shadowed corners of Eda, practitioners of the old ways utilize macabre co
 | Tanned Human Skin        | Pliable and etched with runes. Grants advantage on hex craft when used as parchment.                                |
 | Oiled Severed Head       | Preserved in rare salts. Required for the *Talk with Dead* ritual; grants a more compliant spirit.                      |
 | Eclipse Hair             | Shorn from a victim during a lunar eclipse. A necessary component for high-tier curses.                                 |
-| Omens of the Gut         | Freshly harvested entrails. Used for lithomancy; grants advantage on the next check related to the future.          |
 | Hallowed Grave Soil      | Soil taken from a master craftsman's grave. Grants advantage on *animate plant* or *animate object* rituals.        |
 | Cold Iron                | Unworked iron. Deals 1d10 damage to fey creatures and prevents them from entering a warded circle.                  |
 | Etched Skulls            | Skulls of scholars or warriors. Requirement for the *Talk with Dead* ritual.                                            |
@@ -1142,7 +1141,7 @@ Rituals are powerful, utility-focused magical operations that cannot be cast in 
 | **Cleanse** | 1h | 10 | Pure spring water | You wash the target in water from a mountain's eye to peel away the filth. **Removes one curse or 1 level of exhaustion.** |
 | **Mirror Visions** | 1h | 15 | Silvered mirror (20sp) | You stare into the glass until it reflects things that haven't happened. **Gain Advantage on your next 3 initiative rolls.** |
 | **Dimension Gateway** | 4h | 25 | Star Dust (50sp) | You tear a hole in reality between two known circles. **Portal remains open for 1 hour.** |
-| **Summon Serpent** | 10m | 10 | Snake Skin | You whistle through a hollowed snake-skin. **Summons a Giant Snake (Bestiary) for 1 hour.** |
+| **Summon Serpent** | 10m | 10 | Snake Skin | You whistle through a hollowed snake-skin. **Summons a Giant Snake (Creature Compendium) for 1 hour.** |
 
 
 ## Game Master Section

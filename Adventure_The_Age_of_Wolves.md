@@ -16,7 +16,7 @@
 1.  Part I: The Gazetteer of the North
 2.  Part II: Oakhaven City Guide
 3.  Part III: The Adventure
-4.  Part IV: Bestiary & Loot
+4.  Part IV: Creature Compendium & Loot
 
 ---
 
@@ -257,9 +257,9 @@ The players are now in the wilderness with nothing. This scene teaches the survi
 
 ---
 
-# Part IV: Bestiary & Loot
+# Part IV: Creature Compendium & Loot
 
-*Refer to the Bestiary for full stat blocks.*
+*Refer to the Creature Compendium for full stat blocks.*
 
 > ### Special Loot: The Sun-Shard
 >

@@ -9,7 +9,8 @@
 This repository contains the source files for the Eda TTRPG system, including:
 
 - **[Core Rulebook](Core%20Rulebook.md)**: The complete rules for playing and running the game.
-- **[Bestiary](Bestiary.md)**: A collection of monsters and creatures to challenge players.
+- **[World of Eda](World_of_Eda.md)**: (GM Only) Detailed world description, factions, and random tables.
+- **[Creature Compendium](Creature_Compendium.md)**: A collection of monsters and creatures to challenge players.
 - **Adventures**: Ready-to-play modules like *[The Age of Wolves](Adventure_The_Age_of_Wolves.md)*.
 - **Character Sheets**: Tools for creating and managing characters.
 

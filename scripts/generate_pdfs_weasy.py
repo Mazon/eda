@@ -83,10 +83,11 @@ def main():
     # We now use the .html versions for the sheets to avoid Pandoc escaping
     files_to_convert = {
         'Core Rulebook.md': ('Core_Rulebook.pdf', 'Eda Core Rulebook'),
-        'Bestiary.md': ('Bestiary.pdf', 'Eda Bestiary'),
+        'Creature_Compendium.md': ('Creature_Compendium.pdf', 'Eda Creature Compendium'),
         'character_sheet.html': ('Character_Sheet.pdf', None),
         'cheat_sheet.html': ('Cheat_Sheet.pdf', None),
-        'Adventure_The_Age_of_Wolves.md': ('Adventure_The_Age_of_Wolves.pdf', 'The Age of Wolves')
+        'Adventure_The_Age_of_Wolves.md': ('Adventure_The_Age_of_Wolves.pdf', 'The Age of Wolves'),
+        'World_of_Eda.md': ('World_of_Eda.pdf', 'World of Eda')
     }
 
     style_css = 'scripts/style.css'

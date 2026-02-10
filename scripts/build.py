@@ -113,8 +113,9 @@ def main():
     style_css = os.path.join(scripts_dir, 'style.css')
     other_files = {
         'Core Rulebook.md': 'Core_Rulebook.pdf',
-        'Bestiary.md': 'Bestiary.pdf',
-        'Adventure_The_Age_of_Wolves.md': 'Adventure_The_Age_of_Wolves.pdf'
+        'Creature_Compendium.md': 'Creature_Compendium.pdf',
+        'Adventure_The_Age_of_Wolves.md': 'Adventure_The_Age_of_Wolves.pdf',
+        'World_of_Eda.md': 'World_of_Eda.pdf'
     }
 
     for md_file, pdf_file in other_files.items():
