@@ -38,11 +38,12 @@ jobs:
       - name: Run Build Script
         run: python ./scripts/build.py
 
-      - name: Upload PDFs as Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: eda-rpg-pdfs
-          path: build/*.pdf
+      - name: Get latest commit message
+        id: commit_message
+        run: |
+          echo "msg<<EOF" >> $GITHUB_OUTPUT
+          git log -1 --pretty=%B >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
@@ -50,7 +51,7 @@ jobs:
           files: build/*.pdf
           tag_name: ${{ github.event.inputs.tag_name || (github.ref_type == 'tag' && github.ref_name || 'latest') }}
           name: "Eda RPG - ${{ github.event.inputs.tag_name || (github.ref_type == 'tag' && github.ref_name || 'latest') }}"
-          body: "Automated PDF generation for Eda RPG."
+          body: ${{ steps.commit_message.outputs.msg }}
           draft: false
           prerelease: false
           make_latest: true
