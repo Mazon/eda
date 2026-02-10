@@ -28,7 +28,15 @@ jobs:
 
       - name: Run pandoc
         run: pandoc --version
-  
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install Markdown-to-PDF
+        run: npm install -g md-to-pdf
+
       - name: Run PDF generation script
         run: python ./scripts/generate_pdfs.py
 
