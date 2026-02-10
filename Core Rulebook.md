@@ -628,7 +628,7 @@ Every attack that deals damage (after armor reduction) inflicts a **Bleed**.
 #### 2. Injuries
 When a character suffers a **Critical Hit** (rolling doubles under the attacker's skill, e.g., 11, 22, 33), they suffer an **Injury** in addition to the normal damage.
 
-*   **Roll:** The combatant that did the critical hit rolls a d100 on the **Injury Table**.
+*   **Roll:** The player always roll a d100 on the **Injury Table**.
 *   **Effect:** The table provides both a narrative description and a mechanical penalty (e.g., Stunned, Disadvantage, Broken Limb).
 *   **Note:** Injuries are distinct from Bleeding and have their own specific durations/cures.
 
@@ -866,7 +866,7 @@ In the grime and filth of *Eda*, disease is a constant companion. Poor hygiene, 
 Treatment in *Eda* is not for the faint of heart. Without modern anesthesia, surgery is a trauma in itself.
 
 **The Medicine Skill**
-*   **First Aid (Routine, 1 DoS)**: Stop *Bleeding*, stabilize dying.
+*   **Medicine**: Stop *Bleeding*, stabilize dying.
 *   **Long-Term Care (Challenge, 2 DoS)**: Treat disease, aid natural healing (+2 HP/day).
 *   **Surgery (Hard, 4 DoS)**: Repair severe injuries.
 *   **Amputation (Extreme, 6 DoS)**: Remove limb to cure severe disease/injury.
