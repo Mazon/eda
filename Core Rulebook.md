@@ -1096,13 +1096,6 @@ In the shadowed corners of Eda, practitioners of the old ways utilize macabre co
 
 Magic in Eda is a gnarly, dangerous practice that draws power from the subconscious and the darker corners of the world. It is a strategic gamble; because characters have limited Instinct Points (IP) and magic takes a physical toll, most practitioners must rely on their mundane skills and weapons until a situation becomes desperate.
 
-### The Toll of Magic
-
-Channeling occult forces is not a clean act. It stains the soul and tears at the flesh.
-
-*   **Witch-Marks**: Every time you successfully cast a spell, you take **1 damage (unreducible)** per 5 IP spent as blood seeps from your pores or your skin cracks like old parchment.
-*   **Backlash**: If you fail your INS check to cast a spell, the energy backfires. You lose the spent IP and immediately gain the **Bleeding** condition as your skin splits under the pressure of the unreleased magic.
-
 ### Spells
 
 All spells require a successful **INS check** (including the required DoS). Combat magic focuses on visceral effects and immediate conditions.
