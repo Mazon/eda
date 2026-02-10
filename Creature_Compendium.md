@@ -79,7 +79,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Corrosive Bite.</span> Combat Skill 60, Damage 2 + 2 Bleeding.
+<span class="action-name">Corrosive Bite.</span> Combat Skill 60, Damage 2 and inflicts **Bleeding**.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -103,7 +103,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Infectious Bite.</span> Combat Skill 75, Damage 2. On a hit, the victim must resist infection of lycanthropy (happiness entropy). Those infected by a Garou tend to become stuck in wolf form more quickly.
+<span class="action-name">Infectious Bite.</span> Combat Skill 75, Damage 2. On a hit, the victim must resist the infection of lycanthropy. Those infected by a Garou tend to become stuck in wolf form more quickly.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">

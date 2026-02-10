@@ -204,7 +204,7 @@ strong {
         <h2>Damage & Wounds</h2>
         <ul>
             <li><strong>Damage:</strong> Weapon Base + DoS.</li>
-            <li><strong>Bleeding:</strong> Take +1 dmg per stack from all hits. Removed by Medicine check.</li>
+            <li><strong>Bleeding:</strong> Defense reduced by 2 (non-stacking). Removed by Medicine check.</li>
             <li><strong>Wounds/Injuries:</strong> Caused by Critical Hits. Roll on Injury Table.</li>
         </ul>
       </div>
@@ -223,7 +223,7 @@ strong {
             <tr>
                 <td>01-10</td>
                 <td>Minor</td>
-                <td><strong>Stunned:</strong> Lose next Half Action.<br><span class="small-text">Glancing Blow.</span></td>
+                <td><strong>Stunned:</strong> Lose 1 Action Point (AP) on your next turn.<br><span class="small-text">Glancing Blow.</span></td>
             </tr>
             <tr>
                 <td>11-20</td>
@@ -258,7 +258,7 @@ strong {
             <tr>
                 <td>71-80</td>
                 <td>Severe</td>
-                <td><strong>Vulnerable:</strong> Double dmg from Bleed stacks.<br><span class="small-text">Internal Injury.</span></td>
+                <td><strong>Vulnerable:</strong> Defense penalty from Bleeding is doubled (Total -4 Defense).<br><span class="small-text">Internal Injury.</span></td>
             </tr>
             <tr>
                 <td>81-85</td>

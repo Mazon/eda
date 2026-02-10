@@ -18,9 +18,9 @@ Roll once per day (or once per travel segment).
 | :--- | :--- | :--- | :--- |
 | 01-30 | **Still Cold** | Eerily quiet, freezing air. | No immediate hazard, but visibility is high. |
 | 31-60 | **Falling Snow** | Constant, light snowfall. | -1 DoS to Tracking and Ranged Combat. |
-| 61-80 | **The Howling Gale** | Strong winds and heavy snow. | Routine (1 DoS) Fitness check or gain 1 Fatigue. |
+| 61-80 | **The Howling Gale** | Strong winds and heavy snow. | Routine (1 DoS) Athletics check or gain 1 level of Exhaustion. |
 | 81-95 | **Whiteout** | Blindness-inducing blizzard. | Visibility 0. Movement requires Hard (4 DoS) Navigation. |
-| 96-00 | **Old Night Chill** | Supernatural cold that saps the soul. | Routine (1 DoS) Willpower check or lose 1 HP (ignores armor). |
+| 96-00 | **Old Night Chill** | Supernatural cold that saps the soul. | Routine (1 DoS) Instinct (INS) check or lose 1 HP (ignores armor). |
 
 #### Travel & Survival
 Eda is a world where distance is measured in danger, not miles.
@@ -28,14 +28,11 @@ Eda is a world where distance is measured in danger, not miles.
 **Travel Segments**
 A day is divided into three segments: Morning, Afternoon, and Night. 
 *   **Normal Pace**: 1 segment of travel (Morning or Afternoon).
-*   **Forced March**: 2 segments of travel. Requires a Routine (1 DoS) Fitness check to avoid Fatigue.
+*   **Forced March**: 2 segments of travel. Requires a Routine (1 DoS) Athletics check to avoid Exhaustion.
 *   **Night Travel**: Requires light sources. Disadvantage on all Perception checks.
 
 **Fatigue**
-Fatigue represents physical and mental exhaustion.
-*   **Level 1**: -1 DoS to all physical checks.
-*   **Level 2**: -2 DoS to all physical checks; movement speed halved.
-*   **Level 3**: Incapacitated until a Long Rest is completed.
+Fatigue (Exhaustion) represents physical and mental exhaustion. See the **Exhaustion** rules in the Core Rulebook for mechanical effects.
 
 ---
 
@@ -79,7 +76,7 @@ Used when searching corpses, chests, or ruins.
 ### 3. The Nature of Demons (Demoner)
 Demoner (Dæmons, Fell, Urgudar) is a collective term for entities so horrific, unique, and powerful that they defy traditional classification. They are not a single race, but a variety of singular terrors.
 
-*   **Origins**: Unknown. Theories range from fallen angels to extraterrestrial entities or beings risen from the black hole at the center of the galaxy.
+*   **Origins**: Unknown. Theories range from fallen angels to void-born entities or beings risen from the ancient silence between the stars.
 *   **Influence**:
     *   **Lesser Demons**: Often seize control of human or animal bodies (see Possessed Creatures) to satisfy twisted passions or minor evil ends.
     *   **Higher Demons**: Work through those in power, exchanging forbidden knowledge and power for lives and souls.
@@ -212,7 +209,7 @@ In Eda, anyone can cast a curse, but their strength depends on the caller. Curse
 
 The following organizations operate in the shadows of Eda, each pursuing their own mysterious agendas.
 
-*   **Curatores Lucis (Guardians of Light)**: Founded during the final days of the Inquisition, they have sworn to protect humanity from the supernatural. They operate from a massive library in London and recruit those who have survived paranormal encounters.
+*   **Curatores Lucis (Guardians of Light)**: Founded during the final days of the Inquisition, they have sworn to protect humanity from the supernatural. They operate from a massive library in Lundenwic and recruit those who have survived paranormal encounters.
 *   **Vitae Ordo (The Order of Life)**: A secretive group seeking immortality. Founded by Konrad Kamper, the order is infamous for its elitism and its practice of sacrificing blood relatives to maintain the eternal life of its inner circle.
 *   **Domini Voraginis (Lords of the Abyss)**: A splinter group from the Vitae Ordo, they embrace darkness openly. Unlike the Ordo, they do not care about heritage, often collaborating with mages and witch doctors from across the globe.
 *   **Sorores (The Sisters)**: An all-female order of mages who believe the ultimate power lies in femininity. They use "Glamour" magic to maintain preternatural beauty and believe men were created to serve and protect them.

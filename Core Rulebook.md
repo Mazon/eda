@@ -2,7 +2,7 @@
 
 > ### Preface
 >
-> Winter had arrived, snowflakes gently falling down to the ground. Jonah had finished helping his father put the horses in the stable. It was still not too cold, a wool sweater was enough to hold the cold at bay for now. A river passed by the back side of the house. Jonah walked to get water for dinner. Fog covered the water this morning, reaching out and massaging the grass on each side like fingers playing a beautiful tune on the piano. He bent down to fill up his bucket, something dark suddenly reached out and Jonah was never seen again.
+> Winter had arrived, snowflakes gently falling down to the ground. Jonah had finished helping his father put the horses in the stable. It was still not too cold, a wool sweater was enough to hold the cold at bay for now. A river passed by the back side of the house. Jonah walked to get water for dinner. Fog covered the water this morning, reaching out and massaging the grass on each side like fingers playing a beautiful tune on the lute. He bent down to fill up his bucket, something dark suddenly reached out and Jonah was never seen again.
 
 ## Introduction
 
@@ -537,7 +537,7 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | Redirection               |  T2   | Reaction| Give ally a reaction to avoid/block (1/encounter).        |
 | Shield of the People      |  T3   | 1 AP    | Redirect all attacks against an adjacent ally to yourself for 1 round. |
 | Heirloom Relic            |  T3   | Passive | Item with +5 bonus.                                       |
-| Vanguard Reflexes         |  T3   | Passive | You recover all spent reactions at the start of every round. |
+| Vanguard Reflexes         |  T3   | Passive  | Regain 1 reaction at the start of each round. |
 | Inspiring Presence        |  T4   | Passive | Allies gain advantage on the first roll of the encounter. |
 | Guardian Aura             |  T4   | Passive | Allies +5 defense, resist fear.                           |
 | Tactician's Insight       |  T4   | Passive | Allies +5 dmg vs enemy.                                   |
@@ -608,7 +608,7 @@ A player in the vanguard turn can spend their zero cost action to wait. This dro
 ### Damage & Health
 
 *   **Damage**: Total damage is calculated as weapon base damage + degree of success (DoS).
-*   **Reduction**: Damage is reduced by defense (armor/shields) before being applied to HP.
+*   **Reduction**: Damage is reduced by **Defense** (the sum of armor and shield values) before being applied to HP.
 *   **Death**: At 0 HP.
 
 ### Wounds & Injuries
@@ -619,7 +619,7 @@ Combat in Eda is dangerous. While Hit Points (HP) represent your overall health,
 Every attack that deals damage (after armor reduction) inflicts the **Bleeding** condition.
 
 *   **Trigger:** Any damaging hit.
-*   **Effect:** Bleeding represents the cumulative toll of minor cuts and fatigue. While Bleeding, your **Defense is reduced by 2**.
+*   **Effect:** Bleeding represents the cumulative toll of minor cuts and fatigue. While Bleeding, your **Defense is reduced by 2**. This penalty does not stack.
 *   **Duration:** Bleeding persists until the end of the combat encounter.
 *   **Treatment:** A successful **Medicine check** (Action) can remove the Bleeding condition.
 
@@ -634,7 +634,7 @@ When a character suffers a **Critical Hit** (rolling doubles under the attacker'
 
 | Roll      | Severity     | Narrative Prompt                                            | Mechanical Effect                                                                                      |
 | :-------- | :----------- | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| **01-10** | **Minor**    | **Glancing Blow** - A jarring hit that rattles you.         | **Stunned:** You lose your next Half Action.                                                           |
+| **01-10** | **Minor**    | **Glancing Blow** - A jarring hit that rattles you.         | **Stunned:** You lose 1 Action Point (AP) on your next turn.                                           |
 | **11-20** | **Minor**    | **Deep Gash** - A painful cut but clean.                    | **Pain:** -10 to your next check due to shock.                                                         |
 | **21-30** | **Minor**    | **Knocked Senseless** - Ringing ears and blurred vision.    | **Disoriented:** Disadvantage on all Logic and Instinct checks for 1d4 rounds.                         |
 | **31-40** | **Moderate** | **Leg Wound** - Muscle torn or bone chipped in the leg.     | **Hobbled:** Movement speed halved until healed.                                                       |
@@ -687,7 +687,7 @@ When a character suffers a **Critical Hit** (rolling doubles under the attacker'
 >     *   Bjorn spends his 1st Reaction (out of 6) to Block. He rolls a 30 (3 DoS).
 >     *   *Reduction:* 2 (chain mail) + 2 (shield defense) + 3 (DoS) = 7. The wolf's 6 damage (1 base + 5 DoS) is fully negated.
 > *   Wolf 2: Moves to flank Bjorn. With pack tactics, it has advantage. It rolls 15 and 70. Taking the 15: Hit!
->     *   Bjorn spends his 2nd reaction to dodge. He rolls a 42. Success! (Dodge now only requires a standard success). Bjorn leaps away from the snapping jaws.
+>     *   Bjorn spends his 2nd reaction to dodge. He rolls a 42. Success! Bjorn leaps away from the snapping jaws.
 >     *   *Result:* No damage taken.
 > *   Wolf 3: Moves into melee with Bjorn. It bites with pack tactics (advantage), rolling 48 and 80. Taking the 48: Hit!
 >     *   Bjorn spends his 3rd reaction to block. He rolls a 60 (6 DoS).
@@ -696,7 +696,7 @@ When a character suffers a **Critical Hit** (rolling doubles under the attacker'
 > **Rearguard Turn (Astrid)**
 > 1.  Astrid (Action 1 - Attack): Fires her short bow at Wolf 1. She has advantage (from Erik). She rolls 15 and 60. Taking the 15: Hit!
 >     *   *DoS:* 1 (Roll 15).
->     *   *Damage:* 6 (Short Bow) + 1 (DoS) - 1 (Wolf Defense) + 1 (Wolf Bleed) = 7 damage. Wolf 1 is defeated!
+>     *   *Damage:* 6 (Short Bow) + 1 (DoS) - (1 - 2) (Wolf Defense reduced by Bleed) = 8 damage. Wolf 1 is defeated!
 > 2.  Astrid (Action 2 - Move): Moves to higher ground for safety.
 >
 > **Round 2: The Fight Continues**
@@ -705,14 +705,14 @@ When a character suffers a **Critical Hit** (rolling doubles under the attacker'
 >
 > 1.  Bjorn (Action 1 - Attack): Swings at Wolf 2 (adjacent). Rolls 45. Hit!
 >     *   *DoS:* 4 (Roll 45).
->     *   *Damage:* 7 (base) + 4 (DoS) - 1 (wolf defense) = 10 damage. Wolf 2 is severely wounded (2/12 HP) and gains **1 Bleed Stack**.
+>     *   *Damage:* 7 (base) + 4 (DoS) - 1 (wolf defense) = 10 damage. Wolf 2 is severely wounded (2/12 HP) and is now **Bleeding**.
 > 2.  Bjorn (Action 2 - Attack): Quick follow-up on Wolf 2. Rolls 30. Hit!
 >     *   *DoS:* 3 (Roll 30).
->     *   *Damage:* 7 (base) + 3 (DoS) - 1 (wolf defense) + 1 (Wolf Bleed) = 10 damage. Wolf 2 is defeated!
+>     *   *Damage:* 7 (base) + 3 (DoS) - (1 - 2) (Wolf Defense reduced by Bleed) = 11 damage. Wolf 2 is defeated!
 > 3.  Erik (Action 1 - Move): Moves 5 meters to engage Wolf 3.
 > 4.  Erik (Action 2 - Attack): Swings his hand axe (STR 60). Rolls 35. Hit!
 >     *   *DoS:* 3 (Roll 35).
->     *   *Damage:* 6 (Base) + 3 (DoS) - 1 (Wolf Defense) = 8 damage. Wolf 3 is injured (4/12 HP) and gains **1 Bleed Stack**.
+>     *   *Damage:* 6 (Base) + 3 (DoS) - 1 (Wolf Defense) = 8 damage. Wolf 3 is injured (4/12 HP) and is now **Bleeding**.
 >
 > **Enemy Turn (Gray Wolves)**
 >
@@ -724,7 +724,7 @@ When a character suffers a **Critical Hit** (rolling doubles under the attacker'
 >
 > 1.  Astrid (Action 1 - Attack): Fires at the last remaining wolf (Wolf 3). Rolls 32. Hit!
 >     *   *DoS:* 3 (Roll 32).
->     *   *Damage:* 6 (Base) + 3 (DoS) - 1 (Wolf Defense) + 1 (Wolf Bleed) = 9 damage. Wolf 3 is defeated!
+>     *   *Damage:* 6 (Base) + 3 (DoS) - (1 - 2) (Wolf Defense reduced by Bleed) = 10 damage. Wolf 3 is defeated!
 
 ### Cover
 Cover is a vital part of tactical survival. Represents the difficulty of hitting a target partially or fully obscured by the environment.
@@ -739,7 +739,7 @@ Cover is a vital part of tactical survival. Represents the difficulty of hitting
 
 ### Reactions & Active Defense
 
-Survival in Eda depends on your ability to react to incoming threats. However, physical and mental exhaustion is a factor—characters have a limited pool of Reactions for an entire encounter.
+Survival in Eda depends on your ability to react to incoming threats. However, physical and mental exhaustion is a factor—characters have a limited pool of Reactions for an entire encounter. This pool does not replenish during combat except through specific actions or talents.
 
 *   Reaction Pool: Your total pool of reactions for the entire encounter is equal to the tens digit of your AGI (e.g., AGI 65 provides 6 reactions).
 
@@ -967,7 +967,7 @@ Outside major trade hubs, barter is the primary form of exchange. A character mi
 
 ### Armor
 
-Armor protects you by providing Defense, which is subtracted from incoming damage. Armors are categorized by weight, which determines the penalties applied to the wearer.
+Armor protects you by providing **Defense**, a flat reduction value subtracted from incoming damage. Armors are categorized by weight, which determines the penalties applied to the wearer.
 
 | Type             | Defense |  Cost  | Req    | Notes                                                              |
 | :--------------- | :-----: | :----: | :----- | :----------------------------------------------------------------- |
@@ -1101,13 +1101,13 @@ All spells require a successful **INS check** (including the required DoS). Comb
 
 | Name | IP | Difficulty | Description & Effect |
 | :--- | :--- | :--- | :--- |
-| **Blight** | 5 | Routine (1 DoS) | You exhale a cloud of flies and bile. **Cone (3m). Target takes 7 damage and the Poisoned condition.** |
+| **Blight** | 5 | Routine (1 DoS) | You exhale a cloud of flies and bile. **Cone (3m). Target takes 5 + DoS damage and the Poisoned condition.** |
 | **Veil of Blood** | 5 | Routine (1 DoS) | You slice your palm and blow the droplets into a fine, red fog. **5m Area. Anyone inside takes the Bleeding condition.** |
-| **Vomit Fire** | 10 | Challenge (2 DoS) | You swallow a coal; your ribs glow before you vomit a ball of flame. **10 Fire Damage + Burning condition.** |
+| **Vomit Fire** | 10 | Challenge (2 DoS) | You swallow a coal; your ribs glow before you vomit a ball of flame. **8 + DoS Fire Damage + Burning condition.** |
 | **Clay Grasp** | 5 | Routine (1 DoS) | You whisper to the earth; clay hands rise to seize the ankles of your foe. **Target is Immobilized + Restrained.** |
 | **Salt Statue** | 10 | Challenge (2 DoS) | You blow white dust at a foe; their skin hardens into cracked salt. **Target is Stunned for 1 round.** |
 | **Pluck the Eye** | 5 | Routine (1 DoS) | You make a hooking motion in the air; the target's eyes roll back into their head. **Target is Blinded for 1 round.** |
-| **The Knot** | 5 | Routine (1 DoS) | You twist a rag in your hands; the target's bowels knot in agony. **Target is knocked Prone and takes 5 damage.** |
+| **The Knot** | 5 | Routine (1 DoS) | You twist a rag in your hands; the target's bowels knot in agony. **Target is knocked Prone and takes 3 + DoS damage.** |
 | **Witch Wall** | 5 | Routine (1 DoS) | You weave your fingers in a pattern that blurs your physical form. **Caster gains Evasive status.** |
 | **Crow Senses** | 5 | Routine (1 DoS) | You coat your eyes in crow-fat to blend into the dark. **Caster gains Hidden condition in shadows.** |
 
