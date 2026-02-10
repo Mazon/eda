@@ -877,7 +877,7 @@ Treatment in *Eda* is not for the faint of heart. Without modern anesthesia, sur
 
 **Herbalism & Supplies**
 *   **Bitter-Moss**: Chewed to numb pain (Advantage on Pain CON check).
-*   **Fire-Water**: High-proof alcohol. Used to sterilize (removes Sanitation penalty) or dull pain.
+*   **North-Burn**: High-proof spirits. Used to sterilize (removes Sanitation penalty) or dull pain (Advantage on Pain checks). See *Alchemical Items* for combat use.
 *   **Cauterization**: Using fire/hot iron to stop bleeding/amputate. Stops bleeding instantly but deals 1d10 fire damage and causes a Pain check.
 
 **Integration with Rules**
@@ -1040,6 +1040,7 @@ Shields provide Defense and are used with the Block reaction.
 
 | Item                  | Cost  | Effect                                                                                                  |
 | :-------------------- | :---: | :------------------------------------------------------------------------------------------------------ |
+| North-Burn            | 10sp  | Flask of rough spirits. **Drink**: Advantage on Pain checks (1hr). **Sterilize**: Removes Sanitation penalty. **Weaponize**: If combined with a rag/bandage and lit (1 AP), it can be thrown (AGI check). On hit, deals 3 damage and applies **Burning** to target and units within 1m. |
 | Weapon Oil            | 10sp  | Applied to metal gear. Prevents rust for 24 hours in wet conditions.                                    |
 | Blood-Stanch Herb     | 15sp  | A bitter paste. Immediately stops the bleeding status.                                              |
 | Numbing Mash          | 20sp  | A herbal chew. Ignore penalties from 1 level of exhaustion for 1 hour.                              |
