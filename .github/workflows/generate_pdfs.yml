@@ -37,3 +37,18 @@ jobs:
         with:
           name: generated-pdfs
           path: build/*.pdf  # Change 'output/' to whichever folder your script saves PDFs in
+
+      - name: Create Release and Upload PDF
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            build/Character_Sheet.pdf
+            build/Core_Rulebook.pdf
+            build/Cheat_Sheet.pdf
+          name: "Release ${{ github.ref_name }}"
+          tag_name: ${{ github.ref }}
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
