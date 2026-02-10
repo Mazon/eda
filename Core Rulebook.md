@@ -548,8 +548,8 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 | Name                 | Tier  | Description                                                                                             |
 | :------------------- | :---: | :------------------------------------------------------------------------------------------------------ |
 | Eldritch Sight       |  T1   | See magic auras.                                                                                        |
-| Hex Craft            |  T1   | Cast hexes/curses (INS).                                                                                |
-| Rituals              |  T2   | Perform powerful, utility-focused rituals (see rituals section).                                        |
+| Hex Craft            |  T1   | You have learned the basic methods of channeling magic. You can cast Spells using your INS attribute.   |
+| Rituals              |  T2   | You can perform powerful, utility-focused rituals. Requires significant time and ingredients.            |
 | Coven Bond           |  T2   | +2 Spell Rolls near witches.                                                                            |
 | Familiar             |  T3   | You gain a spiritual familiar (Raven, Cat, or Toad). It can scout, share its senses and deliver spells. |
 | Hex Ward             |  T3   | Advantage on all rolls to resist or cleanse hexes and curses.                                           |
@@ -1094,32 +1094,30 @@ In the shadowed corners of Eda, practitioners of the old ways utilize macabre co
 
 ## Magic & Rituals
 
-Magic draws power from despair and requires IP.
-**IP Limit**: INS / 2.
+Magic in Eda is a gnarly, dangerous practice that draws power from the subconscious and the darker corners of the world. It is a strategic gamble; because characters have limited Instinct Points (IP) and magic takes a physical toll, most practitioners must rely on their mundane skills and weapons until a situation becomes desperate.
+
+### The Toll of Magic
+
+Channeling occult forces is not a clean act. It stains the soul and tears at the flesh.
+
+*   **Witch-Marks**: Every time you successfully cast a spell, you take **1 damage (unreducible)** per 5 IP spent as blood seeps from your pores or your skin cracks like old parchment.
+*   **Backlash**: If you fail your INS check to cast a spell, the energy backfires. You lose the spent IP and immediately gain the **Bleeding** condition as your skin splits under the pressure of the unreleased magic.
 
 ### Spells
-All spells require a successful INS check to be cast (including required DoS).
 
-| Spell                  | IP   | Difficulty        | Effect                                                             |
-| :--------------------- | :--- | :---------------- | :----------------------------------------------------------------- |
-| Confuse                | 5    | Routine (1 DoS)   | -5 Combat Style to target.                                         |
-| Commanding Tale        | 5    | Routine (1 DoS)   | Persuade someone.                                                  |
-| Freeze in Place        | 5    | Routine (1 DoS)   | Immobilize target (INS vs CON check to resist).            |
-| Medusa Glare       | 10   | Challenge (2 DoS) | Turn to stone for 5 rounds (INS vs CON check to resist). |
-| Rain Storm         | 5    | Routine (1 DoS)   | Obscures vision.                                                   |
-| Form of a Beast    | 5    | Challenge (2 DoS) | Transform (2 actions).                                             |
-| Quicksand          | 5    | Routine (1 DoS)   | Immobilize target (INS vs AGI check to resist).            |
-| Instinct Shield    | 5    | Routine (1 DoS)   | Double defense vs witchcraft (1 hr).                               |
-| Charm Animal       | 5    | Routine (1 DoS)   | Make animal friendly.                                              |
-| Poison Touch       | 5    | Routine (1 DoS)   | Inflict 7 damage.                                                  |
-| Gaze of Salamander | 5    | Routine (1 DoS)   | Dark vision / thermal.                                             |
-| Identify           | 5    | Routine (1 DoS)   | Understand magical items.                                          |
-| Alter Winds        | 5    | Routine (1 DoS)   | Change wind speed.                                                 |
-| Diagnose Disease   | 5    | Routine (1 DoS)   | Detect illness.                                                    |
-| Forest Entangle    | 5    | Routine (1 DoS)   | Immobilize target (INS vs AGI check to resist).            |
-| Endure Elements    | 5    | Routine (1 DoS)   | Resistance hot/cold.                                               |
-| Feather Step       | 5    | Routine (1 DoS)   | Ignore rough terrain.                                              |
-| Wind Shield        | 5    | Routine (1 DoS)   | Advantage on defense vs ranged.                                    |
+All spells require a successful **INS check** (including the required DoS). Combat magic focuses on visceral effects and immediate conditions.
+
+| Name | IP | Difficulty | Description & Effect |
+| :--- | :--- | :--- | :--- |
+| **Blight** | 5 | Routine (1 DoS) | You exhale a cloud of flies and bile. **Cone (3m). Target takes 7 damage and the Poisoned condition.** |
+| **Veil of Blood** | 5 | Routine (1 DoS) | You slice your palm and blow the droplets into a fine, red fog. **5m Area. Anyone inside takes the Bleeding condition.** |
+| **Vomit Fire** | 10 | Challenge (2 DoS) | You swallow a coal; your ribs glow before you vomit a ball of flame. **10 Fire Damage + Burning condition.** |
+| **Clay Grasp** | 5 | Routine (1 DoS) | You whisper to the earth; clay hands rise to seize the ankles of your foe. **Target is Immobilized + Restrained.** |
+| **Salt Statue** | 10 | Challenge (2 DoS) | You blow white dust at a foe; their skin hardens into cracked salt. **Target is Stunned for 1 round.** |
+| **Pluck the Eye** | 5 | Routine (1 DoS) | You make a hooking motion in the air; the target's eyes roll back into their head. **Target is Blinded for 1 round.** |
+| **The Knot** | 5 | Routine (1 DoS) | You twist a rag in your hands; the target's bowels knot in agony. **Target is knocked Prone and takes 5 damage.** |
+| **Witch Wall** | 5 | Routine (1 DoS) | You weave your fingers in a pattern that blurs your physical form. **Caster gains Evasive status.** |
+| **Crow Senses** | 5 | Routine (1 DoS) | You coat your eyes in crow-fat to blend into the dark. **Caster gains Hidden condition in shadows.** |
 
 ### Rituals
 Rituals are powerful, utility-focused magical operations that cannot be cast in combat. They require a prepared space, specific ingredients, and significant time.
@@ -1140,20 +1138,18 @@ Rituals are powerful, utility-focused magical operations that cannot be cast in 
 
 ### Ritual List
 
-| Ritual                | Time | IP   | Materials         | Effect                                                             |
-| :-------------------- | :--- | :--- | :---------------- | :----------------------------------------------------------------- |
-| Animate Plant         | 1h   | 10   | Grave Soil (5sp)  | Creates a Vine-Shrouded (HP 15, STR 50) for 24h.                   |
-| Animate Object        | 1h   | 10   | Quicksilver (10sp)| Turns a medium object into a Construct (HP 12, Defense 5) for 24h. |
-| Mud Golem             | 2h   | 15   | Heart of Warrior  | Creates a Mud Golem (HP 30, Defense 2, STR 60) for 24h.            |
-| Soul Eater            | 1h   | 20   | Fresh Corpse      | +10 to one attribute for 1 day. Lose 3 IP (fear).              |
-| Summon Python         | 10m  | 10   | Snake Skin        | Summons a Giant Snake (Bestiary) for 1 hour.                       |
-| Dimension Gateway     | 4h   | 25   | Star Dust (50sp)  | Portal between two known circles.                                  |
-| Sickening Curse       | 1h   | 15   | Hair/Blood        | Target takes -1 Max HP/day. Permanent until Cleanse.               |
-| Cleanse               | 1h   | 10   | Pure Water        | Removes one curse or restores 10 IP lost to fear.                  |
-| Visions of Future     | 1h   | 15   | Mirror (20sp)     | Advantage on next related check.                                   |
-| Sea Storm             | 4h   | 30   | Salt/Sea          | Summons a storm (5km radius) for 5 hours.                       |
-| Talk with Dead        | 1h   | 10   | Skull             | Ask spirit 3 questions. They cannot lie.                           |
-| Create Artifact       | 24h  | 50   | Rare Components   | Permanently enchant an item. High backfire risk.                   |
+| Name | Time | IP | Materials | Description & Effect |
+| :--- | :--- | :--- | :--- | :--- |
+| **Animate Mud** | 2h | 15 | Heart of a warrior (Fresh) | You stitch a still-warm heart into a mound of river-clay. **Creates a Mud Golem (HP 30, Defense 2, STR 60) for 24h.** |
+| **Consume Soul** | 1h | 20 | A child's lock of hair | You burn a lock of innocent hair and inhale the smoke, feeling their potential fuel you. **Gain Advantage on all checks for one attribute for 24h.** |
+| **Dead Tongue** | 1h | 10 | The skull of the deceased | You drip hot wax into the ear-holes of a skull to hear its whispers. **Ask 3 questions. Spirit is vengeful.** |
+| **Wither** | 1h | 10 | Blind man's tears | You sprinkle tears over a field; the grain turns to black rot by dawn. **Destroys a field's harvest.** |
+| **The Grand Curse** | 4h | 30 | A small child's arm | You bury the limb beneath the target's threshold while whispering their name. **Target gains 1 level of Exhaustion every day (permanent).** |
+| **Blood Reading** | 1h | 10 | 1 HP from caster | You taste your own blood after touching a relic, seeing flashes of its past. **Identify the properties and history of a magical object.** |
+| **Cleanse** | 1h | 10 | Pure spring water | You wash the target in water from a mountain's eye to peel away the filth. **Removes one curse or 1 level of exhaustion.** |
+| **Mirror Visions** | 1h | 15 | Silvered mirror (20sp) | You stare into the glass until it reflects things that haven't happened. **Gain Advantage on your next 3 initiative rolls.** |
+| **Dimension Gateway** | 4h | 25 | Star Dust (50sp) | You tear a hole in reality between two known circles. **Portal remains open for 1 hour.** |
+| **Summon Serpent** | 10m | 10 | Snake Skin | You whistle through a hollowed snake-skin. **Summons a Giant Snake (Bestiary) for 1 hour.** |
 
 
 ## Game Master Section
