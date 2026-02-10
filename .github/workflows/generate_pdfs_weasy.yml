@@ -40,16 +40,21 @@ jobs:
           git log -1 --pretty=%B >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Upload PDFs as Artifacts
+      - name: Zip PDFs
+        run: |
+          cd build
+          zip ../eda-rpg-pdfs.zip *.pdf
+
+      - name: Upload Zip as Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: eda-rpg-pdfs
-          path: build/*.pdf
+          name: eda-rpg-pdfs-zip
+          path: eda-rpg-pdfs.zip
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          files: build/*.pdf
+          files: eda-rpg-pdfs.zip
           tag_name: ${{ github.ref_name }}
           name: "Eda RPG - ${{ github.ref_name }}"
           body: ${{ steps.commit_message.outputs.msg }}
