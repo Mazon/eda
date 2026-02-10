@@ -4,8 +4,13 @@ on:
   push:
     branches: [ main, master ]
     tags:
-      - 'v*'
+      - '*'
   workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag name for the release (e.g., v1.0.0). Defaults to branch/tag name if empty.'
+        required: false
+        default: ''
 
 jobs:
   build:
@@ -41,10 +46,11 @@ jobs:
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
+        if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'workflow_dispatch'
         with:
           files: build/*.pdf
-          name: "Eda RPG - ${{ github.ref_name }}"
+          tag_name: ${{ github.event.inputs.tag_name || github.ref_name }}
+          name: "Eda RPG - ${{ github.event.inputs.tag_name || github.ref_name }}"
           body: "Automated PDF generation for Eda RPG."
           draft: false
           prerelease: false
