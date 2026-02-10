@@ -17,6 +17,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 
 <div class="stat-block">
 <h3>Gray Wolf</h3>
+![Gray Wolf](images/creature_wolves.png)
 <div class="flavor-text">Pack hunters that thrive in the winter forests.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 12 | <strong>Defense</strong>: 1 | <strong>Reaction Pool</strong>: 6
@@ -89,7 +90,9 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 
 <div class="stat-block">
 <h3>Garou</h3>
-<div class="flavor-text">A form of werewolf stuck in wolf form, having left all humanity behind. They hunt for human flesh at night and sleep in dens during the day. Garou packs prefer living near cities where prey is abundant.</div><hr>
+![Garou](images/creature_garou.png)
+<div class="flavor-text">
+A form of werewolf stuck in wolf form, having left all humanity behind. They hunt for human flesh at night and sleep in dens during the day. Garou packs prefer living near cities where prey is abundant.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 25 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 6
 </div>
@@ -116,6 +119,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 
 <div class="stat-block">
 <h3>Winter Bear</h3>
+![Winter Bear](images/creature_bears.png)
 <div class="flavor-text">A massive white bear, blending into the snow.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 40 | <strong>Defense</strong>: 3 | <strong>Reaction Pool</strong>: 3
@@ -164,6 +168,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 
 <div class="stat-block">
 <h3>Giant Spider</h3>
+![Giant Spider](images/creature_giant_spider.png)
 <div class="flavor-text">Lurks in dark forests and dungeons.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 15 | <strong>Defense</strong>: 0 | <strong>Reaction Pool</strong>: 5
@@ -194,7 +199,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Elf (Fæ)</h3>
-<div class="flavor-text">Remnants of an old race, the most intelligent of the Fæ. They can blend seamlessly into human society, though they often harbor their own ancient secrets.</div><hr>
+![Fey Folk](images/creature_fey_folk.png)
+<div class="flavor-text">Remnants of an old race
+, the most intelligent of the Fæ. They can blend seamlessly into human society, though they often harbor their own ancient secrets.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 14 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 6
 </div>
@@ -221,7 +228,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Nymph (Fæ)</h3>
-<div class="flavor-text">Beautiful and ethereal Fæ that can briefly visit human lands, though they are physically sensitive to the "unclean" elements of human civilization.</div><hr>
+![Nymph (Fæ)](images/creature_nymph.png)
+<div class="flavor-text">Beautiful and ethereal Fæ
+that can briefly visit human lands, though they are physically sensitive to the "unclean" elements of human civilization.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 12 | <strong>Defense</strong>: 1 | <strong>Reaction Pool</strong>: 5
 </div>
@@ -248,7 +257,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Skogsrå (Rådare)</h3>
-<div class="flavor-text">The Skogsrå appears as a beautiful woman but hides a rotten hole in her back or a tail under her long hair. She lures men deep into the forest; those who follow are never seen again, and those seduced leave their souls behind, becoming introverts.</div><hr>
+<div class="flavor-text">The Skogsrå appears as a beautiful woman
+but hides a rotten hole in her back or a tail under her long hair. She lures men deep into the forest; those who follow are never seen again, and those seduced leave their souls behind, becoming introverts.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 15 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 6
 </div>
@@ -278,7 +288,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Banshee</h3>
-<div class="flavor-text">A female spirit with long flowing hair, wearing a gray cloak over a green dress. Her eyes are red from constant crying as she foretells the death of family members.</div><hr>
+![Banshee](images/creature_banshee.png)
+<div class="flavor-text">A female spirit
+with long flowing hair, wearing a gray cloak over a green dress. Her eyes are red from constant crying as she foretells the death of family members.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 15 | <strong>Defense</strong>: 3 | <strong>Reaction Pool</strong>: 5
 </div>
@@ -305,7 +317,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Barghest</h3>
-<div class="flavor-text">A bloodthirsty ghost dog that hunts its victims relentlessly. Once it has a trail, nothing can stop it until the target is torn to pieces.</div><hr>
+![Gasts & Dogs](images/creature_undead_beasts.png)
+<div class="flavor-text">A bloodthirsty ghost dog
+that hunts its victims relentlessly. Once it has a trail, nothing can stop it until the target is torn to pieces.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 25 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 4
 </div>
@@ -335,7 +349,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Gast</h3>
-<div class="flavor-text">Gasts are horrific spirits that have risen from hell to exact revenge. They are staring and pale with black eyes and lips and streaky hair. A gast never gives up until its revenge is complete or it is destroyed.</div><hr>
+<div class="flavor-text">Gasts are horrific spirits
+that have risen from hell to exact revenge. They are staring and pale with black eyes and lips and streaky hair. A gast never gives up until its revenge is complete or it is destroyed.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 20 | <strong>Defense</strong>: 3 | <strong>Reaction Pool</strong>: 5
 </div>
@@ -365,7 +380,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Possessed Creature (Template)</h3>
-<div class="flavor-text">A spirit or demon has displaced the soul of a living creature, using its body as a vessel. The original host remains eerily aware of the entity's control.</div><hr>
+![Possessed](images/creature_possessed.png)
+<div class="flavor-text">A spirit or demon
+has displaced the soul of a living creature, using its body as a vessel. The original host remains eerily aware of the entity's control.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: Host + 10 | <strong>Defense</strong>: Host + 1 | <strong>Reaction Pool</strong>: Host + 1
 </div>
@@ -395,7 +412,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>The Deep (Dagons)</h3>
-<div class="flavor-text">Vaguely humanoid toads with protruding eyes, slimy gray-green scales, and webbed claws. They dwell in the dark waters and harbor a sinister interest in humanity.</div><hr>
+![The Deep](images/creature_the_deep.png)
+<div class="flavor-text">Vaguely humanoid toads
+with protruding eyes, slimy gray-green scales, and webbed claws. They dwell in the dark waters and harbor a sinister interest in humanity.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 20 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 4
 </div>
@@ -425,7 +444,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Deep-Hybrid</h3>
-<div class="flavor-text">The offspring of a human and one of the Deep. They appear human for decades before their true heritage begins to manifest in strange behaviors and physical changes.</div><hr>
+<div class="flavor-text">The offspring of a human
+and one of the Deep. They appear human for decades before their true heritage begins to manifest in strange behaviors and physical changes.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 12 | <strong>Defense</strong>: 1 | <strong>Reaction Pool</strong>: 5
 </div>
@@ -455,7 +475,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Selkie (Seal Folk)</h3>
-<div class="flavor-text">Mythological creatures that can shapeshift between seal and human form by putting on or taking off their seal skin. In human form, they are often very beautiful and seductive, but they always harbor a yearning to return to the sea.</div><hr>
+![Selkie (Seal Folk)](images/creature_selkie.png)
+<div class="flavor-text">Mythological creatures
+that can shapeshift between seal and human form by putting on or taking off their seal skin. In human form, they are often very beautiful and seductive, but they always harbor a yearning to return to the sea.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 14 | <strong>Defense</strong>: 1 | <strong>Reaction Pool</strong>: 5
 </div>
@@ -485,7 +507,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Goul (Elder Corpse Eater)</h3>
-<div class="flavor-text">After decades of infection, a corpse eater's humanity fades. Their skin turns pale gray and leathery, their nails harden into claws, and they retreat into sewers or catacombs, driven by a cowardice that mirrors the scavengers they have become.</div><hr>
+![Ghouls](images/creature_ghouls.png)
+<div class="flavor-text">After decades of infection
+, a corpse eater's humanity fades. Their skin turns pale gray and leathery, their nails harden into claws, and they retreat into sewers or catacombs, driven by a cowardice that mirrors the scavengers they have become.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 22 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 4
 </div>
@@ -515,7 +539,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Goul (Young Corpse Eater)</h3>
-<div class="flavor-text">Corpse eaters are humans affected by a contagious mutation from eating contaminated human flesh or being bitten. Young corpse eaters (infected up to 30 years) try to live among humans and can often pass as normal.</div><hr>
+<div class="flavor-text">Corpse eaters are humans
+affected by a contagious mutation from eating contaminated human flesh or being bitten. Young corpse eaters (infected up to 30 years) try to live among humans and can often pass as normal.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 14 | <strong>Defense</strong>: 1 | <strong>Reaction Pool</strong>: 5
 </div>
@@ -542,7 +567,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Goul (Ancient Corpse Eater)</h3>
-<div class="flavor-text">After 30 years as infected, the corpse eater's appearance becomes grotesque. They are pale gray, sinewy with claw-like nails and rough teeth. They retreat to sewers and under cemeteries.</div><hr>
+<div class="flavor-text">After 30 years
+as infected, the corpse eater's appearance becomes grotesque. They are pale gray, sinewy with claw-like nails and rough teeth. They retreat to sewers and under cemeteries.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 18 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 4
 </div>
@@ -572,7 +598,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Lesser Demon (Possessor)</h3>
-<div class="flavor-text">A unique and horrific entity from beyond, taking human form to live out sick passions or enact minor evils. No two demons look or act exactly alike.</div><hr>
+![Lesser Demon](images/creature_lesser_demon.png)
+<div class="flavor-text">A unique and horrific entity
+from beyond, taking human form to live out sick passions or enact minor evils. No two demons look or act exactly alike.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 30 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 6
 </div>
@@ -602,7 +630,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Rakshasa</h3>
-<div class="flavor-text">Violent shape-shifters also known as man-eaters. They are said to have been created from Brahma's spirit and banished to earth due to their insatiable bloodlust. They can fly, become invisible, and use illusions (Maya) to change form and size.</div><hr>
+![Rakshasa](images/creature_rakshasa.png)
+<div class="flavor-text">Violent shape-shifters
+also known as man-eaters. They are said to have been created from Brahma's spirit and banished to earth due to their insatiable bloodlust. They can fly, become invisible, and use illusions (Maya) to change form and size.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 45 | <strong>Defense</strong>: 3 | <strong>Reaction Pool</strong>: 6
 </div>
@@ -635,7 +665,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Draug (Draugr)</h3>
-<div class="flavor-text">A Nordic vampire that inhabits burial mounds. It looks human but carries a musty smell of decay when hungry. It can enter dreams and sink into the earth itself.</div><hr>
+![Draug (Draugr)](images/creature_draug_nordic.png)
+<div class="flavor-text">A Nordic vampire
+that inhabits burial mounds. It looks human but carries a musty smell of decay when hungry. It can enter dreams and sink into the earth itself.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 35 | <strong>Defense</strong>: 4 | <strong>Reaction Pool</strong>: 3
 </div>
@@ -677,7 +709,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>The Deathless (Dödlösa)</h3>
-<div class="flavor-text">Ancient, immortal beings often mistaken for gods, demigods, or angels. They have infiltrated human civilizations since time immemorial and are mentioned in the oldest mythological texts.</div><hr>
+![The Deathless](images/creature_deathless.png)
+<div class="flavor-text">Ancient, immortal beings
+often mistaken for gods, demigods, or angels. They have infiltrated human civilizations since time immemorial and are mentioned in the oldest mythological texts.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 50 | <strong>Defense</strong>: 5 | <strong>Reaction Pool</strong>: 8
 </div>
@@ -710,7 +744,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Larvaé</h3>
-<div class="flavor-text">Larvaé are enormous worm-like creatures resting in the depths of the earth. Every fifty or hundred years they rise to eat, consuming everything living within a mile's radius. They are said to have existed since long before humans.</div><hr>
+![Larvaé](images/creature_larvae.png)
+<div class="flavor-text">Larvaé are enormous worm-like creatures
+resting in the depths of the earth. Every fifty or hundred years they rise to eat, consuming everything living within a mile's radius. They are said to have existed since long before humans.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 100 | <strong>Defense</strong>: 8 | <strong>Reaction Pool</strong>: 4
 </div>
@@ -740,7 +776,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Mummy (God-King)</h3>
-<div class="flavor-text">Ancient beings who achieved eternal life through forgotten black arts. They once ruled as god-kings and pharaohs in forgotten realms. Their minds have aged even if their bodies remain, and they are often drawn to power positions in the modern world.</div><hr>
+![Mummies](images/creature_mummies.png)
+<div class="flavor-text">Ancient beings
+who achieved eternal life through forgotten black arts. They once ruled as god-kings and pharaohs in forgotten realms. Their minds have aged even if their bodies remain, and they are often drawn to power positions in the modern world.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 60 | <strong>Defense</strong>: 5 | <strong>Reaction Pool</strong>: 8
 </div>
@@ -770,7 +808,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Mummy (Vengeful)</h3>
-<div class="flavor-text">A restless creature seeking revenge or resurrection. They are tormented souls that over time shrink into hateful monsters.</div><hr>
+<div class="flavor-text">A restless creature
+seeking revenge or resurrection. They are tormented souls that over time shrink into hateful monsters.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 35 | <strong>Defense</strong>: 3 | <strong>Reaction Pool</strong>: 5
 </div>
@@ -800,7 +839,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Mummy (Guardian)</h3>
-<div class="flavor-text">Soulless guardians of dark secrets. They mercilessly kill anyone who stands in their way.</div><hr>
+<div class="flavor-text">Soulless guardians
+of dark secrets. They mercilessly kill anyone who stands in their way.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 40 | <strong>Defense</strong>: 4 | <strong>Reaction Pool</strong>: 4
 </div>
@@ -831,7 +871,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Vampire (Neophyte)</h3>
-<div class="flavor-text">A newly created vampire, often uncertain of its powers and still tethered to its mortal morality. They are fast and dangerous but lack the cold control of their elders.</div><hr>
+![Vampires](images/creature_vampires.png)
+<div class="flavor-text">A newly created vampire
+, often uncertain of its powers and still tethered to its mortal morality. They are fast and dangerous but lack the cold control of their elders.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 20 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 6
 </div>
@@ -861,7 +903,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Vampire (Ancient)</h3>
-<div class="flavor-text">A being of centuries, the Ancient Vampire is an anachronism that has lost its humanity. They are masters of the mind and shadows, viewing mortals as mere cattle.</div><hr>
+<div class="flavor-text">A being of centuries
+, the Ancient Vampire is an anachronism that has lost its humanity. They are masters of the mind and shadows, viewing mortals as mere cattle.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 40 | <strong>Defense</strong>: 4 | <strong>Reaction Pool</strong>: 8
 </div>
@@ -891,7 +934,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Vampire (The Beast)</h3>
-<div class="flavor-text">A vampire that has lost all pretense of humanity, crawling from its grave as a stench-ridden monster driven only by bloodlust. It fears the sun, fire, and the sound of roosters.</div><hr>
+<div class="flavor-text">A vampire that has lost all pretense
+of humanity, crawling from its grave as a stench-ridden monster driven only by bloodlust. It fears the sun, fire, and the sound of roosters.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 30 | <strong>Defense</strong>: 3 | <strong>Reaction Pool</strong>: 5
 </div>
@@ -918,7 +962,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Lilin (Succubus / Incubus)</h3>
-<div class="flavor-text">Descendants of the first mother after her exile, these entities are driven by an ancient instinct to reproduce, though they find few among mortals who can bear their children. They are preternaturally beautiful, with a scent that acts as a potent aphrodisiac when they are in heat, though it turns to the smell of rot if they are displeased.</div><hr>
+![Lilin](images/creature_lilin.png)
+<div class="flavor-text">Descendants of the first mother
+after her exile, these entities are driven by an ancient instinct to reproduce, though they find few among mortals who can bear their children. They are preternaturally beautiful, with a scent that acts as a potent aphrodisiac when they are in heat, though it turns to the smell of rot if they are displeased.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 18 | <strong>Defense</strong>: 2 | <strong>Reaction Pool</strong>: 6
 </div>
@@ -945,7 +991,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Draug</h3>
-<div class="flavor-text">A Nordic variety of vampire. The Draug appears human, but if it has gone long without feeding or sleeping, it begins to emit an odor of decay. While it remains active during the day, it prefers the night and is nearly immune to common weapons, save for those forged of iron. To truly destroy a Draug, one must decapitate it, burn the body, and scatter the ashes at sea.</div><hr>
+<div class="flavor-text">A Nordic variety of vampire.
+The Draug appears human, but if it has gone long without feeding or sleeping, it begins to emit an odor of decay. While it remains active during the day, it prefers the night and is nearly immune to common weapons, save for those forged of iron. To truly destroy a Draug, one must decapitate it, burn the body, and scatter the ashes at sea.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 30 | <strong>Defense</strong>: 3 | <strong>Reaction Pool</strong>: 5
 </div>
@@ -975,7 +1022,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Ancient Larvaé</h3>
-<div class="flavor-text">Ancient, worm-like entities that dwell deep within the earth, rising to the surface only once every fifty or a hundred years to feed. When they emerge, they consume all life within miles. They can split their essence into dozens of smaller, stiff-moving humanoids or animals to infiltrate settlements before the main body arrives.</div><hr>
+<div class="flavor-text">Ancient, worm-like entities
+that dwell deep within the earth, rising to the surface only once every fifty or a hundred years to feed. When they emerge, they consume all life within miles. They can split their essence into dozens of smaller, stiff-moving humanoids or animals to infiltrate settlements before the main body arrives.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 80 | <strong>Defense</strong>: 4 | <strong>Reaction Pool</strong>: 2
 </div>
@@ -1005,7 +1053,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Haitian Zombie</h3>
-<div class="flavor-text">Animate corpses brought back through sorcery. They are in a state of slow decay, driven by an insatiable hunger for the flesh of the living.</div><hr>
+![Haitian Zombie](images/creature_zombie.png)
+<div class="flavor-text">Animate corpses
+brought back through sorcery. They are in a state of slow decay, driven by an insatiable hunger for the flesh of the living.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 16 | <strong>Defense</strong>: 1 | <strong>Reaction Pool</strong>: 3
 </div>
@@ -1036,7 +1086,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Gargoyl</h3>
-<div class="flavor-text">Gargoyls look like stones that have been animated, often representing demons, small stone devils, cherubs, or angels. They are strange creatures that neither consume food nor secrete body fluids. Some believe they are ancient animated stones that were forgotten.</div><hr>
+![Gargoyl](images/creature_gargoyl.png)
+<div class="flavor-text">Gargoyls look like stones
+that have been animated, often representing demons, small stone devils, cherubs, or angels. They are strange creatures that neither consume food nor secrete body fluids. Some believe they are ancient animated stones that were forgotten.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 25 | <strong>Defense</strong>: 4 | <strong>Reaction Pool</strong>: 3
 </div>
@@ -1066,7 +1118,9 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Staty</h3>
-<div class="flavor-text">A lifeless depiction of stone or metal given life through magic or ancient mechanics.</div><hr>
+![Golem/Statue](images/creature_golem.png)
+<div class="flavor-text">A lifeless depiction
+of stone or metal given life through magic or ancient mechanics.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 30 | <strong>Defense</strong>: 5 | <strong>Reaction Pool</strong>: 2
 </div>
@@ -1093,7 +1147,8 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 
 <div class="stat-block">
 <h3>Golem</h3>
-<div class="flavor-text">A form of zombie created from either the flesh of the dead or clay. It lacks its own intelligence and is completely controlled by its creator through simple orders.</div><hr>
+<div class="flavor-text">A form of zombie
+created from either the flesh of the dead or clay. It lacks its own intelligence and is completely controlled by its creator through simple orders.</div><hr>
 <div class="top-stats">
 <strong>HP</strong>: 35 | <strong>Defense</strong>: 3 | <strong>Reaction Pool</strong>: 2
 </div>

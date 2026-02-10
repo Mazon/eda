@@ -1,8 +1,5 @@
 # Eda
-
-> ### Preface
->
-> Winter had arrived, snowflakes gently falling down to the ground. Jonah had finished helping his father put the horses in the stable. It was still not too cold, a wool sweater was enough to hold the cold at bay for now. A river passed by the back side of the house. Jonah walked to get water for dinner. Fog covered the water this morning, reaching out and massaging the grass on each side like fingers playing a beautiful tune on the lute. He bent down to fill up his bucket, something dark suddenly reached out and Jonah was never seen again.
+![World of Eda](images/village.png)
 
 ## Introduction
 
@@ -11,6 +8,11 @@ Eda is a dark fantasy roleplaying game of magic, wonder, and perilous adventure.
 Life in Eda is harsh and often short. It was not always so; legends speak of a prosperous land where peace and harmony once reigned. The name Eda itself is said to mean "Wondrous" in a long-forgotten tongue. Today, few believe these old stories, and they are whispered only in the safety of dimly lit taverns or behind locked doors.
 
 Common people are scared not only of darkness, monsters, and other creatures roaming the countryside but also of religious fanatics, powerful clans, and corrupt governments. Rulers are often bandits, scoundrels, and men trying to prey on the weak. Then there are diseases, harsh weather, and pests eating the crops. Life is not easy for those trying to do good.
+
+![Jonah at the River](images/jonah_river.png)
+
+> Winter had arrived, snowflakes gently falling down to the ground. Jonah had finished helping his father put the horses in the stable. It was still not too cold, a wool sweater was enough to hold the cold at bay for now. A river passed by the back side of the house. Jonah walked to get water for dinner. Fog covered the water this morning, reaching out and massaging the grass on each side like fingers playing a beautiful tune on the lute. He bent down to fill up his bucket, something dark suddenly reached out and Jonah was never seen again.
+
 
 ## What is a Roleplaying Game?
 
@@ -133,6 +135,8 @@ Before rolling, a player can declare they are "Pushing."
 
 ## Character Creation
 
+![Adventurers of Eda](images/adventurers_group.png)
+
 Character creation is the process of defining your protagonist's strengths, history, and motivations. A character is defined by the following elements:
 
 1.  **Lineage**: Your raw physical and mental potential.
@@ -192,6 +196,8 @@ Determines your raw potential and base attributes. Select one lineage option to 
 Your heritage defines your upbringing, innate traits, and starting social standing. Every heritage provides a signature trait, two heritage skills in which you are automatically trained, a unique piece of starting equipment, a set amount of starting currency, and usually a choice of one combat ctyle.
 
 #### Clansman
+
+![Clansman Heritage](images/heritage_clansman.png)
 *The wind cuts like a knife in the wild lands, and graves are dug shallow in the frozen earth. Your people survive on loyalty, debt, and the grim knowledge that winter kills the weak.*
 
 *   **Trait: Grim Resolve.** Once per day, when your life or honor is on the line, you may add your CON or INS tens digit as a bonus to any check.
@@ -200,6 +206,8 @@ Your heritage defines your upbringing, innate traits, and starting social standi
 *   **Starting Currency:** 60 sp.
 
 #### Clergy
+
+![Clergy Heritage](images/heritage_clergy.png)
 *Silence hangs heavy in the temple, broken only by the desperate prayers of the sick. Whether a true believer or a charlatan in a frayed robe, you have walked among the dying and seen what men will do when the gods turn their backs.*
 
 *   **Trait: Unwavering.** You have advantage on checks to resist intimidation, fear, or magical influence.
@@ -208,6 +216,8 @@ Your heritage defines your upbringing, innate traits, and starting social standi
 *   **Starting Currency:** 50 sp.
 
 #### Farmer
+
+![Farmer Heritage](images/heritage_farmer.png)
 *Mud, toil, and the biting frost—these are the only constants. A bad harvest is a death sentence, and hunger is a wolf that never sleeps.*
 
 *   **Trait: Sturdy-Built.** You can ignore all penalties from the first level of exhaustion.
@@ -216,6 +226,8 @@ Your heritage defines your upbringing, innate traits, and starting social standi
 *   **Starting Currency:** 30 sp.
 
 #### Artisan
+
+![Artisan Heritage](images/heritage_artisan.png)
 *In a world of rust and ruin, things must be forged to last. The smell of hot iron and oil is more comforting than perfume, and a well-made tool is worth more than a crown.*
 
 *   **Trait: Eye for Detail.** You have advantage on appraise or engineering checks to identify flaws or value in physical objects.
@@ -224,6 +236,8 @@ Your heritage defines your upbringing, innate traits, and starting social standi
 *   **Starting Currency:** 60 sp.
 
 #### Merchant
+
+![Merchant Heritage](images/heritage_merchant.png)
 *Gold is the only shield that doesn't rust. Raised among the chaotic markets and dangerous trade routes, survival meant spotting a lie before it was spoken.*
 
 *   **Trait: Master of Coin.** You have advantage on barter or persuade checks when negotiating prices or trade deals.
@@ -232,6 +246,8 @@ Your heritage defines your upbringing, innate traits, and starting social standi
 *   **Starting Currency:** 120 sp.
 
 #### Noble
+
+![Noble Heritage](images/heritage_noble.png)
 *Drafty halls filled with the ghosts of past glories were your playground, teaching the bitter taste of pride without gold. The world may have forgotten your family's honor, but you have not.*
 
 *   **Trait: Silver Tongue.** You have advantage on persuade or diplomacy checks when dealing with authority figures or high-society.
@@ -240,6 +256,8 @@ Your heritage defines your upbringing, innate traits, and starting social standi
 *   **Starting Currency:** 100 sp.
 
 #### Outcast
+
+![Outcast Heritage](images/heritage_outcast.png)
 *While decent folk sleep behind locked doors, you learned to be invisible, eating scraps and sleeping with one eye open. Society rejected you, so you learned to survive without it.*
 
 *   **Trait: Hardened Survivor.** You have learned to live on the fringes of society. You have advantage on Stealth and Survival checks when in urban environments or ruins.
@@ -277,7 +295,7 @@ Skills represent your character's training and experience.
 | Entertain            |    CHA    | Performance.                          |
 | History              |    LOG    | Knowledge of the past.                |
 | Intimidate           |    CHA    | Coercion through fear.                |
-| Investigation        |    LOG    | Interrogation, finding clues.         |
+| Investigation        |    LOG    | Finding clues.                         |
 | Linguistics          |    LOG    | Read/write languages.                 |
 | Medicine             |    LOG    | Treating disease/injury, anatomy, first aid. |
 | Nature               |    LOG    | Knowledge of the wild, plants, and animals. |
@@ -296,35 +314,42 @@ Skills represent your character's training and experience.
 
 ### Combat Styles
 
+![Combat Styles](images/combat_styles_overview.png)
+
 Combat styles represent your character's training in specific forms of combat. They have a base value of attribute / 2 and become the full attribute when trained. They determine which weapons you can use effectively and often unlock specific talents.
 
 At character creation, you can choose one combat style if your heritage don't say otherwise.
 
 #### Finesse
+
 *   **Attribute**: AGI
 *   **Applicable Weapons**: Daggers, Short Swords, Rapiers.
 
 *   **Riposte (T2)**: Reaction. After a successful Parry, make an immediate counter-attack with that weapon.
 
 #### One-Handed
+
 *   **Attribute**: STR
 *   **Applicable Weapons**: Long Swords, Hand Axes, Maces, Bastard Swords (1H).
 
 *   **Swift Blade (T1)**: Passive. Drawing or sheathing a one-handed weapon is a zero cost action.
 
 #### Two-Handed
+
 *   **Attribute**: STR
 *   **Applicable Weapons**: Great Swords, Great Axes, Bastard Swords (2H).
 
 *   **Breaker (T2)**: Action (1 AP). Powerful blow. Ignores defense. If damage > 10, target is knocked prone.
 
 #### Polearms
+
 *   **Attribute**: STR
 *   **Applicable Weapons**: Short Spears, Pikes, Halberds.
 
 *   **Sentinel (T2)**: Reaction. Attack enemy entering your reach. On hit, their movement becomes 0 for the turn.
 
 #### Marksmanship
+
 *   **Attribute**: AGI
 *   **Applicable Weapons**: Short Bows, Long Bows, Crossbows.
 
@@ -334,18 +359,21 @@ At character creation, you can choose one combat style if your heritage don't sa
 *   **Flurry of Arrows (T2)**: Action (1 AP). Make one attack. If it hits, you deal your weapon damage three times (without DoS).
 
 #### Throwing
+
 *   **Attribute**: AGI
 *   **Applicable Weapons**: Thrown Daggers, Hand Axes, Javelins.
 
 *   **Far Throwing (T2)**: Action (1 AP). Opposed STR (athletics) check vs target STR. On success, throw humanoid 20m. Target takes 5 damage per 5m thrown.
 
 #### Unarmed
+
 *   **Attribute**: STR
 *   **Applicable Weapons**: Fists, Natural Weapons, Grappling.
 
 *   **Brawler (T2)**: Action (1 AP). Opposed STR (unarmed) check vs target AGI or STR. Success: Target restrained. Deal unarmed damage as a free action each turn held.
 
 #### Shields
+
 *   **Attribute**: STR
 *   **Applicable Weapons**: Bucklers, Round Shields, Kite Shields, Tower Shields, Greatshields.
 
@@ -356,9 +384,9 @@ At character creation, you can choose one combat style if your heritage don't sa
 
 ## Talents
 
-Talents are special abilities or moves. You gain one at the start of the game and then by spending Experience Points (XP).
-
 ### The Talent Pyramid
+
+![The Talent Pyramid](images/talent_pyramid.png)
 
 To ensure a broad base of abilities, you must follow the Talent Pyramid. You cannot specialize in high-tier powers without a foundation of lower-tier skills.
 
@@ -571,6 +599,8 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 
 ## Encounters
 
+![Combat Scenario](images/combat_scene.png)
+
 Combat in Eda is resolved in a series of rounds. Each round represents approximately 10 seconds of in-game time. During a round each combatant take one turn each.
 
 ### Initiative
@@ -631,6 +661,8 @@ When a character suffers a **Critical Hit** (rolling doubles under the attacker'
 *   **Note:** Injuries are distinct from Bleeding and have their own specific durations/cures.
 
 #### Injury Table (d100)
+
+![Wounds and Injuries](images/wounds_and_injuries.png)
 
 | Roll      | Severity     | Narrative Prompt                                            | Mechanical Effect                                                                                      |
 | :-------- | :----------- | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
@@ -942,6 +974,8 @@ Outside major trade hubs, barter is the primary form of exchange. A character mi
 
 ### Weapons
 
+![Arms and Armor](images/arms_and_armor.png)
+
 | Name              | Damage | Cost  | Req    | Notes                                                            |
 | :---------------- | :----: | :---- | :----- | :--------------------------------------------------------------- |
 | Fist              |   2    | -     | -      | -                                                                |
@@ -1093,6 +1127,8 @@ In the shadowed corners of Eda, practitioners of the old ways utilize macabre co
 
 ## Magic & Rituals
 
+![Casting a Spell](images/spellcasting.png)
+
 Magic in Eda is a gnarly, dangerous practice that draws power from the subconscious and the darker corners of the world. It is a strategic gamble; because characters have limited Instinct Points (IP) and magic takes a physical toll, most practitioners must rely on their mundane skills and weapons until a situation becomes desperate.
 
 ### Spells
@@ -1243,5 +1279,3 @@ After every major encounter, significant discovery, or successful completion of 
 *   Increase attributes: +1 to any attribute = 10 XP.
 *   Steady Training: 1 XP increases a trained skill score by 1 point.
 *   Unlock Skill: 5 XP to turn an untrained skill into a trained skill.
-
-
