@@ -43,8 +43,8 @@ def convert_md_to_pdf(input_file, output_file, css_file=None, title=None):
         if md_to_pdf_path:
             # Build pdf-options based on file type
             pdf_options = '{"format": "A4", "margin": {"top": "15mm", "right": "15mm", "bottom": "15mm", "left": "15mm"}, "printBackground": true}'
-            if input_file == 'Character Sheet.md':
-                # Use smaller margins for the character sheet to fit everything
+            if input_file in ['Character Sheet.md', 'Cheat_Sheet.md']:
+                # Use smaller margins for sheets to fit everything
                 pdf_options = '{"format": "A4", "margin": {"top": "0", "right": "0", "bottom": "0", "left": "0"}, "printBackground": true}'
             
             # Additional options to ensure local file access if needed
@@ -86,6 +86,7 @@ def main():
         'Core Rulebook.md': ('Core_Rulebook.pdf', 'Eda Core Rulebook'),
         'Bestiary.md': ('Bestiary.pdf', 'Eda Bestiary'),
         'Character Sheet.md': ('Character_Sheet.pdf', None),
+        'Cheat_Sheet.md': ('Cheat_Sheet.pdf', None),
         'Adventure_The_Age_of_Wolves.md': ('Adventure_The_Age_of_Wolves.pdf', 'The Age of Wolves')
     }
 
@@ -95,8 +96,8 @@ def main():
         if os.path.exists(md_file):
             output_path = os.path.join(build_dir, pdf_file)
             
-            # Apply CSS to all except Character Sheet (it has its own embedded styles)
-            current_css = style_css if md_file != 'Character Sheet.md' else None
+            # Apply CSS to all except Sheets (they have embedded styles)
+            current_css = style_css if md_file not in ['Character Sheet.md', 'Cheat_Sheet.md'] else None
             
             convert_md_to_pdf(md_file, output_path, css_file=current_css, title=title)
         else:
