@@ -21,7 +21,6 @@ This plan outlines where placeholder images will be inserted into the three main
 | Section | Filename | Motive Description |
 | :--- | :--- | :--- |
 | **Adventurers** | `adventurers_group.png` | A group of diverse characters (clansman, clergy, etc.) standing together in a line-up. |
-| **Merchant** | `heritage_merchant.png` | A character with scales and a concealed dagger, surrounded by trade goods. |
 | **Talent Pyramid**| `talent_pyramid.png` | A stone pyramid engraving showing different tiers of abilities. |
 
 ## Creature_Compendium.md
