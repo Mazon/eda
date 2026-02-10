@@ -9,7 +9,7 @@ html, body {
   width: 210mm;
   height: 297mm;
   font-family: 'Georgia', serif;
-  font-size: 9pt; /* Slightly smaller for cheat sheet density */
+  font-size: 8pt; /* Slightly smaller for cheat sheet density */
   color: #1a1a1a;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -21,26 +21,22 @@ html, body {
 /* --- Layout Containers --- */
 .page {
   width: 210mm;
-  height: 296mm;
-  padding: 10mm;
+  height: 297mm;
+  padding: 8mm;
   position: relative;
   overflow: hidden;
   page-break-after: always;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 .columns {
-  display: flex;
-  flex-direction: row;
-  gap: 10mm;
-  height: 100%;
+  display: table;
+  width: 100%;
+  border-spacing: 6mm 0;
+  height: auto;
 }
 .column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: table-cell;
+  width: 50%;
+  vertical-align: top;
 }
 
 /* --- Typography & Colors --- */
@@ -138,9 +134,9 @@ strong {
     <h1>Eda &mdash; Rules Cheat Sheet</h1>
   </div>
 
-  <div class="columns">
-    <!-- Left Column -->
-    <div class="column">
+  <table class="columns">
+    <tr>
+      <td class="column">
       
       <div class="box">
         <h2>Core Mechanics</h2>
@@ -213,12 +209,10 @@ strong {
         </ul>
       </div>
 
-    </div>
-
-    <!-- Right Column -->
-    <div class="column">
+      </td>
       
-      <div class="box">
+      <td class="column">
+<div class="box">
         <h2>Injury Table (d100)</h2>
         <table>
             <tr>
@@ -308,6 +302,7 @@ strong {
         </table>
       </div>
 
-    </div>
-  </div>
+      </td>
+    </tr>
+  </table>
 </div>

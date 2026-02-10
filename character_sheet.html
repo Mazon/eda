@@ -32,8 +32,7 @@
             padding: 10mm;
             position: relative;
             page-break-after: always;
-            background-image: url('images/border.png'); /* Assuming there might be a border image, or we simulate one */
-            background-size: cover; 
+            border-top: 5px solid var(--primary); /* Simple replacement for the image border */
             overflow: hidden;
         }
         
@@ -98,18 +97,37 @@
 
         /* --- Input Placeholders for PDF Script --- */
         /* These classes help the python script find where to put the form fields */
+        input[type="text"], textarea {
+            background: rgba(139, 0, 0, 0.03);
+            border: none;
+            border-bottom: 1px solid #aaa;
+            height: 20px;
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+            font-size: 10pt;
+            /* Force WeasyPrint to see these as form widgets if possible */
+            appearance: auto;
+            -webkit-appearance: auto;
+        }
+
+        input[type="checkbox"] {
+            appearance: auto;
+            -webkit-appearance: auto;
+        }
+
         .input-field {
             background: rgba(139, 0, 0, 0.03);
+            border: none;
             border-bottom: 1px solid #aaa;
             height: 20px;
             width: 100%;
             display: block;
         }
-        
+
         .box-input {
             border: 2px solid var(--primary);
-            height: 40px;
-            width: 40px; /* Reduced width for 2-digit numbers */
+            height: 45px; /* Increased from 40px */
+            width: 45px; /* Increased from 40px for better click target */
             display: flex;
             align-items: center;
             justify-content: center; /* Center the input within the box horizontally */
@@ -117,6 +135,20 @@
             position: relative;
             margin-left: auto; /* Push to right if in flex container */
             margin-right: 0;
+            padding: 0;
+        }
+
+        .box-input input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            font-size: 16pt; /* Increased from 14pt */
+            background: transparent;
+            display: block;
+            margin: 0;
+            padding: 0;
         }
 
         /* Override for XP to be wider */
@@ -133,8 +165,7 @@
         .circle-checkbox {
             width: 16px;
             height: 16px;
-            border: 1px solid var(--primary);
-            border-radius: 50%;
+            border: none; /* Let the checkbox provide its own border */
             display: inline-block;
             vertical-align: middle;
             position: relative;
@@ -143,56 +174,88 @@
         .square-checkbox {
             width: 14px;
             height: 14px;
-            border: 1px solid var(--primary);
+            border: none;
             display: inline-block;
             vertical-align: middle;
             position: relative;
         }
 
-        /* --- Grid Layouts --- */
+        input[type="checkbox"] {
+            appearance: auto;
+            -webkit-appearance: auto;
+            width: 14px; /* Fixed size to prevent it from growing too big */
+            height: 14px;
+            margin: 0;
+            cursor: pointer;
+            border: 1px solid var(--primary);
+            display: inline-block;
+            vertical-align: middle;
+        }
         .top-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 0.5fr;
-            gap: 15px;
+            display: table;
+            width: 100%;
+            border-spacing: 15px 0;
             margin-bottom: 20px;
         }
 
+        .top-grid > div {
+            display: table-cell;
+            vertical-align: top; /* Changed from bottom to top to align labels */
+        }
+
         .main-layout {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 20px;
+            display: table;
+            width: 100%;
+            border-spacing: 20px 0;
             height: 85%; /* Fill most of the page */
         }
 
         .left-col, .right-col {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+            display: table-cell;
+            vertical-align: top;
+            width: 50%;
         }
 
-        /* Attributes */
         .attr-row {
-            display: grid;
-            grid-template-columns: 1fr 45px;
-            align-items: center;
+            display: flex; /* Changed from table to flex for better height control */
+            align-items: stretch;
+            width: 100%;
             margin-bottom: 8px;
             background: var(--bg-light);
-            padding: 5px 8px;
             border-radius: 4px;
             border: 1px solid #eee;
+            height: 45px; /* Fixed height for the row */
         }
         .attr-name {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            padding: 5px 8px;
             font-weight: bold;
             font-size: 10pt;
             color: var(--primary);
             font-family: 'Cinzel', serif;
         }
+        .attr-row .box-input {
+            width: 50px;
+            height: 100%; /* Fill the row height */
+            border-left: 2px solid var(--primary);
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            border-radius: 0;
+            margin: 0;
+        }
 
         /* Vitality */
         .vitality-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
+            display: table;
+            width: 100%;
+            border-spacing: 10px 0;
+        }
+        .vitality-grid > .stat-card {
+            display: table-cell;
+            width: 50%;
         }
         .stat-card {
             border: 1px solid var(--border-color);
@@ -285,22 +348,22 @@
             </div>
             <div style="text-align: right;">
                 <div class="label">Player Name</div>
-                <div class="input-field" data-field="player_name" style="width: 150px;"></div>
+                <input type="text" name="player_name" style="width: 150px;">
             </div>
         </div>
 
         <div class="top-grid">
             <div>
                 <span class="label">Character Name</span>
-                <div class="input-field" data-field="char_name" style="height: 30px; font-size: 14pt;"></div>
+                <input type="text" name="char_name" style="height: 30px; font-size: 14pt;">
             </div>
             <div>
                 <span class="label">Lineage & Heritage</span>
-                <div class="input-field" data-field="lineage" style="height: 30px;"></div>
+                <input type="text" name="lineage" style="height: 30px;">
             </div>
-            <div>
-                <span class="label">Total XP</span>
-                <div class="box-input" data-field="xp" style="height: 30px;"></div>
+            <div style="text-align: right; display: flex; flex-direction: column; align-items: flex-end;">
+                <span class="label" style="width: 60px; text-align: center;">Total XP</span>
+                <div class="box-input" style="height: 30px; width: 60px; margin-left: 0;"><input type="text" name="xp"></div>
             </div>
         </div>
 
@@ -312,27 +375,27 @@
                     <div class="section-header">Attributes</div>
                     <div class="attr-row">
                         <div class="attr-name">Strength (STR)</div>
-                        <div class="box-input" data-field="attr_str"></div>
+                        <div class="box-input"><input type="text" name="attr_str"></div>
                     </div>
                     <div class="attr-row">
                         <div class="attr-name">Agility (AGI)</div>
-                        <div class="box-input" data-field="attr_agi"></div>
+                        <div class="box-input"><input type="text" name="attr_agi"></div>
                     </div>
                     <div class="attr-row">
                         <div class="attr-name">Logic (LOG)</div>
-                        <div class="box-input" data-field="attr_log"></div>
+                        <div class="box-input"><input type="text" name="attr_log"></div>
                     </div>
                     <div class="attr-row">
                         <div class="attr-name">Instinct (INS)</div>
-                        <div class="box-input" data-field="attr_ins"></div>
+                        <div class="box-input"><input type="text" name="attr_ins"></div>
                     </div>
                     <div class="attr-row">
                         <div class="attr-name">Charisma (CHA)</div>
-                        <div class="box-input" data-field="attr_cha"></div>
+                        <div class="box-input"><input type="text" name="attr_cha"></div>
                     </div>
                     <div class="attr-row">
                         <div class="attr-name">Constitution (CON)</div>
-                        <div class="box-input" data-field="attr_con"></div>
+                        <div class="box-input"><input type="text" name="attr_con"></div>
                     </div>
                 </div>
 
@@ -405,7 +468,7 @@
                      <div style="margin-top: 10px;">
                          <div class="stat-card">
                              <div style="display: flex; justify-content: space-between;">
-                                 <span class="label">Critical Injuries</span>
+                                 <span class="label">Injuries</span>
                              </div>
                              <div class="input-field" data-field="injuries" data-multiline="true" style="height: 60px; text-align: left; padding: 2px; border: 1px solid #ccc; background: white;"></div>
                          </div>

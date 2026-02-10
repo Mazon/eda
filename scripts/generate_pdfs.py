@@ -13,7 +13,7 @@ def convert_md_to_pdf(input_file, output_file, css_file=None, title=None):
             'pandoc',
             input_file,
             '-s', # standalone
-            '-f', 'markdown+raw_html', # ensure HTML is preserved
+            '-f', 'markdown', # removed +raw_html to avoid literal HTML in output
             '--toc', # Generate Table of Contents
             '-o', html_file
         ]
