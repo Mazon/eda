@@ -615,15 +615,13 @@ A player in the vanguard turn can spend their zero cost action to wait. This dro
 
 Combat in Eda is dangerous. While Hit Points (HP) represent your overall health, **Wounds** and **Injuries** represent  physical trauma that degrades your ability to fight.
 
-#### 1. Bleeding Wounds
-Every attack that deals damage (after armor reduction) inflicts a **Bleed**.
+#### 1. Bleeding (Condition)
+Every attack that deals damage (after armor reduction) inflicts the **Bleeding** condition.
 
 *   **Trigger:** Any damaging hit.
-*   **Effect:** Bleeding acts as **Negative Damage Reduction**. For every stack of Bleeding you have, you take **+1 extra damage** from all future attacks.
-    *   *Example:* If you have 3 Bleeding stacks and an enemy hits you for 5 damage, you take **8 damage** (5 + 3).
-*   **Stacking:** Bleeding stacks indefinitely during combat.
-*   **Duration:** Bleeding stacks persist until the end of the combat encounter, representing the cumulative toll of minor injuries opening up your defenses.
-*   **Treatment:** A successful **Medicine check** (Action) can remove all bleed.
+*   **Effect:** Bleeding represents the cumulative toll of minor cuts and fatigue. While Bleeding, your **Defense is reduced by 2**.
+*   **Duration:** Bleeding persists until the end of the combat encounter.
+*   **Treatment:** A successful **Medicine check** (Action) can remove the Bleeding condition.
 
 #### 2. Injuries
 When a character suffers a **Critical Hit** (rolling doubles under the attacker's skill, e.g., 11, 22, 33), they suffer an **Injury** in addition to the normal damage.
@@ -643,7 +641,7 @@ When a character suffers a **Critical Hit** (rolling doubles under the attacker'
 | **41-50** | **Moderate** | **Arm Wound** - Deep trauma to the arm or shoulder.         | **Weakened Grip:** Disadvantage on checks using that arm (Attacks, Climbing) until healed.             |
 | **51-60** | **Moderate** | **Head Trauma** - A severe blow to the skull.               | **Concussion:** -10 to Logic and Instinct permanently (or until fully rested/healed).                  |
 | **61-70** | **Severe**   | **Broken Ribs** - Breathing is agony.                       | **Winded:** You cannot take the "Sprint" action. -10 to Constitution checks.                           |
-| **71-80** | **Severe**   | **Internal Injury** - Organs bruised or ruptured.           | **Vulnerable:** You take double damage from Bleeding stacks (e.g., +2 damage per stack instead of +1). |
+| **71-80** | **Severe**   | **Internal Injury** - Organs bruised or ruptured.           | **Vulnerable:** The Defense penalty from Bleeding is doubled (Total -4 Defense).                       |
 | **81-85** | **Severe**   | **Mangled Limb** - An arm or leg is crushed or ruined.      | **Useless Limb:** The limb is unusable. If leg, prone and crawl only. If arm, drop items.              |
 | **86-90** | **Severe**   | **Severed Extremity** - Fingers, toes, ear, or nose lost.   | **Permanent Loss:** -5 to relevant checks (e.g., Dexterity, Charisma) permanently.                     |
 | **91-95** | **Lethal**   | **Mortal Wound** - A strike to the heart, throat, or brain. | **Dying:** You immediately drop to 0 HP and begin dying.                                               |

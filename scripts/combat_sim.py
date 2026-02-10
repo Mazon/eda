@@ -56,9 +56,18 @@ class Character:
     talents: List[str] = field(default_factory=list)
     relics: List[str] = field(default_factory=list)
     marked_skills: Set[str] = field(default_factory=set)
-    wounds: List[str] = field(default_factory=list)
-    max_wounds: int = 0
+    
+    # Wound & Injury System
+    is_bleeding: bool = False # Binary condition
+    injuries: List[str] = field(default_factory=list)
     is_dead: bool = False
+    is_stunned: bool = False # Minor Injury 01-10
+    has_pain: bool = False # Minor Injury 11-20 (-10 next check)
+    is_disoriented: int = 0 # Minor Injury 21-30 (rounds)
+    is_hobbled: bool = False # Moderate Injury 31-40
+    is_weakened: bool = False # Moderate Injury 41-50
+    is_concussed: bool = False # Moderate Injury 51-60
+    is_vulnerable: bool = False # Severe Injury 71-80 (Double penalty?)
     
     # Tactical Combat States
     combat_ap: int = 0
@@ -102,18 +111,34 @@ class Character:
         if "Duelist" in self.talents: self.max_reactions += 1
         
         if self.reactions > self.max_reactions: self.reactions = self.max_reactions
-        
-        # Max Wounds
-        self.max_wounds = 4
 
     def full_heal(self):
         if not self.is_dead:
             self.hp = self.max_hp
             self.ip = self.max_ip
             self.reactions = self.max_reactions
-            self.wounds = []
+            self.is_bleeding = False
+            self.injuries = []
+            self.is_stunned = False
+            self.has_pain = False
+            self.is_disoriented = 0
+            self.is_hobbled = False
+            self.is_weakened = False
+            self.is_concussed = False
+            self.is_vulnerable = False
 
     def roll_skill(self, skill_val: int, skill_name: Optional[str] = None, modifier: int = 0, advantage: bool = False, disadvantage: bool = False) -> Tuple[bool, int, int, bool]:
+        # Injury Penalties
+        if self.has_pain:
+            modifier -= 10
+            self.has_pain = False # Pain is for the next check only
+        
+        if self.is_concussed and skill_name in ["Logic", "Instinct"]:
+            modifier -= 10
+            
+        if self.is_disoriented > 0 and skill_name in ["Logic", "Instinct"]:
+            disadvantage = True
+
         target = skill_val + modifier
         
         def do_roll():
@@ -155,16 +180,25 @@ class Character:
 
     def take_damage(self, amount: int):
         defense = self.armor.defense + getattr(self, "natural_defense", 0)
+        
+        # Bleeding Condition: -2 Defense
+        if self.is_bleeding:
+            defense -= 2
+            if self.is_vulnerable: defense -= 2 # Severe injury double penalty
+            
         if "Holy Aura" in self.talents: defense += 1
         if "Defensive Stance" in self.talents: defense += 2
         if "Steel Resolve" in self.talents: defense += 2
-        if self.has_evasive_bonus: defense += 3 # New Rule: +3 Defense from movement
+        if self.has_evasive_bonus: defense += 3 
         
         final_dmg = max(0, amount - defense)
         if final_dmg > 0:
             self.took_damage_this_round = True
+            # Bleeding: Trigger if you take damage
+            self.is_bleeding = True
             if "Iron Will" in self.talents:
                 self.focus_points = min(5, self.focus_points + 1)
+        
         self.hp -= final_dmg
         if self.hp <= 0:
             if "Unyielding Spirit" in self.talents and not getattr(self, "used_unyielding", False):
@@ -175,22 +209,49 @@ class Character:
                 self.hp = 0
                 self.is_dead = True
     
-    def inflict_wound(self):
-        if len(self.wounds) >= self.max_wounds:
-            self.is_dead = True
-            return
-
-        roll = random.randint(1, 10)
-        wound_map = {
-            1: "Concussion", 2: "Concussion",
-            3: "Broken Ribs", 4: "Broken Ribs",
-            5: "Deep Gash", 6: "Deep Gash",
-            7: "Fractured Limb", 8: "Fractured Limb",
-            9: "Internal Bleeding",
-            10: "Mangled Limb"
-        }
-        self.wounds.append(wound_map[roll])
-        if len(self.wounds) >= self.max_wounds:
+    def inflict_injury(self):
+        roll = random.randint(1, 100)
+        if 1 <= roll <= 10:
+            self.injuries.append("Stunned")
+            self.is_stunned = True
+        elif 11 <= roll <= 20:
+            self.injuries.append("Pain")
+            self.has_pain = True
+        elif 21 <= roll <= 30:
+            self.injuries.append("Disoriented")
+            self.is_disoriented = random.randint(1, 4)
+        elif 31 <= roll <= 40:
+            self.injuries.append("Hobbled")
+            self.is_hobbled = True
+        elif 41 <= roll <= 50:
+            self.injuries.append("Weakened Grip")
+            self.is_weakened = True
+        elif 51 <= roll <= 60:
+            self.injuries.append("Concussion")
+            self.is_concussed = True
+        elif 61 <= roll <= 70:
+            self.injuries.append("Broken Ribs")
+        elif 71 <= roll <= 80:
+            self.injuries.append("Internal Injury")
+            self.is_vulnerable = True
+        elif 81 <= roll <= 85:
+            self.injuries.append("Mangled Limb")
+            self.is_weakened = True # Simplify for sim
+        elif 86 <= roll <= 90:
+            self.injuries.append("Severed Extremity")
+        elif 91 <= roll <= 95:
+            self.injuries.append("Mortal Wound")
+            self.hp = 0
+            self.is_dead = True # Simplified "Dying" to dead for sim
+        elif 96 <= roll <= 99:
+            self.injuries.append("Amputation")
+            # Constitution check or pass out
+            success, _, _, _ = self.roll_skill(self.stats.CON)
+            if not success:
+                self.is_dead = True # Passed out/shock
+        elif roll == 100:
+            self.injuries.append("Instant Death")
+            self.hp = 0
             self.is_dead = True
 
     def gain_ap(self, amount=10):
@@ -223,6 +284,7 @@ class EncounterResult:
     enemies_killed: int
     total_enemies: int
     vanguard_percentage: float = 0.0
+    total_injuries: int = 0
 
 class CombatEncounter:
     def __init__(self, name: str, enemies: List[Character], is_boss=False):
@@ -233,6 +295,7 @@ class CombatEncounter:
         total_enemies = len(self.enemies)
         vanguard_instances = 0
         total_instances = 0
+        total_injuries = 0
         
         while any(p.hp > 0 for p in party) and any(e.hp > 0 for e in self.enemies):
             rounds += 1
@@ -252,6 +315,10 @@ class CombatEncounter:
                 c.momentum = None
                 c.has_acted = False
                 c.took_damage_this_round = False
+                
+                # Decrement Injury Durations
+                if c.is_disoriented > 0:
+                    c.is_disoriented -= 1
 
             vanguard_players = []
             rearguard_players = []
@@ -260,7 +327,7 @@ class CombatEncounter:
                 total_instances += 1
                 mod = 0
                 if "Tempo" in p.talents: mod += 10
-                success, roll, dos, crit = p.roll_skill(p.stats.AGI, modifier=mod)
+                success, roll, dos, crit = p.roll_skill(p.stats.AGI, skill_name="Agility", modifier=mod)
                 if success: 
                     vanguard_players.append(p)
                     vanguard_instances += 1
@@ -293,7 +360,8 @@ class CombatEncounter:
         hp_pct = hp_sum / max_hp_sum if max_hp_sum > 0 else 0
         killed = len([e for e in self.enemies if e.is_dead])
         van_pct = (vanguard_instances / total_instances) if total_instances > 0 else 0
-        return EncounterResult(won, rounds, hp_pct, killed, total_enemies, van_pct)
+        total_injuries = sum(len(p.injuries) for p in party)
+        return EncounterResult(won, rounds, hp_pct, killed, total_enemies, van_pct, total_injuries)
 
     def resolve_turn(self, p: Character, friends: List[Character], foes: List[Character], forced_strategy: Optional[str] = None):
         strategy = forced_strategy if forced_strategy else "Default"
@@ -304,11 +372,10 @@ class CombatEncounter:
             p.reactions = min(p.max_reactions, p.reactions + 1)
             p.momentum = None
 
-        # Wound Effects: Bleeding
-        bleeding_stacks = p.wounds.count("Deep Gash")
-        if bleeding_stacks > 0:
-            p.take_damage(2 * bleeding_stacks)
-            if p.hp <= 0: return
+        # Stunned: You lose your next Half Action (1 AP)
+        if p.is_stunned:
+            p.combat_ap -= 1
+            p.is_stunned = False
 
         while p.combat_ap > 0:
             if strategy == "SingleAttackLimit":
@@ -327,7 +394,9 @@ class CombatEncounter:
             if strategy == "MoveAndAttack":
                 if p.combat_ap == 2:
                     # Move 3m for Evasive bonus AND free reaction
-                    p.moved_this_turn = 3
+                    dist = 3
+                    if p.is_hobbled: dist = 1 # Half speed
+                    p.moved_this_turn = dist
                     p.has_evasive_bonus = True
                     p.has_free_reaction = True
                     p.combat_ap -= 1
@@ -350,7 +419,9 @@ class CombatEncounter:
 
             # Default
             if p.hp < p.max_hp * 0.5 and p.moved_this_turn < 3 and p.combat_ap >= 1:
-                p.moved_this_turn = 3
+                dist = 3
+                if p.is_hobbled: dist = 1
+                p.moved_this_turn = dist
                 p.has_evasive_bonus = True
                 p.has_free_reaction = True
                 p.combat_ap -= 1
@@ -368,9 +439,9 @@ class CombatEncounter:
         hit_mod = 0
         skill_val = att.skill_combat
         
-        # Wound Penalties
-        if "Broken Ribs" in att.wounds:
-            skill_val -= 10
+        # Injury Penalties
+        if "Broken Ribs" in att.injuries:
+            hit_mod -= 10
         
         # Multiple Attack Penalty (MAP): /2 skill for 2nd+ attack
         if hasattr(att, 'attacks_this_turn') and att.attacks_this_turn >= 1:
@@ -379,8 +450,10 @@ class CombatEncounter:
         adv = att.next_attack_advantage
         if "Pack Tactics" in att.talents and any(f for f in friends if f.hp > 0 and f != att and (f.moved_this_turn > 0 or f.has_acted)):
             adv = True
+            
+        disadv = att.is_weakened
         
-        success, roll, dos, crit = att.roll_skill(skill_val, modifier=hit_mod, advantage=adv)
+        success, roll, dos, crit = att.roll_skill(skill_val, skill_name="Combat", modifier=hit_mod, advantage=adv, disadvantage=disadv)
         
         if hasattr(att, 'attacks_this_turn'):
             att.attacks_this_turn += 1
@@ -389,11 +462,12 @@ class CombatEncounter:
 
         if not success: return
         
+        # Critical Hit inflicts an Injury
         if crit:
-            vic.inflict_wound()
+            vic.inflict_injury()
 
         damage = att.weapon.damage + (att.skill_combat // 10 if crit else dos)
-        
+
         # Momentum Bonus (Evasive Token): +2 damage if you moved 3m+
         if getattr(self, 'use_momentum_damage', False) and att.moved_this_turn >= 3:
             damage += 2
@@ -408,21 +482,22 @@ class CombatEncounter:
             elif vic.reactions > 0:
                 vic.reactions -= 1
             else:
-                return # No reactions left and no free one used
-                
-            def_adv = vic.has_evasive_bonus or "Master of Defense" in vic.talents
-            def_mod = 0
+                pass # No reactions left
             
-            if vic.offhand and vic.offhand.is_shield and "Blocker" in vic.talents:
-                d_success, d_roll, d_dos, d_crit = vic.roll_skill(vic.skill_combat, modifier=def_mod, advantage=def_adv)
-                if d_success: dmg_reduction = vic.offhand.defense + d_dos
-                else: final_dmg_mult = 0.5
-            elif "Dodge" in vic.talents:
-                d_success, d_roll, d_dos, d_crit = vic.roll_skill(vic.stats.AGI, modifier=def_mod, advantage=def_adv)
-                if d_success: final_dmg_mult = 0.0
-            elif "Parry" in vic.talents:
-                d_success, d_roll, d_dos, d_crit = vic.roll_skill(vic.stats.AGI, modifier=def_mod, advantage=def_adv)
-                if d_success: dmg_reduction = vic.weapon.damage + d_dos
+            if not (not vic.has_free_reaction and vic.reactions == 0):
+                def_adv = vic.has_evasive_bonus or "Master of Defense" in vic.talents
+                def_mod = 0
+                
+                if vic.offhand and vic.offhand.is_shield and "Blocker" in vic.talents:
+                    d_success, d_roll, d_dos, d_crit = vic.roll_skill(vic.skill_combat, skill_name="Combat", modifier=def_mod, advantage=def_adv)
+                    if d_success: dmg_reduction = vic.offhand.defense + d_dos
+                    else: final_dmg_mult = 0.5
+                elif "Dodge" in vic.talents:
+                    d_success, d_roll, d_dos, d_crit = vic.roll_skill(vic.stats.AGI, skill_name="Agility", modifier=def_mod, advantage=def_adv)
+                    if d_success: final_dmg_mult = 0.0
+                elif "Parry" in vic.talents:
+                    d_success, d_roll, d_dos, d_crit = vic.roll_skill(vic.stats.AGI, skill_name="Agility", modifier=def_mod, advantage=def_adv)
+                    if d_success: dmg_reduction = vic.weapon.damage + d_dos
             
         damage -= dmg_reduction
         vic.take_damage(int(max(0, damage * final_dmg_mult)))
@@ -435,8 +510,8 @@ def run_sim(name, party, enemies, iterations=100, strategy: Optional[str] = None
         enc = CombatEncounter(name, enemies)
         
         # Core Rules (Evasive Stance & Half-Skill MAP)
-        enc.use_free_reaction = False
-        enc.use_momentum_damage = False
+        enc.use_free_reaction = True
+        enc.use_momentum_damage = True
         enc.use_evasive_defense = True
         
         results.append(enc.run(party, strategy=strategy))
@@ -445,6 +520,7 @@ def run_sim(name, party, enemies, iterations=100, strategy: Optional[str] = None
     print(f"  Win Rate: {len(wins) / iterations:.2%}")
     print(f"  Avg Rounds: {statistics.mean([r.rounds for r in results]):.1f}")
     print(f"  Avg Party HP: {statistics.mean([r.party_hp_pct for r in results]):.2%}")
+    print(f"  Avg Injuries per Party Member: {statistics.mean([r.total_injuries for r in results]) / len(party):.2f}")
     print("-" * 20)
 
 def create_party():
@@ -479,7 +555,8 @@ def create_enemies(type_name, count):
         elif type_name == "Draugr":
             e = Character(f"Draugr {i}", "Enemy", Stats(STR=65, AGI=45, CON=55, INS=40, LOG=20, CHA=5))
             e.weapon = Weapon("Great Axe", 11); e.armor = Armor("Lamellar", 3); e.skill_combat = 55
-            e.max_hp = 25; e.hp = 25; e.max_reactions = 4; e.reactions = 4
+            max_hp = 25
+            e.max_hp = max_hp; e.hp = max_hp; e.max_reactions = 4; e.reactions = 4
         enemies.append(e)
     return enemies
 
