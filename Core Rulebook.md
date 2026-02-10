@@ -53,7 +53,7 @@ When a character attempts an action with an uncertain outcome, the game master (
 *   **Success**: Roll under or equal to your skill or attribute value.
 *   **Failure**: Roll over your skill or attribute value.
 
-Success is not only if you succeeded in something or not. Eda uses degree of sucess to see how good you performed something. Failure might also have different consquences but is decided by the GM only and not measured by dice. A failure is a failure. 
+Success is not only if you succeeded in something or not. Eda uses degree of sucess to see how good you performed something. Failure might also have different consquences but is decided by the GM only and not measured by dice. A failure is a failure.
 
 ### Degree of Success (DoS)
 
@@ -73,7 +73,7 @@ Eda uses a "blackjack" style system where you want to roll as high as possible w
 ### Critical Success
 
 *   **Critical Success**: A pair (11, 22, 33...) that is under or equal to your skill value.
-    *   **Combat**: Deals critical damage (weapon damage + tens digit of the skill). This replaces the normal damage calculation for that hit.
+    *   **Combat**: Deals critical damage (weapon damage + tens digit of the skill) AND inflicts a **Wound** (see Damage & Health section).
     *   **Non-Combat**: Automatically fulfills the required degrees of success for any difficulty level.
 
 ### Difficulty Modifiers
@@ -146,7 +146,7 @@ Character creation is the process of defining your protagonist's strengths, hist
 
 > ### Example: Character Creation (Bjorn the Brave)
 >
-> Step 1: Lineage: Bjorn chooses The Bear totem. Attributes: STR 70, AGI 65, LOG 60, INS 40, CHA 60, CON 65.
+> Step 1: Lineage: Bjorn chooses Lineage A. Attributes: STR 70, AGI 65, LOG 60, INS 40, CHA 60, CON 65.
 >
 > Step 2: Body & Mind: He calculates 65 HP (equal to CON), 20 IP (INS / 2), and a pool of 6 Reactions (tens digit of AGI).
 >
@@ -163,7 +163,7 @@ Character creation is the process of defining your protagonist's strengths, hist
 
 ### Lineage
 
-Determines your raw potential and base attributes. Select one animal totem to get all your attributes.
+Determines your raw potential and base attributes. Select one lineage option to get all your attributes.
 
 *   Strength (STR): Raw power and strength.
 *   Agility (AGI): Nimbleness, flexibility, aim..
@@ -172,14 +172,14 @@ Determines your raw potential and base attributes. Select one animal totem to ge
 *   Charisma (CHA): Social influence, charm, leadership.
 *   Constitution (CON): Physical resilience, health.
 
-| Animal totem  |  STR  |  AGI  |  LOG  |  INS  |  CHA  |  CON  |
+| Lineage Option|  STR  |  AGI  |  LOG  |  INS  |  CHA  |  CON  |
 | :------------ | :---: | :---: | :---: | :---: | :---: | :---: |
-| **The Bear**  |  70   |  65   |  60   |  40   |  60   |  65   |
-| **The Raven** |  50   |  55   |  80   |  65   |  70   |  40   |
-| **The Lynx**  |  60   |  70   |  55   |  65   |  60   |  50   |
-| **The Owl**   |  50   |  65   |  70   |  75   |  50   |  50   |
-| **The Ox**    |  60   |  60   |  60   |  60   |  50   |  70   |
-| **The Fox**   |  50   |  65   |  65   |  50   |  70   |  60   |
+| **Lineage A** |  70   |  65   |  60   |  40   |  60   |  65   |
+| **Lineage B** |  50   |  55   |  80   |  65   |  70   |  40   |
+| **Lineage C** |  60   |  70   |  55   |  65   |  60   |  50   |
+| **Lineage D** |  50   |  65   |  70   |  75   |  50   |  50   |
+| **Lineage E** |  60   |  60   |  60   |  60   |  50   |  70   |
+| **Lineage F** |  50   |  65   |  65   |  50   |  70   |  60   |
 
 ### Body & Mind
 
@@ -611,6 +611,52 @@ A player in the vanguard turn can spend their zero cost action to wait. This dro
 *   **Reduction**: Damage is reduced by defense (armor/shields) before being applied to HP.
 *   **Death**: At 0 HP.
 
+### Wounds & Injuries
+
+Combat in Eda is dangerous. While Hit Points (HP) represent your overall health, **Wounds** and **Injuries** represent  physical trauma that degrades your ability to fight.
+
+#### 1. Bleeding Wounds
+Every attack that deals damage (after armor reduction) inflicts a **Bleed**.
+
+*   **Trigger:** Any damaging hit.
+*   **Effect:** Bleeding acts as **Negative Damage Reduction**. For every stack of Bleeding you have, you take **+1 extra damage** from all future attacks.
+    *   *Example:* If you have 3 Bleeding stacks and an enemy hits you for 5 damage, you take **8 damage** (5 + 3).
+*   **Stacking:** Bleeding stacks indefinitely during combat.
+*   **Duration:** Bleeding stacks persist until the end of the combat encounter, representing the cumulative toll of minor injuries opening up your defenses.
+*   **Treatment:** A successful **Medicine check** (Action) can remove all bleed.
+
+#### 2. Injuries
+When a character suffers a **Critical Hit** (rolling doubles under the attacker's skill, e.g., 11, 22, 33), they suffer an **Injury** in addition to the normal damage.
+
+*   **Roll:** The combatant that did the critical hit rolls a d100 on the **Injury Table**.
+*   **Effect:** The table provides both a narrative description and a mechanical penalty (e.g., Stunned, Disadvantage, Broken Limb).
+*   **Note:** Injuries are distinct from Bleeding and have their own specific durations/cures.
+
+#### Injury Table (d100)
+
+| Roll      | Severity     | Narrative Prompt                                            | Mechanical Effect                                                                                      |
+| :-------- | :----------- | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| **01-10** | **Minor**    | **Glancing Blow** - A jarring hit that rattles you.         | **Stunned:** You lose your next Half Action.                                                           |
+| **11-20** | **Minor**    | **Deep Gash** - A painful cut but clean.                    | **Pain:** -10 to your next check due to shock.                                                         |
+| **21-30** | **Minor**    | **Knocked Senseless** - Ringing ears and blurred vision.    | **Disoriented:** Disadvantage on all Logic and Instinct checks for 1d4 rounds.                         |
+| **31-40** | **Moderate** | **Leg Wound** - Muscle torn or bone chipped in the leg.     | **Hobbled:** Movement speed halved until healed.                                                       |
+| **41-50** | **Moderate** | **Arm Wound** - Deep trauma to the arm or shoulder.         | **Weakened Grip:** Disadvantage on checks using that arm (Attacks, Climbing) until healed.             |
+| **51-60** | **Moderate** | **Head Trauma** - A severe blow to the skull.               | **Concussion:** -10 to Logic and Instinct permanently (or until fully rested/healed).                  |
+| **61-70** | **Severe**   | **Broken Ribs** - Breathing is agony.                       | **Winded:** You cannot take the "Sprint" action. -10 to Constitution checks.                           |
+| **71-80** | **Severe**   | **Internal Injury** - Organs bruised or ruptured.           | **Vulnerable:** You take double damage from Bleeding stacks (e.g., +2 damage per stack instead of +1). |
+| **81-85** | **Severe**   | **Mangled Limb** - An arm or leg is crushed or ruined.      | **Useless Limb:** The limb is unusable. If leg, prone and crawl only. If arm, drop items.              |
+| **86-90** | **Severe**   | **Severed Extremity** - Fingers, toes, ear, or nose lost.   | **Permanent Loss:** -5 to relevant checks (e.g., Dexterity, Charisma) permanently.                     |
+| **91-95** | **Lethal**   | **Mortal Wound** - A strike to the heart, throat, or brain. | **Dying:** You immediately drop to 0 HP and begin dying.                                               |
+| **96-99** | **Lethal**   | **Severed Limb** - Arm or leg chopped off.                  | **Amputation:** Limb is gone. Constitution check or pass out immediately.                              |
+| **00**    | **Fatality** | **Instant Death** - Decapitation or heart destroyed.        | **Dead:** Character is instantly killed.                                                               |
+
+#### Healing & Recovery
+*   **Bleeding:** Removed automatically at end of combat, or via Medicine (Action) during combat.
+*   **Minor Injuries:** Heal naturally after a Long Rest.
+*   **Moderate Injuries:** Require Medical attention.
+*   **Severe Injuries:** Require Surgery.
+*   **Lethal/Permanent:** Require high-level Magic or unique prosthetics to mitigate.
+
 > #### Combat Example: The Pack Attacks
 >
 > Bjorn (AGI 65) and his companions Astrid (AGI 75) and Erik (AGI 50) are trekking through the Frostwood when three Gray Wolves emerge from the trees.
@@ -631,7 +677,7 @@ A player in the vanguard turn can spend their zero cost action to wait. This dro
 >
 >     *   *DoS:* 2 (Roll 25).
 >     *   *Damage:* 7 (Base) + 2 (DoS) = 9 damage.
->     *   *Result:* 9 - 1 (Wolf Defense) = 8 damage. Wolf 1 is injured (4/12 HP).
+>     *   *Result:* 9 - 1 (Wolf Defense) = 8 damage. Wolf 1 is injured (4/12 HP) and gains **1 Bleed Stack**.
 >
 > 3.  Erik (Action 1 - Move): Erik moves next to Astrid to protect her.
 >
@@ -639,7 +685,7 @@ A player in the vanguard turn can spend their zero cost action to wait. This dro
 >
 > **Enemy Turn (Gray Wolves)**
 >
-> *   Wolf 1 (Injured): Bites Bjorn. Rolls 55 (Hit).
+> *   Wolf 1 (Injured, 1 Bleed): Bites Bjorn. Rolls 55 (Hit).
 >     *   Bjorn spends his 1st Reaction (out of 6) to Block. He rolls a 30 (3 DoS).
 >     *   *Reduction:* 2 (chain mail) + 2 (shield defense) + 3 (DoS) = 7. The wolf's 6 damage (1 base + 5 DoS) is fully negated.
 > *   Wolf 2: Moves to flank Bjorn. With pack tactics, it has advantage. It rolls 15 and 70. Taking the 15: Hit!
@@ -652,7 +698,7 @@ A player in the vanguard turn can spend their zero cost action to wait. This dro
 > **Rearguard Turn (Astrid)**
 > 1.  Astrid (Action 1 - Attack): Fires her short bow at Wolf 1. She has advantage (from Erik). She rolls 15 and 60. Taking the 15: Hit!
 >     *   *DoS:* 1 (Roll 15).
->     *   *Damage:* 6 (Short Bow) + 1 (DoS) - 1 (Wolf Defense) = 6 damage. Wolf 1 is defeated!
+>     *   *Damage:* 6 (Short Bow) + 1 (DoS) - 1 (Wolf Defense) + 1 (Wolf Bleed) = 7 damage. Wolf 1 is defeated!
 > 2.  Astrid (Action 2 - Move): Moves to higher ground for safety.
 >
 > **Round 2: The Fight Continues**
@@ -661,14 +707,14 @@ A player in the vanguard turn can spend their zero cost action to wait. This dro
 >
 > 1.  Bjorn (Action 1 - Attack): Swings at Wolf 2 (adjacent). Rolls 45. Hit!
 >     *   *DoS:* 4 (Roll 45).
->     *   *Damage:* 7 (base) + 4 (DoS) - 1 (wolf defense) = 10 damage. Wolf 2 is severely wounded (2/12 HP).
+>     *   *Damage:* 7 (base) + 4 (DoS) - 1 (wolf defense) = 10 damage. Wolf 2 is severely wounded (2/12 HP) and gains **1 Bleed Stack**.
 > 2.  Bjorn (Action 2 - Attack): Quick follow-up on Wolf 2. Rolls 30. Hit!
 >     *   *DoS:* 3 (Roll 30).
->     *   *Damage:* 7 (base) + 3 (DoS) - 1 (wolf defense) = 9 damage. Wolf 2 is defeated!
+>     *   *Damage:* 7 (base) + 3 (DoS) - 1 (wolf defense) + 1 (Wolf Bleed) = 10 damage. Wolf 2 is defeated!
 > 3.  Erik (Action 1 - Move): Moves 5 meters to engage Wolf 3.
 > 4.  Erik (Action 2 - Attack): Swings his hand axe (STR 60). Rolls 35. Hit!
 >     *   *DoS:* 3 (Roll 35).
->     *   *Damage:* 6 (Base) + 3 (DoS) - 1 (Wolf Defense) = 8 damage. Wolf 3 is injured (4/12 HP).
+>     *   *Damage:* 6 (Base) + 3 (DoS) - 1 (Wolf Defense) = 8 damage. Wolf 3 is injured (4/12 HP) and gains **1 Bleed Stack**.
 >
 > **Enemy Turn (Gray Wolves)**
 >
@@ -680,7 +726,7 @@ A player in the vanguard turn can spend their zero cost action to wait. This dro
 >
 > 1.  Astrid (Action 1 - Attack): Fires at the last remaining wolf (Wolf 3). Rolls 32. Hit!
 >     *   *DoS:* 3 (Roll 32).
->     *   *Damage:* 6 (Base) + 3 (DoS) - 1 (Wolf Defense) = 8 damage. Wolf 3 is defeated!
+>     *   *Damage:* 6 (Base) + 3 (DoS) - 1 (Wolf Defense) + 1 (Wolf Bleed) = 9 damage. Wolf 3 is defeated!
 
 ### Cover
 Cover is a vital part of tactical survival. Represents the difficulty of hitting a target partially or fully obscured by the environment.
@@ -740,7 +786,7 @@ Status effects represent the toll of the environment and biological needs on the
 
 | Effect          | Mechanical Effect                                                                                                                                                                                                                                                        |
 | :-------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Bleeding**    | You are losing blood. Take 2 damage at the start of each of your turns. This effect can be stopped with a successful medicine check (routine, 1 DoS) or if you receive any form of healing.                                                                  |
+| **Bleeding**    | Your defenses are compromised. You take +1 damage from all attacks per stack of Bleeding. Stacks indefinitely. Removed by Medicine check. |
 | **Burning**     | You are on fire. Take 2 damage at the start of each of your turns. You can spend 1 AP to attempt an agility check to douse the flames. (routine, 1 DoS for small fires, challenge, 2 DoS for large).                                       |
 | **Cold**        | Extreme cold numbs your body. You have disadvantage on all agility checks. If you do not find warmth, you must succeed on a constitution check (routine, 1 DoS) every hour or take 2 damage.                                                         |
 | **Exhaustion**  | You are physically or mentally spent. Exhaustion has 3 levels: <br>1. Disadvantage on all attribute checks. <br>2. Speed is halved and disadvantage on all skill checks. <br>3. You fall unconscious. <br>A full rest removes 1 level of exhaustion. |
@@ -772,10 +818,73 @@ A standard rest requires at least 8 hours of sleep. Minor interruptions do not n
 *   **HP Recovery**: You recover 4 + (CON Tens Digit) HP per night of normal sleep.
 *   **IP Recovery**: You recover INS Tens Digit IP per night of normal sleep.
 
-### Health & Injuries
+### Injuries & Diseases
 
-#### Healing Abilities
-Using the Medicine skill to bandage or splint a broken arm can stop bleeding and prevent an injury from getting worse.
+In *Eda*, getting hurt means more than just losing Hit Points. When a character is pushed to their breaking point, they suffer lasting injuries that require time and care to heal.
+
+#### Injury System
+(See **Wounds & Injuries** section in Combat for details on Critical Injuries and Bleeding.)
+
+#### Disease System
+
+In the grime and filth of *Eda*, disease is a constant companion. Poor hygiene, tainted water, and untreated wounds claim more lives than any monster.
+
+**Transmission**
+*   **Airborne**: Close proximity to infected.
+*   **Bloodborne**: Bites, scratches, sharing needles/blades.
+*   **Ingested**: Tainted food/water.
+*   **Touch**: Direct skin contact.
+
+**Sample Diseases**
+
+*   **Gut-Rot (Dysentery)**
+    *   *Transmission*: Ingested (Tainted water, spoiled food).
+    *   *Incubation*: 1 day.
+    *   *Effect*: Violent vomiting and cramps. The character cannot recover Hit Points or Exhaustion from rest.
+    *   *Cure*: Clean water, bed rest, and *Charcoal Paste* (Alchemy/Nature).
+
+*   **Filth Fever (Sepsis)**
+    *   *Transmission*: Bloodborne (Untreated deep gash or dirty blade).
+    *   *Incubation*: 1d10 hours.
+    *   *Effect*: High fever and delirium. The character suffers Disadvantage on all INS and LOG checks and cannot receive natural healing.
+    *   *Cure*: Amputation (if on limb), Maggots (to eat rot), or strong antibiotics (rare).
+
+*   **Lung-Blight (Consumption)**
+    *   *Transmission*: Airborne (Close contact, coughing).
+    *   *Incubation*: 1d10 weeks (Long dormancy).
+    *   *Effect*: Chronic cough and bloody phlegm. -20 to Athletics checks, and strenuous activity causes 1d10 damage.
+    *   *Cure*: None known. Symptoms managed with *Soothing Tea* (Herbalism). Move to dry climate helps.
+
+*   **The Shakes**
+    *   *Transmission*: Ingested (Eating infected meat/cannibalism).
+    *   *Incubation*: 1d10 months.
+    *   *Effect*: Uncontrollable tremors. -20 to DEX/AGI checks and Disadvantage on all attacks.
+    *   *Cure*: None.
+
+#### Medical Treatment
+
+Treatment in *Eda* is not for the faint of heart. Without modern anesthesia, surgery is a trauma in itself.
+
+**The Medicine Skill**
+*   **First Aid (Routine, 1 DoS)**: Stop *Bleeding*, stabilize dying.
+*   **Long-Term Care (Challenge, 2 DoS)**: Treat disease, aid natural healing (+2 HP/day).
+*   **Surgery (Hard, 4 DoS)**: Repair severe injuries.
+*   **Amputation (Extreme, 6 DoS)**: Remove limb to cure severe disease/injury.
+
+**The Cost of Treatment**
+*   **Pain**: Surgery requires a CON check (Challenge, 2 DoS). Failure means the patient loses 1d10 IP from the trauma/pain. If IP reaches 0, the character passes out (Unconscious).
+*   **Shock**: If the surgery fails (Medicine check failed), the patient takes damage equal to the "Pain" roll and gains 1 level of Exhaustion.
+*   **Tools**: Improvised tools (rusty knife, fire) give Disadvantage. Proper tools (scalpel, clamps) are required for surgeries without penalty.
+*   **Sanitation**: Performing surgery in a dungeon or swamp gives -20 penalty.
+
+**Herbalism & Supplies**
+*   **Bitter-Moss**: Chewed to numb pain (Advantage on Pain CON check).
+*   **Fire-Water**: High-proof alcohol. Used to sterilize (removes Sanitation penalty) or dull pain.
+*   **Cauterization**: Using fire/hot iron to stop bleeding/amputate. Stops bleeding instantly but deals 1d10 fire damage and causes a Pain check.
+
+**Integration with Rules**
+*   **Conditions**: Diseases often inflict existing conditions like *Exhaustion*, *Poisoned*, or *Bleeding*.
+*   **Infected Condition**: A character with an active disease or untreated Severe Injury is *Infected*. They cannot recover HP from natural rest.
 
 ## Equipment & Economy
 

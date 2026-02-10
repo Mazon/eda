@@ -56,6 +56,8 @@ class Character:
     talents: List[str] = field(default_factory=list)
     relics: List[str] = field(default_factory=list)
     marked_skills: Set[str] = field(default_factory=set)
+    wounds: List[str] = field(default_factory=list)
+    max_wounds: int = 0
     is_dead: bool = False
     
     # Tactical Combat States
@@ -100,12 +102,16 @@ class Character:
         if "Duelist" in self.talents: self.max_reactions += 1
         
         if self.reactions > self.max_reactions: self.reactions = self.max_reactions
+        
+        # Max Wounds
+        self.max_wounds = 4
 
     def full_heal(self):
         if not self.is_dead:
             self.hp = self.max_hp
             self.ip = self.max_ip
             self.reactions = self.max_reactions
+            self.wounds = []
 
     def roll_skill(self, skill_val: int, skill_name: Optional[str] = None, modifier: int = 0, advantage: bool = False, disadvantage: bool = False) -> Tuple[bool, int, int, bool]:
         target = skill_val + modifier
@@ -168,6 +174,24 @@ class Character:
             else:
                 self.hp = 0
                 self.is_dead = True
+    
+    def inflict_wound(self):
+        if len(self.wounds) >= self.max_wounds:
+            self.is_dead = True
+            return
+
+        roll = random.randint(1, 10)
+        wound_map = {
+            1: "Concussion", 2: "Concussion",
+            3: "Broken Ribs", 4: "Broken Ribs",
+            5: "Deep Gash", 6: "Deep Gash",
+            7: "Fractured Limb", 8: "Fractured Limb",
+            9: "Internal Bleeding",
+            10: "Mangled Limb"
+        }
+        self.wounds.append(wound_map[roll])
+        if len(self.wounds) >= self.max_wounds:
+            self.is_dead = True
 
     def gain_ap(self, amount=10):
         self.ap += amount
@@ -280,6 +304,12 @@ class CombatEncounter:
             p.reactions = min(p.max_reactions, p.reactions + 1)
             p.momentum = None
 
+        # Wound Effects: Bleeding
+        bleeding_stacks = p.wounds.count("Deep Gash")
+        if bleeding_stacks > 0:
+            p.take_damage(2 * bleeding_stacks)
+            if p.hp <= 0: return
+
         while p.combat_ap > 0:
             if strategy == "SingleAttackLimit":
                 if attacks_made >= 1:
@@ -338,6 +368,10 @@ class CombatEncounter:
         hit_mod = 0
         skill_val = att.skill_combat
         
+        # Wound Penalties
+        if "Broken Ribs" in att.wounds:
+            skill_val -= 10
+        
         # Multiple Attack Penalty (MAP): /2 skill for 2nd+ attack
         if hasattr(att, 'attacks_this_turn') and att.attacks_this_turn >= 1:
             skill_val = skill_val // 2
@@ -355,6 +389,9 @@ class CombatEncounter:
 
         if not success: return
         
+        if crit:
+            vic.inflict_wound()
+
         damage = att.weapon.damage + (att.skill_combat // 10 if crit else dos)
         
         # Momentum Bonus (Evasive Token): +2 damage if you moved 3m+

@@ -1,0 +1,4002 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Core Rulebook</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="scripts/style.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#eda" id="toc-eda">Eda</a>
+<ul>
+<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
+<li><a href="#what-is-a-roleplaying-game"
+id="toc-what-is-a-roleplaying-game">What is a Roleplaying Game?</a></li>
+<li><a href="#dice-mechanics" id="toc-dice-mechanics">Dice
+Mechanics</a></li>
+<li><a href="#game-sessions" id="toc-game-sessions">Game
+Sessions</a></li>
+<li><a href="#core-mechanics" id="toc-core-mechanics">Core Mechanics</a>
+<ul>
+<li><a href="#checks" id="toc-checks">Checks</a></li>
+<li><a href="#degree-of-success-dos"
+id="toc-degree-of-success-dos">Degree of Success (DoS)</a></li>
+<li><a href="#critical-success" id="toc-critical-success">Critical
+Success</a></li>
+<li><a href="#difficulty-modifiers"
+id="toc-difficulty-modifiers">Difficulty Modifiers</a></li>
+<li><a href="#advantage-disadvantage"
+id="toc-advantage-disadvantage">Advantage &amp; Disadvantage</a></li>
+<li><a href="#opposing-rolls" id="toc-opposing-rolls">Opposing
+Rolls</a></li>
+<li><a href="#pushing-the-limit" id="toc-pushing-the-limit">Pushing the
+Limit</a></li>
+</ul></li>
+<li><a href="#character-creation" id="toc-character-creation">Character
+Creation</a>
+<ul>
+<li><a href="#lineage" id="toc-lineage">Lineage</a></li>
+<li><a href="#body-mind" id="toc-body-mind">Body &amp; Mind</a></li>
+<li><a href="#heritage" id="toc-heritage">Heritage</a></li>
+<li><a href="#course-of-life" id="toc-course-of-life">Course of
+Life</a></li>
+<li><a href="#skills" id="toc-skills">Skills</a></li>
+<li><a href="#combat-styles" id="toc-combat-styles">Combat
+Styles</a></li>
+</ul></li>
+<li><a href="#talents" id="toc-talents">Talents</a>
+<ul>
+<li><a href="#the-talent-pyramid" id="toc-the-talent-pyramid">The Talent
+Pyramid</a></li>
+<li><a href="#common-talents" id="toc-common-talents">Common
+Talents</a></li>
+<li><a href="#troubadour-talents" id="toc-troubadour-talents">Troubadour
+Talents</a></li>
+<li><a href="#thug-talents" id="toc-thug-talents">Thug Talents</a></li>
+<li><a href="#zealot-talents" id="toc-zealot-talents">Zealot
+Talents</a></li>
+<li><a href="#warden-talents" id="toc-warden-talents">Warden
+Talents</a></li>
+<li><a href="#wanderer-talents" id="toc-wanderer-talents">Wanderer
+Talents</a></li>
+<li><a href="#huntsman-talents" id="toc-huntsman-talents">Huntsman
+Talents</a></li>
+<li><a href="#veteran-talents" id="toc-veteran-talents">Veteran
+Talents</a></li>
+<li><a href="#witch-talents" id="toc-witch-talents">Witch
+Talents</a></li>
+<li><a href="#earl-talents" id="toc-earl-talents">Earl Talents</a></li>
+</ul></li>
+<li><a href="#encounters" id="toc-encounters">Encounters</a>
+<ul>
+<li><a href="#initiative" id="toc-initiative">Initiative</a></li>
+<li><a href="#actions" id="toc-actions">Actions</a></li>
+<li><a href="#damage-health" id="toc-damage-health">Damage &amp;
+Health</a></li>
+<li><a href="#cover" id="toc-cover">Cover</a></li>
+<li><a href="#reactions-active-defense"
+id="toc-reactions-active-defense">Reactions &amp; Active
+Defense</a></li>
+</ul></li>
+<li><a href="#conditions-status-effects"
+id="toc-conditions-status-effects">Conditions &amp; Status
+Effects</a></li>
+<li><a href="#environmental-hazards"
+id="toc-environmental-hazards">Environmental Hazards</a>
+<ul>
+<li><a href="#falling" id="toc-falling">Falling</a></li>
+</ul></li>
+<li><a href="#adventuring" id="toc-adventuring">Adventuring</a>
+<ul>
+<li><a href="#downtime" id="toc-downtime">Downtime</a></li>
+<li><a href="#rest-recovery" id="toc-rest-recovery">Rest &amp;
+Recovery</a></li>
+<li><a href="#injuries-diseases" id="toc-injuries-diseases">Injuries
+&amp; Diseases</a></li>
+</ul></li>
+<li><a href="#equipment-economy" id="toc-equipment-economy">Equipment
+&amp; Economy</a>
+<ul>
+<li><a href="#denominations"
+id="toc-denominations">Denominations</a></li>
+<li><a href="#hacksilver-barter" id="toc-hacksilver-barter">Hacksilver
+&amp; Barter</a></li>
+<li><a href="#common-goods-services"
+id="toc-common-goods-services">Common Goods &amp; Services</a></li>
+</ul></li>
+<li><a href="#equipment-weapons" id="toc-equipment-weapons">Equipment
+&amp; Weapons</a>
+<ul>
+<li><a href="#weapons" id="toc-weapons">Weapons</a></li>
+<li><a href="#armor" id="toc-armor">Armor</a></li>
+<li><a href="#helmets-accessories" id="toc-helmets-accessories">Helmets
+&amp; Accessories</a></li>
+<li><a href="#shields-1" id="toc-shields-1">Shields</a></li>
+<li><a href="#adventuring-gear" id="toc-adventuring-gear">Adventuring
+Gear</a></li>
+<li><a href="#alchemical-herbal-items"
+id="toc-alchemical-herbal-items">Alchemical &amp; Herbal Items</a></li>
+<li><a href="#relics-curios" id="toc-relics-curios">Relics &amp;
+Curios</a></li>
+<li><a href="#folk-curios-occult-ingredients"
+id="toc-folk-curios-occult-ingredients">Folk Curios &amp; Occult
+Ingredients</a></li>
+</ul></li>
+<li><a href="#magic-rituals" id="toc-magic-rituals">Magic &amp;
+Rituals</a>
+<ul>
+<li><a href="#spells" id="toc-spells">Spells</a></li>
+<li><a href="#rituals" id="toc-rituals">Rituals</a></li>
+<li><a href="#ritual-rules" id="toc-ritual-rules">Ritual Rules</a></li>
+<li><a href="#ritual-list" id="toc-ritual-list">Ritual List</a></li>
+</ul></li>
+<li><a href="#game-master-section" id="toc-game-master-section">Game
+Master Section</a>
+<ul>
+<li><a href="#progress-clocks" id="toc-progress-clocks">Progress
+Clocks</a></li>
+<li><a href="#types-of-clocks" id="toc-types-of-clocks">Types of
+Clocks</a></li>
+<li><a href="#filling-a-clock" id="toc-filling-a-clock">Filling a
+Clock</a></li>
+<li><a href="#why-use-clocks" id="toc-why-use-clocks">Why Use
+Clocks?</a></li>
+<li><a href="#running-the-game" id="toc-running-the-game">Running the
+Game</a></li>
+<li><a href="#handling-lethality-success"
+id="toc-handling-lethality-success">Handling Lethality &amp;
+Success</a></li>
+<li><a href="#practical-rules-application"
+id="toc-practical-rules-application">Practical Rules
+Application</a></li>
+</ul></li>
+<li><a href="#progression" id="toc-progression">Progression</a>
+<ul>
+<li><a href="#the-fumble-points" id="toc-the-fumble-points">The Fumble
+Points</a></li>
+<li><a href="#milestones-growth" id="toc-milestones-growth">Milestones
+&amp; Growth</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="eda">Eda</h1>
+<blockquote>
+<h3 id="preface">Preface</h3>
+<p>Winter had arrived, snowflakes gently falling down to the ground.
+Jonah had finished helping his father put the horses in the stable. It
+was still not too cold, a wool sweater was enough to hold the cold at
+bay for now. A river passed by the back side of the house. Jonah walked
+to get water for dinner. Fog covered the water this morning, reaching
+out and massaging the grass on each side like fingers playing a
+beautiful tune on the piano. He bent down to fill up his bucket,
+something dark suddenly reached out and Jonah was never seen again.</p>
+</blockquote>
+<h2 id="introduction">Introduction</h2>
+<p>Eda is a dark fantasy roleplaying game of magic, wonder, and perilous
+adventure. While the world is filled with supernatural forces, magic
+often carries heavy consequences for those who dare to wield it.</p>
+<p>Life in Eda is harsh and often short. It was not always so; legends
+speak of a prosperous land where peace and harmony once reigned. The
+name Eda itself is said to mean “Wondrous” in a long-forgotten tongue.
+Today, few believe these old stories, and they are whispered only in the
+safety of dimly lit taverns or behind locked doors.</p>
+<p>Common people are scared not only of darkness, monsters, and other
+creatures roaming the countryside but also of religious fanatics,
+powerful clans, and corrupt governments. Rulers are often bandits,
+scoundrels, and men trying to prey on the weak. Then there are diseases,
+harsh weather, and pests eating the crops. Life is not easy for those
+trying to do good.</p>
+<h2 id="what-is-a-roleplaying-game">What is a Roleplaying Game?</h2>
+<p>A tabletop role-playing game is played with a group of friends. One
+acts as a game master (GM). The rest will take control of a player
+character (PC). The players act through their character and let their
+character make decisions. The GM will be the world around the players
+and guide them. Together the players and the GM create a collaborative
+adventure.</p>
+<p>The primary goal is that everyone should have fun. The rules laid out
+in this book are for guidance, your group might feel like changing some
+aspects on how you feel to play the game and that is great! Homebrewing
+of the rules are encouraged.</p>
+<p>The game is divided into Adventures and Campaigns.</p>
+<ul>
+<li><strong>Adventure</strong>: A short story or quest.</li>
+<li><strong>Campaign</strong>: A series of adventures connected together
+by a continuing storyline.</li>
+</ul>
+<h2 id="dice-mechanics">Dice Mechanics</h2>
+<p>Dice are used to decide outcomes of uncertain actions. Eda uses two
+10-sided dice to represent numbers from 01-100, referred to as a
+d100.</p>
+<ul>
+<li><strong>Primary Dice</strong>: Represents the 10s (00, 10, 20…
+90).</li>
+<li><strong>Secondary Dice</strong>: Represents the 1s (0-9).</li>
+</ul>
+<blockquote>
+<h3 id="example-rolling-the-dice">Example: Rolling the Dice</h3>
+<p>A “70” on the primary and “5” on the secondary equals 75.</p>
+<p>Two “0”s equal 100.</p>
+<p>Note on Rounding: When dividing values (e.g., Skill / 2), always
+round down. Example: 75 / 2 = 37.</p>
+</blockquote>
+<h2 id="game-sessions">Game Sessions</h2>
+<p>While the duration of play is up to each group, sessions typically
+last 4–5 hours. This allows enough time for the story to unfold without
+causing player fatigue. Ultimately, you should choose a pace that
+ensures the most enjoyment for your group.</p>
+<p><strong>Session 0</strong>: It is always a good idea to have a first
+session where you don’t adventure fully but make sure everyone has a
+character created, backstories are done, and expectations are set
+regarding the tone of the game.</p>
+<h2 id="core-mechanics">Core Mechanics</h2>
+<h3 id="checks">Checks</h3>
+<p>When a character attempts an action with an uncertain outcome, the
+game master (GM) will call for a check. To make a check, roll a d100
+(two ten-sided dice).</p>
+<ul>
+<li><strong>Success</strong>: Roll under or equal to your skill or
+attribute value.</li>
+<li><strong>Failure</strong>: Roll over your skill or attribute
+value.</li>
+</ul>
+<p>Success is not only if you succeeded in something or not. Eda uses
+degree of sucess to see how good you performed something. Failure might
+also have different consquences but is decided by the GM only and not
+measured by dice. A failure is a failure.</p>
+<h3 id="degree-of-success-dos">Degree of Success (DoS)</h3>
+<p>Eda uses a “blackjack” style system where you want to roll as high as
+possible without exceeding your skill value. The quality of your success
+is measured by the degree of success (DoS).</p>
+<ul>
+<li>Calculating DoS: Your DoS is equal to the tens digit of your
+successful roll.
+<ul>
+<li><em>Example</em>: A roll of 48 provides 4 DoS.</li>
+</ul></li>
+</ul>
+<blockquote>
+<h3 id="example-calculating-dos">Example: Calculating DoS</h3>
+<p>Bjorn (Skill 70) attempts to track a wolf.</p>
+<ul>
+<li>He rolls a 65: Success! The tens digit is 6, so he achieves 6
+DoS.</li>
+<li>He rolls a 12: Success! The tens digit is 1, so he achieves 1
+DoS.</li>
+<li>He rolls a 75: Failure! He achieves 0 DoS.</li>
+</ul>
+</blockquote>
+<h3 id="critical-success">Critical Success</h3>
+<ul>
+<li><strong>Critical Success</strong>: A pair (11, 22, 33…) that is
+under or equal to your skill value.
+<ul>
+<li><strong>Combat</strong>: Deals critical damage (weapon damage + tens
+digit of the skill). This replaces the normal damage calculation for
+that hit.</li>
+<li><strong>Non-Combat</strong>: Automatically fulfills the required
+degrees of success for any difficulty level.</li>
+</ul></li>
+</ul>
+<h3 id="difficulty-modifiers">Difficulty Modifiers</h3>
+<p>Some tasks are harder than others and the GM might require a minimum
+number of degrees of success to succeed.</p>
+<blockquote>
+<h3 id="example-bjorn-swimming-in-the-river">Example: Bjorn swimming in
+the river</h3>
+<p>Bjorn ended up in the river with his chainmail and a strong current,
+while he can swim he is struggling to reach the shore.</p>
+<ul>
+<li>He rolls a 65: Success! The tens digit is 6, so he achieves 6 DoS.
+The GM had decided 2 DoS would be enough in this case.</li>
+</ul>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 14%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Difficulty</th>
+<th style="text-align: left;">Requirement</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Easy</strong></td>
+<td style="text-align: left;">0 DoS</td>
+<td style="text-align: left;">Routine tasks with no significant
+pressure.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Routine</strong></td>
+<td style="text-align: left;">1 DoS</td>
+<td style="text-align: left;">Standard professional tasks.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Challenge</strong></td>
+<td style="text-align: left;">2 DoS</td>
+<td style="text-align: left;">Demanding tasks requiring focus and
+skill.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hard</strong></td>
+<td style="text-align: left;">4 DoS</td>
+<td style="text-align: left;">Significant obstacles; requires
+expertise.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Extreme</strong></td>
+<td style="text-align: left;">6 DoS</td>
+<td style="text-align: left;">At the edge of human capability.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Near Impossible</strong></td>
+<td style="text-align: left;">8 DoS</td>
+<td style="text-align: left;">Practically legendary feats; requires a
+Master.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="advantage-disadvantage">Advantage &amp; Disadvantage</h3>
+<p>When you have advantage or disadvantage, you roll d100 as normal, but
+you can swap which die is the primary (tens) and which is the secondary
+(units). This allows you to choose between two possible results from a
+single roll.</p>
+<ul>
+<li><strong>Advantage</strong>: You select the best result. The best
+result is defined as the successful roll that provides the highest
+degree of success (DoS).</li>
+<li><strong>Disadvantage</strong>: You must take the worst result.</li>
+</ul>
+<blockquote>
+<h3 id="example-advantage-swap">Example: Advantage Swap</h3>
+<p>Bjorn (Skill 70) rolls with advantage. He rolls a 2 and a 6.</p>
+<ul>
+<li>Option A: 26 (2 DoS)</li>
+<li>Option B: 62 (6 DoS)</li>
+</ul>
+<p>Bjorn picks 62. It is still under his skill (70), but it provides a
+higher DoS.</p>
+</blockquote>
+<h3 id="opposing-rolls">Opposing Rolls</h3>
+<p>When two characters compete (e.g., an arm wrestling match or hiding
+from a guard), both make a check.</p>
+<ul>
+<li><strong>Highest Successful Roll Wins</strong>: If both succeed, the
+character with the highest successful roll wins (degree of
+success).</li>
+<li><strong>Single Success</strong>: If one succeeds and the other
+fails, the successful character wins.</li>
+<li><strong>Double Failure</strong>: If both fail, the situation remains
+unchanged.</li>
+</ul>
+<h3 id="pushing-the-limit">Pushing the Limit</h3>
+<p>Before rolling, a player can declare they are “Pushing.”</p>
+<ul>
+<li>Effect: You gain advantage on the roll.</li>
+<li>Cost: Regardless of success or failure, you lose 10 instinct points
+(IP).</li>
+</ul>
+<blockquote>
+<p>Instinct points (IP) represent your character’s subconscious and
+willpower. They are a pool of points that can be spent to push yourself
+or are lost when facing horrific sights. If your instinct points reach
+0, you become frightened. See section Body &amp; Mind in character
+creation for how to calculate your maximum IP.</p>
+</blockquote>
+<h2 id="character-creation">Character Creation</h2>
+<p>Character creation is the process of defining your protagonist’s
+strengths, history, and motivations. A character is defined by the
+following elements:</p>
+<ol type="1">
+<li><strong>Lineage</strong>: Your raw physical and mental
+potential.</li>
+<li><strong>Body &amp; Mind</strong>: Derived values for health and
+instinct.</li>
+<li><strong>Heritage</strong>: Your cultural background and innate
+traits.</li>
+<li><strong>Skills</strong>: Specialized training and knowledge.</li>
+<li><strong>Talents</strong>: Unique abilities and combat
+maneuvers.</li>
+<li><strong>Combat Styles</strong>: Mastery of specific weapon
+categories.</li>
+<li><strong>Course of Life</strong>: Your character’s history and
+goals.</li>
+<li><strong>Equipment</strong>: The gear you carry into the wilds.</li>
+</ol>
+<blockquote>
+<h3 id="example-character-creation-bjorn-the-brave">Example: Character
+Creation (Bjorn the Brave)</h3>
+<p>Step 1: Lineage: Bjorn chooses Lineage A. Attributes: STR 70, AGI 65,
+LOG 60, INS 40, CHA 60, CON 65.</p>
+<p>Step 2: Body &amp; Mind: He calculates 65 HP (equal to CON), 20 IP
+(INS / 2), and a pool of 6 Reactions (tens digit of AGI).</p>
+<p>Step 3: Heritage: He picks Clansman. Trait: Grim Resolve. Skills:
+Trained in Survival and Intimidate. Gear: A whetstone and a flask of
+“North-Burn.”</p>
+<p>Step 4: Skills: Bjorn is already trained in survival and intimidate
+from his heritage. He chooses 3 more trained skills: athletics, warfare,
+and perception.</p>
+<p>Step 5 and 6: Talents &amp; Combat Styles: Bjorn selects the shield
+wall talent and the one-handed &amp; shield combat style.</p>
+<p>Step 7: Course of Life: Bjorn is a veteran of the Frost Wars, seeking
+to protect his village from the creeping ice. He is brave but
+cautious.</p>
+<p>Step 8: Equipment: Bjorn starts with 60 sp from his Clansman
+heritage. He purchases a Hand Axe (30sp), a bedroll (2sp), a tinderbox
+(2sp), and 5 days of rations (10sp). He also carries his whetstone from
+his heritage, leaving him with 16 sp.</p>
+</blockquote>
+<h3 id="lineage">Lineage</h3>
+<p>Determines your raw potential and base attributes. Select one lineage
+option to get all your attributes.</p>
+<ul>
+<li>Strength (STR): Raw power and strength.</li>
+<li>Agility (AGI): Nimbleness, flexibility, aim..</li>
+<li>Logic (LOG): Deduction, memory, understanding languages,
+puzzles.</li>
+<li>Instinct (INS): Focus, will, determination, subconscious.</li>
+<li>Charisma (CHA): Social influence, charm, leadership.</li>
+<li>Constitution (CON): Physical resilience, health.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Lineage Option</th>
+<th style="text-align: center;">STR</th>
+<th style="text-align: center;">AGI</th>
+<th style="text-align: center;">LOG</th>
+<th style="text-align: center;">INS</th>
+<th style="text-align: center;">CHA</th>
+<th style="text-align: center;">CON</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Lineage A</strong></td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">65</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lineage B</strong></td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">55</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">40</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lineage C</strong></td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">55</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">50</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lineage D</strong></td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">75</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">50</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lineage E</strong></td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">70</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lineage F</strong></td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">60</td>
+</tr>
+</tbody>
+</table>
+<h3 id="body-mind">Body &amp; Mind</h3>
+<ul>
+<li>Health Points (HP): Equal to your CON attribute.</li>
+<li>Instinct Points (IP): Equal to INS / 2. Used for talents, magic, and
+resisting fear.</li>
+<li>Reaction Pool: Tens digit of AGI (e.g., AGI 65 = 6 reactions). The
+amount of reactions during a full encounter.</li>
+</ul>
+<h3 id="heritage">Heritage</h3>
+<p>Your heritage defines your upbringing, innate traits, and starting
+social standing. Every heritage provides a signature trait, two heritage
+skills in which you are automatically trained, a unique piece of
+starting equipment, a set amount of starting currency, and usually a
+choice of one combat ctyle.</p>
+<h4 id="clansman">Clansman</h4>
+<p><em>The wind cuts like a knife in the wild lands, and graves are dug
+shallow in the frozen earth. Your people survive on loyalty, debt, and
+the grim knowledge that winter kills the weak.</em></p>
+<ul>
+<li><strong>Trait: Grim Resolve.</strong> Once per day, when your life
+or honor is on the line, you may add your CON or INS tens digit as a
+bonus to any check.</li>
+<li><strong>Heritage Skills:</strong> Trained in Survival and
+Intimidate.</li>
+<li><strong>Starting Equipment:</strong> A whetstone, a flask of
+“North-Burn” spirits, or a carved bone token.</li>
+<li><strong>Starting Currency:</strong> 60 sp.</li>
+</ul>
+<h4 id="clergy">Clergy</h4>
+<p><em>Silence hangs heavy in the temple, broken only by the desperate
+prayers of the sick. Whether a true believer or a charlatan in a frayed
+robe, you have walked among the dying and seen what men will do when the
+gods turn their backs.</em></p>
+<ul>
+<li><strong>Trait: Unwavering.</strong> You have advantage on checks to
+resist intimidation, fear, or magical influence.</li>
+<li><strong>Heritage Skills:</strong> Trained in Religion and
+Medicine.</li>
+<li><strong>Starting Equipment:</strong> A holy symbol (chipped), a
+small box of salt, or a roll of clean bandages.</li>
+<li><strong>Starting Currency:</strong> 50 sp.</li>
+</ul>
+<h4 id="farmer">Farmer</h4>
+<p><em>Mud, toil, and the biting frost—these are the only constants. A
+bad harvest is a death sentence, and hunger is a wolf that never
+sleeps.</em></p>
+<ul>
+<li><strong>Trait: Sturdy-Built.</strong> You can ignore all penalties
+from the first level of exhaustion.</li>
+<li><strong>Heritage Skills:</strong> Trained in Nature and
+Athletics.</li>
+<li><strong>Starting Equipment:</strong> A heavy wood-axe, a small bag
+of hardy seeds, or a sturdy iron cook-pot.</li>
+<li><strong>Starting Currency:</strong> 30 sp.</li>
+</ul>
+<h4 id="artisan">Artisan</h4>
+<p><em>In a world of rust and ruin, things must be forged to last. The
+smell of hot iron and oil is more comforting than perfume, and a
+well-made tool is worth more than a crown.</em></p>
+<ul>
+<li><strong>Trait: Eye for Detail.</strong> You have advantage on
+appraise or engineering checks to identify flaws or value in physical
+objects.</li>
+<li><strong>Heritage Skills:</strong> Trained in Crafting and
+Engineering.</li>
+<li><strong>Starting Equipment:</strong> A set of masterwork tools, a
+leather apron, or a small bag of scrap metal.</li>
+<li><strong>Starting Currency:</strong> 60 sp.</li>
+</ul>
+<h4 id="merchant">Merchant</h4>
+<p><em>Gold is the only shield that doesn’t rust. Raised among the
+chaotic markets and dangerous trade routes, survival meant spotting a
+lie before it was spoken.</em></p>
+<ul>
+<li><strong>Trait: Master of Coin.</strong> You have advantage on barter
+or persuade checks when negotiating prices or trade deals.</li>
+<li><strong>Heritage Skills:</strong> Trained in Barter and
+Appraise.</li>
+<li><strong>Starting Equipment:</strong> A set of brass scales, a
+concealed dagger, or a map with safe routes marked.</li>
+<li><strong>Starting Currency:</strong> 120 sp.</li>
+</ul>
+<h4 id="noble">Noble</h4>
+<p><em>Drafty halls filled with the ghosts of past glories were your
+playground, teaching the bitter taste of pride without gold. The world
+may have forgotten your family’s honor, but you have not.</em></p>
+<ul>
+<li><strong>Trait: Silver Tongue.</strong> You have advantage on
+persuade or diplomacy checks when dealing with authority figures or
+high-society.</li>
+<li><strong>Heritage Skills:</strong> Trained in Diplomacy and
+History.</li>
+<li><strong>Starting Equipment:</strong> A heavy signet ring (worth
+10sp), a fine but frayed cloak, or a letter of debt owed to your
+family.</li>
+<li><strong>Starting Currency:</strong> 100 sp.</li>
+</ul>
+<h4 id="outcast">Outcast</h4>
+<p><em>While decent folk sleep behind locked doors, you learned to be
+invisible, eating scraps and sleeping with one eye open. Society
+rejected you, so you learned to survive without it.</em></p>
+<ul>
+<li><strong>Trait: Hardened Survivor.</strong> You have learned to live
+on the fringes of society. You have advantage on Stealth and Survival
+checks when in urban environments or ruins.</li>
+<li><strong>Heritage Skills:</strong> Trained in Occult Knowledge and
+Investigation.</li>
+<li><strong>Starting Equipment:</strong> A rusted knife, a lucky charm
+made of bone, or a heavy hood.</li>
+<li><strong>Starting Currency:</strong> 40 sp.</li>
+</ul>
+<h3 id="course-of-life">Course of Life</h3>
+<p>Describe your character. Are you generous? Do you like animals? What
+are your goals? Keep a journal of your adventures, friends, and
+enemies.</p>
+<h3 id="skills">Skills</h3>
+<p>Skills represent your character’s training and experience.</p>
+<ul>
+<li><strong>Base Skill</strong>: Your base score in any skill is equal
+to its associated Attribute / 2.</li>
+<li><strong>Trained</strong>: You are specialized in this skill. A
+Trained skill is equal to its associated Attribute in full. At character
+creation, you gain 2 Trained Skills from your Heritage, 1 Combat Style,
+and select 3 additional Trained Skills from the list below. After that
+you can increase your skills by using XP. Only trained skills can be
+improved by XP. To “unlock” an untrained skill into a trained skill you
+need to spend 5 XP at once, representing dedicated training. After that,
+you can increase the skill score using XP.</li>
+</ul>
+<h4 id="skill-list">Skill List</h4>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 13%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Skill</th>
+<th style="text-align: center;">Attribute</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Acrobatics</td>
+<td style="text-align: center;">AGI</td>
+<td style="text-align: left;">Balance, tumbling.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alchemy</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Create potions and brews.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Animal Training</td>
+<td style="text-align: center;">CHA</td>
+<td style="text-align: left;">Train animals.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Appraise</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Estimate value of items.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Athletics</td>
+<td style="text-align: center;">STR</td>
+<td style="text-align: left;">Scaling walls/trees, jumping, swimming,
+physical feats.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Barter</td>
+<td style="text-align: center;">CHA</td>
+<td style="text-align: left;">Negotiate prices.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bluff</td>
+<td style="text-align: center;">CHA</td>
+<td style="text-align: left;">Deception.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Crafting</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Making items.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Diplomacy</td>
+<td style="text-align: center;">CHA</td>
+<td style="text-align: left;">Negotiation and peace-making.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Disguise</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Changing appearance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Drive Vehicle</td>
+<td style="text-align: center;">AGI</td>
+<td style="text-align: left;">Controlling carts/wagons.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Engineering</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Mechanics, gadgets.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Entertain</td>
+<td style="text-align: center;">CHA</td>
+<td style="text-align: left;">Performance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">History</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Knowledge of the past.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Intimidate</td>
+<td style="text-align: center;">CHA</td>
+<td style="text-align: left;">Coercion through fear.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Investigation</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Interrogation, finding clues.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Linguistics</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Read/write languages.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Medicine</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Treating disease/injury, anatomy, first
+aid.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nature</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Knowledge of the wild, plants, and
+animals.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Navigation</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Finding your way.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Occult Knowledge</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Magic, monsters, dark beings.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Perception</td>
+<td style="text-align: center;">INS</td>
+<td style="text-align: left;">Spotting hidden things (Sixth Sense).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Persuade</td>
+<td style="text-align: center;">CHA</td>
+<td style="text-align: left;">Convincing others.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Religion</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Knowledge of gods/cults.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Riding</td>
+<td style="text-align: center;">AGI</td>
+<td style="text-align: left;">Riding mounts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Seafaring</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Boating knowledge.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stealth</td>
+<td style="text-align: center;">AGI</td>
+<td style="text-align: left;">Hiding and moving silently.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Survival</td>
+<td style="text-align: center;">CON</td>
+<td style="text-align: left;">Enduring harsh environments.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Thievery</td>
+<td style="text-align: center;">AGI</td>
+<td style="text-align: left;">Pickpocket, lockpicking.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tracking</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Following trails.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Warfare</td>
+<td style="text-align: center;">LOG</td>
+<td style="text-align: left;">Tactics and strategy.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="combat-styles">Combat Styles</h3>
+<p>Combat styles represent your character’s training in specific forms
+of combat. They have a base value of attribute / 2 and become the full
+attribute when trained. They determine which weapons you can use
+effectively and often unlock specific talents.</p>
+<p>At character creation, you can choose one combat style if your
+heritage don’t say otherwise.</p>
+<h4 id="finesse">Finesse</h4>
+<ul>
+<li><p><strong>Attribute</strong>: AGI</p></li>
+<li><p><strong>Applicable Weapons</strong>: Daggers, Short Swords,
+Rapiers.</p></li>
+<li><p><strong>Riposte (T2)</strong>: Reaction. After a successful
+Parry, make an immediate counter-attack with that weapon.</p></li>
+</ul>
+<h4 id="one-handed">One-Handed</h4>
+<ul>
+<li><p><strong>Attribute</strong>: STR</p></li>
+<li><p><strong>Applicable Weapons</strong>: Long Swords, Hand Axes,
+Maces, Bastard Swords (1H).</p></li>
+<li><p><strong>Swift Blade (T1)</strong>: Passive. Drawing or sheathing
+a one-handed weapon is a zero cost action.</p></li>
+</ul>
+<h4 id="two-handed">Two-Handed</h4>
+<ul>
+<li><p><strong>Attribute</strong>: STR</p></li>
+<li><p><strong>Applicable Weapons</strong>: Great Swords, Great Axes,
+Bastard Swords (2H).</p></li>
+<li><p><strong>Breaker (T2)</strong>: Action (1 AP). Powerful blow.
+Ignores defense. If damage &gt; 10, target is knocked prone.</p></li>
+</ul>
+<h4 id="polearms">Polearms</h4>
+<ul>
+<li><p><strong>Attribute</strong>: STR</p></li>
+<li><p><strong>Applicable Weapons</strong>: Short Spears, Pikes,
+Halberds.</p></li>
+<li><p><strong>Sentinel (T2)</strong>: Reaction. Attack enemy entering
+your reach. On hit, their movement becomes 0 for the turn.</p></li>
+</ul>
+<h4 id="marksmanship">Marksmanship</h4>
+<ul>
+<li><p><strong>Attribute</strong>: AGI</p></li>
+<li><p><strong>Applicable Weapons</strong>: Short Bows, Long Bows,
+Crossbows.</p></li>
+<li><p><strong>Calm Shooting (T1)</strong>: Passive. Ranged attacks
+treat Heavy cover as Light, and ignore Light cover.</p></li>
+<li><p><strong>Crossbow Expert (T1)</strong>: +1 Damage with
+crossbows.</p></li>
+<li><p><strong>Far Shooting (T2)</strong>: Ranged weapon range
++25%.</p></li>
+<li><p><strong>Flurry of Arrows (T2)</strong>: Action (1 AP). Make one
+attack. If it hits, you deal your weapon damage three times (without
+DoS).</p></li>
+</ul>
+<h4 id="throwing">Throwing</h4>
+<ul>
+<li><p><strong>Attribute</strong>: AGI</p></li>
+<li><p><strong>Applicable Weapons</strong>: Thrown Daggers, Hand Axes,
+Javelins.</p></li>
+<li><p><strong>Far Throwing (T2)</strong>: Action (1 AP). Opposed STR
+(athletics) check vs target STR. On success, throw humanoid 20m. Target
+takes 5 damage per 5m thrown.</p></li>
+</ul>
+<h4 id="unarmed">Unarmed</h4>
+<ul>
+<li><p><strong>Attribute</strong>: STR</p></li>
+<li><p><strong>Applicable Weapons</strong>: Fists, Natural Weapons,
+Grappling.</p></li>
+<li><p><strong>Brawler (T2)</strong>: Action (1 AP). Opposed STR
+(unarmed) check vs target AGI or STR. Success: Target restrained. Deal
+unarmed damage as a free action each turn held.</p></li>
+</ul>
+<h4 id="shields">Shields</h4>
+<ul>
+<li><p><strong>Attribute</strong>: STR</p></li>
+<li><p><strong>Applicable Weapons</strong>: Bucklers, Round Shields,
+Kite Shields, Tower Shields, Greatshields.</p></li>
+<li><p><strong>Blocker (T1)</strong>: Unlock the block reaction. Use
+shield skill to reduce damage.</p></li>
+<li><p><strong>Shield Bash (T1)</strong>: Strike with shield (Damage =
+Shield Defense + DoS).</p></li>
+<li><p><strong>Shield Wall (T2)</strong>: Passive. Adjacent allies gain
++2 Defense. Reaction: After a successful Block, make a free Shield Bash
+attack.</p></li>
+<li><p><strong>Shield Edge (T3)</strong>: You have advantage on attacks
+against an enemy you have immobilized with your shield.</p></li>
+</ul>
+<h2 id="talents">Talents</h2>
+<p>Talents are special abilities or moves. You gain one at the start of
+the game and then by spending Experience Points (XP).</p>
+<h3 id="the-talent-pyramid">The Talent Pyramid</h3>
+<p>To ensure a broad base of abilities, you must follow the Talent
+Pyramid. You cannot specialize in high-tier powers without a foundation
+of lower-tier skills.</p>
+<ul>
+<li>Tier 1: Cost 5 XP.</li>
+<li>Tier 2: Cost 10 XP.</li>
+<li>Tier 3: Cost 15 XP.</li>
+<li>Tier 4: Cost 20 XP.</li>
+</ul>
+<blockquote>
+<p><strong>The Rule of More</strong>: At any time, you must have more
+talents in a given tier than you have in the tier directly above it.
+(Common Talents). * Example: To take your first Tier 2 talent, you must
+have at least two Tier 1 talents. To take a second Tier 2 talent, you
+must have at least three Tier 1 talents.</p>
+<p><strong>Archetype Path Rule</strong>: To take an Archetype Talent of
+Tier 2 or higher, you must already possess at least one talent from that
+same Archetype in the tier directly below it.</p>
+</blockquote>
+<h3 id="common-talents">Common Talents</h3>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 3%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Tier</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Focus</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Action: Your next attack this turn has
+advantage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Overdrive</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Action (1 AP): Your next attack this turn
+adds degree of success (tens digit of roll) to damage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Berserk</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Action: Enter frenzy (advantage on all
+attacks, cannot use reactions).</td>
+</tr>
+<tr>
+<td style="text-align: left;">First Strike</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Action (1 AP): Make an attack. If acting
+in the rearguard, deal +5 damage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vanguard’s Lead</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">If you move 3m+ in the vanguard, one ally
+gains momentum (regain 1 reaction) for free.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Desperate Attack</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Move 5m with attack action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">The Charge</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Move up to Speed in a straight line and
+make a melee attack. If 3m+, deal +5 damage. No reactions.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Smart Fighting</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Passive: While in cover, you gain
+advantage on all active defense rolls (dodge/parry/block).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dodge</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Reaction: AGI check to avoid attack.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Expert</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage on one skill check/day.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parry</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Reaction: AGI check to parry melee. On
+success, reduce damage by weapon damage + DoS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bounce Back</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage on check to avoid prone.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Relentless Pursuit</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Move 10m and attack as single action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Battle Scarred</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Choose damage type; reduce by 50%.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Harrying Strike</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Action: Target has disadvantage on their
+next defense roll.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bloodied Fury</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">If your HP is &lt; 50%, all your attacks
+deal +5 damage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Empower</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Action (1 AP): Spend 1 IP. Your next
+attack this turn deals +10 damage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Jack of all Trades</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Lowest skills set to second-lowest
+value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cleave</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Passive: When you kill an enemy, you may
+immediately make a free attack against another nearby enemy.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dual Wielding</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Req: Two Weapons. Passive. +10 Parry.
+Action (1 AP). Attack with both weapons (one roll). Hit: Combined weapon
+damage + DoS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Blind Fighting</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Ignore penalties for fighting in darkness
+or against invisible enemies.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Counter Attack</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Reaction: When hit, halve the damage and
+immediately make a melee attack against the attacker.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Duelist</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Passive: You gain +1 additional Reaction
+pool for the encounter.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Iron Will</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">When you take damage, gain 1 Focus Point.
+Spend 1 pt for +5 to a roll or 2 pts for a free Reaction.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Coup de Grace</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Action: Deal double damage (ignores
+defense) if the target is prone or stunned.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tempo</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Advantage on initiative checks.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Durable</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">+5 Natural Defense.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unyielding Spirit</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Once per long rest, if you would fall to 0
+HP, you instead stay at 1 HP and gain 10 Temp HP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Battle Plan</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: left;">Party gets advantage on initiative
+checks.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Master of Defense</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: left;">Passive: You gain advantage on all active
+defense rolls (dodge/parry/block).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Steel Resolve</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: left;">Passive: Gain +2 Defense against all
+physical attacks.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Combat Transcendence</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: left;">Action: For 3 rounds, you gain advantage
+on all defense rolls and do not spend reactions to dodge.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="troubadour-talents">Troubadour Talents</h3>
+<p><em>Use music and stories to influence or curse.</em></p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 6%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Tier</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Storyteller</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage on CHA to inspire/persuade.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Witty Response</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage on skill check after witty
+retort.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Beauty</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage on CHA vs attracted
+targets.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eyes of the Night</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Low-light vision, advantage on perception
+in dark.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Shadow Step</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Move 10m ignoring opportunity attacks (end
+in shadow).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hex Craft Novice</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Weave curses/blessings.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Blade Dancer</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">+2 Dmg and advantage on melee for 1
+turn.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Veil of Illusion</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Invisibility for 1 round.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dirge of Despair</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Enemies in 15m get -5 Attack for 3
+turns.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Siren’s Call</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Charm creature (CHA 60+).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Harbinger’s Lament</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: left;">15 Psychic Dmg + Stun to enemies in
+20m.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="thug-talents">Thug Talents</h3>
+<p><em>Ruthless street fighters.</em></p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 4%" />
+<col style="width: 76%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Tier</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dirty Fighting</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage vs surprised enemies.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Streetwise</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage on LOG checks re: crime.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sneak Attack</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">+5 damage vs unaware enemy.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Intimidation</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Force morale check (CHA vs INS) or target
+has disadvantage rest of the round.</td>
+</tr>
+<tr>
+<td style="text-align: left;">False Persona</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Assume a disguise; cannot use other
+talents.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Information Network</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Access to thieves’ network for info.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Merciless</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage on attacks vs injured
+enemies.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fence Contacts</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Sell stolen goods.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Disguise Mastery</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Disguise 50+ required.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Exploit Opening</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Rearguard: Deal +10 Damage if the target
+missed an attack against you or an ally this round.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fake Attack</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Action: Target avoids any more attacks
+this round.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mystic Shroud</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Invisibility for 3 turns (Darkness) ( non
+combat).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flanking</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Advantage if ally is on opposite
+side.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="zealot-talents">Zealot Talents</h3>
+<p><em>Driven by faith and fanaticism.</em></p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 4%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Tier</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Vigil</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">+5 Perception when guarding.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rites</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Remove minor curses/contamination.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Whispered Secrets</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage on occult/magic ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Healing Touch</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Restore 10 HP to ally. Once a day.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Holy Aura</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Allies within 10m gain +1 defense and
+advantage on all active defense rolls.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Blood Offering</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Sacrifice 5 HP for +10 Damage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Holy Weapon</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Coated in “holy” poison (+2 damage).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Caregiver</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">+20 on Aid rolls.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Martyr’s Shield</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Take 50% of damage meant for an ally
+within 5m.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Strength in Grief</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Advantage on all attack and defense rolls
+for 1 turn.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dark Channel</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Aura +5 dmg/advantage to allies, take 10
+dmg/turn.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Death Awakens</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: left;">Revive ally with 15 HP (1/day).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="warden-talents">Warden Talents</h3>
+<p><em>Guardians of nature.</em></p>
+<table>
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 7%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Tier</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Detect Illness</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Diagnose disease/curses.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Naturalistic Bolster</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Grant 5 Temp HP (1/long rest).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sylvan Whisper</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Speak with animals/plants.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bird-man</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Pet bird (Carry message, Hunt,
+Track).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Healing Leaf</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Create poultice (10 HP).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Guardian’s Resilience</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">+5 Defense in home terrain.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stone’s Fortitude</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Resistance to Blunt, +5 CON checks.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Peak Vision</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Advantage on perception in mountains.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ocean’s Blessing</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Resistance Cold, Water breathing.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tide Caller</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Slow enemies (Half Speed).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Entangling Vines</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Immobilize foes (STR check).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Spirit Walker</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Commune with spirits.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Avalanche Strike</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">10m cone, knock prone.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Storm Watcher</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Detect storms, survival advantage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Canopy Cloak</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Invisibility in woods.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wanderer-talents">Wanderer Talents</h3>
+<p><em>Cursed souls.</em></p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 7%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Tier</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Hopeless Resilience</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Resistance psychic, advantage vs
+curses.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ghostly Presence</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Phase through objects (1 turn).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cursed Aura</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Enemies -5 Attack/Saves.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Shadow Shield</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Absorb 3 damage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bane of Fate</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">5 Dmg AOE + -5 Penalty.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fortune’s Reversal</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Enemy misses or backfires.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Teleport</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">20m teleport to shadow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Spiritual Shackles</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Immobilize + 5 Dmg.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Abyssal Reckoning</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">&lt;10 HP -&gt; Resistance All, +5
+Defense.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Master of Misfortune</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Double curse penalties.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fate’s Embrace</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: left;">Invincible 3 turns.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cursed Rebirth</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: left;">Revive with 15 HP (1/long rest).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="huntsman-talents">Huntsman Talents</h3>
+<p><em>Masters of the hunt.</em></p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 6%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Tier</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Survival Instinct</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage on survival.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Animal Handler</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage on animal training checks.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Endurance Training</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Increase Max HP by 5.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hunter’s Mark</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Action: Target is marked. You deal +2
+damage to them.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Precision Strikes</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">+5 Attack vs creatures.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Trap Expertise</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Set traps (+2 Dmg).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Uncanny Defense</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Reaction: Halve damage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Slayer’s Fury</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Advantage to hit and +10 damage (1/long
+rest).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Apex Predator</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Sense supernatural.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pack Tactics</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">If an ally is within 2m of your target,
+gain advantage on attack.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Toughened Resolve</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Resistance Psychic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Slayer’s Mark</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Action: Target is marked. All allies deal
++5 damage to them.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alertness</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Cannot be surprised.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Master Tactician</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Grant allies advantage (1/long rest).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Improved Toughened Resolve</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Immunity Psychic.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="veteran-talents">Veteran Talents</h3>
+<p><em>Seasoned warriors.</em></p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 5%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Tier</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Combat Awareness</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Advantage on perception (ambush).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mounted Combat</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">+5 Damage while mounted.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tactical Maneuvering</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Move 10m free action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Defensive Stance</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Reduce damage by 2.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weapon Specialization</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">+1 Dmg, +5 Hit with chosen weapon.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Guardian</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Redirect attack from an adjacent ally to
+yourself (1/round).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Redirection</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Give ally a reaction to avoid/block
+(1/encounter).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Shield of the People</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Redirect all attacks against an adjacent
+ally to yourself for 1 round.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Heirloom Relic</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Item with +5 bonus.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vanguard Reflexes</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Passive: You recover all spent reactions
+at the start of every round.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Inspiring Presence</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: left;">Allies gain advantage on the first roll of
+the encounter.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Guardian Aura</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: left;">Allies +5 defense, resist fear.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tactician’s Insight</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: left;">Allies +5 dmg vs enemy.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="witch-talents">Witch Talents</h3>
+<p><em>Users of dark magic.</em></p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 3%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Tier</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Eldritch Sight</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">See magic auras.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hex Craft</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Cast hexes/curses (INS).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rituals</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Perform powerful, utility-focused rituals
+(see rituals section).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Coven Bond</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">+2 Spell Rolls near witches.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Familiar</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">You gain a spiritual familiar (Raven, Cat,
+or Toad). It can scout, share its senses and deliver spells.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hex Ward</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Advantage on all rolls to resist or
+cleanse hexes and curses.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Abyssal Affinity</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Spend 2 IP for Double Damage spell; take 5
+necrotic damage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Shape Shift</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Werewolf form (+10 STR, Claw 7dmg).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="earl-talents">Earl Talents</h3>
+<p><em>Social dominance and diplomatic authority.</em></p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 3%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Tier</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Sanctuary of Status</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Enemies must pass an INS check (vs your
+CHA) to target you with an attack if you haven’t struck yet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gilded Words</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">Successful persuade checks also charm the
+target (advantage on subsequent social checks) for 1 hour.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Master of Etiquette</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: left;">You can never be surprised in social
+situations and always act first in social encounters.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sovereign Mandate</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Action (1 IP): Command a creature to
+“Halt”, “Flee”, or “Kneel”. They must pass an INS check or obey for 1
+round.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Noble Aegis</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">Allies within 5m gain advantage on all
+checks to resist fear, charm, or mind-control.</td>
+</tr>
+<tr>
+<td style="text-align: left;">High Stakes Negotiator</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: left;">You can use CHA instead of AGI for
+initiative rolls.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Right of Passage</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: left;">Action (1/Encounter): You and your allies
+can move through enemy spaces without triggering opportunity attacks for
+1 round.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="encounters">Encounters</h2>
+<p>Combat in Eda is resolved in a series of rounds. Each round
+represents approximately 10 seconds of in-game time. During a round each
+combatant take one turn each.</p>
+<h3 id="initiative">Initiative</h3>
+<p>At the start of every round, only the player characters (PCs) roll
+for initiative. Roll a check against your AGI.</p>
+<ul>
+<li><strong>Vanguard Turn (Success)</strong>: If you succeed, you act
+before the enemies.</li>
+<li><strong>Rearguard Turn (Failure)</strong>: If you fail, you act
+after the enemies.</li>
+<li><strong>Enemies</strong>: All enemies act between the vanguard and
+rearguard turns.</li>
+<li><strong>Group Coordination</strong>: Players acting in the same turn
+(Vanguard or Rearguard) may act in any order they choose.</li>
+</ul>
+<h3 id="actions">Actions</h3>
+<p>On your turn, you receive 2 Action Points (AP) and 1 Zero Cost
+Action.</p>
+<h4 id="standard-actions">Standard Actions</h4>
+<ul>
+<li><strong>Move (1 AP)</strong>: Move a distance up to your Speed (AGI
+/ 10 meters).
+<ul>
+<li><strong>Evasive Stance</strong>: If you move at least 3 meters
+during your turn, you gain the evasive status until the start of your
+next turn. You gain +3 defense against all attacks while you are
+evasive.</li>
+</ul></li>
+<li><strong>Attack (1 AP)</strong>: Make an attack using a combat style.
+<ul>
+<li><strong>Multiple Attack Penalty (MAP)</strong>: If you perform more
+than one attack action in a single turn, any attack after the first is
+made at /2 skill chance.</li>
+</ul></li>
+<li><strong>Help (1 AP)</strong>: Assist an ally within melee range,
+granting them advantage on their next action.</li>
+<li><strong>Interact (1 AP)</strong>: Open a door, light a torch, or
+manipulate an object.</li>
+<li><strong>Swap Weapon (1 AP)</strong>: Draw or sheathe a weapon.</li>
+<li><strong>Mount/Dismount (1 AP)</strong>: Get on or off a mount or
+vehicle.</li>
+<li><strong>Stand Up (1 AP)</strong>: Rise from a prone or seated
+position.</li>
+<li><strong>Use Talent/Skill (Variable)</strong>: Use an ability as
+described in its text (usually 1 AP).</li>
+<li><strong>Prepare (1 AP)</strong>: Save an action to be used as a
+reaction later in the round.</li>
+</ul>
+<h4 id="the-wait-action">The Wait Action</h4>
+<p>A player in the vanguard turn can spend their zero cost action to
+wait. This drops them to the rearguard turn, effectively trading
+initiative for better positioning, observation, or recovery.</p>
+<ul>
+<li><strong>Momentum</strong>: By waiting and observing the enemy, the
+player gains momentum. When acting in the rearguard turn, they regain 1
+spent reaction to their pool.</li>
+</ul>
+<h3 id="damage-health">Damage &amp; Health</h3>
+<ul>
+<li><strong>Damage</strong>: Total damage is calculated as weapon base
+damage + degree of success (DoS).</li>
+<li><strong>Reduction</strong>: Damage is reduced by defense
+(armor/shields) before being applied to HP.</li>
+<li><strong>Death</strong>: At 0 HP.</li>
+</ul>
+<blockquote>
+<h4 id="combat-example-the-pack-attacks">Combat Example: The Pack
+Attacks</h4>
+<p>Bjorn (AGI 65) and his companions Astrid (AGI 75) and Erik (AGI 50)
+are trekking through the Frostwood when three Gray Wolves emerge from
+the trees.</p>
+<p><strong>Round 1: Initiative</strong></p>
+<ul>
+<li><p>Bjorn rolls a 42 (Success). Acts in the Vanguard Turn.</p></li>
+<li><p>Erik rolls a 28 (Success). Acts in the Vanguard Turn.</p></li>
+<li><p>Astrid rolls a 81 (Failure). Acts in the Rearguard Turn.</p></li>
+</ul>
+<p><strong>Vanguard Turn (Bjorn &amp; Erik)</strong></p>
+<ol type="1">
+<li><p>Bjorn (Action 1 - Move): Moves 6 meters to intercept Wolf 1.
+Gains Evasive Stance (+3 Defense).</p></li>
+<li><p>Bjorn (Action 2 - Attack): Swings his Long Sword (STR 70). Rolls
+25. Hit!</p>
+<ul>
+<li><em>DoS:</em> 2 (Roll 25).</li>
+<li><em>Damage:</em> 7 (Base) + 2 (DoS) = 9 damage.</li>
+<li><em>Result:</em> 9 - 1 (Wolf Defense) = 8 damage. Wolf 1 is injured
+(4/12 HP).</li>
+</ul></li>
+<li><p>Erik (Action 1 - Move): Erik moves next to Astrid to protect
+her.</p></li>
+<li><p>Erik (Action 2 - Help): Erik uses Help to spot for Astrid, giving
+her advantage on her next attack.</p></li>
+</ol>
+<p><strong>Enemy Turn (Gray Wolves)</strong></p>
+<ul>
+<li>Wolf 1 (Injured): Bites Bjorn. Rolls 55 (Hit).
+<ul>
+<li>Bjorn spends his 1st Reaction (out of 6) to Block. He rolls a 30 (3
+DoS).</li>
+<li><em>Reduction:</em> 2 (chain mail) + 2 (shield defense) + 3 (DoS) =
+7. The wolf’s 6 damage (1 base + 5 DoS) is fully negated.</li>
+</ul></li>
+<li>Wolf 2: Moves to flank Bjorn. With pack tactics, it has advantage.
+It rolls 15 and 70. Taking the 15: Hit!
+<ul>
+<li>Bjorn spends his 2nd reaction to dodge. He rolls a 42. Success!
+(Dodge now only requires a standard success). Bjorn leaps away from the
+snapping jaws.</li>
+<li><em>Result:</em> No damage taken.</li>
+</ul></li>
+<li>Wolf 3: Moves into melee with Bjorn. It bites with pack tactics
+(advantage), rolling 48 and 80. Taking the 48: Hit!
+<ul>
+<li>Bjorn spends his 3rd reaction to block. He rolls a 60 (6 DoS).</li>
+<li><em>Reduction:</em> 2 (Chain Mail) + 2 (Shield Defense) + 6 (DoS) =
+10. The wolf’s 6 damage (1 Base + 5 DoS) is fully negated.</li>
+</ul></li>
+</ul>
+<p><strong>Rearguard Turn (Astrid)</strong> 1. Astrid (Action 1 -
+Attack): Fires her short bow at Wolf 1. She has advantage (from Erik).
+She rolls 15 and 60. Taking the 15: Hit! * <em>DoS:</em> 1 (Roll 15). *
+<em>Damage:</em> 6 (Short Bow) + 1 (DoS) - 1 (Wolf Defense) = 6 damage.
+Wolf 1 is defeated! 2. Astrid (Action 2 - Move): Moves to higher ground
+for safety.</p>
+<p><strong>Round 2: The Fight Continues</strong></p>
+<p><strong>Vanguard Turn (Bjorn &amp; Erik)</strong></p>
+<ol type="1">
+<li>Bjorn (Action 1 - Attack): Swings at Wolf 2 (adjacent). Rolls 45.
+Hit!
+<ul>
+<li><em>DoS:</em> 4 (Roll 45).</li>
+<li><em>Damage:</em> 7 (base) + 4 (DoS) - 1 (wolf defense) = 10 damage.
+Wolf 2 is severely wounded (2/12 HP).</li>
+</ul></li>
+<li>Bjorn (Action 2 - Attack): Quick follow-up on Wolf 2. Rolls 30. Hit!
+<ul>
+<li><em>DoS:</em> 3 (Roll 30).</li>
+<li><em>Damage:</em> 7 (base) + 3 (DoS) - 1 (wolf defense) = 9 damage.
+Wolf 2 is defeated!</li>
+</ul></li>
+<li>Erik (Action 1 - Move): Moves 5 meters to engage Wolf 3.</li>
+<li>Erik (Action 2 - Attack): Swings his hand axe (STR 60). Rolls 35.
+Hit!
+<ul>
+<li><em>DoS:</em> 3 (Roll 35).</li>
+<li><em>Damage:</em> 6 (Base) + 3 (DoS) - 1 (Wolf Defense) = 8 damage.
+Wolf 3 is injured (4/12 HP).</li>
+</ul></li>
+</ol>
+<p><strong>Enemy Turn (Gray Wolves)</strong></p>
+<ul>
+<li>Wolf 3: Attempts to bite Erik. Rolls 50. Hit!
+<ul>
+<li>Erik spends his 1st Reaction to Parry with his Axe. He rolls 40 (4
+DoS).</li>
+<li><em>Reduction:</em> 6 (axe base) + 4 (DoS) = 10. The wolf’s 6 damage
+(1 base + 5 DoS) is negated.</li>
+</ul></li>
+</ul>
+<p><strong>Rearguard Turn (Astrid)</strong></p>
+<ol type="1">
+<li>Astrid (Action 1 - Attack): Fires at the last remaining wolf (Wolf
+3). Rolls 32. Hit!
+<ul>
+<li><em>DoS:</em> 3 (Roll 32).</li>
+<li><em>Damage:</em> 6 (Base) + 3 (DoS) - 1 (Wolf Defense) = 8 damage.
+Wolf 3 is defeated!</li>
+</ul></li>
+</ol>
+</blockquote>
+<h3 id="cover">Cover</h3>
+<p>Cover is a vital part of tactical survival. Represents the difficulty
+of hitting a target partially or fully obscured by the environment.</p>
+<h4 id="cover-types">Cover Types</h4>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 46%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Examples</th>
+<th style="text-align: left;">Mechanical Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>None</strong></td>
+<td style="text-align: left;">Open field, empty hallway.</td>
+<td style="text-align: left;">No bonus.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Half</strong></td>
+<td style="text-align: left;">Bushes, crates, furniture, other
+creatures.</td>
+<td style="text-align: left;">Disadvantage for the attacker.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Full</strong></td>
+<td style="text-align: left;">Behind a solid wall, inside a room.</td>
+<td style="text-align: left;">Cannot be targeted by direct attacks.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="reactions-active-defense">Reactions &amp; Active Defense</h3>
+<p>Survival in Eda depends on your ability to react to incoming threats.
+However, physical and mental exhaustion is a factor—characters have a
+limited pool of Reactions for an entire encounter.</p>
+<ul>
+<li>Reaction Pool: Your total pool of reactions for the entire encounter
+is equal to the tens digit of your AGI (e.g., AGI 65 provides 6
+reactions).</li>
+</ul>
+<blockquote>
+<h3 id="conserving-your-strength">Conserving Your Strength</h3>
+<p>In Eda, combat is fast and brutal. Because your Reaction Pool is
+finite, every choice to Dodge, Parry, or Block is a strategic gamble.
+Once your reactions are spent, you are left completely vulnerable.
+Players must decide whether to expend their energy early or save it for
+the enemy’s most devastating strikes.</p>
+</blockquote>
+<h4 id="active-defense-options">Active Defense Options</h4>
+<p>When you are targeted by an attack, you may spend 1 Reaction from
+your pool to perform one of the following:</p>
+<ul>
+<li><strong>Dodge (AGI Check)</strong>:
+<ul>
+<li>Success: You move out of the way. You take no damage.</li>
+<li>Failure: You fail to move in time. You take full damage.</li>
+</ul></li>
+<li><strong>Parry (combat style check)</strong>:
+<ul>
+<li>Success: You deflect the blow with your weapon. Reduce incoming
+damage by your weapon damage + DoS.</li>
+<li>Failure: Your guard is broken. You take full damage.</li>
+</ul></li>
+<li><strong>Block (shield skill check)</strong>:
+<ul>
+<li>Success: You catch the blow on your shield. Reduce incoming damage
+by your shield defense + DoS.</li>
+<li>Failure: The shield absorbs some impact. You take half damage.</li>
+</ul></li>
+</ul>
+<h2 id="conditions-status-effects">Conditions &amp; Status Effects</h2>
+<p>Conditions represent various physical, mental, or situational states
+that can affect a character. Most conditions are temporary, but they can
+be deadly if ignored.</p>
+<p>Fear is a force that erodes your instinct. Anything that causes fear
+reduces your current IP directly. Unlike HP, IP does not naturally
+recover without rest or special items. If your IP reaches 0, you gain
+the condition frightened until you recover your maximum IP.</p>
+<p><strong>Morale check</strong>: A check to resist fear or
+intimidation. This is an opposing roll (e.g., attacker’s CHA
+vs. target’s INS).</p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 92%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Condition</th>
+<th style="text-align: left;">Mechanical Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Blinded</strong></td>
+<td style="text-align: left;">You cannot see. All your attacks have
+disadvantage. You automatically fail any check relying on sight.
+Attackers have advantage on attacks against you.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Frightened</strong></td>
+<td style="text-align: left;">You are overwhelmed by fear. You have
+disadvantage on all skill and attribute checks. You cannot willingly
+move closer to the source of your fear.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hidden</strong></td>
+<td style="text-align: left;">You are unseen and unheard. You have
+advantage on your next attack. If you attack or move into the open, the
+condition ends. See stealth skill for more details.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Immobilized</strong></td>
+<td style="text-align: left;">Your movement is restricted. Your speed is
+0. You cannot use the move or the charge actions. You have disadvantage
+on dodge checks.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prone</strong></td>
+<td style="text-align: left;">You are lying on the ground. Ranged
+attacks against you have disadvantage, but melee attacks against you
+have advantage. Standing up costs 1 AP.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Restrained</strong></td>
+<td style="text-align: left;">You are immobilized and have disadvantage
+on all attack rolls. Attackers have advantage on attacks against
+you.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Stunned</strong></td>
+<td style="text-align: left;">You are momentarily dazed. You cannot take
+actions or reactions. Attackers have advantage on attacks against
+you.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Unconscious</strong></td>
+<td style="text-align: left;">You are totally unaware of your
+surroundings. You are prone and stunned. You automatically fail all
+checks. Any successful attack against you is a critical success.</td>
+</tr>
+</tbody>
+</table>
+<p>Status effects represent the toll of the environment and biological
+needs on the body.</p>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 94%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Effect</th>
+<th style="text-align: left;">Mechanical Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Bleeding</strong></td>
+<td style="text-align: left;">You are losing blood. Take 2 damage at the
+start of each of your turns. This effect can be stopped with a
+successful medicine check (routine, 1 DoS) or if you receive any form of
+healing.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Burning</strong></td>
+<td style="text-align: left;">You are on fire. Take 2 damage at the
+start of each of your turns. You can spend 1 AP to attempt an agility
+check to douse the flames. (routine, 1 DoS for small fires, challenge, 2
+DoS for large).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cold</strong></td>
+<td style="text-align: left;">Extreme cold numbs your body. You have
+disadvantage on all agility checks. If you do not find warmth, you must
+succeed on a constitution check (routine, 1 DoS) every hour or take 2
+damage.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Exhaustion</strong></td>
+<td style="text-align: left;">You are physically or mentally spent.
+Exhaustion has 3 levels: <br>1. Disadvantage on all attribute checks.
+<br>2. Speed is halved and disadvantage on all skill checks. <br>3. You
+fall unconscious. <br>A full rest removes 1 level of exhaustion.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Heat</strong></td>
+<td style="text-align: left;">Blistering heat drains your stamina. You
+double your consumption of water. If you do not have water, you must
+succeed on a constitution check (routine, 1 DoS) every hour or gain 1
+level of exhaustion.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Poisoned</strong></td>
+<td style="text-align: left;">Toxins are in your system. You have
+disadvantage on all strength and constitution checks. Take 1 damage at
+the start of each of your turns unless the poison is neutralized with a
+constitution check (challenge, 2 DoS).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Starvation</strong></td>
+<td style="text-align: left;">You lack nourishment. After 3 days without
+food, you gain 1 level of exhaustion every 24 hours. This cannot be
+recovered until you eat a full meal.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Suffocating</strong></td>
+<td style="text-align: left;">You cannot breathe. In calm situations,
+you can hold your breath for CON / 10 minutes (minimum 1). In
+high-stress situations (combat), you must succeed on a constitution
+check every round or gain 1 level of exhaustion. If you reach level 3,
+you die.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="environmental-hazards">Environmental Hazards</h2>
+<h3 id="falling">Falling</h3>
+<p>Gravity is a lethal foe. When you fall from a height of 3 meters or
+more, you take damage upon landing.</p>
+<ul>
+<li><strong>Damage</strong>: 5 damage for every 3 meters fallen.</li>
+<li><strong>Mitigation</strong>: You may attempt an Acrobatics check
+(Challenge, 2 DoS) to halve the falling damage.</li>
+</ul>
+<h2 id="adventuring">Adventuring</h2>
+<h3 id="downtime">Downtime</h3>
+<p>During periods of extended peace or between adventures, characters
+enter Downtime. Provided they have access to settlements or trade hubs,
+players may spend their currency on equipment, repairs, or lifestyle
+services. Downtime is also an ideal time for roleplaying personal goals,
+such as training, research, or tending to wounds.</p>
+<h3 id="rest-recovery">Rest &amp; Recovery</h3>
+<h4 id="normal-rest">Normal Rest</h4>
+<p>A standard rest requires at least 8 hours of sleep. Minor
+interruptions do not negate the benefits of a rest, provided no
+significant physical exertion occurs.</p>
+<ul>
+<li><strong>HP Recovery</strong>: You recover 4 + (CON Tens Digit) HP
+per night of normal sleep.</li>
+<li><strong>IP Recovery</strong>: You recover INS Tens Digit IP per
+night of normal sleep.</li>
+</ul>
+<h3 id="injuries-diseases">Injuries &amp; Diseases</h3>
+<p>In <em>Eda</em>, getting hurt means more than just losing Hit Points.
+When a character is pushed to their breaking point, they suffer lasting
+injuries that require time and care to heal.</p>
+<h4 id="injury-system">Injury System</h4>
+<p><strong>Triggers</strong> Injuries occur in the following situations,
+applying to both Player Characters and NPCs/Monsters: 1.
+<strong>Critical Hit</strong>: When a combatant lands a critical hit,
+the target sustains a <strong>Minor Injury</strong> in addition to the
+critical damage. 2. <strong>Massive Damage</strong>: If a combatant
+takes damage equal to or greater than half their maximum HP in a single
+blow, they must make a CON check (Challenge, 2 DoS). Failure results in
+a <strong>Severe Injury</strong>.</p>
+<p><strong>Minor Injury (d100)</strong></p>
+<table>
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 12%" />
+<col style="width: 51%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Roll</th>
+<th style="text-align: left;">Injury</th>
+<th style="text-align: left;">Effect</th>
+<th style="text-align: left;">Treatment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">01-30</td>
+<td style="text-align: left;">Sprained Limb</td>
+<td style="text-align: left;">-2 to STR/AGI checks involving that
+limb.</td>
+<td style="text-align: left;">Rest, Splint (Routine Medicine)</td>
+</tr>
+<tr>
+<td style="text-align: center;">31-60</td>
+<td style="text-align: left;">Battered Ribs</td>
+<td style="text-align: left;">-2 to CON checks.</td>
+<td style="text-align: left;">Rest, Wrap (Routine Medicine)</td>
+</tr>
+<tr>
+<td style="text-align: center;">61-80</td>
+<td style="text-align: left;">Deep Gash</td>
+<td style="text-align: left;">Bleeding (2 dmg/turn) until treated.</td>
+<td style="text-align: left;">Bandage (Routine Medicine)</td>
+</tr>
+<tr>
+<td style="text-align: center;">81-00</td>
+<td style="text-align: left;">Concussion</td>
+<td style="text-align: left;">-10 to LOG/INS checks. Disadvantage vs
+Bright Light.</td>
+<td style="text-align: left;">Rest in dark</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Severe Injury (d100)</strong></p>
+<table>
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 14%" />
+<col style="width: 46%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Roll</th>
+<th style="text-align: left;">Injury</th>
+<th style="text-align: left;">Effect</th>
+<th style="text-align: left;">Treatment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">01-10</td>
+<td style="text-align: left;">Severed Finger/Toe</td>
+<td style="text-align: left;">-5 to DEX/AGI checks. Permanent.</td>
+<td style="text-align: left;">Cauterize (Painful)</td>
+</tr>
+<tr>
+<td style="text-align: center;">11-20</td>
+<td style="text-align: left;">Broken Arm</td>
+<td style="text-align: left;">Cannot use arm. -20 to STR/AGI.</td>
+<td style="text-align: left;">Set Bone (Painful, Hard Medicine),
+Splint</td>
+</tr>
+<tr>
+<td style="text-align: center;">21-30</td>
+<td style="text-align: left;">Broken Leg</td>
+<td style="text-align: left;">Speed halved. Cannot run/dash. -20 to
+AGI.</td>
+<td style="text-align: left;">Set Bone (Painful, Hard Medicine),
+Splint</td>
+</tr>
+<tr>
+<td style="text-align: center;">31-40</td>
+<td style="text-align: left;">Gouged Eye</td>
+<td style="text-align: left;">Disadvantage on Perception. -10 to Ranged
+Attacks.</td>
+<td style="text-align: left;">Clean &amp; Patch (Hard Medicine)</td>
+</tr>
+<tr>
+<td style="text-align: center;">41-50</td>
+<td style="text-align: left;">Internal Bleeding</td>
+<td style="text-align: left;">CON check every hour or gain 1
+Exhaustion.</td>
+<td style="text-align: left;">Surgery (Painful, Extreme Medicine)</td>
+</tr>
+<tr>
+<td style="text-align: center;">51-60</td>
+<td style="text-align: left;">Punctured Lung</td>
+<td style="text-align: left;">Cannot hold breath. Hard CON check to
+run.</td>
+<td style="text-align: left;">Surgery (Painful, Extreme Medicine)</td>
+</tr>
+<tr>
+<td style="text-align: center;">61-70</td>
+<td style="text-align: left;">Cracked Skull</td>
+<td style="text-align: left;">-20 to LOG/INS. 50% chance to fail
+spells.</td>
+<td style="text-align: left;">Rest (Weeks), Surgery (Extreme)</td>
+</tr>
+<tr>
+<td style="text-align: center;">71-80</td>
+<td style="text-align: left;">Festering Wound</td>
+<td style="text-align: left;">Immune system compromised. Disadvantage vs
+Disease.</td>
+<td style="text-align: left;">Clean &amp; Debride (Painful, Hard
+Medicine)</td>
+</tr>
+<tr>
+<td style="text-align: center;">81-90</td>
+<td style="text-align: left;">Spine Damage</td>
+<td style="text-align: left;">Paralyzed from waist down (Roll 1-5) or
+neck down (6-10).</td>
+<td style="text-align: left;">Miracle or High Magic</td>
+</tr>
+<tr>
+<td style="text-align: center;">91-00</td>
+<td style="text-align: left;">Guts Spilled</td>
+<td style="text-align: left;">1d10 hours to live unless treated.</td>
+<td style="text-align: left;">Surgery (Painful, Near Impossible
+Medicine)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Healing Injuries</strong> * <strong>Natural Healing</strong>:
+Most minor injuries heal in 1d10 days. Severe injuries take 1d10 weeks
+or months. * <strong>Magical Healing</strong>: Restores HP but does
+<em>not</em> instantly fix broken bones or regrow limbs unless
+specifically stated (e.g., high-tier rituals).</p>
+<h4 id="disease-system">Disease System</h4>
+<p>In the grime and filth of <em>Eda</em>, disease is a constant
+companion. Poor hygiene, tainted water, and untreated wounds claim more
+lives than any monster.</p>
+<p><strong>Disease Stages</strong> 1. <strong>Incubation</strong>: The
+disease is silent. No symptoms. 2. <strong>Stage 1 (Early)</strong>:
+Minor symptoms. Disadvantage on specific checks. 3. <strong>Stage 2
+(Advanced)</strong>: Major symptoms. Stat damage or Exhaustion. 4.
+<strong>Stage 3 (Terminal)</strong>: Death or permanent alteration.</p>
+<p><strong>Transmission</strong> * <strong>Airborne</strong>: Close
+proximity to infected. * <strong>Bloodborne</strong>: Bites, scratches,
+sharing needles/blades. * <strong>Ingested</strong>: Tainted food/water.
+* <strong>Touch</strong>: Direct skin contact.</p>
+<p><strong>Sample Diseases</strong></p>
+<ul>
+<li><strong>Gut-Rot (Dysentery)</strong>
+<ul>
+<li><em>Transmission</em>: Ingested (Tainted water, spoiled food).</li>
+<li><em>Incubation</em>: 1 day.</li>
+<li><em>Symptoms</em>: Violent vomiting, cramps, fever.</li>
+<li><em>Stage 1</em>: Disadvantage on CON checks. Gain 1 level of
+Exhaustion.</li>
+<li><em>Stage 2</em>: Cannot recover HP or Exhaustion from rest.
+Dehydration.</li>
+<li><em>Stage 3</em>: Death from dehydration and organ failure.</li>
+<li><em>Cure</em>: Clean water, bed rest, and <em>Charcoal Paste</em>
+(Alchemy/Nature).</li>
+</ul></li>
+<li><strong>Filth Fever (Sepsis)</strong>
+<ul>
+<li><em>Transmission</em>: Bloodborne (Untreated deep gash or dirty
+blade).</li>
+<li><em>Incubation</em>: 1d10 hours.</li>
+<li><em>Symptoms</em>: The wound turns black/green, high fever,
+delirium.</li>
+<li><em>Stage 1</em>: The “Infected” condition. No natural healing.</li>
+<li><em>Stage 2</em>: Disadvantage on all INS and LOG checks (delirium).
+Max HP -10.</li>
+<li><em>Stage 3</em>: Coma and Death.</li>
+<li><em>Cure</em>: Amputation (if on limb), Maggots (to eat rot), or
+strong antibiotics (rare).</li>
+</ul></li>
+<li><strong>Lung-Blight (Consumption)</strong>
+<ul>
+<li><em>Transmission</em>: Airborne (Close contact, coughing).</li>
+<li><em>Incubation</em>: 1d10 weeks (Long dormancy).</li>
+<li><em>Symptoms</em>: Chronic cough, blood in phlegm, weight loss.</li>
+<li><em>Stage 1</em>: -20 to Athletics checks. Easily winded.</li>
+<li><em>Stage 2</em>: Coughing fits cause 1d10 damage. Gaining levels of
+Exhaustion after strenuous activity.</li>
+<li><em>Stage 3</em>: Suffocation (Death).</li>
+<li><em>Cure</em>: None known. Symptoms managed with <em>Soothing
+Tea</em> (Herbalism). Move to dry climate helps.</li>
+</ul></li>
+<li><strong>The Shakes</strong>
+<ul>
+<li><em>Transmission</em>: Ingested (Eating infected
+meat/cannibalism).</li>
+<li><em>Incubation</em>: 1d10 months.</li>
+<li><em>Symptoms</em>: Tremors, uncontrollable laughter, loss of
+coordination.</li>
+<li><em>Stage 1</em>: -10 to DEX/AGI checks. Hands shake
+constantly.</li>
+<li><em>Stage 2</em>: Cannot hold weapons or items. Disadvantage on all
+physical rolls.</li>
+<li><em>Stage 3</em>: Madness and death.</li>
+<li><em>Cure</em>: None.</li>
+</ul></li>
+</ul>
+<h4 id="medical-treatment">Medical Treatment</h4>
+<p>Treatment in <em>Eda</em> is not for the faint of heart. Without
+modern anesthesia, surgery is a trauma in itself.</p>
+<p><strong>The Medicine Skill</strong> * <strong>First Aid (Routine, 1
+DoS)</strong>: Stop <em>Bleeding</em>, stabilize dying. *
+<strong>Long-Term Care (Challenge, 2 DoS)</strong>: Treat disease, aid
+natural healing (+2 HP/day). * <strong>Surgery (Hard, 4 DoS)</strong>:
+Repair severe injuries. * <strong>Amputation (Extreme, 6 DoS)</strong>:
+Remove limb to cure terminal disease/injury.</p>
+<p><strong>The Cost of Treatment</strong> * <strong>Pain</strong>:
+Surgery requires a CON check (Challenge, 2 DoS). Failure means the
+patient loses 1d10 IP from the trauma/pain. If IP reaches 0, the
+character passes out (Unconscious). * <strong>Shock</strong>: If the
+surgery fails (Medicine check failed), the patient takes damage equal to
+the “Pain” roll and gains 1 level of Exhaustion. *
+<strong>Tools</strong>: Improvised tools (rusty knife, fire) give
+Disadvantage. Proper tools (scalpel, clamps) are required for surgeries
+without penalty. * <strong>Sanitation</strong>: Performing surgery in a
+dungeon or swamp gives -20 penalty.</p>
+<p><strong>Herbalism &amp; Supplies</strong> *
+<strong>Bitter-Moss</strong>: Chewed to numb pain (Advantage on Pain CON
+check). * <strong>Fire-Water</strong>: High-proof alcohol. Used to
+sterilize (removes Sanitation penalty) or dull pain. *
+<strong>Cauterization</strong>: Using fire/hot iron to stop
+bleeding/amputate. Stops bleeding instantly but deals 1d10 fire damage
+and causes a Pain check.</p>
+<p><strong>Integration with Rules</strong> *
+<strong>Conditions</strong>: Diseases often inflict existing conditions
+like <em>Exhaustion</em>, <em>Poisoned</em>, or <em>Bleeding</em>. *
+<strong>Infected Condition</strong>: A character with an active disease
+or untreated Severe Injury is <em>Infected</em>. They cannot recover HP
+from natural rest.</p>
+<h2 id="equipment-economy">Equipment &amp; Economy</h2>
+<p>Currency is based on the weight and purity of precious metals. While
+many remote clans still rely on barter, most settled areas use a
+standardized coinage system.</p>
+<h3 id="denominations">Denominations</h3>
+<ul>
+<li><strong>Copper (cp)</strong>: A thin, stamped copper disc used for
+everyday purchases.</li>
+<li><strong>Silver (sp)</strong>: The standard unit of trade. Most goods
+are priced in silver pieces. (100 cp = 1 sp).</li>
+<li><strong>Gold (gp)</strong>: Large, heavy coins often dating back
+long in history. Used only for significant transactions, such as buying
+land or high-quality livestock. (100sp = 1 gp).</li>
+</ul>
+<h3 id="hacksilver-barter">Hacksilver &amp; Barter</h3>
+<p>In the rugged wilds, coins are often rare. Travelers frequently use
+Hacksilver—pieces of silver jewelry, arm-rings, or even coins cut into
+halves or quarters—which are valued by weight.</p>
+<p>Outside major trade hubs, barter is the primary form of exchange. A
+character might trade a bundle of furs for a night’s stay and a hot
+meal. When haggling over significant trades, the GM may call for a CHA
+or Appraise check. Opposing rolls for haggling might occur.</p>
+<h3 id="common-goods-services">Common Goods &amp; Services</h3>
+<table>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 7%" />
+<col style="width: 17%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Cost</th>
+<th style="text-align: left;">Unit</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Grains &amp; Foodstuffs</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Wheat</td>
+<td style="text-align: left;">1cp</td>
+<td style="text-align: left;">1 kg</td>
+<td style="text-align: left;">Standard crop</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flour</td>
+<td style="text-align: left;">2cp</td>
+<td style="text-align: left;">1 kg</td>
+<td style="text-align: left;">Ground grain</td>
+</tr>
+<tr>
+<td style="text-align: left;">Salt</td>
+<td style="text-align: left;">5cp</td>
+<td style="text-align: left;">100g</td>
+<td style="text-align: left;">Essential preservative</td>
+</tr>
+<tr>
+<td style="text-align: left;">Spices (Common)</td>
+<td style="text-align: left;">1sp</td>
+<td style="text-align: left;">100g</td>
+<td style="text-align: left;">Pepper, mustard seeds</td>
+</tr>
+<tr>
+<td style="text-align: left;">Spices (Exotic)</td>
+<td style="text-align: left;">10sp+</td>
+<td style="text-align: left;">100g</td>
+<td style="text-align: left;">Saffron, cloves</td>
+</tr>
+<tr>
+<td style="text-align: left;">Honey</td>
+<td style="text-align: left;">5sp</td>
+<td style="text-align: left;">1 jar</td>
+<td style="text-align: left;">Natural sweetener</td>
+</tr>
+<tr>
+<td style="text-align: left;">Livestock</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Chicken</td>
+<td style="text-align: left;">1sp</td>
+<td style="text-align: left;">1 bird</td>
+<td style="text-align: left;">Lays eggs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Goat</td>
+<td style="text-align: left;">50sp</td>
+<td style="text-align: left;">1 animal</td>
+<td style="text-align: left;">Milk and meat</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sheep</td>
+<td style="text-align: left;">30sp</td>
+<td style="text-align: left;">1 animal</td>
+<td style="text-align: left;">Wool and meat</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pig</td>
+<td style="text-align: left;">40sp</td>
+<td style="text-align: left;">1 animal</td>
+<td style="text-align: left;">Meat</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cow</td>
+<td style="text-align: left;">200sp</td>
+<td style="text-align: left;">1 animal</td>
+<td style="text-align: left;">Milk and labor</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ox</td>
+<td style="text-align: left;">150sp</td>
+<td style="text-align: left;">1 animal</td>
+<td style="text-align: left;">Heavy labor</td>
+</tr>
+<tr>
+<td style="text-align: left;">Horse (Draft)</td>
+<td style="text-align: left;">300sp</td>
+<td style="text-align: left;">1 animal</td>
+<td style="text-align: left;">Hauling</td>
+</tr>
+<tr>
+<td style="text-align: left;">Horse (Riding)</td>
+<td style="text-align: left;">500sp</td>
+<td style="text-align: left;">1 animal</td>
+<td style="text-align: left;">Faster travel</td>
+</tr>
+<tr>
+<td style="text-align: left;">Materials</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Canvas</td>
+<td style="text-align: left;">2sp</td>
+<td style="text-align: left;">1 sq. meter</td>
+<td style="text-align: left;">Heavy cloth</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cotton/Linen</td>
+<td style="text-align: left;">5sp</td>
+<td style="text-align: left;">1 sq. meter</td>
+<td style="text-align: left;">Standard clothing material</td>
+</tr>
+<tr>
+<td style="text-align: left;">Silk</td>
+<td style="text-align: left;">50sp</td>
+<td style="text-align: left;">1 sq. meter</td>
+<td style="text-align: left;">Luxury material</td>
+</tr>
+<tr>
+<td style="text-align: left;">Iron Ingots</td>
+<td style="text-align: left;">10sp</td>
+<td style="text-align: left;">1 kg</td>
+<td style="text-align: left;">For smithing</td>
+</tr>
+<tr>
+<td style="text-align: left;">Steel Ingots</td>
+<td style="text-align: left;">50sp</td>
+<td style="text-align: left;">1 kg</td>
+<td style="text-align: left;">High-quality arms/armor</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timber (Firewood)</td>
+<td style="text-align: left;">1cp</td>
+<td style="text-align: left;">1 bundle</td>
+<td style="text-align: left;">Burns for 4 hours</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timber (Building)</td>
+<td style="text-align: left;">5sp</td>
+<td style="text-align: left;">1 beam</td>
+<td style="text-align: left;">For construction</td>
+</tr>
+<tr>
+<td style="text-align: left;">Services &amp; Lodging</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Simple Meal</td>
+<td style="text-align: left;">1sp</td>
+<td style="text-align: left;">1 serving</td>
+<td style="text-align: left;">Stew and bread</td>
+</tr>
+<tr>
+<td style="text-align: left;">Feast</td>
+<td style="text-align: left;">10sp</td>
+<td style="text-align: left;">1 serving</td>
+<td style="text-align: left;">Fine meats and wine</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ale</td>
+<td style="text-align: left;">2sp</td>
+<td style="text-align: left;">1 gallon</td>
+<td style="text-align: left;">Standard tavern fare</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wine (Common)</td>
+<td style="text-align: left;">5sp</td>
+<td style="text-align: left;">1 bottle</td>
+<td style="text-align: left;">Local vintage</td>
+</tr>
+<tr>
+<td style="text-align: left;">Inn Stay (Common)</td>
+<td style="text-align: left;">2sp</td>
+<td style="text-align: left;">1 night</td>
+<td style="text-align: left;">Shared room/straw bed</td>
+</tr>
+<tr>
+<td style="text-align: left;">Inn Stay (Private)</td>
+<td style="text-align: left;">10sp</td>
+<td style="text-align: left;">1 night</td>
+<td style="text-align: left;">Private room, warm bath</td>
+</tr>
+<tr>
+<td style="text-align: left;">Carriage Travel</td>
+<td style="text-align: left;">1sp</td>
+<td style="text-align: left;">per 5km</td>
+<td style="text-align: left;">Road travel</td>
+</tr>
+<tr>
+<td style="text-align: left;">Message Courier</td>
+<td style="text-align: left;">5sp</td>
+<td style="text-align: left;">per city</td>
+<td style="text-align: left;">Reliable delivery</td>
+</tr>
+</tbody>
+</table>
+<h2 id="equipment-weapons">Equipment &amp; Weapons</h2>
+<h3 id="weapons">Weapons</h3>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Damage</th>
+<th style="text-align: left;">Cost</th>
+<th style="text-align: left;">Req</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Fist</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dagger</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">15sp</td>
+<td style="text-align: left;">AGI&gt;50</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sling</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">5sp</td>
+<td style="text-align: left;">AGI&gt;40</td>
+<td style="text-align: left;">Range 20m. Uses stones (free).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Short Sword</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">40sp</td>
+<td style="text-align: left;">AGI&gt;40</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Long Sword</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">75sp</td>
+<td style="text-align: left;">STR&gt;50</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bastard Sword</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">120sp</td>
+<td style="text-align: left;">STR&gt;50</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Falchion</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">60sp</td>
+<td style="text-align: left;">STR&gt;55</td>
+<td style="text-align: left;">Brutal: +1 damage on critical
+success.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Great Sword</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;">250sp</td>
+<td style="text-align: left;">STR&gt;65</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hand Axe</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">30sp</td>
+<td style="text-align: left;">STR&gt;50</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Great Axe</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;">220sp</td>
+<td style="text-align: left;">STR&gt;65</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Short Spear</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">50sp</td>
+<td style="text-align: left;">STR&gt;50</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pike</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">90sp</td>
+<td style="text-align: left;">STR&gt;60</td>
+<td style="text-align: left;">Reach: Can attack enemies up to 3m
+away.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mace</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">60sp</td>
+<td style="text-align: left;">STR&gt;50</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Morning Star</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">80sp</td>
+<td style="text-align: left;">STR&gt;55</td>
+<td style="text-align: left;">Spiked: Ignores 1 point of armor
+defense.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Warhammer</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">70sp</td>
+<td style="text-align: left;">STR&gt;60</td>
+<td style="text-align: left;">Crushing: Ignores 1 point of shield
+defense.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Short Bow</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">80sp</td>
+<td style="text-align: left;">AGI&gt;50</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Long Bow</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">150sp</td>
+<td style="text-align: left;">AGI&gt;50</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Crossbow</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">200sp</td>
+<td style="text-align: left;">STR&gt;55</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weighted Net</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">20sp</td>
+<td style="text-align: left;">AGI&gt;50</td>
+<td style="text-align: left;">Entangle: Hit targets are restrained.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Caltrops</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">10sp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Area Denial: Covers 2m sq. AGI check or 2
+dmg + immobilized.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="armor">Armor</h3>
+<p>Armor protects you by providing Defense, which is subtracted from
+incoming damage. Armors are categorized by weight, which determines the
+penalties applied to the wearer.</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Defense</th>
+<th style="text-align: center;">Cost</th>
+<th style="text-align: left;">Req</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Light Armor</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Clothes</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gambeson</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">50sp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Thick quilted cloth. Can be worn under
+other armor for +1 (Max 3).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fur-Lined Garb</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">40sp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Advantage on checks vs cold.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Thick Fabric</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">30sp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Leather</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">80sp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Studded Leather</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">200sp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Medium Armor</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Hide Armor</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">120sp</td>
+<td style="text-align: left;">STR&gt;40</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ring Mail</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">250sp</td>
+<td style="text-align: left;">STR&gt;45</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Scale Mail</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">450sp</td>
+<td style="text-align: left;">STR&gt;50</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Brigandine</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">650sp</td>
+<td style="text-align: left;">STR&gt;55</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Heavy Armor</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Chain Mail</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">300sp</td>
+<td style="text-align: left;">STR&gt;50</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lamellar Armor</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">700sp</td>
+<td style="text-align: left;">STR&gt;65</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Plate Armor</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">800sp</td>
+<td style="text-align: left;">STR&gt;70</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Master-crafted Plate</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2000sp</td>
+<td style="text-align: left;">STR&gt;80</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="helmets-accessories">Helmets &amp; Accessories</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 8%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Defense</th>
+<th style="text-align: center;">Cost</th>
+<th style="text-align: left;">Req</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Open Helmet</td>
+<td style="text-align: center;">+1</td>
+<td style="text-align: center;">60sp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Protects the head. Penalty: -5 to
+perception.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Full Great Helm</td>
+<td style="text-align: center;">+2</td>
+<td style="text-align: center;">200sp</td>
+<td style="text-align: left;">STR&gt;60</td>
+<td style="text-align: left;">Maximum protection. Penalty: -15 to
+perception.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Reinforced Greaves</td>
+<td style="text-align: center;">+0</td>
+<td style="text-align: center;">80sp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Advantage vs leg-based “crippled”
+effects.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="shields-1">Shields</h3>
+<p>Shields provide Defense and are used with the Block reaction.</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 8%" />
+<col style="width: 13%" />
+<col style="width: 6%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Defense</th>
+<th style="text-align: left;">Requirement</th>
+<th style="text-align: center;">Cost</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Wicker Shield</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: center;">10sp</td>
+<td style="text-align: left;">Cheap and fragile.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Buckler</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">STR &gt; 30</td>
+<td style="text-align: center;">25sp</td>
+<td style="text-align: left;">Small, easy to carry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Small Round Shield</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">STR &gt; 40</td>
+<td style="text-align: center;">40sp</td>
+<td style="text-align: left;">Standard light shield.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Round Shield</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">STR &gt; 55</td>
+<td style="text-align: center;">100sp</td>
+<td style="text-align: left;">Reliable protection.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Square Shield</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">STR &gt; 60</td>
+<td style="text-align: center;">120sp</td>
+<td style="text-align: left;">Covers more of the body.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kite Shield</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">STR &gt; 65</td>
+<td style="text-align: center;">180sp</td>
+<td style="text-align: left;">Almond-shaped, excellent coverage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Metal Shield</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">STR &gt; 70</td>
+<td style="text-align: center;">250sp</td>
+<td style="text-align: left;">Very durable.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tower Shield</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">STR &gt; 80</td>
+<td style="text-align: center;">500sp</td>
+<td style="text-align: left;">Massive. Disadvantage on stealth.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Iron-Hold Greatshield</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">STR &gt; 85</td>
+<td style="text-align: center;">800sp</td>
+<td style="text-align: left;">Master-crafted stone/metal hybrid.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="adventuring-gear">Adventuring Gear</h3>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 5%" />
+<col style="width: 67%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: center;">Cost</th>
+<th style="text-align: left;">Weight/Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Torch (x3)</td>
+<td style="text-align: center;">1sp</td>
+<td style="text-align: left;">Burns for 1 hour.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lantern</td>
+<td style="text-align: center;">10sp</td>
+<td style="text-align: left;">Requires Oil.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flask of Oil</td>
+<td style="text-align: center;">2sp</td>
+<td style="text-align: left;">Burns for 4 hours.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rope (15m)</td>
+<td style="text-align: center;">5sp</td>
+<td style="text-align: left;">Hemp.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Grappling Hook</td>
+<td style="text-align: center;">15sp</td>
+<td style="text-align: left;">Attaches to rope. Advantage on climbing
+checks.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Iron Spikes (x10)</td>
+<td style="text-align: center;">2sp</td>
+<td style="text-align: left;">For climbing or jamming doors.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Crowbar</td>
+<td style="text-align: center;">10sp</td>
+<td style="text-align: left;">Advantage on STR checks to pry
+objects.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rations (1 day)</td>
+<td style="text-align: center;">2sp</td>
+<td style="text-align: left;">Dried meat/bread.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Waterskin</td>
+<td style="text-align: center;">1sp</td>
+<td style="text-align: left;">Holds 2 liters.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bedroll</td>
+<td style="text-align: center;">2sp</td>
+<td style="text-align: left;">For sleeping in the wild.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tinderbox</td>
+<td style="text-align: center;">2sp</td>
+<td style="text-align: left;">Used to light fires.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Iron Pot</td>
+<td style="text-align: center;">10sp</td>
+<td style="text-align: left;">For cooking and boiling water.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Whetstone</td>
+<td style="text-align: center;">5sp</td>
+<td style="text-align: left;">Use during rest. Adds +1 to the next
+damage roll.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Clean Bandages (x5)</td>
+<td style="text-align: center;">5sp</td>
+<td style="text-align: left;">Required for Medicine checks without
+penalty.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Needle &amp; Thread</td>
+<td style="text-align: center;">2sp</td>
+<td style="text-align: left;">Repair gear or stitch wounds (medicine
+advantage).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Manacles (Iron)</td>
+<td style="text-align: center;">30sp</td>
+<td style="text-align: left;">Restrains a character. Requires key or
+hard thievery check.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Holy Water</td>
+<td style="text-align: center;">50sp</td>
+<td style="text-align: left;">Deals 1d10 dmg to undead/demons.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="alchemical-herbal-items">Alchemical &amp; Herbal Items</h3>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 3%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: center;">Cost</th>
+<th style="text-align: left;">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Weapon Oil</td>
+<td style="text-align: center;">10sp</td>
+<td style="text-align: left;">Applied to metal gear. Prevents rust for
+24 hours in wet conditions.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Blood-Stanch Herb</td>
+<td style="text-align: center;">15sp</td>
+<td style="text-align: left;">A bitter paste. Immediately stops the
+bleeding status.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Numbing Mash</td>
+<td style="text-align: center;">20sp</td>
+<td style="text-align: left;">A herbal chew. Ignore penalties from 1
+level of exhaustion for 1 hour.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Troll Fat Candle</td>
+<td style="text-align: center;">5sp</td>
+<td style="text-align: left;">Burns for 6 hours. Waterproof; stays lit
+in rain or snow.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stilling-Dust</td>
+<td style="text-align: center;">40sp</td>
+<td style="text-align: left;">Potent narcotic. Removes fear and pain
+(ignore 2 levels of exhaustion), but causes -10 LOG for 4 hours.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="relics-curios">Relics &amp; Curios</h3>
+<p>In the world of Eda, special items are rare and often carry a
+price—either in coin or in the toll they take on the soul.</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 42%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Effect</th>
+<th style="text-align: left;">Lore/Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Amulet of Clarity</td>
+<td style="text-align: left;">Advantage on checks to resist fear.</td>
+<td style="text-align: left;">Wearer takes 1 damage per hour as the
+stone siphons corruption.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Blood-Stained Dagger</td>
+<td style="text-align: left;">Deals +5 damage against enemies already
+below max HP.</td>
+<td style="text-align: left;">A relic from the “Bleeding Land”
+campaign.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Shadow-Veil Cloak</td>
+<td style="text-align: left;">Advantage on stealth checks in dim light
+or darkness.</td>
+<td style="text-align: left;">While worn, the user feels a cold dread
+(-5 to INS checks).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Silver-Bell</td>
+<td style="text-align: left;">Rings softly when undead or demons are
+within 20m.</td>
+<td style="text-align: left;">Blessed by the Zealots of the Sun.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cold-Iron Shackles</td>
+<td style="text-align: left;">Prevents the use of spells and rituals by
+anyone bound in them.</td>
+<td style="text-align: left;">Used by witch-hunters to transport
+prisoners.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Marrow-Bone Flute</td>
+<td style="text-align: left;">Using the Perform skill grants +5 IP to an
+ally (1/day).</td>
+<td style="text-align: left;">Carved from the bone of a forgotten
+saint.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Void-Glass Lens</td>
+<td style="text-align: left;">Allows the user to see invisible spirits
+and magic auras.</td>
+<td style="text-align: left;">Extensive use causes temporary blindness
+(1d10 hours).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vanguard Bracers</td>
+<td style="text-align: left;">Your first attack in a combat encounter
+has advantage.</td>
+<td style="text-align: left;">Emblazoned with the crest of the High
+Vanguard.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Duelist’s Cape</td>
+<td style="text-align: left;">Gain +1 Reaction pool while not wearing
+heavy armor.</td>
+<td style="text-align: left;">A swirling silk cape designed to confuse
+opponents.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="folk-curios-occult-ingredients">Folk Curios &amp; Occult
+Ingredients</h3>
+<p>In the shadowed corners of Eda, practitioners of the old ways utilize
+macabre components to tether their magic to the physical realm. These
+items are rarely found in shops, often requiring desecration or
+dangerous harvesting.</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 83%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Mechanical Effect &amp; Occult
+Significance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Elf Stone / Elf Shot</td>
+<td style="text-align: left;">Ancient flint arrowheads. Grants +5
+defense vs ranged attacks and protection against fey curses.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Desecrated Remains</td>
+<td style="text-align: left;">The small skeletons of the unbaptized.
+Grants advantage on occult knowledge checks when communing with
+spirits.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bone Knots</td>
+<td style="text-align: left;">Finger bones tied with sinew. Grants
+advantage on thievery (lockpicking) checks as they “whisper” to the
+mechanism.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sacrificial Blood</td>
+<td style="text-align: left;">Collected during a lunar event. Restores 1
+IP if used as a component in a ritual.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hanging Torso</td>
+<td style="text-align: left;">A preserved human torso. Grants advantage
+on intimidate checks; its presence unsettles the living.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Amber Resin</td>
+<td style="text-align: left;">Warm to the touch. Grants advantage on
+medicine checks, specifically related to childbirth or vitality.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Obsidian Glass</td>
+<td style="text-align: left;">Sharp and cold. Used to trap minor
+spirits; grants advantage on INS checks to resist ghosts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hazel Dowsing Rods</td>
+<td style="text-align: left;">Naturally attuned to water and metal.
+Grants advantage on navigation when searching for resources.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tanned Human Skin</td>
+<td style="text-align: left;">Pliable and etched with runes. Grants
+advantage on hex craft when used as parchment.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Oiled Severed Head</td>
+<td style="text-align: left;">Preserved in rare salts. Required for the
+<em>Talk with Dead</em> ritual; grants a more compliant spirit.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eclipse Hair</td>
+<td style="text-align: left;">Shorn from a victim during a lunar
+eclipse. A necessary component for high-tier curses.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Omens of the Gut</td>
+<td style="text-align: left;">Freshly harvested entrails. Used for
+lithomancy; grants advantage on the next check related to the
+future.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hallowed Grave Soil</td>
+<td style="text-align: left;">Soil taken from a master craftsman’s
+grave. Grants advantage on <em>animate plant</em> or <em>animate
+object</em> rituals.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cold Iron</td>
+<td style="text-align: left;">Unworked iron. Deals 1d10 damage to fey
+creatures and prevents them from entering a warded circle.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Etched Skulls</td>
+<td style="text-align: left;">Skulls of scholars or warriors.
+Requirement for the <em>Talk with Dead</em> ritual.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cinerary Ash</td>
+<td style="text-align: left;">The remains of a powerful witch or
+warlock. Acts as a potent component for necromancy rituals.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vitriol Mucus</td>
+<td style="text-align: left;">Extracted from venomous beasts. Grants
+advantage on alchemy when brewing lethal poisons.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ancient Mirror</td>
+<td style="text-align: left;">A tarnished, silvered mirror. Reflects
+curses back at the caster (advantage on resistance checks).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sulfur Salts</td>
+<td style="text-align: left;">Stinking yellow powder. Deters insects and
+low-tier demons; grants advantage on survival.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Warded Rowan Sticks</td>
+<td style="text-align: left;">Bound with red thread. Grants advantage on
+INS checks to resist or detect incoming magic.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Silver Filigree</td>
+<td style="text-align: left;">Pure silver shavings. Deals 1d10 damage to
+lycanthropes and wards against their presence.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eagle Stone</td>
+<td style="text-align: left;">A hollow geode found in high nests. Grants
+advantage on perception when used as a focus.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="magic-rituals">Magic &amp; Rituals</h2>
+<p>Magic draws power from despair and requires IP. <strong>IP
+Limit</strong>: INS / 2.</p>
+<h3 id="spells">Spells</h3>
+<p>All spells require a successful INS check to be cast (including
+required DoS).</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 3%" />
+<col style="width: 15%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Spell</th>
+<th style="text-align: left;">IP</th>
+<th style="text-align: left;">Difficulty</th>
+<th style="text-align: left;">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Confuse</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">-5 Combat Style to target.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Commanding Tale</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Persuade someone.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Freeze in Place</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Immobilize target (INS vs CON check to
+resist).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Medusa Glare</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">Challenge (2 DoS)</td>
+<td style="text-align: left;">Turn to stone for 5 rounds (INS vs CON
+check to resist).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rain Storm</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Obscures vision.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Form of a Beast</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Challenge (2 DoS)</td>
+<td style="text-align: left;">Transform (2 actions).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quicksand</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Immobilize target (INS vs AGI check to
+resist).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Instinct Shield</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Double defense vs witchcraft (1 hr).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Charm Animal</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Make animal friendly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Poison Touch</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Inflict 7 damage.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gaze of Salamander</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Dark vision / thermal.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Identify</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Understand magical items.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alter Winds</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Change wind speed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Diagnose Disease</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Detect illness.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Forest Entangle</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Immobilize target (INS vs AGI check to
+resist).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Endure Elements</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Resistance hot/cold.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Feather Step</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Ignore rough terrain.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wind Shield</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Routine (1 DoS)</td>
+<td style="text-align: left;">Advantage on defense vs ranged.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rituals">Rituals</h3>
+<p>Rituals are powerful, utility-focused magical operations that cannot
+be cast in combat. They require a prepared space, specific ingredients,
+and significant time.</p>
+<h3 id="ritual-rules">Ritual Rules</h3>
+<ul>
+<li>Requirements: Must have the Rituals (T2) Witch Talent.</li>
+<li>Time: 1 Hour (Standard).</li>
+<li>Cost: 10 IP + Material Cost (Gold/Ingredients).</li>
+<li>Check: Roll INS vs difficulty (DoS). Most standard rituals require 1
+DoS (routine). Powerful rituals may require 2-4 DoS.</li>
+</ul>
+<h4 id="ritual-outcomes">Ritual Outcomes</h4>
+<ul>
+<li>Success: The ritual works as intended.</li>
+<li>Critical success (pair under skill): No IP cost, and the effect is
+doubled or enhanced.</li>
+<li>Failure: No effect. Lose IP and materials. Lose 2 additional IP due
+to fear.</li>
+<li>Critical failure (roll 95-100): The ritual backfires. The GM
+determines a negative consequence. Lose 5 additional IP due to
+fear.</li>
+</ul>
+<h3 id="ritual-list">Ritual List</h3>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 15%" />
+<col style="width: 58%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Ritual</th>
+<th style="text-align: left;">Time</th>
+<th style="text-align: left;">IP</th>
+<th style="text-align: left;">Materials</th>
+<th style="text-align: left;">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Animate Plant</td>
+<td style="text-align: left;">1h</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">Grave Soil (5sp)</td>
+<td style="text-align: left;">Creates a Vine-Shrouded (HP 15, STR 50)
+for 24h.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Animate Object</td>
+<td style="text-align: left;">1h</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">Quicksilver (10sp)</td>
+<td style="text-align: left;">Turns a medium object into a Construct (HP
+12, Defense 5) for 24h.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mud Golem</td>
+<td style="text-align: left;">2h</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">Heart of Warrior</td>
+<td style="text-align: left;">Creates a Mud Golem (HP 30, Defense 2, STR
+60) for 24h.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Soul Eater</td>
+<td style="text-align: left;">1h</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">Fresh Corpse</td>
+<td style="text-align: left;">+10 to one attribute for 1 day. Lose 3 IP
+(fear).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Summon Python</td>
+<td style="text-align: left;">10m</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">Snake Skin</td>
+<td style="text-align: left;">Summons a Giant Snake (Bestiary) for 1
+hour.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dimension Gateway</td>
+<td style="text-align: left;">4h</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">Star Dust (50sp)</td>
+<td style="text-align: left;">Portal between two known circles.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sickening Curse</td>
+<td style="text-align: left;">1h</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">Hair/Blood</td>
+<td style="text-align: left;">Target takes -1 Max HP/day. Permanent
+until Cleanse.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cleanse</td>
+<td style="text-align: left;">1h</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">Pure Water</td>
+<td style="text-align: left;">Removes one curse or restores 10 IP lost
+to fear.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Visions of Future</td>
+<td style="text-align: left;">1h</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">Mirror (20sp)</td>
+<td style="text-align: left;">Advantage on next related check.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sea Storm</td>
+<td style="text-align: left;">4h</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">Salt/Sea</td>
+<td style="text-align: left;">Summons a storm (5km radius) for 5
+hours.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Talk with Dead</td>
+<td style="text-align: left;">1h</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">Skull</td>
+<td style="text-align: left;">Ask spirit 3 questions. They cannot
+lie.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create Artifact</td>
+<td style="text-align: left;">24h</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">Rare Components</td>
+<td style="text-align: left;">Permanently enchant an item. High backfire
+risk.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="game-master-section">Game Master Section</h2>
+<h3 id="progress-clocks">Progress Clocks</h3>
+<p>Progress clocks are a visual tool used by the game master to track
+the flow of events, the progress of a complex task, or the approaching
+threat of a looming danger.</p>
+<p>A clock is a circle divided into segments—typically 4, 6, or 8. As
+events unfold, the GM fills in these segments to represent progress.</p>
+<h3 id="types-of-clocks">Types of Clocks</h3>
+<ul>
+<li>Objective Clocks: Used to track the players’ progress toward a goal,
+such as “Sneak into the Fortress” or “Research the Ancient Curse.”</li>
+<li>Danger Clocks: Represent a growing threat or a countdown to a
+negative event, such as “The Guards are Alerted” or “The Ritual
+Completes.”</li>
+<li>Linked Clocks: Sometimes, one clock must be completed before another
+can begin. For example, a “Find the Secret Entrance” (4 segments) clock
+might need to be filled before the “Infiltrate the Vault” (6 segments)
+clock starts.</li>
+<li>Mission Clocks: Track the overall progress of a large-scale
+operation or adventure.</li>
+</ul>
+<h3 id="filling-a-clock">Filling a Clock</h3>
+<p>Segments are usually filled based on the outcome of rolls:</p>
+<ul>
+<li>Success: Fill 1 segment.</li>
+<li>Critical success: Fill 2 or 3 segments.</li>
+<li>Failure on a risky action: The GM may fill 1 or 2 segments on a
+related danger clock.</li>
+</ul>
+<h3 id="why-use-clocks">Why Use Clocks?</h3>
+<p>Clocks provide transparency and tension. They allow players to see
+exactly how close they are to success or disaster, making their choices
+feel more impactful. They are especially useful for situations that
+shouldn’t be resolved by a single roll but require a series of
+actions.</p>
+<h3 id="running-the-game">Running the Game</h3>
+<p>This section provides concrete guidance for managing the challenges
+of Eda at the table.</p>
+<h3 id="handling-lethality-success">Handling Lethality &amp;
+Success</h3>
+<p>Eda is a dangerous world. Success is never guaranteed, and failure
+should always carry weight.</p>
+<h4 id="the-cost-of-failure">The Cost of Failure</h4>
+<p>Avoid “nothing happens” on a failed roll. Instead, introduce a
+concrete consequence:</p>
+<ul>
+<li>Strength Failure: You force the door open, but your shoulder is
+bruised (Lose 1d10 HP) or your crowbar snaps.</li>
+<li>Logic Failure: You decipher the map, but it takes so long that the
+sun sets, consuming time and light resources.</li>
+<li>Agility Failure: You sneak past the guard, but drop a pouch of 5 sp
+that clatters on the stone.</li>
+</ul>
+<h4 id="success-with-a-cost">Success with a Cost</h4>
+<p>Sometimes a player fails a roll by a small margin. You can offer them
+the choice to succeed at a cost.</p>
+<ul>
+<li><em>Example</em>: “You catch the ledge, but the strain costs you 5
+IP as panic sets in.”</li>
+</ul>
+<h3 id="practical-rules-application">Practical Rules Application</h3>
+<ul>
+<li>The Art of the Roll: Only call for a roll when:
+<ol type="1">
+<li>The character is under pressure (time, danger, or social
+stakes).</li>
+<li>The outcome is uncertain.</li>
+<li>Failure has a concrete consequence.</li>
+</ol></li>
+<li>Narrating degrees of success (DoS): Use the DoS to describe the
+quality of the action:
+<ul>
+<li>1 DoS (Routine): You get the job done, but it’s messy or takes
+effort.</li>
+<li>4 DoS (Hard): You perform the task with professional grace and
+efficiency.</li>
+<li>8 DoS (Near Impossible): You perform a legendary feat that leaves
+witnesses in awe.</li>
+</ul></li>
+</ul>
+<h2 id="progression">Progression</h2>
+<p>The progression system in Eda rewards failure and provides consistent
+growth, ensuring low skills improve quickly while high skills
+plateau.</p>
+<h3 id="the-fumble-points">The Fumble Points</h3>
+<ul>
+<li>Trigger: Your skill improves immediately when you roll a Critical
+Fumble.</li>
+<li>Definition of Critical Fumble:
+<ol type="1">
+<li><p>Rolling a pair (11, 22, 33, …, 00) that is ABOVE your skill
+value.</p>
+<ul>
+<li><em>Example</em>: Skill 45. Roll 77. (Fail + pair) -&gt; fumble.
+Skill increases to 46.</li>
+</ul></li>
+</ol></li>
+<li>The Reward: When you Fumble, increase that skill by 1 point
+permanently. This represents learning from a spectacular failure.</li>
+</ul>
+<h3 id="milestones-growth">Milestones &amp; Growth</h3>
+<p>After every major encounter, significant discovery, or successful
+completion of a goal, the GM awards players 2–5 Experience Points (XP).
+As a general rule, players should receive about 5 XP for every day of
+active adventuring.</p>
+<p><strong>Spending XP:</strong></p>
+<ul>
+<li>Buy Talents: T1 = 5 XP, T2 = 10 XP, T3 = 15 XP, T4 = 20 XP.</li>
+<li>Increase attributes: +1 to any attribute = 10 XP.</li>
+<li>Steady Training: 1 XP increases a trained skill score by 1
+point.</li>
+<li>Unlock Skill: 5 XP to turn an untrained skill into a trained
+skill.</li>
+</ul>
+</body>
+</html>

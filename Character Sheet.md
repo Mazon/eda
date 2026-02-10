@@ -447,9 +447,21 @@ textarea {
              </div>
            </div>
         </div>
-        <div class="stat-box" style="margin-top: 10px;">
-             <span class="label">Reaction Pool</span>
-             <input type="text" name="reaction">
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 10px; margin-top: 10px;">
+            <div class="stat-box">
+                 <span class="label">Reaction Pool</span>
+                 <input type="text" name="reaction">
+            </div>
+            <div class="stat-box">
+                 <span class="label">Wound Clock</span>
+                 <div style="display: flex; gap: 5px; justify-content: center; margin: 2px 0;">
+                     <div class="checkbox-wrapper"><input type="checkbox"></div>
+                     <div class="checkbox-wrapper"><input type="checkbox"></div>
+                     <div class="checkbox-wrapper"><input type="checkbox"></div>
+                     <div class="checkbox-wrapper"><input type="checkbox"></div>
+                 </div>
+                 <input type="text" name="wounds" placeholder="List injuries..." style="font-size: 9pt; text-align: center;">
+            </div>
         </div>
       </div>
       <!-- ARSENAL -->
