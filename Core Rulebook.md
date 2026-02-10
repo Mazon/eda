@@ -1202,6 +1202,23 @@ Sometimes a player fails a roll by a small margin. You can offer them the choice
 
 *   *Example*: "You catch the ledge, but the strain costs you 5 IP as panic sets in."
 
+#### Theater of the Mind & Tactical Combat
+
+In Eda, you can resolve encounters using either Theater of the Mind or tactical maps. Theater of the Mind (TotM) relies on narrative descriptions and is often the best choice for social encounters, travel, or quick skirmishes where precise positioning isn't critical. It keeps the story moving and allows for high flexibility.
+
+However, because of the depth of Eda’s mechanical systems, **Combat** is usually more satisfying and clear when handled **tactically** with a grid or map. It is ultimately up to the GM and the players to choose the style that fits the current scene best.
+
+**Benefits of Tactical Combat:**
+- **Precision of Movement**: Features like *Evasive Stance* (moving 3m+) and specific weapon reaches (like *Pikes* with 3m reach) are much easier to adjudicate when distances are concrete.
+- **Resource Management**: The *Reaction Pool* is a finite resource. Seeing exactly how many enemies can reach you allows players to make better strategic gambles on when to Dodge, Parry, or Block.
+- **Cover and Positioning**: Tactical maps remove disputes about whether a character has *Half* or *Full Cover* or if they are successfully *Flanking* an opponent.
+- **Battlefield Control**: Talents that affect areas or multiple targets are more impactful when the spatial relationships between combatants are visible.
+
+> #### GM Tip: Tracking Bleeding
+> Because damaging hits inflicts the **Bleeding** condition, keeping track of it for multiple NPCs and PCs can become a chore. 
+> 
+> Use physical markers—such as red plastic rings, small red dice, or red translucent tokens—and place them directly on or next to the miniature on the map. This provides an immediate visual cue of who is losing blood.
+
 ### Practical Rules Application
 
 *   The Art of the Roll: Only call for a roll when:
