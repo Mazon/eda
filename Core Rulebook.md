@@ -1222,7 +1222,11 @@ Outside major trade hubs, barter is the primary form of exchange. A character mi
 
 ### Weapons
 
-![Arms and Armor](images/arms_and_armor.png)
+<img src="images/arms_and_armor.png" class="float-right" style="width: 40%;">
+
+Finding a rusted sword in a gutter or looting a fallen knight's plate mail can mean the difference between life and death. In Eda, equipment is more than just numbers—it is your lifeline. Good steel is expensive, and most must make do with what they can scavenge or craft.
+
+<div class="clearfix"></div>
 
 | Name              | Damage | Cost  | Req    | Notes                                                            |
 | :---------------- | :----: | :---- | :----- | :--------------------------------------------------------------- |
@@ -1375,9 +1379,13 @@ In the shadowed corners of Eda, practitioners of the old ways utilize macabre co
 
 ## Magic & Rituals
 
-![Casting a Spell](images/spellcasting.png)
+<img src="images/spellcasting.png" class="float-right" style="width: 40%;">
 
 Magic in Eda is a gnarly, dangerous practice that draws power from the subconscious and the darker corners of the world. It is a strategic gamble; because characters have limited instinct points (IP) and magic takes a physical toll, most practitioners must rely on their mundane skills and weapons until a situation becomes desperate.
+
+To cast a spell, one must reach into the golden void and pull forth energy that was never meant for mortal hands. This process is exhausting and often leaves the caster's mind frayed.
+
+<div class="clearfix"></div>
 
 ### Spells
 
