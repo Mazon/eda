@@ -137,8 +137,6 @@ Before rolling, a player can declare they are "Pushing."
 
 ## Character Creation
 
-<img src="images/combat_scene.png" style="width: 100%; border-radius: 0;">
-
 Character creation is the process of defining your protagonist's strengths, history, and motivations. A character is defined by the following elements:
 
 1.  Lineage: Your raw physical and mental potential.
@@ -149,7 +147,7 @@ Character creation is the process of defining your protagonist's strengths, hist
 6.  Course of Life: Your character's history and goals.
 7.  Equipment: The gear you have.
 
-> ### Example: Character Creation (Bjorn the Brave)
+> ### Example: Character Creation (Bjorn)
 >
 > Step 1: lineage: Bjorn chooses lineage A. attributes: **STR** 70, **AGI** 65, **LOG** 60, **INS** 40, **CHA** 60, **CON** 65.
 >
@@ -177,15 +175,6 @@ Determines your raw potential and base attributes. Select one lineage Option to 
 *   **Charisma (CHA)**: Force of personality and social grace. It is used to persuade others, barter for better prices, or lead through charm and deception.
 *   **Constitution (CON)**: Physical resilience and endurance. It determines your **health points** and is used to survive harsh environments, poisons, and exhaustion.
 
-> ### Example: Using attributes
->
-> *   **Strength**: You attempt to lift a fallen portcullis or swing a heavy claymore.
-> *   **Agility**: You dive out of the way of a dragon's breath or fire a longbow at a distant target.
-> *   **Logic**: You try to identify the vintage of a rare wine or decipher an ancient scroll.
-> *   **Instinct**: You feel a prickle on your neck just before an assassin strikes or push through the horror of seeing a ghoul.
-> *   **Charisma**: You try to convince a merchant that your silver is worth more than it looks or calm a panicked crowd.
-> *   **Constitution**: You march through a blizzard for hours or try to resist the venom of a giant spider.
-
 | lineage Option|  **STR**  |  **AGI**  |  **LOG**  |  **INS**  |  **CHA**  |  **CON**  |
 | :------------ | :---: | :---: | :---: | :---: | :---: | :---: |
 | **lineage A** |  70   |  65   |  60   |  40   |  60   |  65   |
@@ -197,9 +186,9 @@ Determines your raw potential and base attributes. Select one lineage Option to 
 
 ### Body & Mind
 
-*   **health points (HP)**: Equal to your **CON** attribute.
-*   **instinct points (IP)**: Equal to **INS** / 2. Used for talents, magic, and resisting fear.
-*   **Reaction Pool**: Tens digit of **AGI** (e.g., **AGI** 65 = 6 reactions). The amount of reactions during a full encounter.
+*   **Health Points (HP)**: Equal to your **CON** attribute.
+*   **Instinct Points (IP)**: Equal to **INS** / 2. Used for talents, magic, and resisting fear.
+*   **Reactions**: Tens digit of **AGI** (e.g., **AGI** 65 = 6 reactions). The amount of reactions during a full encounter.
  
 ### Heritage
 
@@ -218,7 +207,7 @@ Starting talent: When you choose your heritage, you also choose one tier 1 talen
 </div>
 <div class="heritage-info">
 
-Life in the harsh northern territories has forged you with **Grim Resolve**. Once per day, when your life or honor is on the line, you may add your **CON** or **INS** tens digit as a bonus to any check. Your upbringing has made you proficient in the ways of the wild, leaving you trained in Survival and Intimidate. You begin your journey with 60 silver pieces and a unique memento of your past, such as a whetstone, a flask of "North-Burn" spirits, or a carved bone token.
+Life in the harsh northern territories has forged you with **Grim Resolve**. Once per day, when your life or honor is on the line, you may add your **CON** or **INS** tens digit as a bonus to any check. Your upbringing has made you proficient in the ways of the wild, leaving you trained in **Survival** and **Intimidate**. You begin your journey with 60 silver pieces and a unique memento of your past, such as a whetstone, a flask of "North-Burn" spirits, or a carved bone token.
 
 </div>
 </div>
@@ -254,7 +243,7 @@ Life in the harsh northern territories has forged you with **Grim Resolve**. Onc
 <div class="two-column-layout">
 <div class="heritage-info">
 
-Your faith has made you **Unwavering**, granting you advantage on checks to resist intimidation, fear, or magical influence. Having spent your days in service to the divine or the desperate, you are trained in Religion and Medicine. You start with 50 silver pieces and a token of your calling: a chipped holy symbol, a small box of salt, or a roll of clean bandages.
+Your faith has made you **Unwavering**, granting you advantage on checks to resist intimidation, fear, or magical influence. Having spent your days in service to the divine or the desperate, you are trained in **Religion** and **Medicine**. You start with 50 silver pieces and a token of your calling: a chipped holy symbol, a small box of salt, or a roll of clean bandages.
 
 </div>
 <div>
@@ -308,7 +297,7 @@ Your faith has made you **Unwavering**, granting you advantage on checks to resi
 </div>
 <div class="heritage-info">
 
-You are **Sturdy-Built** from years of manual labor, allowing you to ignore all penalties from the first level of **Exhaustion**. Life on the land has taught you much, and you are trained in Nature and Athletics. You carry 30 silver pieces and the tools of your trade, whether it be a heavy wood-axe, a small bag of hardy seeds, or a sturdy iron cook-pot.
+You are **Sturdy-Built** from years of manual labor, allowing you to ignore all penalties from the first level of **Exhaustion**. Life on the land has taught you much, and you are trained in **Nature** and **Athletics**. You carry 30 silver pieces and the tools of your trade, whether it be a heavy wood-axe, a small bag of hardy seeds, or a sturdy iron cook-pot.
 
 </div>
 </div>
@@ -340,7 +329,7 @@ You are **Sturdy-Built** from years of manual labor, allowing you to ignore all 
 <div class="two-column-layout">
 <div class="heritage-info">
 
-A lifetime of creation has given you an **Eye for Detail**, providing advantage on Appraise or Engineering checks to identify flaws or determine the value of physical objects. You are highly skilled in your craft, trained in Crafting and Engineering. You begin with 60 silver pieces and your essential gear: a set of masterwork tools, a leather apron, or a small bag of scrap metal.
+A lifetime of creation has given you an **Eye for Detail**, providing advantage on Appraise or Engineering checks to identify flaws or determine the value of physical objects. You are highly skilled in your craft, trained in **Crafting** and **Engineering**. You begin with 60 silver pieces and your essential gear: a set of masterwork tools, a leather apron, or a small bag of scrap metal.
 
 </div>
 <div>
@@ -374,7 +363,7 @@ A lifetime of creation has given you an **Eye for Detail**, providing advantage 
 </div>
 <div class="heritage-info">
 
-You are a **Master of Coin**, possessing advantage on Barter or Persuade checks when negotiating prices or trade deals. Your time in the markets has left you trained in Barter and Appraise. You start your travels with 120 silver pieces and a helpful item: a set of brass scales, a concealed dagger, or a map with safe routes marked.
+You are a **Master of Coin**, possessing advantage on Barter or Persuade checks when negotiating prices or trade deals. Your time in the markets has left you trained in **Barter** and **Appraise**. You start your travels with 120 silver pieces and a helpful item: a set of brass scales, a concealed dagger, or a map with safe routes marked.
 
 </div>
 </div>
@@ -405,7 +394,7 @@ You are a **Master of Coin**, possessing advantage on Barter or Persuade checks 
 <div class="two-column-layout">
 <div class="heritage-info">
 
-Blessed with a **Silver Tongue**, you have advantage on Persuade or Diplomacy checks when dealing with authority figures or high society. Your education has ensured you are trained in Diplomacy and History. You carry 100 silver pieces and a remnant of your lineage: a heavy signet ring worth 10 silver, a fine but frayed cloak, or a letter of debt owed to your family.
+Blessed with a **Silver Tongue**, you have advantage on Persuade or Diplomacy checks when dealing with authority figures or high society. Your education has ensured you are trained in **Diplomacy** and **History**. You carry 100 silver pieces and a remnant of your lineage: a heavy signet ring worth 10 silver, a fine but frayed cloak, or a letter of debt owed to your family.
 
 </div>
 <div>
@@ -458,7 +447,7 @@ Blessed with a **Silver Tongue**, you have advantage on Persuade or Diplomacy ch
 </div>
 <div class="heritage-info">
 
-Life on the fringes has made you a **Hardened Survivor**, granting you advantage on Stealth and Survival checks when navigating urban environments or ruins. You have picked up forbidden or forgotten knowledge, leaving you trained in Occult Knowledge and Investigation. You start with 40 silver pieces and whatever you could scrounge: a rusted knife, a lucky charm made of bone, or a heavy hood.
+Life on the fringes has made you a **Hardened Survivor**, granting you advantage on Stealth and Survival checks when navigating urban environments or ruins. You have picked up forbidden or forgotten knowledge, leaving you trained in **Occult Knowledge** and **Investigation**. You start with 40 silver pieces and whatever you could scrounge: a rusted knife, a lucky charm made of bone, or a heavy hood.
 
 </div>
 </div>
@@ -504,7 +493,7 @@ Life on the fringes has made you a **Hardened Survivor**, granting you advantage
 <div class="two-column-layout">
 <div class="heritage-info">
 
-Your time on the battlefield has sharpened your **Combat Reflexes**, granting you an additional point to your **Reaction Pool** during the first round of any encounter. You are a seasoned warrior, trained in Warfare and Athletics. You begin with 60 silver pieces and a memento of your service: a whetstone, a notch-filled dagger, or a tattered company banner.
+Your time on the battlefield has sharpened your **Combat Reflexes**, granting you an additional point to your **Reaction Pool** during the first round of any encounter. You are a seasoned warrior, trained in **Warfare** and **Athletics**. You begin with 60 silver pieces and a memento of your service: a whetstone, a notch-filled dagger, or a tattered company banner.
 
 </div>
 <div>
@@ -564,7 +553,7 @@ Your time on the battlefield has sharpened your **Combat Reflexes**, granting yo
 </div>
 <div class="heritage-info">
 
-You possess a **Tracker's Eye**, giving you advantage on Perception and Survival checks when tracking creatures or searching for water in the wild. Your life in the wilderness has made you trained in Nature and Survival. You carry 40 silver pieces and your hunting gear: a hunting trap, a small bag of dried meat, or a necklace of animal teeth.
+You possess a **Tracker's Eye**, giving you advantage on Perception and Survival checks when tracking creatures or searching for water in the wild. Your life in the wilderness has made you trained in **Nature** and **Survival**. You carry 40 silver pieces and your hunting gear: a hunting trap, a small bag of dried meat, or a necklace of animal teeth.
 
 </div>
 </div>
@@ -618,7 +607,7 @@ You possess a **Tracker's Eye**, giving you advantage on Perception and Survival
 <div class="two-column-layout">
 <div class="heritage-info">
 
-Touched by shadows, you possess a **Cursed Insight**. Once per day, you may ask the GM one question about a person or place, receiving a cryptic but truthful answer in return. Your strange journey has left you trained in Occult Knowledge and Investigation. You begin with 30 silver pieces and a few oddities: a hooded lantern, a book of strange drawings, or a piece of leaden jewelry.
+Touched by shadows, you possess a **Cursed Insight**. Once per day, you may ask the GM one question about a person or place, receiving a cryptic but truthful answer in return. Your strange journey has left you trained in **Occult Knowledge** and **Investigation**. You begin with 30 silver pieces and a few oddities: a hooded lantern, a book of strange drawings, or a piece of leaden jewelry.
 
 </div>
 <div>
