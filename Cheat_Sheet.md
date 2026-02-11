@@ -142,22 +142,22 @@ strong {
         <h2>Core Mechanics</h2>
         <h3>Checks (d100)</h3>
         <ul>
-            <li><strong>Success:</strong> Roll &le; Skill/Attribute.</li>
-            <li><strong>Failure:</strong> Roll > Skill/Attribute.</li>
-            <li><strong>Degree of Success (DoS):</strong> Tens digit of a successful roll (e.g., Roll 48 = 4 DoS).</li>
-            <li><strong>Critical Success:</strong> Doubles under skill (11, 22, etc.).
+            <li><strong>success:</strong> Roll &le; skill/attribute.</li>
+            <li><strong>failure:</strong> Roll > skill/attribute.</li>
+            <li><strong>degree of success (DoS):</strong> Tens digit of a successful roll (e.g., Roll 48 = 4 DoS).</li>
+            <li><strong>Critical success:</strong> Doubles under skill (11, 22, etc.).
                 <ul>
-                    <li><em>Combat:</em> Crit Dmg (Weapon + Tens) + <strong>Injury</strong>.</li>
+                    <li><em>Combat:</em> Crit Dmg (Weapon + Tens) + <strong>injury</strong>.</li>
                     <li><em>Non-Combat:</em> Auto success (max difficulty).</li>
                 </ul>
             </li>
-            <li><strong>Pushing:</strong> Gain Advantage, but lose 10 IP (Instinct).</li>
+            <li><strong>Pushing:</strong> Gain advantage, but lose 10 IP (Instinct).</li>
         </ul>
 
-        <h3>Advantage & Disadvantage</h3>
+        <h3>advantage & disadvantage</h3>
         <ul>
-            <li><strong>Advantage:</strong> Swap tens/units for best result.</li>
-            <li><strong>Disadvantage:</strong> Swap tens/units for worst result.</li>
+            <li><strong>advantage:</strong> Swap tens/units for best result.</li>
+            <li><strong>disadvantage:</strong> Swap tens/units for worst result.</li>
         </ul>
 
         <h3>Difficulty Modifiers</h3>
@@ -180,7 +180,7 @@ strong {
         <ul>
             <li><strong>Move:</strong> Move up to Speed (AGI/10 m). <br><em>Evasive Stance:</em> Move >3m = +3 Defense.</li>
             <li><strong>Attack:</strong> Weapon check. 2nd attack = 1/2 skill.</li>
-            <li><strong>Help:</strong> Advantage to ally (melee range).</li>
+            <li><strong>Help:</strong> advantage to ally (melee range).</li>
             <li><strong>Interact:</strong> Open door, light torch, etc.</li>
             <li><strong>Swap Weapon:</strong> Draw/Sheathe.</li>
             <li><strong>Stand Up:</strong> From prone.</li>
@@ -195,7 +195,7 @@ strong {
         <h3>Reactions (Cost 1 Reaction from Pool)</h3>
         <ul>
             <li><strong>Dodge (AGI):</strong> Success = No damage.</li>
-            <li><strong>Parry (Combat Style):</strong> Reduce dmg by Weapon + DoS.</li>
+            <li><strong>Parry (combat style):</strong> Reduce dmg by Weapon + DoS.</li>
             <li><strong>Block (Shield):</strong> Reduce dmg by Shield + DoS. Fail = Half dmg.</li>
         </ul>
       </div>
@@ -205,7 +205,7 @@ strong {
         <ul>
             <li><strong>Damage:</strong> Weapon Base + DoS.</li>
             <li><strong>Bleeding:</strong> Defense reduced by 2 (non-stacking). Removed by Medicine check.</li>
-            <li><strong>Wounds/Injuries:</strong> Caused by Critical Hits. Roll on Injury Table.</li>
+            <li><strong>Wounds/Injuries:</strong> Caused by Critical Hits. Roll on injury Table.</li>
         </ul>
       </div>
 
@@ -213,7 +213,7 @@ strong {
       
       <td class="column">
 <div class="box">
-        <h2>Injury Table (d100)</h2>
+        <h2>injury Table (d100)</h2>
         <table>
             <tr>
                 <th style="width: 40px;">Roll</th>
@@ -223,7 +223,7 @@ strong {
             <tr>
                 <td>01-10</td>
                 <td>Minor</td>
-                <td><strong>Stunned:</strong> Lose 1 Action Point (AP) on your next turn.<br><span class="small-text">Glancing Blow.</span></td>
+                <td><strong>Stunned:</strong> Lose 1 action point (AP) on your next turn.<br><span class="small-text">Glancing Blow.</span></td>
             </tr>
             <tr>
                 <td>11-20</td>
@@ -258,7 +258,7 @@ strong {
             <tr>
                 <td>71-80</td>
                 <td>Severe</td>
-                <td><strong>Vulnerable:</strong> Defense penalty from Bleeding is doubled (Total -4 Defense).<br><span class="small-text">Internal Injury.</span></td>
+                <td><strong>Vulnerable:</strong> Defense penalty from Bleeding is doubled (Total -4 Defense).<br><span class="small-text">Internal injury.</span></td>
             </tr>
             <tr>
                 <td>81-85</td>

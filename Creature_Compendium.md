@@ -7,8 +7,8 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 *   **HP**: Hit Points.
 *   **Defense**: A value that reduces incoming damage.
 *   **Reaction Pool**: The number of reactions available for the encounter.
-*   **Attributes**: Core stats (STR, AGI, LOG, INS, CHA, CON).
-*   **Combat Skill**: The skill value used for attack rolls.
+*   **attributes**: Core stats (STR, AGI, LOG, INS, CHA, CON).
+*   **combat skill**: The skill value used for attack rolls.
 *   **Base Damage**: The starting damage value before adding DoS and attribute bonuses.
 
 ---
@@ -32,7 +32,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Bite.</span> Combat Skill 65, Damage 1.
+<span class="action-name">Bite.</span> combat skill 65, Damage 1.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -56,7 +56,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Crippling Bite.</span> Combat Skill 70, Damage 2.
+<span class="action-name">Crippling Bite.</span> combat skill 70, Damage 2.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -80,7 +80,7 @@ This book contains creatures and adversaries found in the world of Eda. Each ent
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Corrosive Bite.</span> Combat Skill 60, Damage 2 and inflicts **Bleeding**.
+<span class="action-name">Corrosive Bite.</span> combat skill 60, Damage 2 and inflicts **Bleeding**.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -106,7 +106,7 @@ A form of werewolf stuck in wolf form, having left all humanity behind. They hun
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Infectious Bite.</span> Combat Skill 75, Damage 2. On a hit, the victim must resist the infection of lycanthropy. Those infected by a Garou tend to become stuck in wolf form more quickly.
+<span class="action-name">Infectious Bite.</span> combat skill 75, Damage 2. On a hit, the victim must resist the infection of lycanthropy. Those infected by a Garou tend to become stuck in wolf form more quickly.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -134,7 +134,7 @@ A form of werewolf stuck in wolf form, having left all humanity behind. They hun
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Heavy Maul.</span> Combat Skill 65, Damage 3.
+<span class="action-name">Heavy Maul.</span> combat skill 65, Damage 3.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -158,7 +158,7 @@ A form of werewolf stuck in wolf form, having left all humanity behind. They hun
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Maul.</span> Combat Skill 60, Damage 1.
+<span class="action-name">Maul.</span> combat skill 60, Damage 1.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -183,7 +183,7 @@ A form of werewolf stuck in wolf form, having left all humanity behind. They hun
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Poisonous Bite.</span> Combat Skill 70, Damage 1.
+<span class="action-name">Poisonous Bite.</span> combat skill 70, Damage 1.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -215,7 +215,7 @@ The Fæ are remnants of ancient races—Alv, Alf, Nymph, and many others. They a
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Swift Strike.</span> Combat Skill 70, Damage 1.
+<span class="action-name">Swift Strike.</span> combat skill 70, Damage 1.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -244,7 +244,7 @@ that can briefly visit human lands, though they are physically sensitive to the 
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Mesmerizing Gaze.</span> Combat Skill 65, Damage 0. Target must pass an INS check or be fascinated for 1 round.
+<span class="action-name">Mesmerizing Gaze.</span> combat skill 65, Damage 0. Target must pass an INS check or be fascinated for 1 round.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -272,7 +272,7 @@ but hides a rotten hole in her back or a tail under her long hair. She lures men
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Seductive Call.</span> Combat Skill 75, Damage 0. Target must pass a Difficult (2 DoS) INS check or be deeply fascinated and lured to follow her.
+<span class="action-name">Seductive Call.</span> combat skill 75, Damage 0. Target must pass a difficult (2 DoS) INS check or be deeply fascinated and lured to follow her.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -304,7 +304,7 @@ with long flowing hair, wearing a gray cloak over a green dress. Her eyes are re
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Deathly Wail.</span> Combat Skill 65, Damage 2. Target must pass an INS check or lose 1 IP.
+<span class="action-name">Deathly Wail.</span> combat skill 65, Damage 2. Target must pass an INS check or lose 1 IP.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -333,7 +333,7 @@ that hunts its victims relentlessly. Once it has a trail, nothing can stop it un
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Relentless Bite.</span> Combat Skill 75, Damage 2. Gains +10 to hit against its designated victim.
+<span class="action-name">Relentless Bite.</span> combat skill 75, Damage 2. Gains +10 to hit against its designated victim.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -364,14 +364,14 @@ that have risen from hell to exact revenge. They are staring and pale with black
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Vengeful Touch.</span> Combat Skill 70, Damage 2. Ignores non-magical protection.
+<span class="action-name">Vengeful Touch.</span> combat skill 70, Damage 2. Ignores non-magical protection.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
 <strong>Relentless Revenge:</strong> The gast focuses on the target of its revenge. It has **advantage** on all rolls against this target and can track it regardless of distance.
 </div>
 <div class="property-line">
-<strong>Horrific Gaze:</strong> Anyone meeting the gast's gaze must pass a Difficult (2 DoS) INS check or be paralyzed by fear for 1 round.
+<strong>Horrific Gaze:</strong> Anyone meeting the gast's gaze must pass a difficult (2 DoS) INS check or be paralyzed by fear for 1 round.
 </div>
 <div class="property-line">
 <strong>Spectral Form:</strong> The gast can move through solid objects but cannot end its turn inside one.
@@ -400,7 +400,7 @@ has displaced the soul of a living creature, using its body as a vessel. The ori
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Displaced Soul:</strong> The host's soul is aware but powerless. Once per encounter, a strong-willed host may attempt a Difficult (2 DoS) INS check to regain control of their voice or body for 1 round.
+<strong>Displaced Soul:</strong> The host's soul is aware but powerless. Once per encounter, a strong-willed host may attempt a difficult (2 DoS) INS check to regain control of their voice or body for 1 round.
 </div>
 <div class="property-line">
 <strong>Eerie Awareness:</strong> The creature gains **advantage** on INS checks to notice details or spy, as the entity uses the host's body for its own sinister purposes.
@@ -428,10 +428,10 @@ with protruding eyes, slimy gray-green scales, and webbed claws. They dwell in t
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Clawed Swipe.</span> Combat Skill 60, Damage 1.
+<span class="action-name">Clawed Swipe.</span> combat skill 60, Damage 1.
 </div>
 <div class="action">
-<span class="action-name">Bite.</span> Combat Skill 55, Damage 2.
+<span class="action-name">Bite.</span> combat skill 55, Damage 2.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -459,7 +459,7 @@ and one of the Deep. They appear human for decades before their true heritage be
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Unarmed Strike.</span> Combat Skill 45, Damage 0.
+<span class="action-name">Unarmed Strike.</span> combat skill 45, Damage 0.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -491,7 +491,7 @@ that can shapeshift between seal and human form by putting on or taking off thei
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Unarmed Strike.</span> Combat Skill 50, Damage 0.
+<span class="action-name">Unarmed Strike.</span> combat skill 50, Damage 0.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -523,10 +523,10 @@ that can shapeshift between seal and human form by putting on or taking off thei
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Claw Swipe.</span> Combat Skill 60, Damage 2.
+<span class="action-name">Claw Swipe.</span> combat skill 60, Damage 2.
 </div>
 <div class="action">
-<span class="action-name">Infectious Bite.</span> Combat Skill 65, Damage 1. On a hit, 25% chance of infecting the target with the Goul mutation.
+<span class="action-name">Infectious Bite.</span> combat skill 65, Damage 1. On a hit, 25% chance of infecting the target with the Goul mutation.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -554,7 +554,7 @@ affected by a contagious mutation from eating contaminated human flesh or being 
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Unarmed Strike.</span> Combat Skill 50, Damage 0.
+<span class="action-name">Unarmed Strike.</span> combat skill 50, Damage 0.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -582,10 +582,10 @@ as infected, the corpse eater's appearance becomes grotesque. They are pale gray
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Claw Strike.</span> Combat Skill 60, Damage 1.
+<span class="action-name">Claw Strike.</span> combat skill 60, Damage 1.
 </div>
 <div class="action">
-<span class="action-name">Infectious Bite.</span> Combat Skill 55, Damage 2. Risk of infecting others with the Goul mutation.
+<span class="action-name">Infectious Bite.</span> combat skill 55, Damage 2. Risk of infecting others with the Goul mutation.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -614,11 +614,11 @@ from beyond, taking human form to live out sick passions or enact minor evils. N
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Abyssal Strike.</span> Combat Skill 70, Damage 2. Deals supernatural damage that ignores non-magical armor.
+<span class="action-name">Abyssal Strike.</span> combat skill 70, Damage 2. Deals supernatural damage that ignores non-magical armor.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
-<strong>Unspeakable Presence:</strong> Any human who has contact with a demon must pass a Difficult (2 DoS) INS check or gain 1 point of Permanent Insanity.
+<strong>Unspeakable Presence:</strong> Any human who has contact with a demon must pass a difficult (2 DoS) INS check or gain 1 point of Permanent Insanity.
 </div>
 <div class="property-line">
 <strong>Ritual Vulnerability:</strong> While powerful, lesser demons can be controlled or banished through complex and secret rituals known to only the most daring mages.
@@ -646,10 +646,10 @@ also known as man-eaters. They are said to have been created from Brahma's spiri
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Claw Strike.</span> Combat Skill 80, Damage 2.
+<span class="action-name">Claw Strike.</span> combat skill 80, Damage 2.
 </div>
 <div class="action">
-<span class="action-name">Flesh Devour.</span> Combat Skill 75, Damage 3. The rakshasa drinks blood or eats raw meat directly from the victim.
+<span class="action-name">Flesh Devour.</span> combat skill 75, Damage 3. The rakshasa drinks blood or eats raw meat directly from the victim.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -681,10 +681,10 @@ that inhabits burial mounds. It looks human but carries a musty smell of decay w
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Crushing Grip.</span> Combat Skill 65, Damage 2. Target is grappled.
+<span class="action-name">Crushing Grip.</span> combat skill 65, Damage 2. Target is grappled.
 </div>
 <div class="action">
-<span class="action-name">Drain Vitality.</span> Combat Skill 60, Damage 1. Draug heals damage equal to the damage dealt.
+<span class="action-name">Drain Vitality.</span> combat skill 60, Damage 1. Draug heals damage equal to the damage dealt.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -725,7 +725,7 @@ often mistaken for gods, demigods, or angels. They have infiltrated human civili
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Divine Strike.</span> Combat Skill 90, Damage 4. Target must pass an INS check or be stunned for 1 round.
+<span class="action-name">Divine Strike.</span> combat skill 90, Damage 4. Target must pass an INS check or be stunned for 1 round.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -760,7 +760,7 @@ resting in the depths of the earth. Every fifty or hundred years they rise to ea
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Devour.</span> Combat Skill 80, Damage 5.
+<span class="action-name">Devour.</span> combat skill 80, Damage 5.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -792,7 +792,7 @@ who achieved eternal life through forgotten black arts. They once ruled as god-k
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Divine Authority.</span> Combat Skill 90, Damage 3. The target must pass a Difficult (2 DoS) INS check or obey a simple command.
+<span class="action-name">Divine Authority.</span> combat skill 90, Damage 3. The target must pass a difficult (2 DoS) INS check or obey a simple command.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -802,7 +802,7 @@ who achieved eternal life through forgotten black arts. They once ruled as god-k
 <strong>God-King Influence:</strong> Has **advantage** on all social checks to manipulate or lead humans.
 </div>
 <div class="property-line">
-<strong>Vengeful Curse:</strong> If killed, the Mummy utters a final curse. The killer must pass a Very Hard (3 DoS) INS check or suffer **disadvantage** on all checks until cleansed.
+<strong>Vengeful Curse:</strong> If killed, the Mummy utters a final curse. The killer must pass a very hard (3 DoS) INS check or suffer **disadvantage** on all checks until cleansed.
 </div>
 </div>
 
@@ -823,7 +823,7 @@ seeking revenge or resurrection. They are tormented souls that over time shrink 
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Hateful Touch.</span> Combat Skill 70, Damage 2 + 1 Rot.
+<span class="action-name">Hateful Touch.</span> combat skill 70, Damage 2 + 1 Rot.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -854,7 +854,7 @@ of dark secrets. They mercilessly kill anyone who stands in their way.</div><hr>
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Crushing Blow.</span> Combat Skill 65, Damage 3.
+<span class="action-name">Crushing Blow.</span> combat skill 65, Damage 3.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -887,7 +887,7 @@ of dark secrets. They mercilessly kill anyone who stands in their way.</div><hr>
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Blood Bite.</span> Combat Skill 70, Damage 2. Heals the vampire for 1 HP.
+<span class="action-name">Blood Bite.</span> combat skill 70, Damage 2. Heals the vampire for 1 HP.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -918,7 +918,7 @@ of dark secrets. They mercilessly kill anyone who stands in their way.</div><hr>
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Ancient Bite.</span> Combat Skill 85, Damage 3. Heals the vampire for 2 HP.
+<span class="action-name">Ancient Bite.</span> combat skill 85, Damage 3. Heals the vampire for 2 HP.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -949,7 +949,7 @@ of humanity, crawling from its grave as a stench-ridden monster driven only by b
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Feral Bite.</span> Combat Skill 80, Damage 3.
+<span class="action-name">Feral Bite.</span> combat skill 80, Damage 3.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -978,7 +978,7 @@ after her exile, these entities are driven by an ancient instinct to reproduce, 
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Seductive Embrace.</span> Combat Skill 75, Damage 0. Target must pass an INS check (difficult - 2 DoS) or be fascinated.
+<span class="action-name">Seductive Embrace.</span> combat skill 75, Damage 0. Target must pass an INS check (difficult - 2 DoS) or be fascinated.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1006,7 +1006,7 @@ The Draug appears human, but if it has gone long without feeding or sleeping, it
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Grip of the Grave.</span> Combat Skill 70, Damage 2. If it hits, the target is restrained.
+<span class="action-name">Grip of the Grave.</span> combat skill 70, Damage 2. If it hits, the target is restrained.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1037,7 +1037,7 @@ that dwell deep within the earth, rising to the surface only once every fifty or
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Crushing Maw.</span> Combat Skill 60, Damage 4.
+<span class="action-name">Crushing Maw.</span> combat skill 60, Damage 4.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1069,7 +1069,7 @@ brought back through sorcery. They are in a state of slow decay, driven by an in
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Bite.</span> Combat Skill 50, Damage 2. 25% chance of infection.
+<span class="action-name">Bite.</span> combat skill 50, Damage 2. 25% chance of infection.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1102,7 +1102,7 @@ that have been animated, often representing demons, small stone devils, cherubs,
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Claw Strike.</span> Combat Skill 60, Damage 2.
+<span class="action-name">Claw Strike.</span> combat skill 60, Damage 2.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1134,7 +1134,7 @@ of stone or metal given life through magic or ancient mechanics.</div><hr>
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Crushing Blow.</span> Combat Skill 50, Damage 3.
+<span class="action-name">Crushing Blow.</span> combat skill 50, Damage 3.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">
@@ -1162,7 +1162,7 @@ created from either the flesh of the dead or clay. It lacks its own intelligence
 </div>
 <div class="section-header">Actions</div>
 <div class="action">
-<span class="action-name">Relentless Slam.</span> Combat Skill 55, Damage 3.
+<span class="action-name">Relentless Slam.</span> combat skill 55, Damage 3.
 </div>
 <div class="section-header">Abilities</div>
 <div class="property-line">

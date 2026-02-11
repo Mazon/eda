@@ -204,7 +204,7 @@ Suddenly, the horses stop screaming. Silence falls—heavy and unnatural. Then a
 >
 > *   All players must make a **CON check (routine - 1 DoS)**.
 >
-> *   **Failure**: Take 5 bludgeoning damage and start with 1 level of exhaustion.
+> *   **failure**: Take 5 bludgeoning damage and start with 1 level of exhaustion.
 
 **The Horror**:
 Looking up at the road (50ft up the embankment), they see a Dire Bear standing on two legs. Its fur is matted with black slime. It tears a guard in half like wet paper. It doesn't see them... yet.
@@ -224,7 +224,7 @@ The players are now in the wilderness with nothing. This scene teaches the survi
 >
 > **The Cold**: Without proper clothing (Cloaks/Furs), a character must make a CON check every hour of exposure.
 >
-> *   **Failure**: Gain 1 level of exhaustion.
+> *   **failure**: Gain 1 level of exhaustion.
 >
 > *   **Exhaustion**: See Core Rulebook for effects.
 >
