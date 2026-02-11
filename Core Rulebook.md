@@ -192,119 +192,389 @@ Determines your raw potential and base attributes. Select one lineage option to 
  
 ### Heritage
 
-Your heritage defines your upbringing, innate traits, and starting social standing. Every heritage provides an **Identity Tag**, a signature trait, two heritage skills in which you are automatically trained, a unique piece of starting equipment, and a set amount of starting currency.
+Your heritage defines your upbringing, innate traits, and starting social standing. A signature trait, two heritage skills in which you are automatically trained, a unique piece of starting equipment, and a set amount of starting currency.
 
-**Starting Talent**: When you choose your heritage, you also choose one Tier 1 Talent from the Master Talent Table that matches your Heritage's Identity Tag.
+**Starting Talent**: When you choose your heritage, you also choose one Tier 1 talent from the talent table that matches your heritage.
 
-#### Clansman
+### Clansman
 
 ![Clansman Heritage](images/heritage_clansman.png)
 *The wind cuts like a knife in the wild lands, and graves are dug shallow in the frozen earth. Your people survive on loyalty, debt, and the grim knowledge that winter kills the weak.*
 
-*   **Identity Tag:** [Clansman]
+
 *   **Trait: Grim Resolve.** Once per day, when your life or honor is on the line, you may add your CON or INS tens digit as a bonus to any check.
 *   **Heritage Skills:** Trained in Survival and Intimidate.
 *   **Starting Equipment:** A whetstone, a flask of "North-Burn" spirits, or a carved bone token.
 *   **Starting Currency:** 60 sp.
 
-#### Zealot
+**Clansman Talents**
+
+| Tier | Talent | Cost | Description |
+| :--- | :--- | :--- | :--- |
+| T1 | **Berserk** | 1 AP | Enter frenzy (advantage on attacks, no reactions). |
+| T1 | **Heavy Hitter** | Passive | Use Logic instead of STR for attack with tools. |
+| T1 | **Tribal Ferocity** | Passive | Advantage on melee attacks if you have taken damage. |
+| T1 | **Mountain Born** | Passive | Ignore difficult terrain in cold/rocky areas. |
+| T1 | **Blood Debt** | Free | Gain advantage on attacks if an ally is downed. |
+| T1 | **North-Burn Breath** | Free | Drink spirits for 5 Temp HP. |
+| T1 | **Skald's Song** | 1 AP | Battle cry: allies within 5m gain +1 next damage roll. |
+| T1 | **Merciless** | Passive | Advantage on attacks vs injured enemies. |
+| T1 | **Survival Instinct** | Passive | Advantage on survival checks. |
+| T1 | **Combat Awareness** | Passive | Advantage on perception to avoid ambushes. |
+| T2 | **Bloodied Fury** | Passive | HP < 50%: all attacks deal +5 damage. |
+| T2 | **Blood Offering** | Free | Sacrifice 5 HP for +10 Damage. |
+| T2 | **Peak Vision** | Passive | Advantage on perception in mountains. |
+| T2 | **Slayer's Fury** | Free | Advantage and +10 damage (1/long rest). |
+| T2 | **Defensive Stance** | 1 AP | Reduce damage taken by 2. |
+| T3 | **Avalanche Strike** | 1 AP | 10m cone, knock prone. |
+| T3 | **Shape Shift** | 1 AP | Werewolf form (+10 STR, Claw 7dmg). |
+
+### Zealot
 
 ![Zealot Heritage](images/heritage_clergy.png)
 *Silence hangs heavy in the temple, broken only by the desperate prayers of the sick. Whether a true believer or a charlatan in a frayed robe, you have walked among the dying and seen what men will do when the gods turn their backs.*
 
-*   **Identity Tag:** [Zealot]
 *   **Trait: Unwavering.** You have advantage on checks to resist intimidation, fear, or magical influence.
 *   **Heritage Skills:** Trained in Religion and Medicine.
 *   **Starting Equipment:** A holy symbol (chipped), a small box of salt, or a roll of clean bandages.
 *   **Starting Currency:** 50 sp.
 
-#### Commoner
+**Zealot Talents**
+
+| Tier | Talent | Cost | Description |
+| :--- | :--- | :--- | :--- |
+| T1 | **Vigil** | Passive | +5 Perception when guarding. |
+| T1 | **Rites** | 1 AP | Remove minor curses/contamination. |
+| T1 | **Whispered Secrets** | Passive | Advantage on occult/magic ID. |
+| T1 | **Detect Illness** | 1 AP | Diagnose disease/curses. |
+| T1 | **Eldritch Sight** | Passive | See magic auras. |
+| T2 | **Empower** | 1 AP | Spend 1 IP for +10 damage. |
+| T2 | **Hex Craft Novice** | 1 AP | Weave curses/blessings. |
+| T2 | **Healing Touch** | 1 AP | Restore 10 HP to ally (1/day). |
+| T2 | **Holy Aura** | Passive | Allies in 10m: +1 defense, advantage defense. |
+| T2 | **Blood Offering** | Free | Sacrifice 5 HP for +10 Damage. |
+| T2 | **Holy Weapon** | 1 AP | Coated in "holy" poison (+2 damage). |
+| T2 | **Caregiver** | Passive | +20 on Aid rolls. |
+| T2 | **Martyr's Shield** | Reaction | Take 50% of damage meant for ally. |
+| T2 | **Rituals** | Action | Perform powerful, utility-focused rituals. |
+| T2 | **Coven Bond** | Passive | +2 Spell Rolls near witches. |
+| T2 | **Noble Aegis** | Passive | Allies in 5m: advantage vs fear/charm. |
+| T3 | **Iron Will** | Free | Take dmg: gain pt for bonus or reaction. |
+| T3 | **Unyielding Spirit** | Free | Fall to 0 HP: stay at 1 HP + 10 Temp HP. |
+| T3 | **Strength in Grief** | 1 AP | Advantage on attack and defense for 1 turn. |
+| T3 | **Dark Channel** | 1 AP | Aura +5 dmg/advantage, take 10 dmg/turn. |
+| T3 | **Spirit Walker** | 1 AP | Commune with spirits. |
+| T3 | **Abyssal Reckoning** | Passive | <10 HP: Resistance All, +5 Defense. |
+| T3 | **Toughened Resolve** | Passive | Resistance Psychic. |
+| T3 | **Imp. Tough. Resolve**| Passive | Immunity Psychic. |
+| T3 | **Spell Ward** | Passive | Advantage to resist/cleanse spells. |
+| T4 | **Death Awakens** | 1 AP | Revive ally with 15 HP (1/day). |
+| T4 | **Guardian Aura** | Passive | Allies: +5 defense, resist fear. |
+
+### Commoner
 
 ![Commoner Heritage](images/heritage_farmer.png)
 *Mud, toil, and the biting frost—these are the only constants. A bad harvest is a death sentence, and hunger is a wolf that never sleeps.*
 
-*   **Identity Tag:** [Commoner]
 *   **Trait: Sturdy-Built.** You can ignore all penalties from the first level of exhaustion.
 *   **Heritage Skills:** Trained in Nature and Athletics.
 *   **Starting Equipment:** A heavy wood-axe, a small bag of hardy seeds, or a sturdy iron cook-pot.
 *   **Starting Currency:** 30 sp.
 
-#### Artisan
+**Commoner Talents**
+
+| Tier | Talent | Cost | Description |
+| :--- | :--- | :--- | :--- |
+| T1 | **Bounce Back** | Free | Advantage on check to avoid prone. |
+| T1 | **Scythe Sweep** | 1 AP | Polearm/Scythe: hit two adjacent targets (half damage). |
+| T1 | **Animal Husbandry** | Passive | Loyal farm animal assists in tracking/guarding. |
+| T1 | **Weather Wise** | Free | Predict weather for 24h with 100% accuracy. |
+| T1 | **Seasoned Toil** | Passive | +5 to Constitution checks. |
+| T1 | **Improvised Defense**| Passive | Use pitchfork/shovel as shield (+5 Defense). |
+| T1 | **Animal Handler** | Passive | Advantage on animal training checks. |
+| T2 | **Caregiver** | Passive | +20 on Aid rolls. |
+| T2 | **Healing Leaf** | 1 AP | Create poultice (10 HP). |
+| T2 | **Stone’s Fortitude** | Passive | Resistance to Blunt, +5 CON checks. |
+| T3 | **Durable** | Passive | +5 Natural Defense. |
+| T3 | **Storm Watcher** | Passive | Detect storms, survival advantage. |
+| T4 | **Steel Resolve** | Passive | Gain +2 Defense against physical. |
+
+### Artisan
 
 ![Artisan Heritage](images/heritage_artisan.png)
 *In a world of rust and ruin, things must be forged to last. The smell of hot iron and oil is more comforting than perfume, and a well-made tool is worth more than a crown.*
 
-*   **Identity Tag:** [Artisan]
+
 *   **Trait: Eye for Detail.** You have advantage on appraise or engineering checks to identify flaws or value in physical objects.
 *   **Heritage Skills:** Trained in Crafting and Engineering.
 *   **Starting Equipment:** A set of masterwork tools, a leather apron, or a small bag of scrap metal.
 *   **Starting Currency:** 60 sp.
 
-#### Merchant
+**Artisan Talents**
+
+| Tier | Talent | Cost | Description |
+| :--- | :--- | :--- | :--- |
+| T1 | **Smart Fighting** | Passive | In cover: advantage on active defense. |
+| T1 | **Expert** | Free | Advantage on one skill check/day. |
+| T1 | **Master Crafter** | Passive | Advantage on all Crafting checks. |
+| T1 | **Structural Weakness**| Passive | Identify flaws; advantage on dmg vs objects/armor. |
+| T1 | **Field Repairs** | Free | Repair one item during a short rest. |
+| T1 | **Gadgeteer** | Free | Once/day: create gadget for advantage on one task. |
+| T1 | **Heavy Hitter** | Passive | Use Logic instead of STR for attack with tools. |
+
+### Merchant
 
 ![Merchant Heritage](images/heritage_merchant.png)
 *Gold is the only shield that doesn't rust. Raised among the chaotic markets and dangerous trade routes, survival meant spotting a lie before it was spoken.*
 
-*   **Identity Tag:** [Merchant]
 *   **Trait: Master of Coin.** You have advantage on barter or persuade checks when negotiating prices or trade deals.
 *   **Heritage Skills:** Trained in Barter and Appraise.
 *   **Starting Equipment:** A set of brass scales, a concealed dagger, or a map with safe routes marked.
 *   **Starting Currency:** 120 sp.
 
-#### Noble
+**Merchant Talents**
+
+| Tier | Talent | Cost | Description |
+| :--- | :--- | :--- | :--- |
+| T1 | **Master of Barter** | Passive | Advantage on all Barter checks. |
+| T1 | **Spot the Lie** | Passive | Advantage on Insight vs deception in trade. |
+| T1 | **Hidden Pocket** | Passive | Concealed space for 3 small items. |
+| T1 | **Network of Contacts**| Free | Find contact in settlement for info or discount. |
+| T1 | **Distracting Coin** | 1 AP | Target within 5m has disadvantage on next roll. |
+| T1 | **Beauty** | Passive | Advantage on CHA vs attracted targets. |
+| T1 | **Streetwise** | Passive | Advantage on LOG checks regarding crime. |
+| T1 | **Information Network**| Free | Access to thieves' network for info. |
+| T1 | **Gilded Words** | Passive | Successful persuade also charms target. |
+| T2 | **Fence Contacts** | Free | Sell stolen goods. |
+| T2 | **High Stakes Neg.** | Passive | Use CHA instead of AGI for initiative. |
+| T3 | **Right of Passage** | 1 AP | Allies move through enemy spaces freely. |
+
+### Noble
 
 ![Noble Heritage](images/heritage_noble.png)
 *Drafty halls filled with the ghosts of past glories were your playground, teaching the bitter taste of pride without gold. The world may have forgotten your family's honor, but you have not.*
 
-*   **Identity Tag:** [Noble]
 *   **Trait: Silver Tongue.** You have advantage on persuade or diplomacy checks when dealing with authority figures or high-society.
 *   **Heritage Skills:** Trained in Diplomacy and History.
 *   **Starting Equipment:** A heavy signet ring (worth 10sp), a fine but frayed cloak, or a letter of debt owed to your family.
 *   **Starting Currency:** 100 sp.
 
-#### Outcast
+**Noble Talents**
+
+| Tier | Talent | Cost | Description |
+| :--- | :--- | :--- | :--- |
+| T1 | **Spot the Lie** | Passive | Advantage on Insight vs deception in trade. |
+| T1 | **Distracting Coin** | 1 AP | Target within 5m has disadvantage on next roll. |
+| T1 | **Skald's Song** | 1 AP | Battle cry: allies within 5m gain +1 next damage roll. |
+| T1 | **Storyteller** | Passive | Advantage on CHA to inspire/persuade. |
+| T1 | **Witty Response** | Free | Advantage on skill check after witty retort. |
+| T1 | **Beauty** | Passive | Advantage on CHA vs attracted targets. |
+| T1 | **False Persona** | 1 AP | Assume a disguise; cannot use other talents. |
+| T1 | **Mounted Combat** | Passive | +5 Damage while mounted. |
+| T1 | **Sanctuary of Status**| Passive | Enemies must pass INS check to attack you first. |
+| T1 | **Gilded Words** | Passive | Successful persuade also charms target. |
+| T1 | **Master of Etiquette**| Passive | Never surprised in social situations. |
+| T2 | **Shadow Step** | 1 AP | Move 10m ignoring opportunity attacks. |
+| T2 | **Blade Dancer** | 1 AP | +2 Dmg and advantage on melee for 1 turn. |
+| T2 | **Veil of Illusion** | 1 AP | Invisibility for 1 round. |
+| T2 | **Disguise Mastery** | Passive | Disguise 50+ required. |
+| T2 | **Fake Attack** | 1 AP | Target avoids any more attacks this round. |
+| T2 | **Redirection** | Reaction | Give ally a reaction to avoid/block. |
+| T2 | **Sovereign Mandate** | 1 AP | Command a creature to "Halt", "Flee", etc. |
+| T2 | **Noble Aegis** | Passive | Allies in 5m: advantage vs fear/charm. |
+| T2 | **High Stakes Neg.** | Passive | Use CHA instead of AGI for initiative. |
+| T3 | **Dirge of Despair** | 1 AP | Enemies in 15m: -5 Attack for 3 turns. |
+| T3 | **Siren's Call** | 1 AP | Charm creature (CHA 60+). |
+| T3 | **Heirloom Relic** | Passive | Item with +5 bonus. |
+| T3 | **Right of Passage** | 1 AP | Allies move through enemy spaces freely. |
+| T4 | **Harbinger's Lament** | 1 AP | 15 Psychic Dmg + Stun to enemies in 20m. |
+| T4 | **Inspiring Presence** | Passive | Allies: advantage on first roll. |
+
+### Outcast
 
 ![Outcast Heritage](images/heritage_outcast.png)
 *While decent folk sleep behind locked doors, you learned to be invisible, eating scraps and sleeping with one eye open. Society rejected you, so you learned to survive without it.*
 
-*   **Identity Tag:** [Outcast]
 *   **Trait: Hardened Survivor.** You have learned to live on the fringes of society. You have advantage on Stealth and Survival checks when in urban environments or ruins.
 *   **Heritage Skills:** Trained in Occult Knowledge and Investigation.
 *   **Starting Equipment:** A rusted knife, a lucky charm made of bone, or a heavy hood.
 *   **Starting Currency:** 40 sp.
 
-#### Veteran
+**Outcast Talents**
+
+| Tier | Talent | Cost | Description |
+| :--- | :--- | :--- | :--- |
+| T1 | **Dodge** | Reaction | AGI check to avoid attack. |
+| T1 | **Hidden Pocket** | Passive | Concealed space for 3 small items. |
+| T1 | **Storyteller** | Passive | Advantage on CHA to inspire/persuade. |
+| T1 | **Witty Response** | Free | Advantage on skill check after witty retort. |
+| T1 | **Dirty Fighting** | Passive | Advantage vs surprised enemies. |
+| T1 | **Streetwise** | Passive | Advantage on LOG checks regarding crime. |
+| T1 | **Sneak Attack** | Passive | +5 damage vs unaware enemy. |
+| T1 | **Intimidation** | 1 AP | Force morale check or target has disadvantage. |
+| T1 | **False Persona** | 1 AP | Assume a disguise; cannot use other talents. |
+| T1 | **Information Network**| Free | Access to thieves' network for info. |
+| T1 | **Merciless** | Passive | Advantage on attacks vs injured enemies. |
+| T1 | **Spell Craft** | Passive | Cast spells using INS attribute. |
+| T2 | **Dual Wielding** | 1 AP | Attack with both weapons (one roll). |
+| T2 | **Shadow Step** | 1 AP | Move 10m ignoring opportunity attacks. |
+| T2 | **Blade Dancer** | 1 AP | +2 Dmg and advantage on melee for 1 turn. |
+| T2 | **Veil of Illusion** | 1 AP | Invisibility for 1 round. |
+| T2 | **Fence Contacts** | Free | Sell stolen goods. |
+| T2 | **Disguise Mastery** | Passive | Disguise 50+ required. |
+| T2 | **Exploit Opening** | Passive | Rearguard: +10 Dmg if target missed you/ally. |
+| T2 | **Fake Attack** | 1 AP | Target avoids any more attacks this round. |
+| T2 | **Shadow Shield** | Passive | Absorb 3 damage. |
+| T2 | **Trap Expertise** | 1 AP | Set traps (+2 Dmg). |
+| T3 | **Coup de Grace** | 1 AP | Double damage if target prone/stunned. |
+| T3 | **Mystic Shroud** | 1 AP | Invisibility for 3 turns (non-combat). |
+| T3 | **Flanking** | Passive | Advantage if ally on opposite side. |
+| T3 | **Canopy Cloak** | 1 AP | Invisibility in woods. |
+| T3 | **Teleport** | 1 AP | 20m teleport to shadow. |
+
+### Veteran
 
 ![Veteran Heritage](images/placeholder.png)
 *You have spent your years in the shield wall, or perhaps as a mercenary in lands where life is cheap. You know the weight of cold steel and the sound of a dying man's breath. Peace is just a pause between battles.*
 
-*   **Identity Tag:** [Veteran]
 *   **Trait: Combat Reflexes.** You gain +1 to your Reaction Pool for the first round of any encounter.
 *   **Heritage Skills:** Trained in Warfare and Athletics.
 *   **Starting Equipment:** A whetstone, a notch-filled dagger, or a tattered company banner.
 *   **Starting Currency:** 60 sp.
 
-#### Warden
+**Veteran Talents**
+
+| Tier | Talent | Cost | Description |
+| :--- | :--- | :--- | :--- |
+| T1 | **First Strike** | 1 AP | Make an attack. Rearguard: +5 damage. |
+| T1 | **Vanguard's Lead** | Free | Move 3m+ in vanguard: one ally gains 1 reaction. |
+| T1 | **The Charge** | 1 AP | Move Speed in line + attack. 3m+: +5 damage. |
+| T1 | **Parry** | Reaction | AGI check to parry melee. Reduce dmg by weapon + DoS. |
+| T1 | **Intimidation** | 1 AP | Force morale check or target has disadvantage. |
+| T1 | **Vigil** | Passive | +5 Perception when guarding. |
+| T1 | **Endurance Training** | Passive | Increase Max HP by 5. |
+| T1 | **Combat Awareness** | Passive | Advantage on perception (ambush). |
+| T1 | **Mounted Combat** | Passive | +5 Damage while mounted. |
+| T2 | **Battle Scarred** | Passive | Choose damage type; reduce by 50%. |
+| T2 | **Cleave** | Passive | On kill: free attack against nearby enemy. |
+| T2 | **Martyr's Shield** | Reaction | Take 50% of damage meant for ally. |
+| T2 | **Precision Strikes** | Passive | +5 Attack vs creatures. |
+| T2 | **Pack Tactics** | Passive | Advantage if ally within 2m of target. |
+| T2 | **Tactical Maneuvering**| Free | Move 10m free action. |
+| T2 | **Defensive Stance** | 1 AP | Reduce damage by 2. |
+| T2 | **Weapon Spec.** | Passive | +1 Dmg, +5 Hit with chosen weapon. |
+| T2 | **Guardian** | Reaction | Redirect attack from adjacent ally to self. |
+| T2 | **Redirection** | Reaction | Give ally a reaction to avoid/block. |
+| T3 | **Counter Attack** | Reaction | Halve dmg, immediately make melee attack. |
+| T3 | **Duelist** | Passive | +1 additional Reaction pool. |
+| T3 | **Flanking** | Passive | Advantage if ally on opposite side. |
+| T3 | **Alertness** | Passive | Cannot be surprised. |
+| T3 | **Master Tactician** | Free | Grant allies advantage (1/long rest). |
+| T3 | **Shield of the People**| 1 AP | Redirect all attacks against adjacent ally. |
+| T3 | **Heirloom Relic** | Passive | Item with +5 bonus. |
+| T3 | **Vanguard Reflexes** | Passive | Regain 1 reaction at start of each round. |
+| T4 | **Battle Plan** | Free | Party gets advantage on initiative. |
+| T4 | **Master of Defense** | Passive | Advantage on all active defense rolls. |
+| T4 | **Combat Transcend** | 1 AP | 3 rounds: advantage defense, free dodges. |
+| T4 | **Inspiring Presence** | Passive | Allies: advantage on first roll. |
+| T4 | **Guardian Aura** | Passive | Allies: +5 defense, resist fear. |
+| T4 | **Tactician's Insight** | Passive | Allies: +5 dmg vs enemy. |
+
+### Warden
 
 ![Warden Heritage](images/placeholder.png)
 *You are a guardian of the wild places, or perhaps a hunter who respects the balance of the forest. You know that nature is neither kind nor cruel—it is simply hungry. You walk where others fear to tread.*
 
-*   **Identity Tag:** [Warden]
 *   **Trait: Tracker's Eye.** You have advantage on Perception and Survival checks to track creatures or find water in the wilderness.
 *   **Heritage Skills:** Trained in Nature and Survival.
 *   **Starting Equipment:** A hunting trap, a small bag of dried meat, or a necklace of animal teeth.
 *   **Starting Currency:** 40 sp.
 
-#### Wanderer
+**Warden Talents**
+
+| Tier | Talent | Cost | Description |
+| :--- | :--- | :--- | :--- |
+| T1 | **Mountain Born** | Passive | Ignore difficult terrain in cold/rocky areas. |
+| T1 | **Scythe Sweep** | 1 AP | Polearm/Scythe: hit two adjacent targets (half damage). |
+| T1 | **Animal Husbandry** | Passive | Loyal farm animal assists in tracking/guarding. |
+| T1 | **Eyes of the Night** | Passive | Low-light vision, advantage on perception in dark. |
+| T1 | **Detect Illness** | 1 AP | Diagnose disease/curses. |
+| T1 | **Naturalistic Bolster**| 1 AP | Grant 5 Temp HP (1/long rest). |
+| T1 | **Sylvan Whisper** | 1 AP | Speak with animals/plants. |
+| T1 | **Bird-man** | Passive | Pet bird (Carry message, Hunt, Track). |
+| T1 | **Survival Instinct** | Passive | Advantage on survival. |
+| T1 | **Animal Handler** | Passive | Advantage on animal training checks. |
+| T1 | **Endurance Training** | Passive | Increase Max HP by 5. |
+| T1 | **Hunter's Mark** | 1 AP | Target is marked. You deal +2 damage to them. |
+| T2 | **Healing Leaf** | 1 AP | Create poultice (10 HP). |
+| T2 | **Guardian Resilience**| Passive | +5 Defense in home terrain. |
+| T2 | **Stone’s Fortitude** | Passive | Resistance to Blunt, +5 CON checks. |
+| T2 | **Peak Vision** | Passive | Advantage on perception in mountains. |
+| T2 | **Ocean’s Blessing** | Passive | Resistance Cold, Water breathing. |
+| T2 | **Tide Caller** | 1 AP | Slow enemies (Half Speed). |
+| T2 | **Entangling Vines** | 1 AP | Immobilize foes (STR check). |
+| T2 | **Precision Strikes** | Passive | +5 Attack vs creatures. |
+| T2 | **Trap Expertise** | 1 AP | Set traps (+2 Dmg). |
+| T2 | **Uncanny Defense** | Reaction | Halve damage. |
+| T2 | **Slayer's Fury** | Free | Advantage and +10 damage (1/long rest). |
+| T2 | **Apex Predator** | Passive | Sense supernatural. |
+| T2 | **Pack Tactics** | Passive | Advantage if ally within 2m of target. |
+| T3 | **Spirit Walker** | 1 AP | Commune with spirits. |
+| T3 | **Storm Watcher** | Passive | Detect storms, survival advantage. |
+| T3 | **Canopy Cloak** | 1 AP | Invisibility in woods. |
+| T3 | **Spiritual Shackles** | 1 AP | Immobilize + 5 Dmg. |
+| T3 | **Toughened Resolve** | Passive | Resistance Psychic. |
+| T3 | **Slayer's Mark** | 1 AP | Marked target: allies deal +5 damage. |
+| T3 | **Alertness** | Passive | Cannot be surprised. |
+| T3 | **Master Tactician** | Free | Grant allies advantage (1/long rest). |
+| T3 | **Imp. Tough. Resolve**| Passive | Immunity Psychic. |
+| T3 | **Familiar** | Passive | Spiritual familiar scouts and delivers spells. |
+
+### Wanderer
 
 ![Wanderer Heritage](images/placeholder.png)
 *You are a drifter, an exile, or perhaps someone touched by a curse that keeps you moving. You have seen things that would break a lesser mind, and you carry the weight of your past like a heavy cloak.*
 
-*   **Identity Tag:** [Wanderer]
 *   **Trait: Cursed Insight.** Once per day, you may ask the GM one question about a person or place. The GM will provide a cryptic but truthful answer.
 *   **Heritage Skills:** Trained in Occult Knowledge and Investigation.
 *   **Starting Equipment:** A hooded lantern, a book of strange drawings, or a piece of leaden jewelry.
 *   **Starting Currency:** 30 sp.
+
+**Wanderer Talents**
+
+| Tier | Talent | Cost | Description |
+| :--- | :--- | :--- | :--- |
+| T1 | **Eyes of the Night** | Passive | Low-light vision, advantage on perception in dark. |
+| T1 | **Rites** | 1 AP | Remove minor curses/contamination. |
+| T1 | **Whispered Secrets** | Passive | Advantage on occult/magic ID. |
+| T1 | **Sylvan Whisper** | 1 AP | Speak with animals/plants. |
+| T1 | **Hopeless Resilience**| Passive | Resistance psychic, advantage vs curses. |
+| T1 | **Ghostly Presence** | 1 AP | Phase through objects (1 turn). |
+| T1 | **Eldritch Sight** | Passive | See magic auras. |
+| T1 | **Spell Craft** | Passive | Cast spells using INS attribute. |
+| T2 | **Blind Fighting** | Passive | Ignore penalties for darkness/invisibility. |
+| T2 | **Hex Craft Novice** | 1 AP | Weave curses/blessings. |
+| T2 | **Cursed Aura** | Passive | Enemies -5 Attack/Saves. |
+| T2 | **Shadow Shield** | Passive | Absorb 3 damage. |
+| T2 | **Apex Predator** | Passive | Sense supernatural. |
+| T2 | **Rituals** | Action | Perform powerful, utility-focused rituals. |
+| T2 | **Coven Bond** | Passive | +2 Spell Rolls near witches. |
+| T3 | **Dirge of Despair** | 1 AP | Enemies in 15m: -5 Attack for 3 turns. |
+| T3 | **Siren's Call** | 1 AP | Charm creature (CHA 60+). |
+| T3 | **Mystic Shroud** | 1 AP | Invisibility for 3 turns (non-combat). |
+| T3 | **Bane of Fate** | 1 AP | 5 Dmg AOE + -5 Penalty. |
+| T3 | **Fortune's Reversal** | Reaction | Enemy misses or backfires. |
+| T3 | **Teleport** | 1 AP | 20m teleport to shadow. |
+| T3 | **Spiritual Shackles** | 1 AP | Immobilize + 5 Dmg. |
+| T3 | **Abyssal Reckoning** | Passive | <10 HP: Resistance All, +5 Defense. |
+| T3 | **Master of Misfortune**| Passive | Double curse penalties. |
+| T3 | **Familiar** | Passive | Spiritual familiar scouts and delivers spells. |
+| T3 | **Spell Ward** | Passive | Advantage to resist/cleanse spells. |
+| T3 | **Abyssal Affinity** | Free | Spend 2 IP for Double Damage spell. |
+| T3 | **Shape Shift** | 1 AP | Werewolf form (+10 STR, Claw 7dmg). |
+| T4 | **Harbinger's Lament** | 1 AP | 15 Psychic Dmg + Stun to enemies in 20m. |
+| T4 | **Fate's Embrace** | Passive | Invincible 3 turns. |
+| T4 | **Cursed Rebirth** | Passive | Revive with 15 HP (1/long rest). |
 
 ### Course of Life
 
@@ -436,196 +706,64 @@ To ensure a broad base of abilities, you must follow the Talent Pyramid. You can
 *   Tier 3: Cost 15 XP.
 *   Tier 4: Cost 20 XP.
 
-> **The Rule of More**: At any time, you must have more talents in a given tier than you have in the tier directly above it. (Common Talents).
+> **The Rule of More**: At any time, you must have more talents in a given tier than you have in the tier directly above it.
 > *   Example: To take your first Tier 2 talent, you must have at least two Tier 1 talents. To take a second Tier 2 talent, you must have at least three Tier 1 talents.
 >
-> **Tag Path Rule**: To take a Talent of Tier 2 or higher with a specific Identity Tag, you must already possess at least one talent with that same Tag in the tier directly below it. (e.g., to take a T2 [Warden] talent, you must have at least one T1 [Warden] talent).
+> **Tag Path Rule**: To take a Talent of Tier 2 or higher with a specific heritage, you must already possess at least one talent with that same in the tier directly below it. (e.g., to take a T2 [Warden] talent, you must have at least one T1 [Warden] talent).
 
-### Talent Tables
+### Talent Index
+Talents are grouped by their associated heritage. Follow the links below to find the talents for your character:
 
-All talents in Eda are categorized by **Identity Tags**. 
+*   **General Talents** (Available to all)
+*   [Clansman Talents](#clansman)
+*   [Zealot Talents](#zealot)
+*   [Commoner Talents](#commoner)
+*   [Artisan Talents](#artisan)
+*   [Merchant Talents](#merchant)
+*   [Noble Talents](#noble)
+*   [Outcast Talents](#outcast)
+*   [Veteran Talents](#veteran)
+*   [Warden Talents](#warden)
+*   [Wanderer Talents](#wanderer)
 
-#### Tier 1 Talents (Cost: 5 XP)
-*You can choose any Tier 1 talent at character creation if it matches your Heritage's Tag. After creation, you can buy any Tier 1 talent.*
+### General Talents
+General talents are available to any character, regardless of their Heritage.
 
-| Name | Tags | Cost | Description |
+| Tier | Talent | Cost | Description |
 | :--- | :--- | :--- | :--- |
-| **Focus** | [Common] | 1 AP | Your next attack this turn has advantage. |
-| **Overdrive** | [Common] | 1 AP | Your next attack this turn adds degree of success to damage. |
-| **Berserk** | [Common], [Clansman] | 1 AP | Enter frenzy (advantage on attacks, no reactions). |
-| **First Strike** | [Common], [Veteran] | 1 AP | Make an attack. Rearguard: +5 damage. |
-| **Vanguard's Lead** | [Common], [Veteran] | Free | Move 3m+ in vanguard: one ally gains 1 reaction. |
-| **Desperate Attack** | [Common] | 1 AP | Move 5m with attack action. |
-| **The Charge** | [Common], [Veteran] | 1 AP | Move Speed in line + attack. 3m+: +5 damage. |
-| **Smart Fighting** | [Common], [Artisan] | Passive | In cover: advantage on active defense. |
-| **Dodge** | [Common], [Outcast] | Reaction | AGI check to avoid attack. |
-| **Expert** | [Common], [Artisan] | Free | Advantage on one skill check/day. |
-| **Parry** | [Common], [Veteran] | Reaction | AGI check to parry melee. Reduce dmg by weapon + DoS. |
-| **Bounce Back** | [Common], [Commoner] | Free | Advantage on check to avoid prone. |
-| **Master Crafter** | [Artisan] | Passive | Advantage on all Crafting checks. |
-| **Structural Weakness**| [Artisan] | Passive | Identify flaws; advantage on dmg vs objects/armor. |
-| **Field Repairs** | [Artisan] | Free | Repair one item during a short rest. |
-| **Gadgeteer** | [Artisan] | Free | Once/day: create gadget for advantage on one task. |
-| **Heavy Hitter** | [Artisan], [Clansman] | Passive | Use Logic instead of STR for attack with tools (hammers/axes). |
-| **Master of Barter** | [Merchant] | Passive | Advantage on all Barter checks. |
-| **Spot the Lie** | [Merchant], [Noble] | Passive | Advantage on Insight vs deception in trade. |
-| **Hidden Pocket** | [Merchant], [Outcast] | Passive | Concealed space for 3 small items. |
-| **Network of Contacts**| [Merchant] | Free | Find contact in settlement for info or discount. |
-| **Distracting Coin** | [Merchant], [Noble] | 1 AP | Target within 5m has disadvantage on next roll. |
-| **Tribal Ferocity** | [Clansman] | Passive | Advantage on melee attacks if you have taken damage. |
-| **Mountain Born** | [Clansman], [Warden] | Passive | Ignore difficult terrain in cold/rocky areas. |
-| **Blood Debt** | [Clansman] | Free | Ally downed: gain advantage on attacks rest of encounter. |
-| **North-Burn Breath** | [Clansman] | Free | Drink spirits for 5 Temp HP. |
-| **Skald's Song** | [Clansman], [Noble] | 1 AP | Battle cry: allies within 5m gain +1 next damage roll. |
-| **Scythe Sweep** | [Commoner], [Warden] | 1 AP | Polearm/Scythe: hit two adjacent targets (half damage). |
-| **Animal Husbandry** | [Commoner], [Warden] | Passive | Loyal farm animal assists in tracking/guarding. |
-| **Weather Wise** | [Commoner] | Free | Predict weather for 24h with 100% accuracy. |
-| **Seasoned Toil** | [Commoner] | Passive | +5 to Constitution checks. |
-| **Improvised Defense**| [Commoner] | Passive | Use pitchfork/shovel as shield (+5 Defense). |
-| **Storyteller** | [Noble], [Outcast] | Passive | Advantage on CHA to inspire/persuade. |
-| **Witty Response** | [Noble], [Outcast] | Free | Advantage on skill check after witty retort. |
-| **Beauty** | [Noble], [Merchant] | Passive | Advantage on CHA vs attracted targets. |
-| **Eyes of the Night** | [Warden], [Wanderer] | Passive | Low-light vision, advantage on perception in dark. |
-| **Dirty Fighting** | [Outcast] | Passive | Advantage vs surprised enemies. |
-| **Streetwise** | [Outcast], [Merchant]| Passive | Advantage on LOG checks regarding crime. |
-| **Sneak Attack** | [Outcast] | Passive | +5 damage vs unaware enemy. |
-| **Intimidation** | [Outcast], [Veteran]| 1 AP | Force morale check or target has disadvantage. |
-| **False Persona** | [Outcast], [Noble] | 1 AP | Assume a disguise; cannot use other talents. |
-| **Information Network**| [Outcast], [Merchant]| Free | Access to thieves' network for info. |
-| **Merciless** | [Outcast], [Clansman]| Passive | Advantage on attacks vs injured enemies. |
-| **Vigil** | [Zealot], [Veteran] | Passive | +5 Perception when guarding. |
-| **Rites** | [Zealot], [Wanderer] | 1 AP | Remove minor curses/contamination. |
-| **Whispered Secrets** | [Zealot], [Wanderer] | Passive | Advantage on occult/magic ID. |
-| **Detect Illness** | [Warden], [Zealot] | 1 AP | Diagnose disease/curses. |
-| **Naturalistic Bolster**| [Warden] | 1 AP | Grant 5 Temp HP (1/long rest). |
-| **Sylvan Whisper** | [Warden], [Wanderer] | 1 AP | Speak with animals/plants. |
-| **Bird-man** | [Warden] | Passive | Pet bird (Carry message, Hunt, Track). |
-| **Hopeless Resilience**| [Wanderer] | Passive | Resistance psychic, advantage vs curses. |
-| **Ghostly Presence** | [Wanderer] | 1 AP | Phase through objects (1 turn). |
-| **Survival Instinct** | [Warden], [Clansman] | Passive | Advantage on survival. |
-| **Animal Handler** | [Warden], [Commoner] | Passive | Advantage on animal training checks. |
-| **Endurance Training** | [Warden], [Veteran] | Passive | Increase Max HP by 5. |
-| **Hunter's Mark** | [Warden] | 1 AP | Target is marked. You deal +2 damage to them. |
-| **Combat Awareness** | [Veteran], [Clansman] | Passive | Advantage on perception (ambush). |
-| **Mounted Combat** | [Veteran], [Noble] | Passive | +5 Damage while mounted. |
-| **Eldritch Sight** | [Wanderer], [Zealot] | Passive | See magic auras. |
-| **Spell Craft** | [Wanderer], [Outcast]| Passive | Cast spells using INS attribute. |
-| **Sanctuary of Status**| [Noble] | Passive | Enemies must pass INS check to attack you first. |
-| **Gilded Words** | [Noble], [Merchant] | Passive | Successful persuade also charms target. |
-| **Master of Etiquette**| [Noble] | Passive | Never surprised in social situations. |
-
-#### Tier 2 Talents (Cost: 10 XP)
-*To take a Tier 2 talent, you must have at least one Tier 1 talent with the same Tag.*
-
-| Name | Tags | Cost | Description |
-| :--- | :--- | :--- | :--- |
-| **Relentless Pursuit** | [Common] | 1 AP | Move 10m and attack as single action. |
-| **Battle Scarred** | [Common], [Veteran] | Passive | Choose damage type; reduce by 50%. |
-| **Harrying Strike** | [Common] | 1 AP | Target has disadvantage on next defense. |
-| **Bloodied Fury** | [Common], [Clansman] | Passive | HP < 50%: all attacks deal +5 damage. |
-| **Empower** | [Common], [Zealot] | 1 AP | Spend 1 IP for +10 damage. |
-| **Jack of all Trades** | [Common] | Passive | Lowest skills set to second-lowest value. |
-| **Cleave** | [Common], [Veteran] | Passive | On kill: free attack against nearby enemy. |
-| **Dual Wielding** | [Common], [Outcast] | 1 AP | Attack with both weapons (one roll). |
-| **Blind Fighting** | [Common], [Wanderer] | Passive | Ignore penalties for darkness/invisibility. |
-| **Shadow Step** | [Noble], [Outcast] | 1 AP | Move 10m ignoring opportunity attacks. |
-| **Hex Craft Novice** | [Wanderer], [Zealot] | 1 AP | Weave curses/blessings. |
-| **Blade Dancer** | [Noble], [Outcast] | 1 AP | +2 Dmg and advantage on melee for 1 turn. |
-| **Veil of Illusion** | [Noble], [Outcast] | 1 AP | Invisibility for 1 round. |
-| **Fence Contacts** | [Outcast], [Merchant]| Free | Sell stolen goods. |
-| **Disguise Mastery** | [Outcast], [Noble] | Passive | Disguise 50+ required. |
-| **Exploit Opening** | [Outcast] | Passive | Rearguard: +10 Dmg if target missed you/ally. |
-| **Fake Attack** | [Outcast], [Noble] | 1 AP | Target avoids any more attacks this round. |
-| **Healing Touch** | [Zealot] | 1 AP | Restore 10 HP to ally (1/day). |
-| **Holy Aura** | [Zealot] | Passive | Allies in 10m: +1 defense, advantage defense. |
-| **Blood Offering** | [Zealot], [Clansman]| Free | Sacrifice 5 HP for +10 Damage. |
-| **Holy Weapon** | [Zealot] | 1 AP | Coated in "holy" poison (+2 damage). |
-| **Caregiver** | [Zealot], [Commoner]| Passive | +20 on Aid rolls. |
-| **Martyr's Shield** | [Zealot], [Veteran] | Reaction | Take 50% of damage meant for ally. |
-| **Healing Leaf** | [Warden], [Commoner]| 1 AP | Create poultice (10 HP). |
-| **Guardian Resilience**| [Warden] | Passive | +5 Defense in home terrain. |
-| **Stone’s Fortitude** | [Warden], [Commoner]| Passive | Resistance to Blunt, +5 CON checks. |
-| **Peak Vision** | [Warden], [Clansman] | Passive | Advantage on perception in mountains. |
-| **Ocean’s Blessing** | [Warden] | Passive | Resistance Cold, Water breathing. |
-| **Tide Caller** | [Warden] | 1 AP | Slow enemies (Half Speed). |
-| **Entangling Vines** | [Warden] | 1 AP | Immobilize foes (STR check). |
-| **Cursed Aura** | [Wanderer] | Passive | Enemies -5 Attack/Saves. |
-| **Shadow Shield** | [Wanderer], [Outcast]| Passive | Absorb 3 damage. |
-| **Precision Strikes** | [Warden], [Veteran] | Passive | +5 Attack vs creatures. |
-| **Trap Expertise** | [Warden], [Outcast] | 1 AP | Set traps (+2 Dmg). |
-| **Uncanny Defense** | [Warden], [Common] | Reaction | Halve damage. |
-| **Slayer's Fury** | [Warden], [Clansman] | Free | Advantage and +10 damage (1/long rest). |
-| **Apex Predator** | [Warden], [Wanderer] | Passive | Sense supernatural. |
-| **Pack Tactics** | [Warden], [Veteran] | Passive | Advantage if ally within 2m of target. |
-| **Tactical Maneuvering**| [Veteran] | Free | Move 10m free action. |
-| **Defensive Stance** | [Veteran], [Clansman]| 1 AP | Reduce damage by 2. |
-| **Weapon Spec.** | [Veteran] | Passive | +1 Dmg, +5 Hit with chosen weapon. |
-| **Guardian** | [Veteran] | Reaction | Redirect attack from adjacent ally to self. |
-| **Redirection** | [Veteran], [Noble] | Reaction | Give ally a reaction to avoid/block. |
-| **Rituals** | [Wanderer], [Zealot] | Action | Perform powerful, utility-focused rituals. |
-| **Coven Bond** | [Wanderer], [Zealot] | Passive | +2 Spell Rolls near witches. |
-| **Sovereign Mandate** | [Noble] | 1 AP | Command a creature to "Halt", "Flee", etc. |
-| **Noble Aegis** | [Noble], [Zealot] | Passive | Allies in 5m: advantage vs fear/charm. |
-| **High Stakes Neg.** | [Noble], [Merchant] | Passive | Use CHA instead of AGI for initiative. |
-
-#### Tier 3 Talents (Cost: 15 XP)
-*To take a Tier 3 talent, you must have at least one Tier 2 talent with the same Tag.*
-
-| Name | Tags | Cost | Description |
-| :--- | :--- | :--- | :--- |
-| **Counter Attack** | [Common], [Veteran] | Reaction | Halve dmg, immediately make melee attack. |
-| **Duelist** | [Common], [Veteran] | Passive | +1 additional Reaction pool. |
-| **Iron Will** | [Common], [Zealot] | Free | Take dmg: gain pt for bonus or reaction. |
-| **Coup de Grace** | [Common], [Outcast] | 1 AP | Double damage if target prone/stunned. |
-| **Tempo** | [Common] | Free | Advantage on initiative checks. |
-| **Durable** | [Common], [Commoner] | Passive | +5 Natural Defense. |
-| **Unyielding Spirit** | [Common], [Zealot] | Free | Fall to 0 HP: stay at 1 HP + 10 Temp HP. |
-| **Dirge of Despair** | [Noble], [Wanderer] | 1 AP | Enemies in 15m: -5 Attack for 3 turns. |
-| **Siren's Call** | [Noble], [Wanderer] | 1 AP | Charm creature (CHA 60+). |
-| **Mystic Shroud** | [Outcast], [Wanderer]| 1 AP | Invisibility for 3 turns (non-combat). |
-| **Flanking** | [Outcast], [Veteran] | Passive | Advantage if ally on opposite side. |
-| **Strength in Grief** | [Zealot] | 1 AP | Advantage on attack and defense for 1 turn. |
-| **Dark Channel** | [Zealot] | 1 AP | Aura +5 dmg/advantage, take 10 dmg/turn. |
-| **Spirit Walker** | [Warden], [Zealot] | 1 AP | Commune with spirits. |
-| **Avalanche Strike** | [Warden], [Clansman] | 1 AP | 10m cone, knock prone. |
-| **Storm Watcher** | [Warden], [Commoner]| Passive | Detect storms, survival advantage. |
-| **Canopy Cloak** | [Warden], [Outcast] | 1 AP | Invisibility in woods. |
-| **Bane of Fate** | [Wanderer] | 1 AP | 5 Dmg AOE + -5 Penalty. |
-| **Fortune's Reversal** | [Wanderer] | Reaction | Enemy misses or backfires. |
-| **Teleport** | [Wanderer], [Outcast]| 1 AP | 20m teleport to shadow. |
-| **Spiritual Shackles** | [Wanderer], [Warden] | 1 AP | Immobilize + 5 Dmg. |
-| **Abyssal Reckoning** | [Wanderer], [Zealot] | Passive | <10 HP: Resistance All, +5 Defense. |
-| **Master of Misfortune**| [Wanderer] | Passive | Double curse penalties. |
-| **Toughened Resolve** | [Warden], [Zealot] | Passive | Resistance Psychic. |
-| **Slayer's Mark** | [Warden] | 1 AP | Marked target: allies deal +5 damage. |
-| **Alertness** | [Warden], [Veteran] | Passive | Cannot be surprised. |
-| **Master Tactician** | [Warden], [Veteran] | Free | Grant allies advantage (1/long rest). |
-| **Imp. Tough. Resolve**| [Warden], [Zealot] | Passive | Immunity Psychic. |
-| **Shield of the People**| [Veteran] | 1 AP | Redirect all attacks against adjacent ally. |
-| **Heirloom Relic** | [Veteran], [Noble] | Passive | Item with +5 bonus. |
-| **Vanguard Reflexes** | [Veteran] | Passive | Regain 1 reaction at start of each round. |
-| **Familiar** | [Wanderer], [Warden] | Passive | Spiritual familiar scouts and delivers spells. |
-| **Spell Ward** | [Wanderer], [Zealot] | Passive | Advantage to resist/cleanse spells. |
-| **Abyssal Affinity** | [Wanderer] | Free | Spend 2 IP for Double Damage spell. |
-| **Shape Shift** | [Wanderer], [Clansman]| 1 AP | Werewolf form (+10 STR, Claw 7dmg). |
-| **Right of Passage** | [Noble], [Merchant] | 1 AP | Allies move through enemy spaces freely. |
-
-#### Tier 4 Talents (Cost: 20 XP)
-*To take a Tier 4 talent, you must have at least one Tier 3 talent with the same Tag.*
-
-| Name | Tags | Cost | Description |
-| :--- | :--- | :--- | :--- |
-| **Battle Plan** | [Common], [Veteran] | Free | Party gets advantage on initiative. |
-| **Master of Defense** | [Common], [Veteran] | Passive | Advantage on all active defense rolls. |
-| **Steel Resolve** | [Common], [Commoner] | Passive | Gain +2 Defense against physical. |
-| **Combat Transcend** | [Common], [Veteran] | 1 AP | 3 rounds: advantage defense, free dodges. |
-| **Harbinger's Lament** | [Noble], [Wanderer] | 1 AP | 15 Psychic Dmg + Stun to enemies in 20m. |
-| **Death Awakens** | [Zealot] | 1 AP | Revive ally with 15 HP (1/day). |
-| **Fate's Embrace** | [Wanderer] | Passive | Invincible 3 turns. |
-| **Cursed Rebirth** | [Wanderer] | Passive | Revive with 15 HP (1/long rest). |
-| **Inspiring Presence** | [Veteran], [Noble] | Passive | Allies: advantage on first roll. |
-| **Guardian Aura** | [Veteran], [Zealot] | Passive | Allies: +5 defense, resist fear. |
-| **Tactician's Insight** | [Veteran] | Passive | Allies: +5 dmg vs enemy. |
+| T1 | **Focus** | 1 AP | Your next attack this turn has advantage. |
+| T1 | **Overdrive** | 1 AP | Your next attack this turn adds degree of success to damage. |
+| T1 | **Berserk** | 1 AP | Enter frenzy (advantage on attacks, no reactions). |
+| T1 | **First Strike** | 1 AP | Make an attack. Rearguard: +5 damage. |
+| T1 | **Vanguard's Lead** | Free | Move 3m+ in vanguard: one ally gains 1 reaction. |
+| T1 | **Desperate Attack** | 1 AP | Move 5m with attack action. |
+| T1 | **The Charge** | 1 AP | Move Speed in line + attack. 3m+: +5 damage. |
+| T1 | **Smart Fighting** | Passive | In cover: advantage on active defense. |
+| T1 | **Dodge** | Reaction | AGI check to avoid attack. |
+| T1 | **Expert** | Free | Advantage on one skill check/day. |
+| T1 | **Parry** | Reaction | AGI check to parry melee. Reduce dmg by weapon + DoS. |
+| T1 | **Bounce Back** | Free | Advantage on check to avoid prone. |
+| T2 | **Relentless Pursuit** | 1 AP | Move 10m and attack as single action. |
+| T2 | **Battle Scarred** | Passive | Choose damage type; reduce by 50%. |
+| T2 | **Harrying Strike** | 1 AP | Target has disadvantage on next defense. |
+| T2 | **Bloodied Fury** | Passive | HP < 50%: all attacks deal +5 damage. |
+| T2 | **Empower** | 1 AP | Spend 1 IP for +10 damage. |
+| T2 | **Jack of all Trades** | Passive | Lowest skills set to second-lowest value. |
+| T2 | **Cleave** | Passive | On kill: free attack against nearby enemy. |
+| T2 | **Dual Wielding** | 1 AP | Attack with both weapons (one roll). |
+| T2 | **Blind Fighting** | Passive | Ignore penalties for darkness/invisibility. |
+| T2 | **Uncanny Defense** | Reaction | Halve damage. |
+| T3 | **Counter Attack** | Reaction | Halve dmg, immediately make melee attack. |
+| T3 | **Duelist** | Passive | +1 additional Reaction pool. |
+| T3 | **Iron Will** | Free | Take dmg: gain pt for bonus or reaction. |
+| T3 | **Coup de Grace** | 1 AP | Double damage if target prone/stunned. |
+| T3 | **Tempo** | Free | Advantage on initiative checks. |
+| T3 | **Durable** | Passive | +5 Natural Defense. |
+| T3 | **Unyielding Spirit** | Free | Fall to 0 HP: stay at 1 HP + 10 Temp HP. |
+| T4 | **Battle Plan** | Free | Party gets advantage on initiative. |
+| T4 | **Master of Defense** | Passive | Advantage on all active defense rolls. |
+| T4 | **Steel Resolve** | Passive | Gain +2 Defense against physical. |
+| T4 | **Combat Transcend** | 1 AP | 3 rounds: advantage defense, free dodges. |
 
 ## Encounters
 

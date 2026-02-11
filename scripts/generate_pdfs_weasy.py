@@ -1,6 +1,7 @@
 import subprocess
 import os
 import shutil
+import sys
 
 def convert_md_to_pdf(input_file, output_file, css_file=None, title=None):
     """
@@ -38,31 +39,15 @@ def convert_md_to_pdf(input_file, output_file, css_file=None, title=None):
             subprocess.run(pandoc_args, check=True)
 
         # Now use weasyprint to convert the HTML to PDF
-        weasyprint_path = shutil.which('weasyprint')
-        if not weasyprint_path:
-            # Fallback if not in PATH (common in some environments)
-            potential_paths = [
-                '/usr/local/bin/weasyprint',
-                '/opt/homebrew/bin/weasyprint',
-                os.path.expanduser('~/.local/bin/weasyprint')
-            ]
-            for p in potential_paths:
-                if os.path.exists(p):
-                    weasyprint_path = p
-                    break
+        # Use sys.executable to ensure we use the same python interpreter
+        print(f"  Running WeasyPrint on {html_file}...")
+        subprocess.run([
+            sys.executable, '-m', 'weasyprint',
+            html_file,
+            output_file
+        ], check=True)
 
-        if weasyprint_path:
-            print(f"  Running WeasyPrint on {html_file}...")
-            # WeasyPrint command line: weasyprint input.html output.pdf
-            subprocess.run([
-                weasyprint_path,
-                html_file,
-                output_file
-            ], check=True)
-
-            print(f"Successfully created {output_file}")
-        else:
-            print("Error: weasyprint not found. Please install it with 'pip install weasyprint'.")
+        print(f"Successfully created {output_file}")
 
         # Cleanup intermediate HTML (only if it was generated from .md)
         if not is_html and os.path.exists(html_file):
