@@ -404,7 +404,7 @@
                     <div class="section-header">Talents & Abilities</div>
                     <div style="margin-bottom: 10px; background: var(--bg-light); padding: 5px; border: 1px solid #eee;">
                         <span class="label">Heritage Traits</span>
-                        <div class="input-field" data-field="heritage_traits"></div>
+                        <input type="text" name="heritage_traits" class="input-field"  />
                     </div>
                     
                     <table>
@@ -414,14 +414,14 @@
                             <th width="55%">Effect</th>
                         </tr>
                         <!-- 10 rows of talents -->
-                        <!-- Row 1 --> <tr> <td><div class="input-field" data-field="talent_tier_1"></div></td> <td><div class="input-field" data-field="talent_name_1"></div></td> <td><div class="input-field" data-field="talent_effect_1"></div></td> </tr>
-                        <!-- Row 2 --> <tr> <td><div class="input-field" data-field="talent_tier_2"></div></td> <td><div class="input-field" data-field="talent_name_2"></div></td> <td><div class="input-field" data-field="talent_effect_2"></div></td> </tr>
-                        <!-- Row 3 --> <tr> <td><div class="input-field" data-field="talent_tier_3"></div></td> <td><div class="input-field" data-field="talent_name_3"></div></td> <td><div class="input-field" data-field="talent_effect_3"></div></td> </tr>
-                        <!-- Row 4 --> <tr> <td><div class="input-field" data-field="talent_tier_4"></div></td> <td><div class="input-field" data-field="talent_name_4"></div></td> <td><div class="input-field" data-field="talent_effect_4"></div></td> </tr>
-                        <!-- Row 5 --> <tr> <td><div class="input-field" data-field="talent_tier_5"></div></td> <td><div class="input-field" data-field="talent_name_5"></div></td> <td><div class="input-field" data-field="talent_effect_5"></div></td> </tr>
-                        <!-- Row 6 --> <tr> <td><div class="input-field" data-field="talent_tier_6"></div></td> <td><div class="input-field" data-field="talent_name_6"></div></td> <td><div class="input-field" data-field="talent_effect_6"></div></td> </tr>
-                        <!-- Row 7 --> <tr> <td><div class="input-field" data-field="talent_tier_7"></div></td> <td><div class="input-field" data-field="talent_name_7"></div></td> <td><div class="input-field" data-field="talent_effect_7"></div></td> </tr>
-                        <!-- Row 8 --> <tr> <td><div class="input-field" data-field="talent_tier_8"></div></td> <td><div class="input-field" data-field="talent_name_8"></div></td> <td><div class="input-field" data-field="talent_effect_8"></div></td> </tr>
+                        <!-- Row 1 --> <tr> <td><input type="text" name="talent_tier_1" class="input-field"  /></td> <td><input type="text" name="talent_name_1" class="input-field"  /></td> <td><input type="text" name="talent_effect_1" class="input-field"  /></td> </tr>
+                        <!-- Row 2 --> <tr> <td><input type="text" name="talent_tier_2" class="input-field"  /></td> <td><input type="text" name="talent_name_2" class="input-field"  /></td> <td><input type="text" name="talent_effect_2" class="input-field"  /></td> </tr>
+                        <!-- Row 3 --> <tr> <td><input type="text" name="talent_tier_3" class="input-field"  /></td> <td><input type="text" name="talent_name_3" class="input-field"  /></td> <td><input type="text" name="talent_effect_3" class="input-field"  /></td> </tr>
+                        <!-- Row 4 --> <tr> <td><input type="text" name="talent_tier_4" class="input-field"  /></td> <td><input type="text" name="talent_name_4" class="input-field"  /></td> <td><input type="text" name="talent_effect_4" class="input-field"  /></td> </tr>
+                        <!-- Row 5 --> <tr> <td><input type="text" name="talent_tier_5" class="input-field"  /></td> <td><input type="text" name="talent_name_5" class="input-field"  /></td> <td><input type="text" name="talent_effect_5" class="input-field"  /></td> </tr>
+                        <!-- Row 6 --> <tr> <td><input type="text" name="talent_tier_6" class="input-field"  /></td> <td><input type="text" name="talent_name_6" class="input-field"  /></td> <td><input type="text" name="talent_effect_6" class="input-field"  /></td> </tr>
+                        <!-- Row 7 --> <tr> <td><input type="text" name="talent_tier_7" class="input-field"  /></td> <td><input type="text" name="talent_name_7" class="input-field"  /></td> <td><input type="text" name="talent_effect_7" class="input-field"  /></td> </tr>
+                        <!-- Row 8 --> <tr> <td><input type="text" name="talent_tier_8" class="input-field"  /></td> <td><input type="text" name="talent_name_8" class="input-field"  /></td> <td><input type="text" name="talent_effect_8" class="input-field"  /></td> </tr>
                     </table>
                 </div>
             </div>
@@ -435,13 +435,13 @@
                         <div class="stat-card">
                             <span class="label">Health Points (HP)</span>
                             <div class="split-val">
-                                <div class="input-field" data-field="hp_cur"></div> / <div class="input-field" data-field="hp_max"></div>
+                                <input type="text" name="hp_cur" class="input-field"  /> / <input type="text" name="hp_max" class="input-field"  />
                             </div>
                         </div>
                         <div class="stat-card">
                             <span class="label">Instinct Points (IP)</span>
                             <div class="split-val">
-                                <div class="input-field" data-field="ip_cur"></div> / <div class="input-field" data-field="ip_max"></div>
+                                <input type="text" name="ip_cur" class="input-field"  /> / <input type="text" name="ip_max" class="input-field"  />
                             </div>
                         </div>
                     </div>
@@ -449,19 +449,19 @@
                     <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 5px; margin-top: 10px;">
                         <div class="stat-card">
                             <span class="label">Speed</span>
-                            <div class="box-input" data-field="speed" style="height: 30px; border: none; border-bottom: 2px solid var(--primary); width: 35px; margin: 0 auto;"></div>
+                            <input type="text" name="speed" class="box-input"  style="height: 30px; border: none; border-bottom: 2px solid var(--primary); width: 35px; margin: 0 auto;" />
                         </div>
                         <div class="stat-card">
                             <span class="label">Defense</span>
-                            <div class="box-input" data-field="defense" style="height: 30px; border: none; border-bottom: 2px solid var(--primary); width: 35px; margin: 0 auto;"></div>
+                            <input type="text" name="defense" class="box-input"  style="height: 30px; border: none; border-bottom: 2px solid var(--primary); width: 35px; margin: 0 auto;" />
                         </div>
                         <div class="stat-card" style="background: #fff0f0; border-color: #8b0000;">
                             <span class="label" style="color: #8b0000; font-size: 6pt;">Bloody Def.</span>
-                            <div class="box-input" data-field="defense_bloody" style="height: 30px; border: none; border-bottom: 2px solid #8b0000; width: 35px; margin: 0 auto; color: #8b0000;"></div>
+                            <input type="text" name="defense_bloody" class="box-input"  style="height: 30px; border: none; border-bottom: 2px solid #8b0000; width: 35px; margin: 0 auto; color: #8b0000;" />
                         </div>
                          <div class="stat-card">
                              <span class="label">Reactions</span>
-                             <div class="box-input" data-field="reaction_pool" style="height: 30px; border: none; border-bottom: 2px solid var(--primary); width: 35px; margin: 0 auto;"></div>
+                             <input type="text" name="reaction_pool" class="box-input"  style="height: 30px; border: none; border-bottom: 2px solid var(--primary); width: 35px; margin: 0 auto;" />
                          </div>
                      </div>
                      
@@ -470,7 +470,7 @@
                              <div style="display: flex; justify-content: space-between;">
                                  <span class="label">Injuries</span>
                              </div>
-                             <div class="input-field" data-field="injuries" data-multiline="true" style="height: 60px; text-align: left; padding: 2px; border: 1px solid #ccc; background: white;"></div>
+                             <input type="text" name="injuries" class="input-field"  data-multiline="true" style="height: 60px; text-align: left; padding: 2px; border: 1px solid #ccc; background: white;" />
                          </div>
                      </div>
                  </div>
@@ -485,17 +485,17 @@
                             <th width="10%">Dmg</th>
                             <th width="45%">Notes</th>
                         </tr>
-                        <tr> <td><div class="input-field" data-field="wep_name_1"></div></td> <td><div class="input-field" data-field="wep_mod_1"></div></td> <td><div class="input-field" data-field="wep_dmg_1"></div></td> <td><div class="input-field" data-field="wep_note_1"></div></td> </tr>
-                        <tr> <td><div class="input-field" data-field="wep_name_2"></div></td> <td><div class="input-field" data-field="wep_mod_2"></div></td> <td><div class="input-field" data-field="wep_dmg_2"></div></td> <td><div class="input-field" data-field="wep_note_2"></div></td> </tr>
-                        <tr> <td><div class="input-field" data-field="wep_name_3"></div></td> <td><div class="input-field" data-field="wep_mod_3"></div></td> <td><div class="input-field" data-field="wep_dmg_3"></div></td> <td><div class="input-field" data-field="wep_note_3"></div></td> </tr>
-                        <tr> <td><div class="input-field" data-field="wep_name_4"></div></td> <td><div class="input-field" data-field="wep_mod_4"></div></td> <td><div class="input-field" data-field="wep_dmg_4"></div></td> <td><div class="input-field" data-field="wep_note_4"></div></td> </tr>
+                        <tr> <td><input type="text" name="wep_name_1" class="input-field"  /></td> <td><input type="text" name="wep_mod_1" class="input-field"  /></td> <td><input type="text" name="wep_dmg_1" class="input-field"  /></td> <td><input type="text" name="wep_note_1" class="input-field"  /></td> </tr>
+                        <tr> <td><input type="text" name="wep_name_2" class="input-field"  /></td> <td><input type="text" name="wep_mod_2" class="input-field"  /></td> <td><input type="text" name="wep_dmg_2" class="input-field"  /></td> <td><input type="text" name="wep_note_2" class="input-field"  /></td> </tr>
+                        <tr> <td><input type="text" name="wep_name_3" class="input-field"  /></td> <td><input type="text" name="wep_mod_3" class="input-field"  /></td> <td><input type="text" name="wep_dmg_3" class="input-field"  /></td> <td><input type="text" name="wep_note_3" class="input-field"  /></td> </tr>
+                        <tr> <td><input type="text" name="wep_name_4" class="input-field"  /></td> <td><input type="text" name="wep_mod_4" class="input-field"  /></td> <td><input type="text" name="wep_dmg_4" class="input-field"  /></td> <td><input type="text" name="wep_note_4" class="input-field"  /></td> </tr>
                     </table>
                 </div>
 
                 <!-- JOURNAL -->
                 <div style="flex-grow: 1; display: flex; flex-direction: column; margin-top: 10px;">
                     <div class="section-header">Journal & Conditions</div>
-                    <div class="input-field" data-field="conditions" data-multiline="true" style="flex-grow: 1; border: 1px solid #ccc; background: var(--bg-light); min-height: 150px; padding: 5px;"></div>
+                    <input type="text" name="conditions" class="input-field"  data-multiline="true" style="flex-grow: 1; border: 1px solid #ccc; background: var(--bg-light); min-height: 150px; padding: 5px;" />
                 </div>
             </div>
         </div>
@@ -516,218 +516,218 @@
                     <div class="skill-item">
                         <span class="skill-name">Acrobatics <span class="skill-stat">(AGI)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_acrobatics_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_acrobatics_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_acrobatics_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_acrobatics_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Alchemy <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_alchemy_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_alchemy_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_alchemy_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_alchemy_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Animal Training <span class="skill-stat">(CHA)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_animal_training_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_animal_training_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_animal_training_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_animal_training_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Appraise <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_appraise_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_appraise_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_appraise_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_appraise_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Athletics <span class="skill-stat">(STR)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_athletics_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_athletics_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_athletics_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_athletics_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Barter <span class="skill-stat">(CHA)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_barter_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_barter_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_barter_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_barter_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Bluff <span class="skill-stat">(CHA)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_bluff_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_bluff_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_bluff_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_bluff_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Crafting <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_crafting_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_crafting_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_crafting_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_crafting_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Diplomacy <span class="skill-stat">(CHA)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_diplomacy_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_diplomacy_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_diplomacy_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_diplomacy_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Disguise <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_disguise_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_disguise_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_disguise_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_disguise_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Drive Vehicle <span class="skill-stat">(AGI)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_drive_vehicle_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_drive_vehicle_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_drive_vehicle_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_drive_vehicle_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Engineering <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_engineering_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_engineering_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_engineering_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_engineering_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Entertain <span class="skill-stat">(CHA)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_entertain_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_entertain_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_entertain_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_entertain_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">History <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_history_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_history_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_history_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_history_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Intimidate <span class="skill-stat">(CHA)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_intimidate_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_intimidate_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_intimidate_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_intimidate_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Investigation <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_investigation_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_investigation_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_investigation_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_investigation_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Linguistics <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_linguistics_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_linguistics_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_linguistics_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_linguistics_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Medicine <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_medicine_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_medicine_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_medicine_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_medicine_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Nature <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_nature_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_nature_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_nature_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_nature_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Navigation <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_navigation_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_navigation_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_navigation_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_navigation_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Occult Knowledge <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_occult_knowledge_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_occult_knowledge_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_occult_knowledge_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_occult_knowledge_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Perception <span class="skill-stat">(INS)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_perception_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_perception_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_perception_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_perception_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Persuade <span class="skill-stat">(CHA)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_persuade_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_persuade_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_persuade_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_persuade_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Religion <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_religion_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_religion_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_religion_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_religion_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Riding <span class="skill-stat">(AGI)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_riding_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_riding_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_riding_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_riding_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Seafaring <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_seafaring_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_seafaring_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_seafaring_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_seafaring_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Stealth <span class="skill-stat">(AGI)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_stealth_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_stealth_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_stealth_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_stealth_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Survival <span class="skill-stat">(CON)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_survival_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_survival_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_survival_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_survival_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Thievery <span class="skill-stat">(AGI)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_thievery_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_thievery_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_thievery_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_thievery_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Tracking <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_tracking_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_tracking_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_tracking_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_tracking_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Warfare <span class="skill-stat">(LOG)</span></span>
                         <div>
-                            <div class="circle-checkbox" data-field="skill_warfare_trained" data-type="checkbox"></div>
-                            <div class="input-field" data-field="skill_warfare_val" style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;"></div>
+                            <input type="checkbox" name="skill_warfare_trained" class="circle-checkbox"  />
+                            <input type="text" name="skill_warfare_val" class="input-field"  style="width: 25px; display: inline-block; vertical-align: middle; border-bottom: 1px solid var(--primary); text-align: center;" />
                         </div>
                     </div>
                 </div>
@@ -743,36 +743,36 @@
                             <th width="90%">Item Name</th>
                         </tr>
                         <!-- 30 Rows -->
-                        <tr> <td style="text-align:center;">1</td> <td><div class="input-field" data-field="inv_item_1"></div></td> </tr>
-                        <tr> <td style="text-align:center;">2</td> <td><div class="input-field" data-field="inv_item_2"></div></td> </tr>
-                        <tr> <td style="text-align:center;">3</td> <td><div class="input-field" data-field="inv_item_3"></div></td> </tr>
-                        <tr> <td style="text-align:center;">4</td> <td><div class="input-field" data-field="inv_item_4"></div></td> </tr>
-                        <tr> <td style="text-align:center;">5</td> <td><div class="input-field" data-field="inv_item_5"></div></td> </tr>
-                        <tr> <td style="text-align:center;">6</td> <td><div class="input-field" data-field="inv_item_6"></div></td> </tr>
-                        <tr> <td style="text-align:center;">7</td> <td><div class="input-field" data-field="inv_item_7"></div></td> </tr>
-                        <tr> <td style="text-align:center;">8</td> <td><div class="input-field" data-field="inv_item_8"></div></td> </tr>
-                        <tr> <td style="text-align:center;">9</td> <td><div class="input-field" data-field="inv_item_9"></div></td> </tr>
-                        <tr> <td style="text-align:center;">10</td> <td><div class="input-field" data-field="inv_item_10"></div></td> </tr>
-                        <tr> <td style="text-align:center;">11</td> <td><div class="input-field" data-field="inv_item_11"></div></td> </tr>
-                        <tr> <td style="text-align:center;">12</td> <td><div class="input-field" data-field="inv_item_12"></div></td> </tr>
-                        <tr> <td style="text-align:center;">13</td> <td><div class="input-field" data-field="inv_item_13"></div></td> </tr>
-                        <tr> <td style="text-align:center;">14</td> <td><div class="input-field" data-field="inv_item_14"></div></td> </tr>
-                        <tr> <td style="text-align:center;">15</td> <td><div class="input-field" data-field="inv_item_15"></div></td> </tr>
-                        <tr> <td style="text-align:center;">16</td> <td><div class="input-field" data-field="inv_item_16"></div></td> </tr>
-                        <tr> <td style="text-align:center;">17</td> <td><div class="input-field" data-field="inv_item_17"></div></td> </tr>
-                        <tr> <td style="text-align:center;">18</td> <td><div class="input-field" data-field="inv_item_18"></div></td> </tr>
-                        <tr> <td style="text-align:center;">19</td> <td><div class="input-field" data-field="inv_item_19"></div></td> </tr>
-                        <tr> <td style="text-align:center;">20</td> <td><div class="input-field" data-field="inv_item_20"></div></td> </tr>
-                        <tr> <td style="text-align:center;">21</td> <td><div class="input-field" data-field="inv_item_21"></div></td> </tr>
-                        <tr> <td style="text-align:center;">22</td> <td><div class="input-field" data-field="inv_item_22"></div></td> </tr>
-                        <tr> <td style="text-align:center;">23</td> <td><div class="input-field" data-field="inv_item_23"></div></td> </tr>
-                        <tr> <td style="text-align:center;">24</td> <td><div class="input-field" data-field="inv_item_24"></div></td> </tr>
-                        <tr> <td style="text-align:center;">25</td> <td><div class="input-field" data-field="inv_item_25"></div></td> </tr>
-                        <tr> <td style="text-align:center;">26</td> <td><div class="input-field" data-field="inv_item_26"></div></td> </tr>
-                        <tr> <td style="text-align:center;">27</td> <td><div class="input-field" data-field="inv_item_27"></div></td> </tr>
-                        <tr> <td style="text-align:center;">28</td> <td><div class="input-field" data-field="inv_item_28"></div></td> </tr>
-                        <tr> <td style="text-align:center;">29</td> <td><div class="input-field" data-field="inv_item_29"></div></td> </tr>
-                        <tr> <td style="text-align:center;">30</td> <td><div class="input-field" data-field="inv_item_30"></div></td> </tr>
+                        <tr> <td style="text-align:center;">1</td> <td><input type="text" name="inv_item_1" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">2</td> <td><input type="text" name="inv_item_2" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">3</td> <td><input type="text" name="inv_item_3" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">4</td> <td><input type="text" name="inv_item_4" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">5</td> <td><input type="text" name="inv_item_5" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">6</td> <td><input type="text" name="inv_item_6" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">7</td> <td><input type="text" name="inv_item_7" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">8</td> <td><input type="text" name="inv_item_8" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">9</td> <td><input type="text" name="inv_item_9" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">10</td> <td><input type="text" name="inv_item_10" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">11</td> <td><input type="text" name="inv_item_11" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">12</td> <td><input type="text" name="inv_item_12" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">13</td> <td><input type="text" name="inv_item_13" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">14</td> <td><input type="text" name="inv_item_14" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">15</td> <td><input type="text" name="inv_item_15" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">16</td> <td><input type="text" name="inv_item_16" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">17</td> <td><input type="text" name="inv_item_17" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">18</td> <td><input type="text" name="inv_item_18" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">19</td> <td><input type="text" name="inv_item_19" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">20</td> <td><input type="text" name="inv_item_20" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">21</td> <td><input type="text" name="inv_item_21" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">22</td> <td><input type="text" name="inv_item_22" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">23</td> <td><input type="text" name="inv_item_23" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">24</td> <td><input type="text" name="inv_item_24" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">25</td> <td><input type="text" name="inv_item_25" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">26</td> <td><input type="text" name="inv_item_26" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">27</td> <td><input type="text" name="inv_item_27" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">28</td> <td><input type="text" name="inv_item_28" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">29</td> <td><input type="text" name="inv_item_29" class="input-field"  /></td> </tr>
+                        <tr> <td style="text-align:center;">30</td> <td><input type="text" name="inv_item_30" class="input-field"  /></td> </tr>
                     </table>
                 </div>
 
@@ -781,15 +781,15 @@
                     <div style="display: flex; justify-content: space-around; background: var(--bg-light); padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
                         <div style="text-align: center;">
                             <span class="label" style="font-size: 8pt; color: #b8860b;">Gold (GP)</span>
-                            <div class="input-field" data-field="gold_gp" style="width: 60px; border-bottom: 2px solid #b8860b; text-align: center;"></div>
+                            <input type="text" name="gold_gp" class="input-field"  style="width: 60px; border-bottom: 2px solid #b8860b; text-align: center;" />
                         </div>
                          <div style="text-align: center;">
                             <span class="label" style="font-size: 8pt; color: #7f8c8d;">Silver (SP)</span>
-                            <div class="input-field" data-field="silver_sp" style="width: 60px; border-bottom: 2px solid #7f8c8d; text-align: center;"></div>
+                            <input type="text" name="silver_sp" class="input-field"  style="width: 60px; border-bottom: 2px solid #7f8c8d; text-align: center;" />
                         </div>
                          <div style="text-align: center;">
                             <span class="label" style="font-size: 8pt; color: #cd7f32;">Copper (CP)</span>
-                            <div class="input-field" data-field="copper_cp" style="width: 60px; border-bottom: 2px solid #cd7f32; text-align: center;"></div>
+                            <input type="text" name="copper_cp" class="input-field"  style="width: 60px; border-bottom: 2px solid #cd7f32; text-align: center;" />
                         </div>
                     </div>
                 </div>

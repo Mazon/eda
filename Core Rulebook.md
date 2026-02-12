@@ -61,12 +61,12 @@ success is not only if you succeeded in something or not. Eda uses **degree of s
 
 ### Degree of Success (DoS)
 
-Eda uses a "blackjack" style system where you want to roll as high as possible without exceeding your skill value. The quality of your success is measured by the degree of success.
+Eda uses a "blackjack" style system where you want to roll as high as possible without exceeding your skill value. The quality of your success is measured by the **DoS**.
 
-*   Calculating degree of success: is equal to the tens digit of your successful roll.
-    *   *Example*: A roll of 48 provides 4 degree of sucess.
+*   Calculating **DoS**: is equal to the tens digit of your successful roll.
+    *   *Example*: A roll of 48 provides 4 **DoS**.
 
-> ### Example: Calculating degree of success
+> ### Example: Calculating **DoS**
 >
 > Bjorn (skill 70) attempts to track a wolf.
 >
@@ -105,7 +105,7 @@ Some tasks are harder than others and the GM might require a minimum number of d
 
 When you have advantage or disadvantage, you roll d100 as normal, but you can swap which die is the primary (tens) and which is the secondary (units). This allows you to choose between two possible results from a single roll.
 
-*   **advantage**: You select the best result. The best result is defined as the successful roll that provides the highest degree of success (DoS).
+*   **advantage**: You select the best result. The best result is defined as the successful roll that provides the highest **DoS**.
 *   **disadvantage**: You must take the worst result.
 
 > ### Example: advantage Swap
@@ -121,7 +121,7 @@ When you have advantage or disadvantage, you roll d100 as normal, but you can sw
 
 When two characters compete (e.g., an arm wrestling match or hiding from a guard), both make a check.
 
-*   Highest successful roll wins: If both succeed, the character with the highest successful roll wins (**degree of success**).
+*   Highest successful roll wins: If both succeed, the character with the highest successful roll wins (**DoS**).
 *   Single success: If one succeeds and the other fails, the successful character wins.
 *   Double failure: If both fail, the situation remains unchanged.
 
@@ -171,7 +171,7 @@ Determines your raw potential and base attributes. Select one lineage Option to 
 *   **Strength (STR)**: Raw physical power and muscle mass. It is used for melee combat, lifting heavy objects, and physical feats like climbing or swimming.
 *   **Agility (AGI)**: Speed, coordination, and reflexes. It is used for initiative, ranged attacks, dodging, and moving with stealth and precision.
 *   **Logic (LOG)**: Intelligence, memory, and analytical thinking. It is used for crafting, identifying strange phenomena, and investigating clues or historical facts.
-*   **Instinct (INS)**: Intuition, willpower, and situational awareness. It is used to sense hidden dangers, resist mental trauma, and determines your pool of **instinct points**.
+*   **Instinct (INS)**: Intuition, willpower, and situational awareness. It is used to sense hidden dangers, resist mental trauma, and determines your pool of **IP**.
 *   **Charisma (CHA)**: Force of personality and social grace. It is used to persuade others, barter for better prices, or lead through charm and deception.
 *   **Constitution (CON)**: Physical resilience and endurance. It determines your **health points** and is used to survive harsh environments, poisons, and exhaustion.
 
@@ -764,7 +764,7 @@ At character creation, you can choose one **combat style** if your heritage does
 *   **attribute**: **STR**
 *   **Applicable Weapons**: Bucklers, Round Shields, Kite Shields, Tower Shields, Greatshields.
 
-*   **Blocker (T1)**: Unlock the **Block** reaction. Use **Shield** skill to reduce damage.
+*   **Blocker (T1)**: Unlock the **Block** reaction. Use **Shields** combat style check to reduce damage.
 *   **Shield Bash (T1)**: Strike with shield (Damage = Shield Defense + **DoS**).
 *   **Shield Wall (T2)**: Passive. Adjacent allies gain +2 Defense. Reaction: After a successful **Block**, make a free **Shield Bash** attack.
 *   **Shield Edge (T3)**: You have advantage on attacks against an enemy you have immobilized with your shield.
@@ -864,6 +864,7 @@ On your turn, you receive 2 **action points (AP)** and 1 **Zero Cost Action**.
     *   Evasive Stance: If you move at least 3 meters during your turn, you gain the Evasive status. You gain +3 Defense against all attacks.
 *   Attack (1 AP): Make an attack using a combat style.
     *   Multiple Attack Penalty (MAP): If you perform more than one attack action in a single turn, any attack after the first is made at half skill chance.
+    *   *Example*: Bjorn has Warfare 70. His first attack uses 70. His second attack uses 35 (half of 70).
 *   Help (1 AP): Assist an ally within melee range, granting them advantage on their next action.
 *   Interact (1 AP): Open a door, light a torch, or manipulate an object.
 *   Swap Weapon (1 AP): Draw or sheathe a weapon.
@@ -879,7 +880,7 @@ A player in the Vanguard turn can spend their **Zero Cost Action** to wait. This
 
 ### Damage & Health
 
-*   Damage: Total damage is calculated as Weapon Base Damage + **degree of success (DoS)**.
+*   Damage: Total damage is calculated as Weapon Base Damage + **DoS**.
 *   Reduction: Damage is reduced by Defense (the sum of armor and shield values) before being applied to HP.
 *   Death: At 0 HP.
 
@@ -893,7 +894,7 @@ Combat in Eda is dangerous. While **health points (HP)** represent your overall 
 Every attack that deals damage (after armor reduction) inflicts the **Bleeding** condition.
 
 *   **Trigger:** Any damaging hit.
-*   **Effect:** Bleeding represents the cumulative toll of minor cuts and fatigue. While Bleeding, your Defense is reduced by 2.
+*   **Effect:** Bleeding represents the cumulative toll of minor cuts and fatigue. While Bleeding, your Defense is reduced by 2. This penalty does not stack—multiple sources of Bleeding still only apply -2 Defense.
 *   **Duration:** Bleeding persists until the end of the combat encounter.
 *   **Treatment:** A successful Medicine check can remove the **Bleeding** condition.
 
@@ -1381,7 +1382,7 @@ In the shadowed corners of Eda, practitioners of the old ways utilize macabre co
 
 <img src="images/spellcasting.png" class="float-right" style="width: 40%;">
 
-Magic in Eda is a gnarly, dangerous practice that draws power from the subconscious and the darker corners of the world. It is a strategic gamble; because characters have limited instinct points (IP) and magic takes a physical toll, most practitioners must rely on their mundane skills and weapons until a situation becomes desperate.
+Magic in Eda is a gnarly, dangerous practice that draws power from the subconscious and the darker corners of the world. It is a strategic gamble; because characters have limited **IP** and magic takes a physical toll, most practitioners must rely on their mundane skills and weapons until a situation becomes desperate.
 
 To cast a spell, one must reach into the golden void and pull forth energy that was never meant for mortal hands. This process is exhausting and often leaves the caster's mind frayed.
 

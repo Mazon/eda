@@ -18,9 +18,10 @@ This repository contains the source files for the Eda TTRPG system, including:
 
 The project includes several utility scripts located in the `scripts/` directory:
 
-- `generate_pdfs.py`: Automates the conversion of Markdown source files into formatted PDFs (requires Pandoc).
+- `build.py`: Main build script for generating all PDFs from Markdown and HTML sources (requires Pandoc and WeasyPrint).
 - `combat_sim.py`: A Python-based combat simulator to test game balance and mechanics.
-- `generate_interactive_sheet.py`: Generates the interactive HTML character sheet.
+- `prepare_html.py`: Prepares the interactive character sheet HTML for PDF generation.
+- `generate_interactive_sheet.py`: Generates the interactive PDF character sheet.
 
 ## 🚀 Getting Started
 
@@ -28,14 +29,29 @@ The project includes several utility scripts located in the `scripts/` directory
 
 To build the documentation locally, you will need:
 - Python 3.10+
-- [Pandoc](https://pandoc.org/installing.html) (for PDF generation)
+- [Pandoc](https://pandoc.org/installing.html) (for Markdown to HTML conversion)
+- WeasyPrint (for HTML to PDF conversion): `pip install weasyprint`
+
+For detailed build instructions, see [BUILD.md](BUILD.md).
 
 ### Generating PDFs
 
-To build the rulebooks and adventure modules into PDFs:
+To build all rulebooks and adventure modules into PDFs:
 
 ```bash
-python ./scripts/generate_pdfs.py
+python ./scripts/build.py
+```
+
+To build a specific file:
+
+```bash
+python ./scripts/build.py "Core Rulebook.md"
+```
+
+To check if all dependencies are installed:
+
+```bash
+python ./scripts/build.py --check
 ```
 
 The generated files will be output to the `build/` directory.

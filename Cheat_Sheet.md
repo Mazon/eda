@@ -204,7 +204,7 @@ strong {
         <h2>Damage & Wounds</h2>
         <ul>
             <li><strong>Damage:</strong> Weapon Base + DoS.</li>
-            <li><strong>Bleeding:</strong> Defense reduced by 2 (non-stacking). Removed by Medicine check.</li>
+            <li><strong>Bleeding:</strong> Defense reduced by 2. Removed by Medicine check.</li>
             <li><strong>Wounds/Injuries:</strong> Caused by Critical Hits. Roll on injury Table.</li>
         </ul>
       </div>

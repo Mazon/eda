@@ -697,7 +697,7 @@ that inhabits burial mounds. It looks human but carries a musty smell of decay w
 <strong>Shadow Weaver:</strong> As an action, the Draug can create temporary darkness in a 10m radius during the day.
 </div>
 <div class="property-line">
-<strong>Dream Haunter:</strong> The Draug can enter the dreams of a sleeping target within its burial mound's vicinity, causing the target to lose 1 Fatigue upon waking.
+<strong>Dream Haunter:</strong> The Draug can enter the dreams of a sleeping target within its burial mound's vicinity, causing the target to lose 1 Exhaustion upon waking.
 </div>
 <div class="property-line">
 <strong>Earth Sink:</strong> The Draug can move through the ground as if it were water, though it must emerge to attack.
@@ -1117,7 +1117,7 @@ that have been animated, often representing demons, small stone devils, cherubs,
 </div>
 
 <div class="stat-block">
-<h3>Staty</h3>
+<h3>Statue</h3>
 ![Golem/Statue](images/creature_golem.png)
 <div class="flavor-text">A lifeless depiction
 of stone or metal given life through magic or ancient mechanics.</div><hr>
